@@ -1,4 +1,13 @@
 import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 export type PermissionType = "motion" | "audio";
 
@@ -97,68 +106,22 @@ export const PermissionButton = ({
   const msg = messages[type];
 
   return (
-    <div style={styles.container}>
-      <div style={styles.card}>
-        <h2 style={styles.title}>{msg.title}</h2>
-        <p style={styles.description}>{msg.description}</p>
-        <button
-          onClick={handleRequest}
-          disabled={requesting}
-          style={styles.button}
-        >
-          {requesting ? "Requesting..." : msg.button}
-        </button>
-        {error && <p style={styles.error}>{error}</p>}
-      </div>
-    </div>
+    <Dialog open={true}>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>{msg.title}</DialogTitle>
+          <DialogDescription>{msg.description}</DialogDescription>
+        </DialogHeader>
+        {error && <div className="text-sm text-destructive">{error}</div>}
+        <DialogFooter>
+          <Button variant="outline" onClick={onDenied} disabled={requesting}>
+            Skip
+          </Button>
+          <Button onClick={handleRequest} disabled={requesting}>
+            {requesting ? "Requesting..." : msg.button}
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
-};
-
-const styles: Record<string, React.CSSProperties> = {
-  container: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100vw",
-    height: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.8)",
-    zIndex: 1000,
-  },
-  card: {
-    backgroundColor: "#1a1a1a",
-    padding: "2rem",
-    borderRadius: "1rem",
-    maxWidth: "400px",
-    textAlign: "center",
-    border: "1px solid #333",
-  },
-  title: {
-    color: "#fff",
-    fontSize: "1.5rem",
-    marginBottom: "1rem",
-  },
-  description: {
-    color: "#aaa",
-    fontSize: "1rem",
-    marginBottom: "1.5rem",
-    lineHeight: "1.5",
-  },
-  button: {
-    backgroundColor: "#ff6b35",
-    color: "#fff",
-    border: "none",
-    padding: "0.75rem 2rem",
-    fontSize: "1rem",
-    borderRadius: "0.5rem",
-    cursor: "pointer",
-    transition: "background-color 0.2s",
-  },
-  error: {
-    color: "#ff4444",
-    fontSize: "0.875rem",
-    marginTop: "1rem",
-  },
 };

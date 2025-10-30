@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 interface VirtualJoystickProps {
   onMove: (x: number, y: number) => void;
@@ -13,60 +13,69 @@ export const VirtualJoystick = ({ onMove }: VirtualJoystickProps) => {
   const STICK_SIZE = 50;
   const MAX_DISTANCE = (JOYSTICK_SIZE - STICK_SIZE) / 2;
 
-  const handleMove = (clientX: number, clientY: number) => {
-    if (!containerRef.current) return;
+  const handleMove = useCallback(
+    (clientX: number, clientY: number) => {
+      if (!containerRef.current) return;
 
-    const rect = containerRef.current.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
+      const rect = containerRef.current.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
 
-    let deltaX = clientX - centerX;
-    let deltaY = clientY - centerY;
+      let deltaX = clientX - centerX;
+      let deltaY = clientY - centerY;
 
-    // Constrain to circle
-    const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-    if (distance > MAX_DISTANCE) {
-      const angle = Math.atan2(deltaY, deltaX);
-      deltaX = Math.cos(angle) * MAX_DISTANCE;
-      deltaY = Math.sin(angle) * MAX_DISTANCE;
-    }
+      // Constrain to circle
+      const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+      if (distance > MAX_DISTANCE) {
+        const angle = Math.atan2(deltaY, deltaX);
+        deltaX = Math.cos(angle) * MAX_DISTANCE;
+        deltaY = Math.sin(angle) * MAX_DISTANCE;
+      }
 
-    // Update position
-    setPosition({ x: deltaX, y: deltaY });
+      // Update position
+      setPosition({ x: deltaX, y: deltaY });
 
-    // Normalize to -1 to 1 range
-    const normalizedX = deltaX / MAX_DISTANCE;
-    const normalizedY = deltaY / MAX_DISTANCE;
+      // Normalize to -1 to 1 range
+      const normalizedX = deltaX / MAX_DISTANCE;
+      const normalizedY = deltaY / MAX_DISTANCE;
 
-    onMove(normalizedX, normalizedY);
-  };
+      onMove(normalizedX, normalizedY);
+    },
+    [MAX_DISTANCE, onMove],
+  );
 
   const handleMouseDown = () => setIsDragging(true);
 
-  const handleMouseUp = () => {
+  const handleMouseUp = useCallback(() => {
     setIsDragging(false);
     setPosition({ x: 0, y: 0 });
     onMove(0, 0);
-  };
+  }, [onMove]);
 
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!isDragging) return;
-    handleMove(e.clientX, e.clientY);
-  };
+  const handleMouseMove = useCallback(
+    (e: MouseEvent) => {
+      if (!isDragging) return;
+      handleMove(e.clientX, e.clientY);
+    },
+    [isDragging, handleMove],
+  );
 
   const handleTouchStart = () => setIsDragging(true);
 
-  const handleTouchEnd = () => {
+  const handleTouchEnd = useCallback(() => {
     setIsDragging(false);
     setPosition({ x: 0, y: 0 });
     onMove(0, 0);
-  };
+  }, [onMove]);
 
-  const handleTouchMove = (e: TouchEvent) => {
-    if (!isDragging || e.touches.length === 0) return;
-    const touch = e.touches[0];
-    handleMove(touch.clientX, touch.clientY);
-  };
+  const handleTouchMove = useCallback(
+    (e: TouchEvent) => {
+      if (!isDragging || e.touches.length === 0) return;
+      const touch = e.touches[0];
+      handleMove(touch.clientX, touch.clientY);
+    },
+    [isDragging, handleMove],
+  );
 
   useEffect(() => {
     document.addEventListener("mousemove", handleMouseMove);
@@ -80,13 +89,7 @@ export const VirtualJoystick = ({ onMove }: VirtualJoystickProps) => {
       document.removeEventListener("touchmove", handleTouchMove);
       document.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [
-    isDragging,
-    handleMouseMove,
-    handleMouseUp,
-    handleTouchMove,
-    handleTouchEnd,
-  ]);
+  }, [handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   return (
     <div style={styles.container}>
