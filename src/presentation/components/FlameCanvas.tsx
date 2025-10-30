@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { VolumetricFire } from "../../volumetricFire";
+import { Candle } from "../../components/Candle";
 import type { FlameState } from "../../core/entities/FlameState";
 
 interface FlameCanvasProps {
@@ -13,16 +13,13 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
     scene: THREE.Scene;
     camera: THREE.PerspectiveCamera;
     renderer: THREE.WebGLRenderer;
-    fire: VolumetricFire;
+    candle: Candle;
     clock: THREE.Clock;
     animationId: number | null;
   } | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
-
-    // Set texture path
-    VolumetricFire.texturePath = "/textures/";
 
     // Scene setup
     const width = window.innerWidth;
@@ -31,40 +28,36 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x000000);
 
-    // Camera setup - fixed position for meditation
-    const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000);
-    camera.position.set(0, 2, 6);
+    // Camera setup
+    const camera = new THREE.PerspectiveCamera(60, width / height, 1, 1000);
+    camera.position.set(3, 5, 8).setLength(15);
     camera.lookAt(0, 2, 0);
 
     // Renderer setup
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); // Limit for performance
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     containerRef.current.appendChild(renderer.domElement);
 
-    // Fire setup
-    const fireWidth = 2;
-    const fireHeight = 4;
-    const fireDepth = 2;
-    const sliceSpacing = 0.5;
+    // Lighting - improved for better depth perception
+    const light = new THREE.DirectionalLight(0xffffff, 0.5);
+    light.position.set(10, 10, 5);
+    light.castShadow = true;
+    scene.add(light);
+    scene.add(new THREE.AmbientLight(0x4a4a5a, 0.3));
 
-    const fire = new VolumetricFire(
-      fireWidth,
-      fireHeight,
-      fireDepth,
-      sliceSpacing,
-      camera,
-    );
-
-    scene.add(fire.mesh);
-    fire.mesh.position.set(0, fireHeight / 2, 0);
+    // Create candle
+    const candle = new Candle();
+    scene.add(candle.group);
 
     // Animation loop
     const animate = () => {
       const animationId = requestAnimationFrame(animate);
       const elapsed = clock.getElapsedTime();
 
-      fire.update(elapsed);
+      candle.update(elapsed);
       renderer.render(scene, camera);
 
       if (sceneRef.current) {
@@ -79,7 +72,7 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
       scene,
       camera,
       renderer,
-      fire,
+      candle,
       clock,
       animationId: null,
     };
@@ -111,18 +104,10 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
   // Update flame based on state changes
   useEffect(() => {
     if (!sceneRef.current) return;
+    const { candle } = sceneRef.current;
+    if (!candle) return;
 
-    const { fire } = sceneRef.current;
-
-    // Apply flame lean (rotate the mesh)
-    fire.mesh.rotation.x = flameState.leanZ * 0.3; // Max 17 degrees
-    fire.mesh.rotation.z = -flameState.leanX * 0.3; // Max 17 degrees
-
-    // Apply height scale
-    fire.mesh.scale.y = flameState.heightScale;
-
-    // TODO: Apply intensity, flickerSpeed, and colorTemperature to shader uniforms
-    // This will require exposing shader uniforms in VolumetricFire class
+    candle.setLean(flameState.leanX, flameState.leanZ);
   }, [flameState]);
 
   return <div ref={containerRef} style={{ width: "100vw", height: "100vh" }} />;

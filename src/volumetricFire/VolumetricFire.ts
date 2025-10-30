@@ -1,7 +1,7 @@
-import * as THREE from 'three';
-import { PriorityQueue } from './PriorityQueue';
-import { cornerNeighbors, incomingEdges } from './fireConstants';
-import { vertexShader, fragmentShader } from './shaders';
+import * as THREE from "three";
+import { PriorityQueue } from "./PriorityQueue";
+import { cornerNeighbors, incomingEdges } from "./fireConstants";
+import { vertexShader, fragmentShader } from "./shaders";
 
 interface ActiveEdge {
   expired: boolean;
@@ -17,20 +17,29 @@ interface ActiveEdge {
 }
 
 export class VolumetricFire {
-  static texturePath = '/textures/';
+  static texturePath = "/textures/";
 
   mesh: THREE.Mesh;
   camera: THREE.Camera;
 
   private _sliceSpacing: number;
   private _posCorners: THREE.Vector3[];
+  private _basePosCorners: THREE.Vector3[]; // Store original positions
   private _texCorners: THREE.Vector3[];
   private _viewVector: THREE.Vector3;
   private _points: number[] = [];
   private _texCoords: number[] = [];
   private _indexes: number[] = [];
+  private _leanX: number = 0;
+  private _leanZ: number = 0;
 
-  constructor(width: number, height: number, depth: number, sliceSpacing: number, camera: THREE.Camera) {
+  constructor(
+    width: number,
+    height: number,
+    depth: number,
+    sliceSpacing: number,
+    camera: THREE.Camera,
+  ) {
     this.camera = camera;
     this._sliceSpacing = sliceSpacing;
 
@@ -38,16 +47,19 @@ export class VolumetricFire {
     const heightHalf = height * 0.5;
     const depthHalf = depth * 0.5;
 
-    this._posCorners = [
+    this._basePosCorners = [
       new THREE.Vector3(-widthHalf, -heightHalf, -depthHalf),
-      new THREE.Vector3( widthHalf, -heightHalf, -depthHalf),
-      new THREE.Vector3(-widthHalf,  heightHalf, -depthHalf),
-      new THREE.Vector3( widthHalf,  heightHalf, -depthHalf),
-      new THREE.Vector3(-widthHalf, -heightHalf,  depthHalf),
-      new THREE.Vector3( widthHalf, -heightHalf,  depthHalf),
-      new THREE.Vector3(-widthHalf,  heightHalf,  depthHalf),
-      new THREE.Vector3( widthHalf,  heightHalf,  depthHalf)
+      new THREE.Vector3(widthHalf, -heightHalf, -depthHalf),
+      new THREE.Vector3(-widthHalf, heightHalf, -depthHalf),
+      new THREE.Vector3(widthHalf, heightHalf, -depthHalf),
+      new THREE.Vector3(-widthHalf, -heightHalf, depthHalf),
+      new THREE.Vector3(widthHalf, -heightHalf, depthHalf),
+      new THREE.Vector3(-widthHalf, heightHalf, depthHalf),
+      new THREE.Vector3(widthHalf, heightHalf, depthHalf),
     ];
+
+    // Clone for working positions
+    this._posCorners = this._basePosCorners.map((v) => v.clone());
 
     this._texCorners = [
       new THREE.Vector3(0, 0, 0),
@@ -57,7 +69,7 @@ export class VolumetricFire {
       new THREE.Vector3(0, 0, 1),
       new THREE.Vector3(1, 0, 1),
       new THREE.Vector3(0, 1, 1),
-      new THREE.Vector3(1, 1, 1)
+      new THREE.Vector3(1, 1, 1),
     ];
 
     this._viewVector = new THREE.Vector3();
@@ -65,13 +77,15 @@ export class VolumetricFire {
     // Load textures
     const textureLoader = new THREE.TextureLoader();
 
-    const nzw = textureLoader.load(VolumetricFire.texturePath + 'nzw.png');
+    const nzw = textureLoader.load(VolumetricFire.texturePath + "nzw.png");
     nzw.wrapS = THREE.RepeatWrapping;
     nzw.wrapT = THREE.RepeatWrapping;
     nzw.magFilter = THREE.LinearFilter;
     nzw.minFilter = THREE.LinearFilter;
 
-    const fireProfile = textureLoader.load(VolumetricFire.texturePath + 'firetex.png');
+    const fireProfile = textureLoader.load(
+      VolumetricFire.texturePath + "firetex.png",
+    );
     fireProfile.wrapS = THREE.ClampToEdgeWrapping;
     fireProfile.wrapT = THREE.ClampToEdgeWrapping;
     fireProfile.magFilter = THREE.LinearFilter;
@@ -80,7 +94,7 @@ export class VolumetricFire {
     const uniforms = {
       nzw: { value: nzw },
       fireProfile: { value: fireProfile },
-      time: { value: 1.0 }
+      time: { value: 1.0 },
     };
 
     const material = new THREE.RawShaderMaterial({
@@ -89,7 +103,7 @@ export class VolumetricFire {
       uniforms,
       side: THREE.DoubleSide,
       blending: THREE.AdditiveBlending,
-      transparent: true
+      transparent: true,
     });
 
     // Create geometry
@@ -99,42 +113,75 @@ export class VolumetricFire {
 
     const geometry = new THREE.BufferGeometry();
     geometry.setIndex(new THREE.BufferAttribute(index, 1));
-    geometry.setAttribute('position', new THREE.BufferAttribute(position, 3));
-    geometry.setAttribute('tex', new THREE.BufferAttribute(tex, 3));
+    geometry.setAttribute("position", new THREE.BufferAttribute(position, 3));
+    geometry.setAttribute("tex", new THREE.BufferAttribute(tex, 3));
 
     this.mesh = new THREE.Mesh(geometry, material);
     this.mesh.updateMatrixWorld();
   }
 
   update(elapsed: number): void {
+    this.applyLean();
     this.updateViewVector();
     this.slice();
     this.updateGeometry();
-    (this.mesh.material as THREE.RawShaderMaterial).uniforms.time.value = elapsed;
+    (this.mesh.material as THREE.RawShaderMaterial).uniforms.time.value =
+      elapsed;
+  }
+
+  setLean(leanX: number, leanZ: number): void {
+    this._leanX = leanX;
+    this._leanZ = leanZ;
+  }
+
+  private applyLean(): void {
+    // Apply lean by tilting the corners based on their height
+    // Higher corners move more (creating a lean effect)
+    for (let i = 0; i < 8; i++) {
+      const basePos = this._basePosCorners[i];
+      // Calculate lean offset based on height (y coordinate)
+      // Normalize height from -heightHalf to +heightHalf to 0-1 range
+      const heightFactor = (basePos.y + 2) / 4; // Assuming height is 4
+
+      this._posCorners[i].copy(basePos);
+      this._posCorners[i].x += this._leanX * heightFactor * 2;
+      this._posCorners[i].z += this._leanZ * heightFactor * 2;
+    }
   }
 
   private updateGeometry(): void {
-    (this.mesh.geometry.index as THREE.BufferAttribute).array.set(new Uint16Array(this._indexes));
-    (this.mesh.geometry.attributes.position as THREE.BufferAttribute).array.set(new Float32Array(this._points));
-    (this.mesh.geometry.attributes.tex as THREE.BufferAttribute).array.set(new Float32Array(this._texCoords));
+    (this.mesh.geometry.index as THREE.BufferAttribute).array.set(
+      new Uint16Array(this._indexes),
+    );
+    (this.mesh.geometry.attributes.position as THREE.BufferAttribute).array.set(
+      new Float32Array(this._points),
+    );
+    (this.mesh.geometry.attributes.tex as THREE.BufferAttribute).array.set(
+      new Float32Array(this._texCoords),
+    );
 
     (this.mesh.geometry.index as THREE.BufferAttribute).needsUpdate = true;
-    (this.mesh.geometry.attributes.position as THREE.BufferAttribute).needsUpdate = true;
-    (this.mesh.geometry.attributes.tex as THREE.BufferAttribute).needsUpdate = true;
+    (
+      this.mesh.geometry.attributes.position as THREE.BufferAttribute
+    ).needsUpdate = true;
+    (this.mesh.geometry.attributes.tex as THREE.BufferAttribute).needsUpdate =
+      true;
   }
 
   private updateViewVector(): void {
     const modelViewMatrix = new THREE.Matrix4();
     modelViewMatrix.multiplyMatrices(
       this.camera.matrixWorldInverse,
-      this.mesh.matrixWorld
+      this.mesh.matrixWorld,
     );
 
-    this._viewVector.set(
-      -modelViewMatrix.elements[2],
-      -modelViewMatrix.elements[6],
-      -modelViewMatrix.elements[10]
-    ).normalize();
+    this._viewVector
+      .set(
+        -modelViewMatrix.elements[2],
+        -modelViewMatrix.elements[6],
+        -modelViewMatrix.elements[10],
+      )
+      .normalize();
   }
 
   private slice(): void {
@@ -164,14 +211,18 @@ export class VolumetricFire {
     }
 
     // Aligning slices
-    let sliceDistance = Math.floor(maxDistance / this._sliceSpacing) * this._sliceSpacing;
+    let sliceDistance =
+      Math.floor(maxDistance / this._sliceSpacing) * this._sliceSpacing;
 
     const activeEdges: ActiveEdge[] = [];
     let firstEdge = 0;
     let nextEdge = 0;
     const expirations = new PriorityQueue();
 
-    const createEdge = (startIndex: number, endIndex: number): ActiveEdge | undefined => {
+    const createEdge = (
+      startIndex: number,
+      endIndex: number,
+    ): ActiveEdge | undefined => {
       if (nextEdge >= 12) return undefined;
 
       const activeEdge: ActiveEdge = {
@@ -182,7 +233,7 @@ export class VolumetricFire {
         deltaTex: new THREE.Vector3(),
         pos: new THREE.Vector3(),
         tex: new THREE.Vector3(),
-        cur: nextEdge
+        cur: nextEdge,
       };
 
       const range = cornerDistance[startIndex] - cornerDistance[endIndex];
@@ -190,26 +241,24 @@ export class VolumetricFire {
       if (range !== 0.0) {
         const irange = 1.0 / range;
 
-        activeEdge.deltaPos.subVectors(
-          this._posCorners[endIndex],
-          this._posCorners[startIndex]
-        ).multiplyScalar(irange);
+        activeEdge.deltaPos
+          .subVectors(this._posCorners[endIndex], this._posCorners[startIndex])
+          .multiplyScalar(irange);
 
-        activeEdge.deltaTex.subVectors(
-          this._texCorners[endIndex],
-          this._texCorners[startIndex]
-        ).multiplyScalar(irange);
+        activeEdge.deltaTex
+          .subVectors(this._texCorners[endIndex], this._texCorners[startIndex])
+          .multiplyScalar(irange);
 
         const step = cornerDistance[startIndex] - sliceDistance;
 
         activeEdge.pos.addVectors(
           activeEdge.deltaPos.clone().multiplyScalar(step),
-          this._posCorners[startIndex]
+          this._posCorners[startIndex],
         );
 
         activeEdge.tex.addVectors(
           activeEdge.deltaTex.clone().multiplyScalar(step),
-          this._texCorners[startIndex]
+          this._texCorners[startIndex],
         );
 
         activeEdge.deltaPos.multiplyScalar(this._sliceSpacing);
@@ -246,7 +295,7 @@ export class VolumetricFire {
 
           const activeEdge1 = createEdge(
             edge.endIndex,
-            incomingEdges[edge.endIndex][edge.startIndex]
+            incomingEdges[edge.endIndex][edge.startIndex],
           );
           if (activeEdge1) {
             activeEdge1.prev = edge.prev;
@@ -256,7 +305,7 @@ export class VolumetricFire {
 
           const activeEdge2 = createEdge(
             edge.endIndex,
-            incomingEdges[edge.endIndex][activeEdge1!.endIndex]
+            incomingEdges[edge.endIndex][activeEdge1!.endIndex],
           );
           if (activeEdge2) {
             activeEdge2.prev = nextEdge - 2;
@@ -282,7 +331,7 @@ export class VolumetricFire {
 
           const activeEdge = createEdge(
             edge.endIndex,
-            incomingEdges[edge.endIndex][prev.startIndex]
+            incomingEdges[edge.endIndex][prev.startIndex],
           );
           if (activeEdge) {
             activeEdge.prev = prev.prev;
@@ -300,15 +349,11 @@ export class VolumetricFire {
       do {
         ++count;
         const activeEdge = activeEdges[cur];
-        this._points.push(
-          activeEdge.pos.x,
-          activeEdge.pos.y,
-          activeEdge.pos.z
-        );
+        this._points.push(activeEdge.pos.x, activeEdge.pos.y, activeEdge.pos.z);
         this._texCoords.push(
           activeEdge.tex.x,
           activeEdge.tex.y,
-          activeEdge.tex.z
+          activeEdge.tex.z,
         );
         activeEdge.pos.add(activeEdge.deltaPos);
         activeEdge.tex.add(activeEdge.deltaTex);
@@ -316,11 +361,7 @@ export class VolumetricFire {
       } while (cur !== firstEdge);
 
       for (i = 2; i < count; i++) {
-        this._indexes.push(
-          nextIndex,
-          nextIndex + i - 1,
-          nextIndex + i
-        );
+        this._indexes.push(nextIndex, nextIndex + i - 1, nextIndex + i);
       }
 
       nextIndex += count;

@@ -14,6 +14,7 @@ export class MotionSensorService implements ISensorService {
   private isListening = false;
   private readonly DEAD_ZONE = 5; // degrees
   private readonly LERP_FACTOR = 0.15; // smooth interpolation
+  private eventCount = 0;
 
   async initialize(): Promise<void> {
     // Check if DeviceOrientationEvent is available
@@ -72,10 +73,19 @@ export class MotionSensorService implements ISensorService {
   }
 
   private handleOrientation = (event: DeviceOrientationEvent): void => {
+    this.eventCount++;
+
     // Extract orientation data
     const alpha = event.alpha ?? 0;
     const beta = event.beta ?? 0;
     const gamma = event.gamma ?? 0;
+
+    // Log every 30 events to avoid spam
+    if (this.eventCount % 30 === 0) {
+      console.log(
+        `Motion events: ${this.eventCount}, α=${alpha.toFixed(1)}° β=${beta.toFixed(1)}° γ=${gamma.toFixed(1)}°`,
+      );
+    }
 
     // Validate and constrain values
     const constrainedBeta = clamp(beta, -90, 90); // Prevent upside-down
@@ -127,10 +137,11 @@ export class MotionSensorService implements ISensorService {
     leanZ: number;
     magnitude: number;
   } {
-    // Normalize beta and gamma to -1 to 1 range
-    // Note: We invert the values for natural "opposite physics" feel
-    const leanX = normalize(reading.gamma, -45, 45, -1, 1);
-    const leanZ = normalize(reading.beta, -45, 45, -1, 1);
+    // Map device orientation to flame lean:
+    // beta: front-to-back tilt (forward/backward) -> maps to leanX (left/right wind)
+    // gamma: left-to-right tilt (sideways) -> maps to leanZ (forward/backward wind)
+    const leanX = normalize(reading.beta, -45, 45, -1, 1);
+    const leanZ = normalize(reading.gamma, -45, 45, -1, 1);
 
     // Calculate tilt magnitude (for intensity effects)
     const magnitude = Math.sqrt(leanX * leanX + leanZ * leanZ);
