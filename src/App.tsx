@@ -67,6 +67,11 @@ function App() {
   // Detect if we're on desktop (no touch support)
   const isDesktop = !("ontouchstart" in window);
 
+  // Check if running on localhost
+  const isLocalhost =
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1";
+
   // Start motion service when permission granted (but not on desktop)
   useEffect(() => {
     if (
@@ -165,8 +170,8 @@ function App() {
         />
       )}
 
-      {/* Virtual Joystick for desktop */}
-      {isDesktop && !currentPermissionRequest && (
+      {/* Virtual Joystick for desktop (localhost only) */}
+      {isDesktop && isLocalhost && !currentPermissionRequest && (
         <VirtualJoystick onMove={handleJoystickMove} />
       )}
 
