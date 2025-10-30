@@ -109,6 +109,10 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
     if (!candle) return;
 
     candle.setLean(flameState.leanX, flameState.leanZ);
+
+    // Apply breath effect from heightScale (audio analysis)
+    const breathIntensity = (flameState.heightScale - 1.0) * 2; // Convert heightScale to 0-1 range
+    candle.setBreath(Math.max(0, Math.min(1, breathIntensity)));
   }, [flameState]);
 
   return <div ref={containerRef} style={{ width: "100vw", height: "100vh" }} />;

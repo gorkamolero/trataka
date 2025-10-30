@@ -238,4 +238,26 @@ export class Candle {
     this.candleLight2.color.setRGB(1, 0.66 + magnitude * 0.34, 0.2);
     this.candleLight2.intensity = 2 + magnitude * 2;
   }
+
+  setBreath(breathIntensity: number) {
+    // breathIntensity ranges from 0 to 1
+    // Make the flame grow/shrink and flicker more with breath
+    this.flameMeshes.forEach((mesh) => {
+      const baseScale = 1.0;
+      const breathScale = baseScale + breathIntensity * 0.3;
+      mesh.scale.y = breathScale;
+    });
+
+    // Increase flicker with breath
+    const breathFlicker = 1.0 + breathIntensity * 2.0;
+    this.flameMaterials.forEach((mat) => {
+      const currentFlicker = mat.uniforms.flickerIntensity.value;
+      mat.uniforms.flickerIntensity.value = currentFlicker * breathFlicker;
+    });
+
+    // Make light brighter and more orange with breath
+    const breathColor = 0.66 + breathIntensity * 0.2;
+    this.candleLight2.color.setRGB(1, breathColor, 0.2);
+    this.candleLight2.intensity = 2 + breathIntensity * 3;
+  }
 }

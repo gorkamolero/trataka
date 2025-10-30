@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FlameCanvas } from "./presentation/components/FlameCanvas";
 import { PermissionButton } from "./presentation/components/PermissionButton";
 import { VirtualJoystick } from "./presentation/components/VirtualJoystick";
+import { AudioIndicator } from "./presentation/components/AudioIndicator";
 import type { PermissionType } from "./presentation/components/PermissionButton";
 import { createDefaultFlameState } from "./core/entities/FlameState";
 import type { FlameState } from "./core/entities/FlameState";
@@ -20,6 +21,10 @@ function App() {
     useState<PermissionStatus>("pending");
   const [currentPermissionRequest, setCurrentPermissionRequest] =
     useState<PermissionType | null>("motion");
+  const [audioLevel, setAudioLevel] = useState({
+    breathIntensity: 0,
+    volume: 0,
+  });
 
   const motionServiceRef = useRef<MotionSensorService | null>(null);
   const audioServiceRef = useRef<WebAudioService | null>(null);
@@ -94,6 +99,12 @@ function App() {
             const { heightScale, flickerSpeed, colorTemperature } =
               WebAudioService.toFlameParams(analysis);
 
+            // Update audio level indicator
+            setAudioLevel({
+              breathIntensity: analysis.breathIntensity,
+              volume: analysis.volume,
+            });
+
             setFlameState((prev) => ({
               ...prev,
               heightScale,
@@ -145,6 +156,14 @@ function App() {
   return (
     <div className="App">
       <FlameCanvas flameState={flameState} />
+
+      {/* Audio level indicator */}
+      {audioPermission === "granted" && (
+        <AudioIndicator
+          breathIntensity={audioLevel.breathIntensity}
+          volume={audioLevel.volume}
+        />
+      )}
 
       {/* Virtual Joystick for desktop */}
       {isDesktop && !currentPermissionRequest && (
