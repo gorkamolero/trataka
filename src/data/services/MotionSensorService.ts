@@ -31,11 +31,17 @@ export class MotionSensorService implements ISensorService {
     // iOS 13+ requires explicit permission
     if (
       typeof DeviceOrientationEvent !== "undefined" &&
-      typeof (DeviceOrientationEvent as any).requestPermission === "function"
+      typeof (
+        DeviceOrientationEvent as unknown as {
+          requestPermission?: () => Promise<PermissionState>;
+        }
+      ).requestPermission === "function"
     ) {
       try {
         const permission = await (
-          DeviceOrientationEvent as any
+          DeviceOrientationEvent as unknown as {
+            requestPermission: () => Promise<PermissionState>;
+          }
         ).requestPermission();
         return permission === "granted" ? "granted" : "denied";
       } catch (error) {

@@ -39,12 +39,17 @@ export const PermissionButton = ({
         // Request motion permission
         if (
           typeof DeviceOrientationEvent !== "undefined" &&
-          typeof (DeviceOrientationEvent as any).requestPermission ===
-            "function"
+          typeof (
+            DeviceOrientationEvent as unknown as {
+              requestPermission?: () => Promise<PermissionState>;
+            }
+          ).requestPermission === "function"
         ) {
           console.log("Requesting DeviceOrientation permission...");
           const permission = await (
-            DeviceOrientationEvent as any
+            DeviceOrientationEvent as unknown as {
+              requestPermission: () => Promise<PermissionState>;
+            }
           ).requestPermission();
           console.log("Permission result:", permission);
           if (permission === "granted") {
@@ -64,14 +69,15 @@ export const PermissionButton = ({
         try {
           await navigator.mediaDevices.getUserMedia({ audio: true });
           onGranted();
-        } catch (err: any) {
-          if (err.name === "NotAllowedError") {
+        } catch (err: unknown) {
+          const error = err as Error & { name: string };
+          if (error.name === "NotAllowedError") {
             setError(
               "Microphone permission denied. Please enable it in your device settings.",
             );
-          } else if (err.name === "NotFoundError") {
+          } else if (error.name === "NotFoundError") {
             setError("No microphone found on this device.");
-          } else if (err.name === "NotReadableError") {
+          } else if (error.name === "NotReadableError") {
             setError("Microphone is already in use by another application.");
           } else {
             setError("Failed to access microphone. Please try again.");

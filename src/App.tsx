@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { FlameCanvas } from "./presentation/components/FlameCanvas";
 import { PermissionButton } from "./presentation/components/PermissionButton";
 import { VirtualJoystick } from "./presentation/components/VirtualJoystick";
-import { DebugOverlay } from "./presentation/components/DebugOverlay";
 import type { PermissionType } from "./presentation/components/PermissionButton";
 import { createDefaultFlameState } from "./core/entities/FlameState";
 import type { FlameState } from "./core/entities/FlameState";
@@ -21,43 +20,31 @@ function App() {
     useState<PermissionStatus>("pending");
   const [currentPermissionRequest, setCurrentPermissionRequest] =
     useState<PermissionType | null>("motion");
-  const [debugMessages, setDebugMessages] = useState<string[]>([]);
 
   const motionServiceRef = useRef<MotionSensorService | null>(null);
   const audioServiceRef = useRef<WebAudioService | null>(null);
-
-  const addDebug = (msg: string) => {
-    setDebugMessages((prev) => [
-      ...prev.slice(-9),
-      `${new Date().toLocaleTimeString()}: ${msg}`,
-    ]);
-  };
 
   // Initialize services
   useEffect(() => {
     motionServiceRef.current = new MotionSensorService();
     audioServiceRef.current = new WebAudioService();
 
-    addDebug("Services initialized");
-
     // Check if we're on a non-iOS device (auto-grant motion permission)
     const checkMotionPermission = async () => {
       const hasRequestPermission =
-        typeof (DeviceOrientationEvent as any).requestPermission === "function";
-      addDebug(`iOS device: ${hasRequestPermission}`);
+        typeof (
+          DeviceOrientationEvent as unknown as {
+            requestPermission?: () => Promise<PermissionState>;
+          }
+        ).requestPermission === "function";
 
       if (motionServiceRef.current?.isAvailable()) {
-        addDebug("DeviceOrientation available");
         // Non-iOS devices don't need explicit permission
         if (!hasRequestPermission) {
-          addDebug("Auto-granting motion (non-iOS)");
           setMotionPermission("granted");
           setCurrentPermissionRequest("audio");
-        } else {
-          addDebug("iOS - needs permission request");
         }
       } else {
-        addDebug("DeviceOrientation NOT available");
         setMotionPermission("denied");
         setCurrentPermissionRequest("audio");
       }
@@ -77,19 +64,14 @@ function App() {
 
   // Start motion service when permission granted (but not on desktop)
   useEffect(() => {
-    addDebug(`Motion effect: perm=${motionPermission}, desk=${isDesktop}`);
-
     if (
       motionPermission === "granted" &&
       motionServiceRef.current &&
       !isDesktop
     ) {
-      addDebug("Starting motion service");
       motionServiceRef.current.start((reading) => {
         const { leanX, leanZ, magnitude } =
           MotionSensorService.toFlameLean(reading);
-
-        addDebug(`Motion: x=${leanX.toFixed(2)}, z=${leanZ.toFixed(2)}`);
 
         setFlameState((prev) => ({
           ...prev,
@@ -130,7 +112,6 @@ function App() {
   }, [audioPermission]);
 
   const handleMotionGranted = async () => {
-    addDebug("Motion permission granted by user");
     setMotionPermission("granted");
     setCurrentPermissionRequest("audio");
   };

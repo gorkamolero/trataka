@@ -19,7 +19,8 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
   } | null>(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    const container = containerRef.current;
+    if (!container) return;
 
     // Scene setup
     const width = window.innerWidth;
@@ -39,7 +40,7 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    containerRef.current.appendChild(renderer.domElement);
+    container.appendChild(renderer.domElement);
 
     // Lighting - improved for better depth perception
     const light = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -94,8 +95,8 @@ export const FlameCanvas = ({ flameState }: FlameCanvasProps) => {
       if (sceneRef.current?.animationId) {
         cancelAnimationFrame(sceneRef.current.animationId);
       }
-      if (containerRef.current && renderer.domElement) {
-        containerRef.current.removeChild(renderer.domElement);
+      if (container && renderer.domElement) {
+        container.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };

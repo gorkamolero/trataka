@@ -38,8 +38,14 @@ export class WebAudioService implements IAudioService {
       });
 
       // Create audio context
-      this.audioContext = new (window.AudioContext ||
-        (window as any).webkitAudioContext)();
+      const AudioContextConstructor =
+        window.AudioContext ||
+        (window as unknown as { webkitAudioContext?: typeof AudioContext })
+          .webkitAudioContext;
+      if (!AudioContextConstructor) {
+        throw new Error("AudioContext is not supported");
+      }
+      this.audioContext = new AudioContextConstructor();
 
       // Create analyser node
       this.analyser = this.audioContext.createAnalyser();
@@ -63,7 +69,11 @@ export class WebAudioService implements IAudioService {
   isAvailable(): boolean {
     return (
       typeof window !== "undefined" &&
-      !!(window.AudioContext || (window as any).webkitAudioContext) &&
+      !!(
+        window.AudioContext ||
+        (window as unknown as { webkitAudioContext?: typeof AudioContext })
+          .webkitAudioContext
+      ) &&
       !!navigator.mediaDevices?.getUserMedia
     );
   }
