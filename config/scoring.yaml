@@ -1,0 +1,33 @@
+# Tunables for the small-building score and the headcount confidence proxy.
+# These are deliberately conservative — output is leads to verify, not truth.
+
+building:
+  # Building floor area (sq meters) mapped to a 0..1 "smallness" score.
+  # Smaller footprint => higher score (more likely a small standalone building).
+  small_footprint_sqm: 200      # at/under this => score contribution ~1.0
+  large_footprint_sqm: 5000     # at/over this => score contribution ~0.0
+
+  # Penalties (subtracted from the score, clamped to [0,1]).
+  penalties:
+    virtual_office: 0.8         # address matches a known virtual-office provider
+    registered_agent: 0.6       # address matches a known registered-agent provider
+    high_rise: 0.5              # building tagged as tower / many floors
+    po_box: 0.7                 # address is a PO box / mailbox store
+
+  # building:levels at/above this is treated as a high-rise.
+  high_rise_levels: 8
+
+headcount:
+  # The target band we are biased toward.
+  target_min: 2
+  target_max: 10
+
+  # Confidence proxy. Headcount itself is ALWAYS reported as unknown; this only
+  # sets a confidence band on whether the company plausibly falls in the target.
+  # Derived from LCA filing volume and the building score.
+  filing_volume:
+    # filings within this range are most consistent with a small shop
+    plausible_min: 1
+    plausible_max: 6
+    # many filings strongly implies a larger employer -> low confidence in "small"
+    too_many: 20

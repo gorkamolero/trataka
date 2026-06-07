@@ -1,25 +1,39 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Build artifacts
+dist/
 
-node_modules
-dist
-dist-ssr
-*.local
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Data — never commit raw downloads or generated artifacts
+data/raw/
+data/processed/
+data/cache/
+*.duckdb
+*.duckdb.wal
+*leads*.csv
+review_queue*.csv
+report*.md
+all_companies_full.csv
+all_software_sponsors.csv
+staffing_shops.csv
+
+# OS / editors
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.vercel
+.idea/
+.vscode/
+findings*.html

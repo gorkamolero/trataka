@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>H1B Small-Software-Sponsor Finder — MO/TX</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <style>
+:root {
+  --bg: #0f1419;
+  --panel: #171c24;
+  --panel-2: #1e2530;
+  --text: #e6e9ef;
+  --muted: #9aa4b2;
+  --accent: #4f9cff;
+  --llc: #36c98d;
+  --other: #f0a35e;
+  --border: #2a313c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+#app { display: flex; height: 100vh; }
+
+#sidebar {
+  width: 360px;
+  min-width: 360px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#sidebar header { padding: 16px 16px 8px; border-bottom: 1px solid var(--border); }
+h1 { font-size: 16px; margin: 0 0 4px; }
+.subtitle { font-size: 12px; color: var(--muted); margin: 0 0 8px; line-height: 1.4; }
+
+.banner {
+  font-size: 12px;
+  background: #3a2e12;
+  color: #f4d58d;
+  border: 1px solid #5c4a1e;
+  border-radius: 6px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+.banner.hidden { display: none; }
+
+.controls { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--border); }
+.check { font-size: 13px; color: var(--text); display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.range { font-size: 13px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.range input { flex: 1; }
+
+.stats { padding: 10px 16px; font-size: 12px; color: var(--muted); display: flex; gap: 14px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+.stats b { color: var(--text); }
+
+.list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+.list li {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.list li:hover { background: var(--panel-2); }
+.list .name { font-size: 13px; font-weight: 600; }
+.list .meta { font-size: 11px; color: var(--muted); margin-top: 3px; display: flex; gap: 8px; flex-wrap: wrap; }
+.tag { font-size: 10px; padding: 1px 6px; border-radius: 10px; border: 1px solid var(--border); }
+.tag.llc { color: var(--llc); border-color: var(--llc); }
+.tag.review { color: #f4b860; border-color: #f4b860; }
+
+footer { padding: 10px 16px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); }
+footer a { color: var(--accent); text-decoration: none; }
+
+#map { flex: 1; height: 100%; }
+
+.maplibregl-popup-content {
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+  max-width: 280px;
+}
+.maplibregl-popup-content h3 { margin: 0 0 6px; font-size: 13px; }
+.maplibregl-popup-content .row { display: flex; justify-content: space-between; gap: 12px; margin: 2px 0; }
+.maplibregl-popup-content .k { color: var(--muted); }
+.maplibregl-popup-tip { display: none; }
+
+@media (max-width: 720px) {
+  #app { flex-direction: column; }
+  #sidebar { width: 100%; min-width: 0; height: 45%; }
+  #map { height: 55%; }
+}
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <header>
+        <h1>H1B Small-Software-Sponsor Finder</h1>
+        <p class="subtitle">Small software companies in MO &amp; TX with H1B/LCA filings — leads to verify, not ground truth.</p>
+        <div id="sample-banner" class="banner hidden">
+          Showing <strong>SAMPLE</strong> data (synthetic companies at city centroids).
+          Run the pipeline with real DOL data for live leads.
+        </div>
+      </header>
+      <div class="controls">
+        <label class="check"><input type="checkbox" id="llc-only" /> LLC only</label>
+        <label class="check"><input type="checkbox" id="band-only" /> In target band (2&ndash;10)</label>
+        <label class="range">
+          Min filings: <span id="minf-val">1</span>
+          <input type="range" id="min-filings" min="1" max="20" value="1" />
+        </label>
+      </div>
+      <div id="stats" class="stats"></div>
+      <ul id="list" class="list"></ul>
+      <footer>
+        <span id="count"></span> &middot;
+        <a href="https://github.com/gorkamolero/trataka" target="_blank" rel="noopener">source</a>
+      </footer>
+    </aside>
+    <main id="map"></main>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script>window.__LEADS__ = {"type": "FeatureCollection", "metadata": {"generated_by": "visa-finder", "sample": true, "states": ["MO", "TX"], "count": 3}, "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-92.3341, 38.9517]}, "properties": {"name": "Synthetic Software LLC", "entity_type": "LLC", "naics_code": "541511", "address": null, "city": "Columbia", "state": "MO", "lca_filing_count": 2, "approval_count": null, "building_score": null, "in_target_band": true, "size_confidence": "low", "review_status": "auto", "job_titles": ["Software Developer", "Senior Software Developer"], "geocode_precision": "city", "sample": true}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-97.7431, 30.2672]}, "properties": {"name": "Fictional Apps LLC", "entity_type": "LLC", "naics_code": "513210", "address": null, "city": "Austin", "state": "TX", "lca_filing_count": 2, "approval_count": null, "building_score": null, "in_target_band": true, "size_confidence": "low", "review_status": "needs_review", "job_titles": ["Web Developer", "Front End Developer"], "geocode_precision": "city", "sample": true}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-96.797, 32.7767]}, "properties": {"name": "Megacorp Systems Inc", "entity_type": "CORP", "naics_code": "541512", "address": null, "city": "Dallas", "state": "TX", "lca_filing_count": 1, "approval_count": null, "building_score": null, "in_target_band": true, "size_confidence": "low", "review_status": "auto", "job_titles": ["Software Developer"], "geocode_precision": "city", "sample": true}}]};</script>
+  <script>
+/* H1B Small-Software-Sponsor Finder — LibreMap (MapLibre GL) viewer.
+ *
+ * Loads data/leads.geojson and plots companies on a free OpenStreetMap-based
+ * vector map. Filters (LLC-only, target band, min filings) drive both the map
+ * layer and the sidebar list. No API keys, no tracking.
+ */
+
+const STYLE_PRIMARY = "https://tiles.openfreemap.org/styles/liberty";
+const STYLE_FALLBACK = "https://demotiles.maplibre.org/style.json";
+
+const state = { all: [], filtered: [] };
+
+const map = new maplibregl.Map({
+  container: "map",
+  style: STYLE_PRIMARY,
+  center: [-94.5, 33.5], // between MO and TX
+  zoom: 4.4,
+  attributionControl: true,
+});
+map.addControl(new maplibregl.NavigationControl(), "top-right");
+
+// Fall back to MapLibre's demo tiles if OpenFreeMap can't be reached.
+map.on("error", (e) => {
+  if (e && e.error && /openfreemap/.test(String(e.error.url || ""))) {
+    if (map.getStyle()?.sprite !== STYLE_FALLBACK) map.setStyle(STYLE_FALLBACK);
+  }
+});
+
+map.on("load", init);
+
+async function init() {
+  let fc;
+  if (window.__LEADS__) {
+    // Standalone single-file build: data is inlined, no fetch needed.
+    fc = window.__LEADS__;
+  } else {
+    try {
+      const resp = await fetch("data/leads.geojson", { cache: "no-store" });
+      fc = await resp.json();
+    } catch (err) {
+      document.getElementById("stats").textContent = "Could not load leads.geojson";
+      return;
+    }
+  }
+
+  state.all = fc.features || [];
+  if (fc.metadata && fc.metadata.sample) {
+    document.getElementById("sample-banner").classList.remove("hidden");
+  }
+
+  map.addSource("leads", { type: "geojson", data: fc });
+
+  // Color by entity type; radius scales with filing count.
+  map.addLayer({
+    id: "leads-circles",
+    type: "circle",
+    source: "leads",
+    paint: {
+      "circle-radius": [
+        "interpolate", ["linear"], ["get", "lca_filing_count"],
+        1, 5, 5, 9, 20, 16,
+      ],
+      "circle-color": [
+        "case", ["==", ["get", "entity_type"], "LLC"], "#36c98d", "#f0a35e",
+      ],
+      "circle-opacity": 0.85,
+      "circle-stroke-width": 1,
+      "circle-stroke-color": "#0f1419",
+    },
+  });
+
+  map.on("click", "leads-circles", (e) => showPopup(e.features[0]));
+  map.on("mouseenter", "leads-circles", () => (map.getCanvas().style.cursor = "pointer"));
+  map.on("mouseleave", "leads-circles", () => (map.getCanvas().style.cursor = ""));
+
+  wireControls();
+  applyFilters();
+  fitToData();
+}
+
+function currentFilters() {
+  return {
+    llcOnly: document.getElementById("llc-only").checked,
+    bandOnly: document.getElementById("band-only").checked,
+    minFilings: parseInt(document.getElementById("min-filings").value, 10),
+  };
+}
+
+function applyFilters() {
+  const f = currentFilters();
+  state.filtered = state.all.filter((ft) => {
+    const p = ft.properties;
+    if (f.llcOnly && p.entity_type !== "LLC") return false;
+    if (f.bandOnly && p.in_target_band !== true) return false;
+    if ((p.lca_filing_count || 0) < f.minFilings) return false;
+    return true;
+  });
+
+  map.getSource("leads").setData({
+    type: "FeatureCollection",
+    features: state.filtered,
+  });
+
+  renderList();
+  renderStats();
+}
+
+function wireControls() {
+  document.getElementById("llc-only").addEventListener("change", applyFilters);
+  document.getElementById("band-only").addEventListener("change", applyFilters);
+  const slider = document.getElementById("min-filings");
+  slider.addEventListener("input", () => {
+    document.getElementById("minf-val").textContent = slider.value;
+    applyFilters();
+  });
+}
+
+function renderStats() {
+  const total = state.filtered.length;
+  const llc = state.filtered.filter((f) => f.properties.entity_type === "LLC").length;
+  const band = state.filtered.filter((f) => f.properties.in_target_band === true).length;
+  document.getElementById("stats").innerHTML =
+    `<span><b>${total}</b> companies</span>` +
+    `<span><b>${llc}</b> LLC</span>` +
+    `<span><b>${band}</b> in band</span>`;
+  document.getElementById("count").textContent = `${total} shown`;
+}
+
+function renderList() {
+  const ul = document.getElementById("list");
+  ul.innerHTML = "";
+  const sorted = [...state.filtered].sort((a, b) => {
+    const al = a.properties.entity_type === "LLC" ? 1 : 0;
+    const bl = b.properties.entity_type === "LLC" ? 1 : 0;
+    if (al !== bl) return bl - al;
+    return (a.properties.lca_filing_count || 0) - (b.properties.lca_filing_count || 0);
+  });
+  for (const ft of sorted) {
+    const p = ft.properties;
+    const li = document.createElement("li");
+    const tags = [];
+    if (p.entity_type === "LLC") tags.push('<span class="tag llc">LLC</span>');
+    if (p.review_status === "needs_review") tags.push('<span class="tag review">review</span>');
+    li.innerHTML =
+      `<div class="name">${escapeHtml(p.name)}</div>` +
+      `<div class="meta">` +
+      `<span>${escapeHtml(p.city || "?")}, ${escapeHtml(p.state || "?")}</span>` +
+      `<span>${p.lca_filing_count} filings</span>` +
+      (p.approval_count != null ? `<span>${p.approval_count} approvals</span>` : "") +
+      tags.join("") +
+      `</div>`;
+    li.addEventListener("click", () => {
+      map.flyTo({ center: ft.geometry.coordinates, zoom: 9 });
+      showPopup(ft);
+    });
+    ul.appendChild(li);
+  }
+}
+
+function showPopup(ft) {
+  const p = ft.properties;
+  const titles = Array.isArray(p.job_titles)
+    ? p.job_titles
+    : JSON.parse(p.job_titles || "[]");
+  const rows = [
+    ["Entity", p.entity_type],
+    ["NAICS", p.naics_code || "—"],
+    ["Location", `${p.city || "?"}, ${p.state || "?"}`],
+    ["LCA filings", p.lca_filing_count],
+    ["Approvals", p.approval_count != null ? p.approval_count : "—"],
+    ["Building score", p.building_score != null ? p.building_score : "—"],
+    ["In band (2–10)", p.in_target_band === true ? "yes" : p.in_target_band === false ? "no" : "unknown"],
+    ["Size confidence", p.size_confidence],
+    ["Headcount", "unknown (proxy only)"],
+    ["Geocode", p.geocode_precision],
+  ];
+  const html =
+    `<h3>${escapeHtml(p.name)}</h3>` +
+    rows.map(([k, v]) => `<div class="row"><span class="k">${k}</span><span>${escapeHtml(String(v))}</span></div>`).join("") +
+    (titles.length ? `<div class="row"><span class="k">Titles</span><span>${escapeHtml(titles.join(", "))}</span></div>` : "");
+  new maplibregl.Popup({ closeButton: true })
+    .setLngLat(ft.geometry.coordinates)
+    .setHTML(html)
+    .addTo(map);
+}
+
+function fitToData() {
+  if (!state.filtered.length) return;
+  const b = new maplibregl.LngLatBounds();
+  state.filtered.forEach((f) => b.extend(f.geometry.coordinates));
+  map.fitBounds(b, { padding: 60, maxZoom: 9 });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+  );
+}
+
+  </script>
+</body>
+</html>
