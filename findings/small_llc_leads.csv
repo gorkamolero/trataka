@@ -1,0 +1,861 @@
+name,entity_type,city,state,zip,naics_code,lca_filing_count,in_target_band,size_confidence,review_status
+Anrib LLC,LLC,St Louis,MO,63141,541511,1,true,low,auto
+"Bordo AI, LLC",LLC,Chesterfield,MO,63017,541511,1,true,low,auto
+Clearent LLC,LLC,Creve Coeur,MO,63141,541519,1,true,low,auto
+"Element 74, LLC",LLC,Cape Girardeau,MO,63703,541511,1,true,low,auto
+Enso Endeavors LLC,LLC,Kansas City,MO,64112,54151,1,true,low,auto
+"Facilisgroup, LLC",LLC,Brentwood,MO,63144,541511,1,true,low,auto
+Foresite Healthcare LLC,LLC,Maryland Heights,MO,63043,541512,1,true,low,auto
+Gamer LLC,LLC,Maryland Heights,MO,63146,513210,1,true,low,auto
+Gateway Scripts LLC,LLC,Saint Louis,MO,63116,541511,1,true,low,auto
+"INTEGRATED MANAGED CARE SYSTEMS, LLC",LLC,CAPE GIRARDEAU,MO,63701,511210,1,true,low,auto
+KKEG Solutions LLC,LLC,OFallon,MO,63366,541511,1,true,low,auto
+"LOGICGRIDZ, LLC",LLC,ST LOUIS,MO,63146,541511,1,true,low,auto
+Liberty Hotel Group LLC,LLC,Liberty,MO,64068,541511,1,true,low,auto
+"Linxup, LLC",LLC,Chesterfield,MO,63017,51121,1,true,low,auto
+"Liquid Logics, L.L.C.",LLC,Lee's Summit,MO,64064,541511,1,true,low,auto
+"MetaJungle, LLC",LLC,Ozark,MO,65721,541511,1,true,low,auto
+"Moktama IT Solutions, LLC.",LLC,Saint Louis,MO,63146,541519,1,true,low,auto
+NEWGEN IT SOLUTIONS LLC,LLC,Farmington Hills,MO,48334,541511,1,true,low,auto
+Newagez Technologies LLC,LLC,Harrisonville,MO,64701,541511,1,true,low,auto
+PINNACLELINK VENTURES LLC,LLC,Saint Louis,MO,63112,541512,1,true,low,auto
+"Segistics, LLC",LLC,North Kansas City,MO,64116,513210,1,true,low,auto
+Sidjun LLC,LLC,Chesterfield,MO,63017,541511,1,true,low,auto
+TEKPROS LLC,LLC,OFALLON,MO,63368,541511,1,true,low,auto
+TM & Associates LLC,LLC,Saint Louis,MO,63110,541511,1,true,low,auto
+"VIVID SITES, LLC",LLC,St. Louis,MO,63141,541511,1,true,low,auto
+"VeriShip, LLC",LLC,Kansas City,MO,64114,541519,1,true,low,auto
+Vizicar LLC,LLC,Columbia,MO,65202,54151,1,true,low,auto
+"Volt Systems, LLC",LLC,St. Louis,MO,63131,541511,1,true,low,auto
+"Web Design and Company, LLC",LLC,St. Louis,MO,63103,541511,1,true,low,auto
+iTek360 LLC,LLC,Cape Girardeau,MO,63701,541512,1,true,low,auto
+se38 Solutions LLC,LLC,Chesterfield,MO,63017,541511,1,true,low,auto
+AYTECHNOLOGIES LLC,LLC,CHESTERFIELD,MO,63005,541511,2,true,low,auto
+"Ascension Health Resource and Supply Management Group, LLC",LLC,St. Louis,MO,63146,541511,2,true,low,auto
+"AutoAlert, LLC",LLC,Kansas,MO,64105,541511,2,true,low,auto
+Bluspire Technologies LLC,LLC,Saint Charles,MO,63303,541511,2,true,low,auto
+"CareSignal, LLC",LLC,St. Louis,MO,63110,541519,2,true,low,auto
+DEVEIQ LLC,LLC,CHESTERFIELD,MO,63005,541511,2,true,low,auto
+DST Brokerage Solutions LLC,LLC,Kansas City,MO,64105,511210,2,true,low,auto
+Digital Plus Solutions LLC,LLC,Kansas City,MO,64131,54151,2,true,low,auto
+"Ditat, LLC",LLC,Saint Louis,MO,63141,541511,2,true,low,auto
+Foursevens LLC,LLC,St. Louis,MO,63146,541511,2,true,low,auto
+"Jon Buck Enterprises, LLC",LLC,JOPLIN,MO,64801,541511,2,true,low,auto
+KDK Technology LLC,LLC,Saint Peters,MO,63376,541512,2,true,low,auto
+Kelly Mitchell Group LLC,LLC,St. Louis,MO,63105,541512,2,true,low,auto
+"Rechars Solutions, LLC.",LLC,Chesterfield,MO,63005,541512,2,true,low,auto
+"TierPoint, LLC",LLC,Saint Louis,MO,63131,518210,2,true,low,auto
+Trizetto Provider Solutions LLC,LLC,Earth City,MO,63045,511210,2,true,low,auto
+UNI CONNECTIONS LLC,LLC,BALLWIN,MO,63021,541511,2,true,low,auto
+"Valorem Reply, LLC",LLC,Kansas City,MO,64108,5415,2,true,low,auto
+"Aggio, LLC",LLC,St. Louis,MO,63132,51821,3,true,low,auto
+Ashers & Aarons LLC,LLC,Ballwin,MO,63011,541511,3,true,low,auto
+"DataMap, LLC",LLC,Kansas City,MO,64108,541512,3,true,low,auto
+"Envision, LLC",LLC,St. Louis,MO,63141,541512,3,true,low,auto
+Guga Technology Solutions LLC,LLC,Saint Joseph,MO,64506,541511,3,true,low,auto
+"Local Backhaul Networks, LLC",LLC,St. Louis,MO,63005,541512,3,true,low,auto
+Snow Tech Solutions LLC,LLC,Saint Peters,MO,63376,541511,3,true,low,auto
+"Techso IT, LLC",LLC,St Charles,MO,63304,541511,3,true,low,auto
+"The Burgiss Group, LLC",LLC,Hoboken,MO,07030,511210,3,true,low,auto
+"Vantage Links, LLC",LLC,St. Louis,MO,63141,541512,3,true,low,auto
+Mortgage NEKS LLC,LLC,Clayton,MO,63105,541511,4,true,low,auto
+Nexify Infosystems LLC,LLC,Saint Charles,MO,63303,541511,4,true,low,auto
+Omnigo Software LLC,LLC,St. Louis,MO,63132,541511,4,true,low,auto
+Ethoca LLC,LLC,O’Fallon,MO,63368,541519,5,true,low,auto
+Hire Soft Solutions LLC,LLC,O’Fallon,MO,63368,541511,5,true,low,auto
+Zetta Data Systems LLC,LLC,Webster Groves,MO,63119-1784,541511,5,true,low,auto
+"CODENETWORKZ, LLC",LLC,KANSAS CITY,MO,64114,541512,6,true,low,auto
+HCM Square LLC,LLC,St Charles,MO,63304,54151,6,true,low,auto
+Information Technology Warehouse LLC,LLC,St. Louis,MO,63132,54151,6,true,low,auto
+"2nd Source IT Solutions, LLC",LLC,Plano,TX,75023,541511,1,true,low,auto
+360 Technology LLC,LLC,Farmers Branch,TX,75244,541511,1,true,low,auto
+A4 Global Tech LLC,LLC,Denton,TX,76205,541511,1,true,low,auto
+ABSOLUTE FABRICATION LLC,LLC,Houston,TX,77020,541511,1,true,low,auto
+ADAPTRA LLC,LLC,Irving,TX,75038,541511,1,true,low,auto
+ADROIT AFFINE LLC,LLC,PHOENIX,TX,85027,54151,1,true,low,auto
+AEHL US LLC,LLC,Austin,TX,78731,51821,1,true,low,auto
+AGI FLUX LLC,LLC,Dallas,TX,75240,541511,1,true,low,auto
+AI Pioneer LLC,LLC,Frisco,TX,75036,541511,1,true,low,auto
+AI2AIGLOBAL LLC,LLC,HOUSTON,TX,77090,541511,1,true,low,auto
+AIWEBIT LLC,LLC,Plano,TX,75093,541511,1,true,low,auto
+ALICE TECH SOLUTIONSLLC,LLC,IRVING,TX,75062,541511,1,true,low,auto
+ALLURTECH LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+"ANOVO TECHNOLOGY GROUP, LLC",LLC,PLANO,TX,75024,541511,1,true,low,auto
+AWNSolution LLC,LLC,Princeton,TX,08540,541511,1,true,low,auto
+AZORY TECH LLC,LLC,"Irving,",TX,75062,541511,1,true,low,auto
+ActiveTech IT Solutions LLC,LLC,Denton,TX,76205,541511,1,true,low,auto
+Admirable Technologies LLC,LLC,Round Rock,TX,78664,541511,1,true,low,auto
+"Advanced Traffic Solutions, LLC",LLC,Katy,TX,77494-7159,541511,1,true,low,auto
+All Calendars LLC,LLC,North Richland Hills,TX,76180,518210,1,true,low,auto
+Alpha Cognition LLC,LLC,Austin,TX,78753,541511,1,true,low,auto
+"Animo Services, LLC",LLC,Dallas,TX,75231,541511,1,true,low,auto
+Anion Marketing LLC,LLC,Frisco,TX,75033,541511,1,true,low,auto
+"Apis Business Intelligence, LLC",LLC,Plano,TX,75024,541512,1,true,low,auto
+Argus Partners LLC,LLC,Fort Worth,TX,76155,541511,1,true,low,auto
+Arise Soft LLC,LLC,Plano,TX,75024,541511,1,true,low,auto
+Arka Services LLC,LLC,Round Rock,TX,78664,541511,1,true,low,auto
+Artigence Tech Solutions LLC,LLC,Garland,TX,75041,541511,1,true,low,auto
+Asite LLC,LLC,The Woodlands,TX,77381,541511,1,true,low,auto
+Aspire Digital LLC,LLC,Austin,TX,78759,541512,1,true,low,auto
+Athletically LLC,LLC,Austin,TX,78756,541511,1,true,low,auto
+"Austin Arc,LLC.",LLC,Austin,TX,78731,541511,1,true,low,auto
+Avaro Group LLC,LLC,Houston,TX,77063,541512,1,true,low,auto
+BACKCHINA LLC,LLC,PEARLAND,TX,77584,519130,1,true,low,auto
+"BGSF PROFESSIONAL, LLC",LLC,PLANO,TX,75024,541511,1,true,low,auto
+Barrage Systems LLC,LLC,Hurst,TX,76054,541513,1,true,low,auto
+Bellatrix Systems LLC,LLC,Houston,TX,77043,541511,1,true,low,auto
+Bhoot LLC,LLC,Austin,TX,78701,51821,1,true,low,auto
+BigNorTek LLC,LLC,Dallas,TX,75254,541511,1,true,low,auto
+"Bonjoy, LLC",LLC,The Woodlands,TX,77380,541512,1,true,low,auto
+Bonterra Tech LLC,LLC,Austin,TX,78759,513210,1,true,low,auto
+"Boostlingo, LLC",LLC,Austin,TX,78701,518210,1,true,low,auto
+"BrainWaves Digital, LLC",LLC,Austin,TX,78737,541519,1,true,low,auto
+Breaker19 Logistics LLC,LLC,Houston,TX,77043,541512,1,true,low,auto
+Broadway Technology LLC,LLC,Austin,TX,78746,541511,1,true,low,auto
+BuilderBinder LLC,LLC,Austin,TX,78722,541519,1,true,low,auto
+C COM DIGITAL LLC,LLC,MCKINNEY,TX,75070,541511,1,true,low,auto
+C2A Global IT SolutionsLLC,LLC,Austin,TX,78752,541511,1,true,low,auto
+CLOUDTEK DATA LLC,LLC,Round Rock,TX,78664,541511,1,true,low,auto
+COHESIVE DIGITAL SOLUTIONS LLC,LLC,Allen,TX,75013,541511,1,true,low,auto
+COREAA LLC,LLC,The Woodlands,TX,77382,541519,1,true,low,auto
+CPI HOLDINGS LLC,LLC,HOUSTON,TX,77068,541511,1,true,low,auto
+"CRM Web Solutions, LLC",LLC,Addison,TX,75001,513210,1,true,low,auto
+CYBIRIUS LLC,LLC,Carrollton,TX,75007,541519,1,true,low,auto
+Capella Software LLC,LLC,Cypress,TX,77429-3952,541512,1,true,low,auto
+"Careexpand, LLC",LLC,Dallas,TX,75254,511210,1,true,low,auto
+Chain Service Solutions LLC,LLC,Houston,TX,77042,541511,1,true,low,auto
+Chenab Technologies LLC,LLC,Richmond,TX,77406,541511,1,true,low,auto
+Ciphermax LLC,LLC,IRVING,TX,75062,541511,1,true,low,auto
+"Claims-X-Change, LLC",LLC,Dallas,TX,75244,541511,1,true,low,auto
+"Clear Again, LLC",LLC,Dallas,TX,75229,541511,1,true,low,auto
+Cloudrho LLC,LLC,Frisco,TX,75034,541512,1,true,low,auto
+Club Sports Solutions L.L.C.,LLC,Round Rock,TX,78665,54151,1,true,low,auto
+Co-Flo Enterprise LLC,LLC,Houston,TX,77027,541511,1,true,low,auto
+CodeneedsIT LLC,LLC,McKinney,TX,75070,541511,1,true,low,auto
+CogentProc LLC,LLC,Mckinney,TX,75070,541519,1,true,low,auto
+Conavlytics LLC,LLC,Irving,TX,75038,541511,1,true,low,auto
+Connexa Technologies LLC,LLC,Austin,TX,78735,541511,1,true,low,auto
+Coppel Tech LLC,LLC,Coppell,TX,75019,541512,1,true,low,auto
+"Cosmosyde, LLC",LLC,Irving,TX,75063,541511,1,true,low,auto
+CoverDoc LLC,LLC,austin,TX,78723,513210,1,true,low,auto
+Credenti LLC,LLC,Houston,TX,77056,541511,1,true,low,auto
+DATA FORCE  - INC LLC,LLC,DALLAS,TX,75252,541511,1,true,low,auto
+"DDS Profits, LLC",LLC,San Antonio,TX,78213,518210,1,true,low,auto
+DPCon Solutions LLC,LLC,Plano,TX,75024,541511,1,true,low,auto
+Data Moguls LLC,LLC,San Antonio,TX,78217,541511,1,true,low,auto
+Data Products Pro LLC,LLC,McKinney,TX,75070,541511,1,true,low,auto
+DataGlacier LLC,LLC,Cedar Park,TX,78613,541511,1,true,low,auto
+"Databasaurus, LLC",LLC,Riesel,TX,76682,518210,1,true,low,auto
+Database Mart LLC,LLC,League City,TX,77573,518210,1,true,low,auto
+Datalibs LLC,LLC,Dallas,TX,75252,541512,1,true,low,auto
+"Dealerware, LLC",LLC,Austin,TX,78701,513210,1,true,low,auto
+Dear Media LLC,LLC,Austin,TX,78701,516210,1,true,low,auto
+Denim Health LLC,LLC,"Austin,",TX,78758,541511,1,true,low,auto
+"Devwise, LLC",LLC,Houston,TX,77094,541511,1,true,low,auto
+"Dialexa, LLC",LLC,Dallas,TX,75201,541511,1,true,low,auto
+Digital Information Security Solutions LLC,LLC,San Antonio,TX,78261,541519,1,true,low,auto
+Dixson Technology Services Americas LLC,LLC,Austin,TX,78701,541512,1,true,low,auto
+Dotsincloud LLC,LLC,Irving,TX,75063,541511,1,true,low,auto
+Droidal LLC,LLC,Plano,TX,75024,541511,1,true,low,auto
+Duelytics LLC,LLC,Irving,TX,75062,541511,1,true,low,auto
+"ELM FieldSight, LLC",LLC,Lewisville,TX,75056,541512,1,true,low,auto
+ENMAS USA LLC,LLC,The Woodlands,TX,77380,541512,1,true,low,auto
+Echo & Reply LLC,LLC,Katy,TX,77494,541511,1,true,low,auto
+Edison Systems Group LLC,LLC,Frisco,TX,75034,541512,1,true,low,auto
+Eleox LLC,LLC,Houston,TX,77002,5182,1,true,low,auto
+Ellym LLC,LLC,Austin,TX,78731,541511,1,true,low,auto
+"Enter Advisor, LLC",LLC,Addison,TX,75001,541511,1,true,low,auto
+"Event Dynamic, LLC",LLC,Dallas,TX,75219,541519,1,true,low,auto
+EverLine Tech Ops LLC,LLC,Houston,TX,77034,541512,1,true,low,auto
+"Exceleron Software, LLC",LLC,Dallas,TX,75231,513210,1,true,low,auto
+"Executive Management Group, LLC",LLC,Southlake,TX,76092,541511,1,true,low,auto
+Exodus Intelligence LLC,LLC,Austin,TX,78703,541511,1,true,low,auto
+FAME PBX LLC,LLC,Plano,TX,75023,51821,1,true,low,auto
+FORTEWIZ SYSTEMS LLC,LLC,Katy,TX,77450,541511,1,true,low,auto
+FORTUNE FOUR TECH SOLUTIONS LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+Finovient LLC,LLC,Wylie,TX,75098,541519,1,true,low,auto
+"Fourth Enterprises, LLC",LLC,Austin,TX,78613,541519,1,true,low,auto
+FreePress LLC,LLC,Austin,TX,78703,516210,1,true,low,auto
+"GATHI ANALYTICS,LLC.",LLC,Plano,TX,75024,541512,1,true,low,auto
+GLOBAL CLIENT TECHNOLOGY LLC,LLC,SUGARLAND,TX,77478,541511,1,true,low,auto
+GLOBPEY LLC,LLC,Plano,TX,75093,541511,1,true,low,auto
+GME Entertainment LLC,LLC,Grapevine,TX,76051,511210,1,true,low,auto
+GMWARE LLC,LLC,Austin,TX,78731,541511,1,true,low,auto
+GOTHINKERS TECH LLC,LLC,Plano,TX,75023,541511,1,true,low,auto
+GRAVITYINTEL LLC,LLC,Mckinney,TX,75072,541511,1,true,low,auto
+Genesis X LLC,LLC,Austin,TX,78704,541511,1,true,low,auto
+"GeoSoftware, LLC",LLC,Houston,TX,77042,541512,1,true,low,auto
+"GlobalStep Management Services, LLC",LLC,Dallas,TX,75225,541511,1,true,low,auto
+Go Idlewild LLC,LLC,Flower Mound,TX,75022,5415,1,true,low,auto
+"Golden Section Ventures, LLC",LLC,Houston,TX,77002,5415,1,true,low,auto
+Groove Jones LLC,LLC,Dallas,TX,75226,54151,1,true,low,auto
+Groves & Company LLC,LLC,Austin,TX,78731,541511,1,true,low,auto
+Gurutech Solutions LLC,LLC,Frisco,TX,75033,541511,1,true,low,auto
+HARTIGEN SOLUTIONS LLC,LLC,Katy,TX,77449,5415,1,true,low,auto
+HIKEIT Trak Racer LLC,LLC,Austin,TX,78752,541512,1,true,low,auto
+"Headspring, LLC",LLC,Austin,TX,78704,541511,1,true,low,auto
+HiTek US LLC,LLC,Sugar Land,TX,77479,541511,1,true,low,auto
+Holistiplan LLC,LLC,College Station,TX,77845,513210,1,true,low,auto
+Hotel Trader LLC,LLC,Irving,TX,75062,541511,1,true,low,auto
+"ILM360, LLC",LLC,ROUND ROCK,TX,78681,541511,1,true,low,auto
+INFOBLITZ TECH SOLUTIONS LLC,LLC,AUSTIN,TX,78731,541511,1,true,low,auto
+INNOVATIVE STARS LLC,LLC,KATY,TX,77450,5415,1,true,low,auto
+INTERACT CX LLC,LLC,LEWSIVILLE,TX,75056,541519,1,true,low,auto
+"IPeople Heathcare, LLC",LLC,Lewisville,TX,75067,541511,1,true,low,auto
+IT SOLVE LLC,LLC,RICHARDSON,TX,75080,541511,1,true,low,auto
+"Ideabud, LLC",LLC,Austin,TX,78705,511210,1,true,low,auto
+"Improving Corporate Services, LLC",LLC,Plano,TX,75024,541511,1,true,low,auto
+"Improvizations, LLC",LLC,Austin,TX,78741,541512,1,true,low,auto
+Increase Financial LLC,LLC,Missouri City,TX,77459,518210,1,true,low,auto
+Infinity Software LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+Inflection Point LLC,LLC,76006,TX,76006,518210,1,true,low,auto
+Infoglaze LLC,LLC,Katy,TX,77494,541512,1,true,low,auto
+Innovate TechLabs LLC,LLC,Coppell,TX,75019,541511,1,true,low,auto
+Innoventworks LLC,LLC,Frisco,TX,75036,541511,1,true,low,auto
+"Insurance Technologies, LLC",LLC,Dallas,TX,75208,541511,1,true,low,auto
+Intelli-Inform LLC,LLC,Flower Mound,TX,75077,541511,1,true,low,auto
+"Iodine Software, LLC",LLC,Austin,TX,78731-3201,541512,1,true,low,auto
+JCIP SERVICES LLC,LLC,Richmond,TX,77407,518210,1,true,low,auto
+JENACIE LLC,LLC,Houston,TX,77064,5132,1,true,low,auto
+JSRM Group LLC,LLC,San Antonio,TX,78216,541511,1,true,low,auto
+"Jatayu Solutions, LLC.",LLC,Denton,TX,76201,541512,1,true,low,auto
+Jenforce LLC,LLC,McKinney,TX,75070,541511,1,true,low,auto
+"Jungle Disk, LLC",LLC,San Antonio,TX,78205,541511,1,true,low,auto
+KENAI SOLUTIONS LLC,LLC,DALLAS,TX,75240,541511,1,true,low,auto
+"KINETECH CLOUD, LLC",LLC,San Antonio,TX,78216,54151,1,true,low,auto
+KINETIKATECH  LLC,LLC,CARTHAGE,TX,75633,541511,1,true,low,auto
+KITKOOL GROUP LLC,LLC,FULSHEAR,TX,77441,541511,1,true,low,auto
+KVISTA LLC,LLC,Leander,TX,78641,541511,1,true,low,auto
+Kaizintel LLC,LLC,Katy,TX,77493,54151,1,true,low,auto
+Kanika Compute LLC,LLC,West Lake Hills,TX,78746,541511,1,true,low,auto
+Keypixel Software Solutions LLC,LLC,Parlin,TX,08859,541511,1,true,low,auto
+Kshitija Professional Services LLC,LLC,Dallas,TX,75247,541511,1,true,low,auto
+"Kuiper OpCo, LLC",LLC,Austin,TX,78701,541511,1,true,low,auto
+Kural Tech Solution LLC,LLC,Plano,TX,75025,541511,1,true,low,auto
+"LENDERBOX, LLC",LLC,DALLAS,TX,75206,5415,1,true,low,auto
+LIAMATRIX LLC,LLC,Houston,TX,77066,541512,1,true,low,auto
+"LINQX, LLC",LLC,Houston,TX,77042,541511,1,true,low,auto
+"LedgerSpace, LLC",LLC,COLLEGE STATION,TX,77845,518210,1,true,low,auto
+"Liberate Life Sciences Technologies, LLC.",LLC,Austin,TX,78717,541512,1,true,low,auto
+"Line-Scape, LLC",LLC,Dallas,TX,75201,513210,1,true,low,auto
+Litigiven LLC,LLC,Dallas,TX,75251,513210,1,true,low,auto
+"Lone Star Tech, LLC",LLC,Keller,TX,76244,541519,1,true,low,auto
+Lorvens AZTech LLC,LLC,Aubrey,TX,76227,541511,1,true,low,auto
+MASH ASSOCIATES LLC,LLC,Dallas,TX,75063,541511,1,true,low,auto
+Manvi Tech LLC,LLC,Spring,TX,77373,51121,1,true,low,auto
+"Marketing Response Solutions, LLC",LLC,Dallas,TX,75244,541511,1,true,low,auto
+"Math Made Visible, LLC",LLC,Paige,TX,78659,513210,1,true,low,auto
+Meat Mafia Media LLC,LLC,Austin,TX,78748,516210,1,true,low,auto
+Mediaocean LLC,LLC,New York,TX,10271,511210,1,true,low,auto
+Menbo Tech LLC,LLC,Plano,TX,75093,541511,1,true,low,auto
+Micro Focus LLC,LLC,Plano,TX,75024,541519,1,true,low,auto
+Microdrive LLC,LLC,Irving,TX,75062,541511,1,true,low,auto
+"MinMax Technologies, LLC",LLC,Dallas,TX,75254,541511,1,true,low,auto
+Miracle Treasures LLC,LLC,Fulshear,TX,77441,541511,1,true,low,auto
+"Molathati Technology Solutions, LLC",LLC,Houston,TX,77092,541511,1,true,low,auto
+NEOSTRIDE LLC,LLC,Allen,TX,75013,541511,1,true,low,auto
+NFORCE ONE LLC,LLC,PLANO,TX,75024-3583,541511,1,true,low,auto
+NP Strategies LLC,LLC,McKinney,TX,75069,513210,1,true,low,auto
+"NUBA, LLC",LLC,El Paso,TX,79922,541511,1,true,low,auto
+Narsingh LLC,LLC,Irving,TX,75063,541513,1,true,low,auto
+NextGen Tech LLC,LLC,Frisco,TX,75034,519130,1,true,low,auto
+Nexxverse LLC,LLC,Dallas,TX,75219,541511,1,true,low,auto
+Nifty Systems LLC,LLC,Plano,TX,75024,541511,1,true,low,auto
+"Ninja Partners, LLC",LLC,Dallas,TX,75226,541511,1,true,low,auto
+"Ntelicor, LLC",LLC,Dallas,TX,75240,541511,1,true,low,auto
+Numerique LLC,LLC,Dallas,TX,75243,541511,1,true,low,auto
+OUTLAY GLOBAL LLC,LLC,IRVING,TX,75039,541511,1,true,low,auto
+"OfficerTRAK, LLC",LLC,Katy,TX,77493,513210,1,true,low,auto
+"Okorio, LLC",LLC,Dallas,TX,75244,541512,1,true,low,auto
+"OrderMyGear, LLC",LLC,Dallas,TX,75201,54151,1,true,low,auto
+"P Tech Crew, LLC",LLC,Allen,TX,75013,541512,1,true,low,auto
+PAGEMATICS LLC,LLC,PLANO,TX,75074,54151,1,true,low,auto
+"Particle41, LLC.",LLC,Frisco,TX,75068,541511,1,true,low,auto
+Penality LLC (f/k/a nowGRC LLC),LLC,Frisco,TX,75033,541512,1,true,low,auto
+"Peppered Software, LLC",LLC,Austin,TX,78757,513210,1,true,low,auto
+Perfect General Contractors LLC,LLC,Frisco,TX,75033,541511,1,true,low,auto
+"Performance Scoring, LLC",LLC,Dallas,TX,75240,541519,1,true,low,auto
+Phenom Enterprise Cloud LLC,LLC,Irving,TX,75038,541511,1,true,low,auto
+"Physician Paradigms, LLC",LLC,Dallas,TX,75248,541511,1,true,low,auto
+"Platform Software, LLC",LLC,Houston,TX,77002,541511,1,true,low,auto
+Portnox Security LLC,LLC,Austin,TX,78735,511210,1,true,low,auto
+Power Central LLC,LLC,Richardson,TX,75082,541511,1,true,low,auto
+"Prelude, LLC",LLC,Austin,TX,78735,541511,1,true,low,auto
+"Prescriptive Data Solutions, LLC",LLC,San Antonio,TX,78240,541512,1,true,low,auto
+Price Kubecka PLLC,LLC,Addison,TX,75001,54151,1,true,low,auto
+"Prime Bids, LLC",LLC,Pasadena,TX,77506,541511,1,true,low,auto
+"Primebids, LLC",LLC,Pasadena,TX,77506,541511,1,true,low,auto
+Pro-Shooter LLC,LLC,Houston,TX,77008,541512,1,true,low,auto
+Prodata Strategies LLC,LLC,McKinney,TX,75070,541511,1,true,low,auto
+"Profusion Tech Labs, LLC",LLC,Austin,TX,78738,541511,1,true,low,auto
+Protocoding LLC,LLC,Dallas,TX,75214,541511,1,true,low,auto
+"Pure Flux Technology Solutions, LLC",LLC,Spring,TX,77379,51121,1,true,low,auto
+Pyrolac LLC,LLC,Houston,TX,77060,541512,1,true,low,auto
+QUANTUM UNIVERSAL LLC,LLC,LEWISVILLE,TX,75067,541511,1,true,low,auto
+RAYS FOOD IMPORTS LLC,LLC,Houston,TX,77041,541512,1,true,low,auto
+REPAVE IT LLC,LLC,Frisco,TX,75034,541511,1,true,low,auto
+RGAP LLC,LLC,Round Rock,TX,78681,541512,1,true,low,auto
+RGS IT  SOLUTIONS LLC,LLC,CROWLEY,TX,76036,541511,1,true,low,auto
+"Radix IoT, LLC",LLC,Dallas,TX,75254,541511,1,true,low,auto
+Ralph Porter Group LLC,LLC,Austin,TX,78704,541511,1,true,low,auto
+Rex Team DEDAP LLC,LLC,Austin,TX,78757,541511,1,true,low,auto
+S Linx LLC,LLC,Leander,TX,78641,541511,1,true,low,auto
+"SAYA SOLUTIONS PROVIDER, LLC.",LLC,HOUSTON,TX,77064,518210,1,true,low,auto
+SEVIS SYSTEMS LLC.,LLC,PLANO,TX,75075,541511,1,true,low,auto
+SIMPLY ACTIVATE LLC,LLC,PARK ROW,TX,77494,541519,1,true,low,auto
+SKOUTERA LLC,LLC,COPPELL,TX,75019,541511,1,true,low,auto
+SOCIUS INNOVATIVE GLOBAL BRAINS LLC,LLC,HOUSTON,TX,77074,518210,1,true,low,auto
+SREELAN LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+STEPINSIGHT LLC,LLC,Austin,TX,78731,541511,1,true,low,auto
+"STRAY KITE STUDIOS, LLC",LLC,PLANO,TX,75024,541511,1,true,low,auto
+SURUG Tech LLC,LLC,Houston,TX,77064,541511,1,true,low,auto
+SYAAT USA LLC,LLC,Spring,TX,77380,541512,1,true,low,auto
+Sailpro LLC,LLC,Plano,TX,75024,541511,1,true,low,auto
+"Salve Enterprises, LLC",LLC,Irving,TX,75063,541512,1,true,low,auto
+Sapientai LLC,LLC,Austin,TX,78704,541511,1,true,low,auto
+Sharpwhiz Corporation LLC,LLC,Austin,TX,78731,541511,1,true,low,auto
+SignalPet LLC,LLC,Dallas,TX,75240,54151,1,true,low,auto
+Simplifi Holdings LLC,LLC,Fort Worth,TX,76164,51321,1,true,low,auto
+Software Freedom Institute LLC,LLC,Houston,TX,77002,541511,1,true,low,auto
+Solutions by Text LLC,LLC,Addison,TX,75001,541511,1,true,low,auto
+SourceHOV LLC,LLC,Irving,TX,75061,54151,1,true,low,auto
+"Space Automotive, LLC",LLC,Dallas,TX,75206,541511,1,true,low,auto
+Space Cow LLC,LLC,Austin,TX,78736,541512,1,true,low,auto
+"Sports Operating, LLC",LLC,Dallas,TX,75219,541519,1,true,low,auto
+Sprint Byte Technologies LLC,LLC,leander,TX,78641,541512,1,true,low,auto
+Squirrels Square LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+Successive Technologies LLC,LLC,Coppell,TX,75019,541511,1,true,low,auto
+Synerzip LLC,LLC,Dallas,TX,75244,541511,1,true,low,auto
+TECH LADDER LLC,LLC,Houston,TX,77064,541511,1,true,low,auto
+TEKMINDS SYSTEM LLC,LLC,MCKINNEY,TX,75070,541511,1,true,low,auto
+TEXAS TECHNOLOGY GROUP LLC,LLC,DUNCANVILLE,TX,75116-4931,541511,1,true,low,auto
+TSICOM LLC,LLC,Houston,TX,77079,541512,1,true,low,auto
+Tangle Systems LLC,LLC,Roswell,TX,30075,541511,1,true,low,auto
+Tech Expertsus LLC,LLC,Irving,TX,75063,511210,1,true,low,auto
+Techdots LLC,LLC,Plano,TX,75023,54151,1,true,low,auto
+Techminers LLC,LLC,McKinney,TX,75071,541511,1,true,low,auto
+The Purpose Built Group LLC,LLC,Dallas,TX,75226,541511,1,true,low,auto
+"The Teneo Group, LLC",LLC,Godley,TX,76044,541512,1,true,low,auto
+ThinkAI Experts LLC,LLC,Frisco,TX,75034,541511,1,true,low,auto
+"Timbergrove Solutions, LLC",LLC,Houston,TX,77003,541512,1,true,low,auto
+Top Gun Blockchain LLC,LLC,Eastland,TX,76448,518210,1,true,low,auto
+Topic Gurus LLC,LLC,Rockwall,TX,75087,511210,1,true,low,auto
+"TowWorks, LLC",LLC,Houston,TX,77007,541511,1,true,low,auto
+Trackme Software LLC,LLC,Allen,TX,75002,541511,1,true,low,auto
+"Triple Point Technology, LLC",LLC,Houston,TX,77010,541511,1,true,low,auto
+"Trust Infosys, LLC",LLC,Austin,TX,78750,541512,1,true,low,auto
+Tscalar Systems LLC,LLC,Plano,TX,75025,541511,1,true,low,auto
+Turtle Cloud LLC,LLC,Dallas,TX,75243,541511,1,true,low,auto
+VGTS LLC,LLC,Frisco,TX,75036,54151,1,true,low,auto
+VIVERE SYSTEMS LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+VOLCONE WEB SOLUTIONS LLC,LLC,GEORGETOWN,TX,78628,541511,1,true,low,auto
+VSSIQ Solutions LLC,LLC,Leander,TX,78641,541511,1,true,low,auto
+Verdict IT Technologies LLC,LLC,IRVING,TX,75063,541511,1,true,low,auto
+Verittsoft LLC,LLC,Frisco,TX,75035,541511,1,true,low,auto
+"Verity Services, LLC",LLC,The Woodlands,TX,77380,5415,1,true,low,auto
+Virtue Serve LLC,LLC,Irving,TX,75063,541511,1,true,low,auto
+"Visual BI Solutions, LLC",LLC,Plano,TX,75093,541511,1,true,low,auto
+"Voltaire Health, LLC.",LLC,Plano,TX,75024,541511,1,true,low,auto
+"Volusion, LLC",LLC,Austin,TX,78758,511210,1,true,low,auto
+WELKIN TECHNOLOGIES LLC,LLC,Alpharetta,TX,30005,541511,1,true,low,auto
+WIZIENT LLC,LLC,CYPRESS,TX,77429,541511,1,true,low,auto
+"WatchmeSports, LLC",LLC,Fort Worth,TX,76116,516210,1,true,low,auto
+Wave Telecom LLC,LLC,Frisco,TX,75034,541511,1,true,low,auto
+Wellsite Navigator LLC,LLC,Houston,TX,77002,511210,1,true,low,auto
+Willow Technologies LLC,LLC,Dallas,TX,75209,54151,1,true,low,auto
+"WiredHive, LLC",LLC,McKinney,TX,75072,541511,1,true,low,auto
+Worldtech IT LLC,LLC,Austin,TX,78702,541512,1,true,low,auto
+ZERO DAY GROUP LLC,LLC,BELLAIRE,TX,77401,54151,1,true,low,auto
+ZOWTA LLC,LLC,Austin,TX,78759,513210,1,true,low,auto
+Zeva Technology LLC,LLC,Plano,TX,75093,541512,1,true,low,auto
+Zinc LLC,LLC,Sugar Land,TX,77478,54151,1,true,low,auto
+Zionzest LLC,LLC,Lewisville,TX,75056,541512,1,true,low,auto
+"Ziosk Payroll, LLC",LLC,Dallas,TX,75251,541519,1,true,low,auto
+"aMind Solutions, LLC d.b.a. ArganoaMind",LLC,Plano,TX,75093,541511,1,true,low,auto
+"defi Solutions DE, LLC",LLC,Westlake,TX,76262,541511,1,true,low,auto
+iRely LLC,LLC,Irving,TX,75039,54151,1,true,low,auto
+iSphere Innovation Partners LLC,LLC,Houston,TX,77060,5415,1,true,low,auto
+"8am, LLC",LLC,Austin,TX,78746,541511,2,true,low,auto
+AAKHIRAH INVESTMENTS LLC,LLC,Irving,TX,75038,518210,2,true,low,auto
+AHACLOUDS LLC,LLC,Coppell,TX,75019,541512,2,true,low,auto
+"ASTOUNDZ, LLC.",LLC,HOUSTON,TX,77092,541511,2,true,low,auto
+ASYNC7 LLC,LLC,HOUSTON,TX,77092,541511,2,true,low,auto
+ATRIXSOFT LLC,LLC,SHERIDAN,TX,82801,541511,2,true,low,auto
+AUSIND Solutions LLC,LLC,Plano,TX,75024,541511,2,true,low,auto
+Aayog Solutions LLC,LLC,Round Rock,TX,78681,541511,2,true,low,auto
+"Adaptive Vision & Robotics, LLC",LLC,McKinney,TX,75069,541512,2,true,low,auto
+"AiQueous, LLC",LLC,Austin,TX,78757,541511,2,true,low,auto
+"Appweb, LLC",LLC,Georgetown,TX,78633,54151,2,true,low,auto
+Arks Intellitech LLC,LLC,Lewisville,TX,75056,541511,2,true,low,auto
+Arora Innovation LLC,LLC,Dallas,TX,75201,541512,2,true,low,auto
+"Auctane, LLC, dba ShipStation",LLC,Austin,TX,78731,518210,2,true,low,auto
+"Axcelinno, LLC",LLC,Frisco,TX,75034,541512,2,true,low,auto
+BEYOND SCRIPTS LLC,LLC,MCKINNEY,TX,75070,541511,2,true,low,auto
+BINARYWAY LLC.,LLC,KATY,TX,77449,541511,2,true,low,auto
+BLOCKnit LLC,LLC,Frisco,TX,75035,541511,2,true,low,auto
+BLUEGREEN TECHSOLUTIONS LLC.,LLC,FRISCO,TX,75034,541511,2,true,low,auto
+Banjaxed Solutions LLC,LLC,College Station,TX,77845,541511,2,true,low,auto
+"Baxter Planning Systems Opco, LLC",LLC,Austin,TX,78731,541519,2,true,low,auto
+"Bellwether Electronics, LLC",LLC,Austin,TX,78731,541519,2,true,low,auto
+Bloomgen LLC,LLC,McKinney,TX,75070,541511,2,true,low,auto
+Blue Goji LLC,LLC,Austin,TX,78744,513210,2,true,low,auto
+Bonterra LLC,LLC,Austin,TX,78759,541511,2,true,low,auto
+Bonum Technologies LLC,LLC,Flower Mound,TX,75022,541512,2,true,low,auto
+"BoosterHub, LLC",LLC,Georgetown,TX,78628,511210,2,true,low,auto
+"Bridge Logix Solutions, LLC",LLC,Sugar Land,TX,77478,541511,2,true,low,auto
+"Broadleaf Commerce, LLC.",LLC,Plano,TX,75024,541511,2,true,low,auto
+C4Workx LLC,LLC,Richmond,TX,77406,541511,2,true,low,auto
+CLOUD IMPERIUM GAMES TEXAS LLC,LLC,BEE CAVE,TX,78738,511210,2,true,low,auto
+CLOUD RESOURCES LLC,LLC,IRVING,TX,75062,541512,2,true,low,auto
+CPS Technology Solutions LLC,LLC,Frisco,TX,75035,541511,2,true,low,auto
+CRAFTANY IT SOLUTIONS LLC,LLC,DALLAS,TX,75243,54151,2,true,low,auto
+Capitalogix LLC,LLC,Coppell,TX,75019,541511,2,true,low,auto
+Caton Analytics LLC,LLC,Austin,TX,78759,518210,2,true,low,auto
+"Cerebre, LLC",LLC,Dallas,TX,78664,541511,2,true,low,auto
+Client Connect LLC,LLC,Plano,TX,75093,511210,2,true,low,auto
+"CoachAlgo, LLC",LLC,Sugar Land,TX,77478,513210,2,true,low,auto
+"Cocolevio, LLC",LLC,Austin,TX,78702,5415,2,true,low,auto
+Code Insights LLC.,LLC,Frisco,TX,75035,541511,2,true,low,auto
+"Computer Visionaries, LLC",LLC,Dallas,TX,75244,541511,2,true,low,auto
+"Conduent Credit Balance Solutions, LLC",LLC,Richardson,TX,75080,541512,2,true,low,auto
+"Conduent Heritage, LLC",LLC,Richardson,TX,75080,541512,2,true,low,auto
+"Corva AI, LLC",LLC,Houston,TX,77043,541519,2,true,low,auto
+Cyberbridge LLC,LLC,Katy,TX,77493,541512,2,true,low,auto
+CyrusOne LLC,LLC,Dallas,TX,75201,518210,2,true,low,auto
+DIGITAL TWINS TECHNOLOGIES LLC,LLC,DUNCANVILLE,TX,75116,541511,2,true,low,auto
+DSP Zusters LLC,LLC,Aubrey,TX,76227,541511,2,true,low,auto
+Digineox LLC,LLC,Houston,TX,77056,541512,2,true,low,auto
+ELFA Ventures LLC,LLC,Irving,TX,75062,541512,2,true,low,auto
+ENQBATOR LLC,LLC,Austin,TX,78750,541512,2,true,low,auto
+EXTERPRISE LLC,LLC,Mckinney,TX,75070,541519,2,true,low,auto
+Enpowertek LLC,LLC,Frisco,TX,75034,541511,2,true,low,auto
+FORMULA HUB LLC,LLC,Farmers Branch,TX,75234,541511,2,true,low,auto
+FORTUNE INSIGHTS LLC.,LLC,SOUTHLAKE,TX,76092,541512,2,true,low,auto
+FRISCO TECHSOL LLC,LLC,Frisco,TX,75034,541511,2,true,low,auto
+"Fame Computers, LLC",LLC,Plano,TX,75023,541512,2,true,low,auto
+Flight Operations Holdings LLC,LLC,Southlake,TX,76092,541511,2,true,low,auto
+"Folio Software, LLC",LLC,Dallas,TX,75204,541511,2,true,low,auto
+Frisco Tech Sol LLC,LLC,Frisco,TX,75034,541511,2,true,low,auto
+"Geek Genix, LLC",LLC,Waco,TX,76710,541519,2,true,low,auto
+Global Infrastructure Services LLC,LLC,Prosper,TX,75078,541511,2,true,low,auto
+Global Paradigm LLC,LLC,DALLAS,TX,75240,541511,2,true,low,auto
+GlobalStep Client Services LLC,LLC,Dallas,TX,75225,541511,2,true,low,auto
+Growth AXL LLC,LLC,Sugar Land,TX,77479,541519,2,true,low,auto
+GrowthAXL Shared Services LLC,LLC,Houston,TX,77060,541519,2,true,low,auto
+"Hahn Stats, LLC",LLC,Austin,TX,78745,518210,2,true,low,auto
+Honeydew Design LLC,LLC,Allen,TX,75013,541511,2,true,low,auto
+Hotel RevUp LLC,LLC,Irving,TX,75062,518210,2,true,low,auto
+"Hynes & Khater, LLC",LLC,Houston,TX,77056,541511,2,true,low,auto
+INTELLECT CLOUD TECHNOLOGIES LLC,LLC,Allen,TX,75013,541511,2,true,low,auto
+IPSEC SYSTEMS LLC,LLC,Plano,TX,75074,541519,2,true,low,auto
+IT MICROSTACK LLC,LLC,Frisco,TX,75036,541511,2,true,low,auto
+IT PRO HUB USA LLC.,LLC,FARMERS BRANCH,TX,75234,541511,2,true,low,auto
+Ingenious IT Systems LLC,LLC,Richmond,TX,77407,541511,2,true,low,auto
+Janus Automation LLC,LLC,The Woodlands,TX,77380,541511,2,true,low,auto
+Jointly LLC,LLC,Austin,TX,78745,511210,2,true,low,auto
+Kibernum USA LLC,LLC,Plano,TX,75024,511210,2,true,low,auto
+"LaborEdge, LLC",LLC,Plano,TX,75024,511210,2,true,low,auto
+Last Mile Venture LLC,LLC,Plano,TX,75093,54151,2,true,low,auto
+LearnSAP LLC,LLC,Pearland,TX,77581,541511,2,true,low,auto
+"Lexipol, LLC",LLC,Frisco,TX,75034,519130,2,true,low,auto
+"Lively Video, LLC",LLC,Austin,TX,78722,541511,2,true,low,auto
+Logicexcell LLC,LLC,Frisco,TX,75033,541513,2,true,low,auto
+Loop1 LLC,LLC,Cedar park,TX,78613,541511,2,true,low,auto
+Lotic AI LLC,LLC,Bee Cave,TX,78738,541511,2,true,low,auto
+"Luminary Creative and Marketing, LLC",LLC,Dallas,TX,75247,541511,2,true,low,auto
+Luna Squares Texas LLC,LLC,Pecos,TX,79772,518210,2,true,low,auto
+METAVERSE TECHNOLOGY GROUP LLC,LLC,DUNCANVILLE,TX,75116,541511,2,true,low,auto
+MNM Innovations LLC,LLC,Fulshear,TX,77441,541511,2,true,low,auto
+MYK PROVIDERSLLC,LLC,DALLAS,TX,75220,541511,2,true,low,auto
+Matrix Software Technology LLC,LLC,Houston,TX,77025,541511,2,true,low,auto
+"Medical Technology Solutions, LLC",LLC,Valencia,TX,91355,518210,2,true,low,auto
+Method Analytics LLC,LLC,Trinidad,TX,75163,541519,2,true,low,auto
+"MiView Integrated Solutions, LLC",LLC,Carrollton,TX,75007,513210,2,true,low,auto
+"Mshana Group, LLC",LLC,Sugar Land,TX,77479,541512,2,true,low,auto
+NEURABOX AI LLC,LLC,DALLAS,TX,75231,541511,2,true,low,auto
+NEXTGEN INNOVATION LABS LLC,LLC,Frisco,TX,75034,541511,2,true,low,auto
+"Navesink Mortgage Services, LLC",LLC,Addison,TX,75001,54151,2,true,low,auto
+Neolution LLC,LLC,Irving,TX,75038,54151,2,true,low,auto
+Nlinq Solutions LLC,LLC,Houston,TX,77060,541519,2,true,low,auto
+"North Polaris, LLC.",LLC,Houston,TX,77036,541511,2,true,low,auto
+"Nusoft Systems, LLC",LLC,Sugar Land,TX,77479,541511,2,true,low,auto
+Octagos Acquisition LLC,LLC,Houston,TX,77070,511210,2,true,low,auto
+Octed LLC,LLC,Coppell,TX,75019,541511,2,true,low,auto
+Oortech LLC,LLC,Austin,TX,78705,51821,2,true,low,auto
+"Optimal Blue, LLC",LLC,Plano,TX,75024,541511,2,true,low,auto
+"Optimus Labs USA, LLC",LLC,Dallas,TX,75234,541511,2,true,low,auto
+PROTAGONA LLC,LLC,PLANO,TX,75074,541511,2,true,low,auto
+"Palm Delivery Innovations QOZB, LLC",LLC,Austin,TX,78702,513210,2,true,low,auto
+Paramount Technologies LLC,LLC,Irving,TX,75063,541519,2,true,low,auto
+Paranet Solutions LLC,LLC,Dallas,TX,75248,541512,2,true,low,auto
+"Payteros, LLC",LLC,Houston,TX,77070,541511,2,true,low,auto
+Potel Projects LLC,LLC,Frisco,TX,75035,541512,2,true,low,auto
+ProjecTools Solutions LLC,LLC,Houston,TX,77043,541512,2,true,low,auto
+QADWORKS SOLUTIONS LLC.,LLC,Houston,TX,77096,541519,2,true,low,auto
+Qualesce LLC,LLC,Frisco,TX,75034,541512,2,true,low,auto
+REVENTION LLC,LLC,HOUSTON,TX,77043,541512,2,true,low,auto
+RPD Systems LLC,LLC,Austin,TX,78750,54151,2,true,low,auto
+"Rand Group Solutions, LLC",LLC,Bellaire,TX,77401,541511,2,true,low,auto
+Rayala Cloud Solutions LLC,LLC,Frisco,TX,75035,541511,2,true,low,auto
+Reach Partners LLC,LLC,Austin,TX,78701,54151,2,true,low,auto
+RepeatMD Operating LLC,LLC,Houston,TX,77056,518210,2,true,low,auto
+SANDBOX TECHNOLOGIES LLC,LLC,DUNCANVILLE,TX,75116,541511,2,true,low,auto
+"SAPPHIRE INFORMATICS, LLC.",LLC,AUSTIN,TX,78752,541511,2,true,low,auto
+"SCMO2, LLC",LLC,Plano,TX,75093,541512,2,true,low,auto
+SCN Corp LLC,LLC,Irving,TX,75063,541511,2,true,low,auto
+SHARANGASOLUTIONS LLC,LLC,FLOWER MOUND,TX,75022,541511,2,true,low,auto
+"SIGGA USA, LLC",LLC,Sugar Land,TX,77478,541512,2,true,low,auto
+SIGNACORP LLC,LLC,Mckineey,TX,75070,541511,2,true,low,auto
+SKIONTEK LLC,LLC,IRVING,TX,75062,541511,2,true,low,auto
+SOFTSYS TECHNOLOGIES LLC,LLC,LANTANA,TX,76226,541512,2,true,low,auto
+SOLVATION LLC,LLC,PLANO,TX,75025,541512,2,true,low,auto
+"SRP TH Services, LLC",LLC,Dallas,TX,75219,541511,2,true,low,auto
+SYMBIOAITECH LLC,LLC,Farmers Branch,TX,75234,541511,2,true,low,auto
+Saantekglobal LLC,LLC,ALLEN,TX,75013,541511,2,true,low,auto
+Salesdrive Technologies LLC,LLC,Flower mound,TX,75028,541511,2,true,low,auto
+Sathya Sai Services LLC,LLC,Austin,TX,78731,541511,2,true,low,auto
+"Shaw Systems Associates, LLC",LLC,Houston,TX,77042,5415,2,true,low,auto
+ShellSquare LLC,LLC,AUSTIN,TX,78701,541511,2,true,low,auto
+Slick Integrations LLC,LLC,Austin,TX,78731,541512,2,true,low,auto
+SoftTelRG LLC,LLC,McKinney,TX,75070,541511,2,true,low,auto
+Softvel LLC,LLC,Austin,TX,78738,541511,2,true,low,auto
+Solidrock Solutions LLC,LLC,Flower Mound,TX,75028,541511,2,true,low,auto
+Solvo Tech Solutions LLC,LLC,Dallas,TX,75243,541511,2,true,low,auto
+Sri Tech International LLC,LLC,AUSTIN,TX,78717,541512,2,true,low,auto
+"Sultanete, LLC",LLC,Irving,TX,75062,541511,2,true,low,auto
+SwiftAnt LLC,LLC,MCKINNEY,TX,75070,541511,2,true,low,auto
+TECHAVIDITY BUSINESS SOLUTIONS LLC,LLC,Frisco,TX,75034,54151,2,true,low,auto
+"TEKENERGY, LLC.",LLC,IRVING,TX,75063,541511,2,true,low,auto
+TEKLEADS LLC,LLC,MCKINNEY,TX,75070,541511,2,true,low,auto
+TEKTRON LLC.,LLC,PLANO,TX,75074,541511,2,true,low,auto
+TOYAJA IT SOLUTIONS LLC.,LLC,GEORGETOWN,TX,78628,541519,2,true,low,auto
+TRAXCEL LLC,LLC,HOUSTON,TX,77084,541512,2,true,low,auto
+TRICON TECH SERVICES LLC,LLC,LEWISVILLE,TX,75056,541511,2,true,low,auto
+Tech Quotient LLC,LLC,Liberty Hill,TX,78642,541511,2,true,low,auto
+TekDeft LLC,LLC,Plano,TX,75023,541511,2,true,low,auto
+TekRubix LLC,LLC,Irving,TX,75039,541511,2,true,low,auto
+Texas VU LLC,LLC,Frisco,TX,75034,541519,2,true,low,auto
+"TexasFile, LLC",LLC,Corpus Christi,TX,78401,518210,2,true,low,auto
+The Quantamental Investment Group LLC,LLC,Fulshear,TX,77441,519130,2,true,low,auto
+The Social Plus LLC,LLC,Frisco,TX,75034,541511,2,true,low,auto
+"ThoughtSpark US, LLC",LLC,Houston,TX,77060,541511,2,true,low,auto
+"Triarc Solutions, LLC",LLC,Houston,TX,77002,54151,2,true,low,auto
+Tysonite Partners LLC,LLC,Missouri City,TX,77459,541511,2,true,low,auto
+ULTIMATE SOFT LLC,LLC,Mckinney,TX,75070,541511,2,true,low,auto
+UPSHOP LLC,LLC,AUSTIN,TX,78757,541511,2,true,low,auto
+UX is Fine LLC,LLC,Austin,TX,78759,541511,2,true,low,auto
+VALUE CREED LLC,LLC,Plano,TX,75074,54151,2,true,low,auto
+VCLOUD TECHNOLOGY GROUP LLC,LLC,DUNCANVILLE,TX,75116-4605,541511,2,true,low,auto
+"VIJAYA, LLC",LLC,WYLIE,TX,75098,541511,2,true,low,auto
+VKAAS LLC,LLC,FRISCO,TX,75033,541511,2,true,low,auto
+VSHARP LLC,LLC,Addison,TX,75001,541511,2,true,low,auto
+Veeratech LLC,LLC,Houston,TX,77070,541511,2,true,low,auto
+"Verge Ventures, LLC",LLC,Richardson,TX,75082,511210,2,true,low,auto
+"Vroom Automotive, LLC",LLC,Stafford,TX,77477,541511,2,true,low,auto
+WISENMORE LLC,LLC,Fulshear,TX,77441,541511,2,true,low,auto
+Waypoint Data Solutions LLC,LLC,Spring,TX,77386,541511,2,true,low,auto
+"Winner, LLC",LLC,Fort Worth,TX,76177,518210,2,true,low,auto
+"Wolfepak Software, LLC",LLC,Abilene,TX,79602,511210,2,true,low,auto
+Xenonsofttech LLC.,LLC,Liberty Hill,TX,78642,541511,2,true,low,auto
+YOCE LLC,LLC,Fort Worth,TX,76110,541511,2,true,low,auto
+"iQGateway, LLC",LLC,The Woodlands,TX,77380,54151,2,true,low,auto
+mlivelihood LLC,LLC,Houston,TX,77003,513210,2,true,low,auto
+"pixelByte, LLC",LLC,EL PASO,TX,79912,541511,2,true,low,auto
+A-DYNASTY LLC,LLC,Irving,TX,75062,541519,3,true,low,auto
+AMPLE GLOBAL SOLUTIONS LLC,LLC,Farmers Branch,TX,75234,541511,3,true,low,auto
+AR INFOTEK SOLUTIONS LLC,LLC,Georgetown,TX,78626,541511,3,true,low,auto
+AUTHENTIC DATA SOLUTIONS LLC,LLC,ROUND ROCK,TX,78664,541511,3,true,low,needs_review
+"Allata, LLC",LLC,Dallas,TX,75207,541511,3,true,low,auto
+Alpha Solutions USA LLC,LLC,Addison,TX,75001,541512,3,true,low,auto
+Amnet Tech LLC,LLC,Leander,TX,78641,541511,3,true,low,auto
+"Aqore, LLC",LLC,Grapevine,TX,75061,541511,3,true,low,auto
+"Argo Design, LLC",LLC,Austin,TX,78704,541512,3,true,low,auto
+Ashtech Intelligent LLC,LLC,Richardson,TX,75080,541513,3,true,low,auto
+Asset Panda LLC,LLC,Frisco,TX,75034,541511,3,true,low,auto
+Atlas Technology Group LLC,LLC,Austin,TX,78701,518210,3,true,low,auto
+Avmtechies LLC,LLC,Frisco,TX,75034,541511,3,true,low,auto
+Bottle Rocket LLC,LLC,Addison,TX,75254,541511,3,true,low,auto
+CITRINE SOLUTION LLC,LLC,IRVING,TX,75038,541513,3,true,low,auto
+COGNITUM SOLUTIONS LLC,LLC,Austin,TX,78731,541511,3,true,low,auto
+CONNECTEK SOLUTIONS LLC,LLC,Farmers Branch,TX,75234,541511,3,true,low,auto
+CY9 LLC,LLC,"Flower Mound,",TX,75022,541511,3,true,low,auto
+"Cloud EPA, LLC",LLC,Euless,TX,76040,541511,3,true,low,auto
+Cloudiyan LLC,LLC,Frisco,TX,75034,541511,3,true,low,auto
+Crocus IT LLC,LLC,Frisco,TX,75036,541511,3,true,low,auto
+Cyber Nirvana LLC,LLC,Irving,TX,75038,541511,3,true,low,auto
+Cytracom LLC,LLC,Allen,TX,75013,541511,3,true,low,auto
+Dabble Sports LLC,LLC,Austin,TX,78701,513210,3,true,low,auto
+Digital 360 LLC,LLC,Arlington,TX,76010,541511,3,true,low,auto
+"Digital Systems X, LLC",LLC,The Woodlands,TX,77381,541512,3,true,low,auto
+DuraPeople LLC,LLC,San Antonio,TX,78205,513210,3,true,low,auto
+EASYSTEPIN LLC,LLC,Katy,TX,77494,541511,3,true,low,auto
+Enboarder LLC,LLC,Austin,TX,78702,511210,3,true,low,auto
+First Infra LLC,LLC,The Colony,TX,75056,541511,3,true,low,auto
+"GDS Link, LLC",LLC,Dallas,TX,75206,541511,3,true,low,auto
+"GeoComputing Group, LLC",LLC,Houston,TX,77079,518210,3,true,low,auto
+Givewith LLC,LLC,Austin,TX,78701,541519,3,true,low,auto
+Global Smart Work LLC,LLC,McKinney,TX,75070,541511,3,true,low,auto
+Hashtag Techie LLC,LLC,Dallas,TX,75243,541511,3,true,low,auto
+"Hiecept, LLC",LLC,Houston,TX,77077,541511,3,true,low,auto
+IBUILDSOFT LLC,LLC,Plano,TX,75074,518210,3,true,low,auto
+IPLUS GLOBAL USA LLC,LLC,Irving,TX,75063,541511,3,true,low,auto
+Idealagi LLC,LLC,The Woodlands,TX,77380,541511,3,true,low,auto
+Invasystems Digital LLC,LLC,Sugar Land,TX,77478,54151,3,true,low,auto
+KEYWEB TECHNOLOGIES LLC,LLC,SHERIDAN,TX,82801,541511,3,true,low,auto
+KLOUDSLACK LLC,LLC,Irving,TX,75062,541511,3,true,low,auto
+KNR Paradise Holdings LLC,LLC,McKinney,TX,75071,541512,3,true,low,auto
+KNSERVICESLLC,LLC,Round Rock,TX,78665,541511,3,true,low,auto
+Kloutix Solutions LLC,LLC,Irving,TX,75039,541519,3,true,low,auto
+LorVen Techservices LLC,LLC,Frisco,TX,75034,541511,3,true,low,auto
+"METAPRO USA, LLC",LLC,Grapevine,TX,76051,54151,3,true,low,auto
+MK Universal LLC,LLC,Plano,TX,75024,541511,3,true,low,auto
+Mash IT Solutions LLC,LLC,Austin,TX,78736,541511,3,true,low,auto
+"Mountain State Software Solutions, LLC d.b.a ArganoMS3",LLC,Plano,TX,75093,541511,3,true,low,needs_review
+Navsan LLC,LLC,Helotes,TX,78023,541511,3,true,low,auto
+Netnology LLC,LLC,Plano,TX,75074,541519,3,true,low,auto
+Nimmetrix LLC,LLC,Houston,TX,77084,541511,3,true,low,auto
+"NinjaOne, LLC",LLC,Austin,TX,78701,511210,3,true,low,auto
+North Star Identity LLC,LLC,Prosper,TX,75078,541512,3,true,low,auto
+Nugen Tech LLC,LLC,Allen,TX,75013,541519,3,true,low,needs_review
+OctagonIT LLC,LLC,Irving,TX,75062,541511,3,true,low,auto
+"OpenSymmetry, LLC",LLC,Austin,TX,78746,541512,3,true,low,auto
+PEREGRINE AI LLC,LLC,PLANO,TX,75024,541511,3,true,low,auto
+PTechCrew LLC,LLC,Allen,TX,75013,541512,3,true,low,auto
+"PakEnergy, LLC",LLC,Abilene,TX,79602,511210,3,true,low,auto
+Panda Solutions USA LLC,LLC,Dallas,TX,75240,541519,3,true,low,auto
+Perficient IT LLC,LLC,McKinney,TX,75071,541511,3,true,low,auto
+"PioneerRX, LLC",LLC,Irving,TX,75039,541512,3,true,low,auto
+Pranu Business Group LLC,LLC,Houston,TX,77079,541512,3,true,low,auto
+ProArch Technologies LLC,LLC,Lakeway,TX,78734,541511,3,true,low,auto
+R'cloud LLC,LLC,Pearland,TX,77584,541511,3,true,low,auto
+REAL SOURCE IT SOLUTIONS LLC,LLC,FRISCO,TX,75035,541511,3,true,low,auto
+ROBOTIC PROCESS AUTOMATION LLC,LLC,DUNCANVILLE,TX,75116-4931,541511,3,true,low,auto
+Rex Team General LLC,LLC,Austin,TX,78731,541511,3,true,low,auto
+SCUBE SOFT SOLUTIONS LLC,LLC,Flower Mound,TX,75022,541511,3,true,low,auto
+SLK Systems LLC,LLC,Dallas,TX,75234,541511,3,true,low,auto
+SMARTCOMMS LLC,LLC,DALLAS,TX,75252,541519,3,true,low,auto
+Serverless Solutions LLC,LLC,Houston,TX,77024,54151,3,true,low,auto
+SimpleCube LLC,LLC,San Antonio,TX,78230,541511,3,true,low,auto
+"Sitemetric, LLC",LLC,Houston,TX,77027,541512,3,true,low,auto
+SoftTrak Technologies LLC.,LLC,Dallas,TX,75019,541511,3,true,low,auto
+"Solera Holdings, LLC",LLC,Westlake,TX,76262,541511,3,true,low,auto
+Sutras LLC,LLC,KATY,TX,77494,541511,3,true,low,auto
+TBX Employee Benefits LLC,LLC,Plano,TX,75024,541511,3,true,low,auto
+TECH SYNERGIES LLC,LLC,Irving,TX,75039,541511,3,true,low,auto
+TEKNOMITE LLC,LLC,MCKINNEY,TX,75070,541511,3,true,low,auto
+TEKPRO IT LLC,LLC,Plano,TX,75023,541511,3,true,low,auto
+TechFuturiq LLC,LLC,McKinney,TX,75071,541511,3,true,low,auto
+TekPeersGlobal LLC,LLC,Austin,TX,78731,541511,3,true,low,auto
+Tekdream LLC,LLC,Lewisville,TX,75067,541511,3,true,low,auto
+Telafor LLC,LLC,Dallas,TX,75019,541511,3,true,low,auto
+Texas Automation Systems LLC,LLC,Grand Prairie,TX,75050,541512,3,true,low,auto
+"TraxID, LLC",LLC,Farmers Branch,TX,75234,541511,3,true,low,auto
+Trinity Edge Solutions LLC,LLC,Irving,TX,75063,541511,3,true,low,auto
+Turvo LLC,LLC,Dallas,TX,75205,541519,3,true,low,auto
+UtilPros LLC,LLC,Plano,TX,75023,541511,3,true,low,auto
+VERATECH SYSTEMS LLC.,LLC,CEDAR PARK,TX,78613,541511,3,true,low,auto
+VIRTUAL AMERICAN COMPANIES LLC,LLC,RICHMOND,TX,77407,518210,3,true,low,auto
+VUYH TECHNOLOGIES LLC,LLC,KATY,TX,77494,541511,3,true,low,auto
+"WORK Technologies, LLC",LLC,San Antonio,TX,78232,518210,3,true,low,needs_review
+Waltasoft Technologies LLC,LLC,Irving,TX,75038,541511,3,true,low,auto
+"Watermark Insights, LLC",LLC,Austin,TX,78759,511210,3,true,low,auto
+We Empower IT LLC,LLC,The Woodlands,TX,77382,541511,3,true,low,auto
+Winstream IT LLC,LLC,Irving,TX,75063,541519,3,true,low,auto
+XNOVAQ LLC,LLC,Frisco,TX,75035,541511,3,true,low,auto
+ZOSH TECH LLC,LLC,Flower Mound,TX,75028,541511,3,true,low,auto
+Zeal Capital Management LLC,LLC,Dallas,TX,75201,541511,3,true,low,auto
+Zimat Investments LLC,LLC,Plano,TX,75024,541511,3,true,low,auto
+wingu llc,LLC,Houston,TX,77041,541512,3,true,low,auto
+A2visions LLC,LLC,Frisco,TX,75034,541511,4,true,low,auto
+APIC SOLUTIONS LLC,LLC,AUSTIN,TX,78731,541511,4,true,low,auto
+Accruent LLC,LLC,Austin,TX,78758,511210,4,true,low,auto
+Assuratech LLC,LLC,Richardson,TX,75082,541511,4,true,low,auto
+AveriSource LLC,LLC,Dallas,TX,75225,541512,4,true,low,auto
+BIOREV LLC,LLC,IRVING,TX,75039,541511,4,true,low,auto
+BLUESPARK LLC,LLC,IRVING,TX,75038,541511,4,true,low,auto
+"BPM Geeks, LLC",LLC,Houston,TX,77077,541511,4,true,low,needs_review
+BROADX IT SOLUTIONS LLC,LLC,Irving,TX,75019,541511,4,true,low,auto
+CLOUD CONNECT SYSTEMS LLC,LLC,FRISCO,TX,75035,541511,4,true,low,auto
+COSMOFETCH LLC,LLC,COPPELL,TX,75019,541511,4,true,low,auto
+Cambay Solutions LLC,LLC,Katy,TX,77449,54151,4,true,low,auto
+"Centrix Group, LLC",LLC,Austin,TX,78744,54151,4,true,low,auto
+Cloud Technosoft LLC,LLC,Dallas,TX,75208,541511,4,true,low,auto
+Cloudaspirers LLC,LLC,IRVING,TX,75062,541511,4,true,low,auto
+Converge Info Systems LLC,LLC,Plano,TX,75074,541511,4,true,low,auto
+"DBD Ventures, LLC",LLC,Austin,TX,78701,541511,4,true,low,auto
+"DYOPATH, LLC",LLC,HOUSTON,TX,77040,541519,4,true,low,auto
+Datamind Analytics LLC,LLC,Frisco,TX,75035,541511,4,true,low,auto
+Datapower LLC,LLC,Frisco,TX,75035,541512,4,true,low,auto
+EverExpanse LLC,LLC,Round Rock,TX,78664,541519,4,true,low,auto
+Flutura Business Solutions LLC,LLC,Houston,TX,77057,541511,4,true,low,auto
+FullStack Labs LLC,LLC,San Antonio,TX,78258,541511,4,true,low,auto
+GalacticIT LLC,LLC,Dallas,TX,75019,541511,4,true,low,auto
+Global Star IT Serve LLC,LLC,Plano,TX,75024,541511,4,true,low,auto
+Google LLC,LLC,California,TX,94043,541512,4,true,low,auto
+Hyphen Solutions LLC,LLC,Dallas,TX,75234,541512,4,true,low,auto
+INTEGRATEUS LLC.,LLC,AUSTIN,TX,78701,541511,4,true,low,auto
+Impact QA Services LLC,LLC,Dallas,TX,75201,541511,4,true,low,auto
+KUNDANA SOLUTIONS LLC.,LLC,ALLEN,TX,75013,541511,4,true,low,auto
+"Koder Labs, LLC",LLC,Soutlake,TX,76092,541511,4,true,low,auto
+Krizmic LLC,LLC,Austin,TX,78731,541511,4,true,low,auto
+Laniakea Companies LLC,LLC,Farmers Branch,TX,75234,541511,4,true,low,auto
+Leading Edge Solutions LLC,LLC,The Colony,TX,75056,541511,4,true,low,auto
+"Leverture, LLC",LLC,Decatur,TX,76234,541512,4,true,low,auto
+LimeIQ LLC,LLC,Dallas,TX,75251,518210,4,true,low,auto
+Lion Skills LLC,LLC,RICHARDSON,TX,75080,541511,4,true,low,auto
+Mahika Info LLC,LLC,Houston,TX,77077,541511,4,true,low,auto
+Master CVV Technologies LLC,LLC,Prosper,TX,75078,541512,4,true,low,auto
+NEO Techstaff LLC,LLC,Irving,TX,75062,541511,4,true,low,auto
+Nexus Cognitive Technologies LLC,LLC,Addison,TX,75001,541511,4,true,low,auto
+"NorthStar Guru, LLC.",LLC,DALLAS,TX,75244,541511,4,true,low,auto
+Ooloo Group LLC,LLC,Richmond,TX,77406,541511,4,true,low,auto
+PEOPLESOFT TECH LLC,LLC,LEANDER,TX,78641,541511,4,true,low,auto
+PLANET9TEK LLC,LLC,FRISCO,TX,75035,541511,4,true,low,auto
+PLV INFO GENIUS LLC,LLC,FRISCO,TX,75035,541511,4,true,low,auto
+PR Square Techstaff LLC,LLC,Justin,TX,76247,541511,4,true,low,auto
+PROFESSIONAL TECHNOLGY SERVICES LLC,LLC,ALLEN,TX,75013,541511,4,true,low,auto
+Paalar LLC,LLC,Frisco,TX,75036,541511,4,true,low,auto
+Pennycoder LLC,LLC,Irving,TX,75039,541511,4,true,low,auto
+Petty Karma Interactive LLC,LLC,Austin,TX,78702,511210,4,true,low,auto
+"Phoenix Infrastructure, LLC",LLC,Fort Worth,TX,76155,518210,4,true,low,auto
+Pragmatech LLC,LLC,The Colony,TX,75056,541511,4,true,low,auto
+"Precocity, LLC",LLC,Dallas,TX,75254,541511,4,true,low,auto
+"Projekt202, LLC",LLC,Dallas,TX,75254,511210,4,true,low,auto
+Prosper Path LLC,LLC,Little Elm,TX,75068,541511,4,true,low,auto
+S TEKWIZARDS LLC,LLC,FARMERS BRANCH,TX,75234,541511,4,true,low,auto
+SKYOVI LLC,LLC,Allen,TX,75013,541511,4,true,low,auto
+"SQL Brains, LLC",LLC,Frisco,TX,75034,541511,4,true,low,auto
+"STRAVISO, LLC",LLC,Frisco,TX,75034,541511,4,true,low,auto
+SYSINTELLECTS LLC,LLC,Plano,TX,75074,513210,4,true,low,auto
+"Safekick Americas, LLC",LLC,Katy,TX,77449,541511,4,true,low,auto
+Sakesh Solutions LLC,LLC,Sugar Land,TX,77479,541511,4,true,low,auto
+Synnefo Solutions LLC,LLC,Grapevine,TX,76051,541511,4,true,low,auto
+TECHLADDER LLC,LLC,Houston,TX,77064,541511,4,true,low,auto
+TEK AMPLIFY LLC,LLC,Hutto,TX,78634,541511,4,true,low,auto
+"TEXAS FSG, LLC",LLC,SOUTH HOUSTON,TX,77587,541512,4,true,low,auto
+"TOADFLY TECHNOLOGIES, LLC",LLC,Houston,TX,77034,541512,4,true,low,auto
+"TechBridge Partners, LLC.",LLC,Houston,TX,77036,541512,4,true,low,auto
+Technoflair Solutions LLC,LLC,Farmers Branch,TX,75234,541511,4,true,low,auto
+"Techwhiz Solutions, LLC",LLC,Dallas,TX,75235,541511,4,true,low,auto
+Tek Geeks LLC,LLC,Argyle,TX,76226,54151,4,true,low,auto
+TekOhana LLC,LLC,Farmers Branch,TX,75234,541511,4,true,low,auto
+Turnitin LLC,LLC,Addison,TX,75001,541511,4,true,low,auto
+"Tyche Softech, LLC",LLC,Prosper,TX,75078,541511,4,true,low,auto
+VASHIPRA LLC,LLC,FULSHEAR,TX,77441,541511,4,true,low,auto
+VS Software LLC,LLC,Frisco,TX,75035,541511,4,true,low,auto
+WIN Reality LLC,LLC,Austin,TX,78730,541511,4,true,low,auto
+Wavelabs US LLC,LLC,Dallas,TX,75201,541511,4,true,low,auto
+"ZenQ, LLC.",LLC,Dallas,TX,75244,541511,4,true,low,auto
+Zenith Cloud LLC,LLC,Irving,TX,75063,541511,4,true,low,auto
+cPanel LLC,LLC,Houston,TX,77092,541511,4,true,low,auto
+"eDriving, LLC",LLC,Westlake,TX,76262,541511,4,true,low,auto
+"ABACUS TECHNICAL SERVICES, LLC",LLC,PLANO,TX,75093,541512,5,true,low,auto
+ACEABLE IT LLC,LLC,LEANDER,TX,78641,541511,5,true,low,auto
+AGATI SYSTEMS LLC,LLC,FRISCO,TX,75034,541511,5,true,low,auto
+AMSYS Innovative Solutions LLC,LLC,Houston,TX,77074,541511,5,true,low,auto
+ANNA GLOBAL TECHNOLOGIES LLC,LLC,PLANO,TX,75093,541511,5,true,low,auto
+AR Val Services LLC,LLC,Allen,TX,75013,541511,5,true,low,auto
+ASA Techsol LLC,LLC,Dallas,TX,75243,541511,5,true,low,auto
+ASPIREDATA LLC,LLC,PLANO,TX,75024,541511,5,true,low,auto
+Ayra Tech LLC,LLC,Allen,TX,75013,541511,5,true,low,needs_review
+BIORBIT LLC,LLC,Lewisville,TX,75056,541511,5,true,low,auto
+Byte Solutions LLC,LLC,IRVING,TX,75039,541511,5,true,low,needs_review
+CUBICOID SOLUTIONS LLC,LLC,Cypress,TX,77433,541511,5,true,low,auto
+Cavnorise Technologies LLC,LLC,Dallas,TX,75244,541511,5,true,low,auto
+"Cognax Tech, LLC",LLC,Frisco,TX,75033,541512,5,true,low,auto
+DATAVERN LLC,LLC,FARMERS BRANCH,TX,75234,541511,5,true,low,auto
+"DataLoopz, LLC",LLC,Houston,TX,77057,541511,5,true,low,auto
+Dynamic Tek LLC,LLC,irving,TX,75062,541511,5,true,low,needs_review
+Emerge IT Solutions LLC,LLC,Frisco,TX,75035,541511,5,true,low,auto
+"Enuit, LLC",LLC,Houston,TX,77002,541511,5,true,low,auto
+INFOGAMA LLC,LLC,The Colony,TX,75056,541511,5,true,low,auto
+INNOVATIVE SCHEDULING LLC,LLC,Dallas,TX,75019,541511,5,true,low,auto
+ITEKSYSTEM LLC,LLC,Farmers Branch,TX,75234,541511,5,true,low,auto
+ITTDIGITAL LLC.,LLC,AUSTIN,TX,78702,541511,5,true,low,auto
+InfoRight Solutions LLC,LLC,Frisco,TX,75036,541511,5,true,low,auto
+"JDCQ SOLUTIONS, LLC",LLC,ADDISON,TX,75001,511210,5,true,low,auto
+KNOVIQITSOLUTIONS LLC.,LLC,MAGNOLIA,TX,77354,541511,5,true,low,auto
+"Khoros, LLC",LLC,Austin,TX,78730,541511,5,true,low,auto
+"Milestone Technologies, LLC.",LLC,Dallas,TX,75244,54151,5,true,low,auto
+NEURALSYS TEK LLC,LLC,HOUSTON,TX,77074,541511,5,true,low,auto
+NEXTGEN IT LABS LLC,LLC,Houston,TX,77079,541511,5,true,low,auto
+OPTTECH LLC,LLC,Richardson,TX,75080,541511,5,true,low,auto
+"Orbitpeople, LLC",LLC,Austin,TX,78732,541511,5,true,low,auto
+"P97 Networks, LLC",LLC,Houston,TX,77042,511210,5,true,low,auto
+PEBAL BRIGHT TECHNOLOGIES LLC,LLC,CEDAR PARK,TX,78613,541519,5,true,low,auto
+PROTECHERS LLC.,LLC,HOUSTON,TX,77036,541511,5,true,low,auto
+PURVI TECHNOLOGIES LLC.,LLC,Lewisville,TX,75056,541511,5,true,low,auto
+"Predactica, LLC",LLC,Plano,TX,75093,541511,5,true,low,auto
+Qubitsys LLC,LLC,Dallas,TX,75243,541511,5,true,low,auto
+Quisitive LLC,LLC,Irving,TX,75038,541511,5,true,low,auto
+"Rarefied Atmosphere, LLC",LLC,Austin,TX,78701,518210,5,true,low,auto
+ReferralPoint LLC,LLC,Irving,TX,75039,541511,5,true,low,auto
+Rifluxyss Softwares LLC,LLC,Irving,TX,75063,541519,5,true,low,auto
+SPRINT ZONE TECH LLC,LLC,Cedar Park,TX,78613,541511,5,true,low,auto
+SS Business Services LLC,LLC,Houston,TX,77043,541511,5,true,low,auto
+Srisys LLC,LLC,Irving,TX,75039,541511,5,true,low,auto
+Suprha Svc LLC,LLC,Frisco,TX,75034,54151,5,true,low,auto
+TECH SPAN LLC,LLC,Plano,TX,75024,541511,5,true,low,auto
+Tech Era LLC,LLC,Irving,TX,75063,541511,5,true,low,auto
+Tectonicx LLC,LLC,Addison,TX,75001,541511,5,true,low,auto
+"Universal Conversion Technologies I, LLC",LLC,Grapevine,TX,76051,541512,5,true,low,auto
+V SHARP LLC,LLC,Addison,TX,75001,541511,5,true,low,auto
+"Virtual Integrated Analytics Solutions, LLC",LLC,Houston,TX,77084,518210,5,true,low,auto
+WORLDWIDE LOGICS LLC,LLC,COPPELL,TX,75019,541511,5,true,low,auto
+"West Advanced Solutions, LLC",LLC,Houston,TX,77008,511210,5,true,low,auto
+eTron Digital LLC,LLC,Southlake,TX,76092,541511,5,true,low,needs_review
+iMiDiA LLC,LLC,Cypress,TX,77433,518210,5,true,low,auto
+ACCLENCE LLC,LLC,PROSPER,TX,75078,541511,6,true,low,auto
+Acentrik Technology Solutions LLC,LLC,Irving,TX,75063,541511,6,true,low,auto
+Amniscient LLC,LLC,Houston,TX,77068,541511,6,true,low,auto
+Arche Resources LLC,LLC,Farmers Branch,TX,75244,541511,6,true,low,auto
+"Audiencent, LLC",LLC,Dallas,TX,75247,54151,6,true,low,auto
+CAREER CONNECT TECHNOLOGIES LLC,LLC,Houston,TX,77057,541511,6,true,low,auto
+CLAPPONE LLC,LLC,Addison,TX,75001,541511,6,true,low,auto
+"CONTENTACTIVE, LLC",LLC,HOUSTON,TX,77064,541511,6,true,low,auto
+CROSS SENSE ANALYTICS LLC,LLC,LEWISVILLE,TX,75057,541511,6,true,low,auto
+Chetana Soft LLC,LLC,HOUSTON,TX,77063,541511,6,true,low,auto
+Cirrus Solutions LLC,LLC,Katy,TX,77494,541511,6,true,low,auto
+"CloudRan Communication, LLC.",LLC,Dallas,TX,75234,541511,6,true,low,auto
+DA2Technologies LLC,LLC,Dallas,TX,75243,541511,6,true,low,auto
+"DallasTek Software Solutions, LLC.",LLC,McKinney,TX,75070,541511,6,true,low,auto
+"Delaware North America, LLC",LLC,Dallas,TX,75218,541519,6,true,low,auto
+Drift Tech LLC,LLC,Celina,TX,75009,541511,6,true,low,auto
+ERP STEP LLC,LLC,Plano,TX,75074,541512,6,true,low,auto
+"Epiphany Industrial Technologies, LLC",LLC,San Antonio,TX,78222,541512,6,true,low,auto
+"Frisco Analytics, LLC",LLC,Austin,TX,78758,541511,6,true,low,auto
+Gigsoft Labs LLC,LLC,Austin,TX,78759,541511,6,true,low,auto
+HAANTECH LLC,LLC,Southlake,TX,76092,54151,6,true,low,auto
+INNOCITO TECHNOLOGIES LLC,LLC,Irving,TX,75062,541511,6,true,low,needs_review
+ITFluence LLC,LLC,McKinney,TX,75070,541511,6,true,low,auto
+Idealforce LLC,LLC,Austin,TX,78750,541511,6,true,low,auto
+Infosys Nova Holdings LLC,LLC,Richardson,TX,75082,541511,6,true,low,auto
+Insightary LLC,LLC,Plano,TX,75093,541511,6,true,low,auto
+KENFILL TECHNO SOLUTIONS LLC.,LLC,DALLAS,TX,75247,541511,6,true,low,auto
+"Keste, LLC d.b.a. ArganoKeste",LLC,Plano,TX,75093,541512,6,true,low,needs_review
+MAADHU GLOBAL BUSINESS SOLUTIONS LLC.,LLC,SUGAR LAND,TX,77478,541511,6,true,low,auto
+Maxwell Tech Systems LLC,LLC,Dallas,TX,75252,541511,6,true,low,auto
+OpenKyber LLC,LLC,Round Rock,TX,78681,541512,6,true,low,auto
+PHASORSOFT GROUP LLC,LLC,LEANDER,TX,78641,541511,6,true,low,auto
+"Royal Monarch Solutions, LLC",LLC,Irving,TX,75038,541511,6,true,low,auto
+SASS Service LLC,LLC,Austin,TX,78728,541511,6,true,low,needs_review
+"SILVERLINE TECHNOLOGIES OF AMERICA, LLC",LLC,RICHARDSON,TX,75081,541511,6,true,low,auto
+"SPIN Analytics and Strategy, LLC",LLC,Conroe,TX,77301,541511,6,true,low,auto
+SRK IT GROUP LLC,LLC,Lewisville,TX,75067,541511,6,true,low,auto
+"SV Evolutions, LLC",LLC,Frisco,TX,75036,541511,6,true,low,auto
+Seventhgeneration Technologies LLC,LLC,Argyle,TX,76226,541511,6,true,low,needs_review
+SmartStart Systems LLC,LLC,Cypress,TX,77429,541512,6,true,low,auto
+Spinakr Solutions LLC,LLC,Dallas,TX,75202,541511,6,true,low,auto
+TEK FYNDER LLC,LLC,Plano,TX,75074,541511,6,true,low,auto
+"TSI USA, LLC",LLC,Dallas,TX,75231,541511,6,true,low,needs_review
+"The WIMR Group, LLC",LLC,Dallas,TX,75226,541512,6,true,low,auto
+Tire Profiles LLC,LLC,Irving,TX,75038,541511,6,true,low,auto
+Twilnet LLC,LLC,Frisco,TX,75034,541519,6,true,low,auto
+United Cloud Technologies LLC,LLC,Lewisville,TX,75056,541511,6,true,low,auto
+Utilipal LLC,LLC,Irving,TX,75038,541511,6,true,low,auto
+VSTRS LLC dba Tek Global,LLC,Cypress,TX,77429,54151,6,true,low,auto
+Vintek LLC,LLC,Prosper,TX,75078,541511,6,true,low,auto
+Vivi LLC,LLC,Houston,TX,77080,541511,6,true,low,auto
+Wawasan LLC,LLC,Katy,TX,77494,541511,6,true,low,auto
+"eComchain, LLC",LLC,Frisco,TX,75035,541511,6,true,low,auto
+eVerge Group LLC,LLC,Lewisville,TX,75067,541512,6,true,low,auto
