@@ -75,9 +75,17 @@ class Config:
     states: dict[str, StateConfig]
     software: SoftwareCodes
     scoring: dict[str, Any] = field(default_factory=dict)
+    staffing_markers: tuple[str, ...] = ()
 
     def enabled_states(self) -> list[str]:
         return [code for code, s in self.states.items() if s.enabled]
+
+    def is_staffing(self, name: str | None) -> bool:
+        """True if a company name looks like an IT-staffing / consulting body shop."""
+        if not name:
+            return False
+        low = name.lower()
+        return any(m in low for m in self.staffing_markers)
 
 
 @lru_cache(maxsize=1)
@@ -108,4 +116,15 @@ def load_config() -> Config:
 
     scoring = _load_yaml("scoring.yaml")
 
-    return Config(states=states, software=software, scoring=scoring)
+    try:
+        raw_staffing = _load_yaml("staffing_markers.yaml").get("markers", [])
+    except FileNotFoundError:
+        raw_staffing = []
+    staffing_markers = tuple(str(m).lower() for m in raw_staffing)
+
+    return Config(
+        states=states,
+        software=software,
+        scoring=scoring,
+        staffing_markers=staffing_markers,
+    )

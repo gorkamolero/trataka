@@ -34,11 +34,11 @@ class RunResult:
     stats: dict[str, int] = field(default_factory=dict)
 
 
-def _load_filings(lca_path: Path) -> Iterator[LcaFiling]:
+def _load_filings(lca_path: Path, states: list[str] | None = None) -> Iterator[LcaFiling]:
     if lca_path.is_dir():
-        yield from lca_source.read_lca_dir(lca_path)
+        yield from lca_source.read_lca_dir(lca_path, states=states)
     else:
-        yield from lca_source.read_lca_file(lca_path)
+        yield from lca_source.read_lca_file(lca_path, states=states)
 
 
 def _load_registry(cfg: Config, states: list[str]) -> dict[str, RegistryRecord]:
@@ -102,20 +102,28 @@ def run(
     cfg: Config | None = None,
     apply_llc: bool = True,
     apply_scoring: bool = False,
+    exclude_staffing: bool = False,
 ) -> RunResult:
     cfg = cfg or load_config()
     states = states or cfg.enabled_states()
     lca_path = Path(lca_path)
     stats: dict[str, int] = {}
 
-    # Phase 1 — hard filters.
-    raw = _load_filings(lca_path)
+    # Phase 1 — hard filters (state pre-filter pushed into the reader for speed).
+    raw = _load_filings(lca_path, states=states)
     filtered = list(filters_mod.apply_hard_filters(raw, cfg, states))
     stats["filings_after_hard_filters"] = len(filtered)
 
     # Phase 2 — dedupe.
     companies = dedupe_mod.dedupe(filtered)
     stats["companies_after_dedupe"] = len(companies)
+
+    # Optional: drop IT-staffing / consulting body shops to bias toward product
+    # software companies.
+    if exclude_staffing:
+        before = len(companies)
+        companies = [c for c in companies if not cfg.is_staffing(c.name)]
+        stats["excluded_staffing"] = before - len(companies)
 
     # Corroboration — attach USCIS approval counts if available.
     approvals = _load_approvals()

@@ -1,0 +1,29 @@
+# Name substrings that flag a company as an IT-staffing / consulting "body shop"
+# rather than a product-software company. Case-insensitive substring match on the
+# raw company name.
+#
+# Deliberately conservative: avoids generic words like "solutions", "systems", or
+# "technologies" that legitimate product companies also use, to limit false drops.
+markers:
+  - staffing
+  - staff aug
+  - consulting
+  - consultancy
+  - consultants
+  - consultant
+  - recruit
+  - recruiting
+  - recruitment
+  - talent
+  - outsourc
+  - resourcing
+  - workforce
+  - manpower
+  - placement
+  - it services
+  - i.t. services
+  - software services
+  - tek systems
+  - teksystems
+  - infotech
+  - info tech

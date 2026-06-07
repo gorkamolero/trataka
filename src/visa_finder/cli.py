@@ -89,6 +89,7 @@ def sources_fetch(key: str, year: int | None) -> None:
 @click.option("--out", default="leads.csv", help="CSV export path.")
 @click.option("--llc-only/--no-llc-only", default=False, help="Restrict CSV to entity_type=LLC.")
 @click.option("--score-buildings", is_flag=True, help="Enable Phase 4 building lookups (network).")
+@click.option("--exclude-staffing", is_flag=True, help="Drop IT-staffing/consulting body shops.")
 @click.option("--geojson", "geojson_path", default=None, help="Also write GeoJSON for the map.")
 @click.option("--markdown", "markdown_path", default=None, help="Also write a Markdown report.")
 def run_cmd(
@@ -98,6 +99,7 @@ def run_cmd(
     out: str,
     llc_only: bool,
     score_buildings: bool,
+    exclude_staffing: bool,
     geojson_path: str | None,
     markdown_path: str | None,
 ) -> None:
@@ -111,7 +113,7 @@ def run_cmd(
         )
 
     result = run_pipeline(
-        lca, state_list, cfg=cfg, apply_scoring=score_buildings
+        lca, state_list, cfg=cfg, apply_scoring=score_buildings, exclude_staffing=exclude_staffing
     )
 
     n_geo = None
@@ -170,7 +172,11 @@ def demo_cmd(out: str) -> None:
 @click.option("--lca", "lca_path", default=None, help="LCA file or dir (default: data/raw/lca).")
 @click.option("--out", default="report.md", help="Markdown report output path.")
 @click.option("--llc-only/--no-llc-only", default=False, help="Restrict to entity_type=LLC.")
-def report_cmd(states: str | None, lca_path: str | None, out: str, llc_only: bool) -> None:
+@click.option("--exclude-staffing/--include-staffing", default=True,
+              help="Drop IT-staffing/consulting body shops (default: exclude).")
+def report_cmd(
+    states: str | None, lca_path: str | None, out: str, llc_only: bool, exclude_staffing: bool
+) -> None:
     """Write a Markdown findings report (tables + Google Maps links).
 
     Uses real LCA data when present under data/raw/lca (or --lca); otherwise
@@ -187,7 +193,9 @@ def report_cmd(states: str | None, lca_path: str | None, out: str, llc_only: boo
         lca, sample = SAMPLE_LCA, True
         click.echo("No real LCA data found — building report from SAMPLE dataset.")
 
-    result = run_pipeline(lca, state_list, cfg=cfg, apply_llc=not sample)
+    result = run_pipeline(
+        lca, state_list, cfg=cfg, apply_llc=not sample, exclude_staffing=exclude_staffing
+    )
     out_path = Path(out)
     db_path = out_path.with_suffix(".duckdb")
     db_path.unlink(missing_ok=True)

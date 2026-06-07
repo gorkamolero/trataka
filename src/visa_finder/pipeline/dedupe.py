@@ -55,9 +55,18 @@ def _employer_address(filing: LcaFiling) -> tuple[str | None, str | None, str | 
 
 
 def collapse_exact(filings: Iterable[LcaFiling]) -> dict[str, Company]:
-    """Stage 1: exact collapse on (normalized_name, state)."""
+    """Stage 1: exact collapse on (normalized_name, state).
+
+    Filings are de-duplicated by case number first, so overlapping cumulative
+    quarterly files (DOL's Q-files repeat earlier cases) don't inflate counts.
+    """
     companies: dict[str, Company] = {}
+    seen_cases: set[str] = set()
     for f in filings:
+        if f.case_number:
+            if f.case_number in seen_cases:
+                continue
+            seen_cases.add(f.case_number)
         state = filing_state(f)
         norm = normalize_name(f.employer_name)
         if not norm:
