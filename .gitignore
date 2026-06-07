@@ -28,6 +28,9 @@ data/cache/
 *leads*.csv
 review_queue*.csv
 report*.md
+all_companies_full.csv
+all_software_sponsors.csv
+staffing_shops.csv
 
 # OS / editors
 .DS_Store
