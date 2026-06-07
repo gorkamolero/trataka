@@ -58,6 +58,34 @@ visa-finder query "SELECT name, city, lca_filing_count FROM companies ORDER BY l
 
 Adding a state is config, not code — see `config/states.yaml`.
 
+## Map viewer (LibreMap)
+
+A static, no-API-key map viewer lives in [`web/`](web/), built on
+**MapLibre GL** with free OpenStreetMap-based vector tiles. It plots leads,
+colours them by entity type (LLC vs other), sizes them by filing volume, and
+offers LLC-only / target-band / min-filings filters plus a synced sidebar list.
+
+Generate the map data from real pipeline output:
+
+```bash
+visa-finder run --states MO,TX --out leads.csv --geojson web/data/leads.geojson
+```
+
+Or build a SAMPLE map (synthetic companies placed at city centroids — clearly
+flagged in the UI) without any downloads:
+
+```bash
+visa-finder demo            # writes web/data/leads.geojson
+python -m http.server -d web 8000   # open http://localhost:8000
+```
+
+### Hosting
+
+The viewer auto-deploys to **GitHub Pages** via
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml): CI builds the
+sample GeoJSON and publishes `web/`. (GitHub Pages on a private repo requires a
+paid GitHub plan; on a public repo it is free.)
+
 ## Data sources (all free)
 
 - **DOL OFLC LCA disclosure data** — the sponsorship signal (certified H1B/LCA filings).
@@ -71,7 +99,9 @@ scraping are avoided.
 
 ## Status
 
-Scaffold + Phase 1/2 pipeline (filter, dedupe, export) implemented. Phases 3–4
-(LLC gate, building/headcount scoring) are wired into the pipeline with working
-interfaces and are progressively being filled in. See the implementation plan
-for the milestone breakdown.
+All four phases implemented end to end: hard filters → dedupe (with fuzzy merge +
+review queue) → LLC gate → building/headcount scoring. USCIS approval counts are
+joined as corroboration when present. A MapLibre map viewer ships in `web/` and
+deploys to GitHub Pages. Phases 3–4 activate fully once you drop the relevant
+free source files into `data/raw/` (registry exports, building lookups). See
+[`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md) for details.

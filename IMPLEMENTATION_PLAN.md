@@ -94,9 +94,22 @@ confidence band.
   `sources/h1b_hub.py`; joining it into the store is the next small task).
 - All building/headcount output is **leads to verify**, not ground truth.
 
+## Map viewer & hosting
+
+- `web/` is a static MapLibre GL viewer (free OSM-based tiles, no API key) that
+  reads `web/data/leads.geojson`.
+- `visa-finder run --geojson <path>` emits map data from real pipeline output;
+  `visa-finder demo` builds a clearly-flagged SAMPLE map at city centroids.
+- `export_geojson` uses precise lat/lon when present
+  (`geocode_precision="address"`) and falls back to city centroids
+  (`geocode_precision="city"`); unplaceable companies stay in the CSV/store but
+  are omitted from the map.
+- `.github/workflows/pages.yml` builds the sample GeoJSON and deploys to GitHub
+  Pages. `.github/workflows/ci.yml` runs ruff + pytest on every push/PR.
+
 ## Next tasks (smallest valuable increments)
 
-1. Join `h1b_hub` approval counts into the store after dedupe.
+1. ✅ Join `h1b_hub` approval counts into the store after dedupe.
 2. Add a `geocode-batch` command using the Census *batch* endpoint (faster than
    per-address) for Phase 4 at scale.
 3. Expand virtual-office / registered-agent marker lists from observed data.

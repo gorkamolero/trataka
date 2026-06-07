@@ -18,6 +18,8 @@ from pathlib import Path
 
 from ..config import Config, data_dir, load_config
 from ..models import Company, LcaFiling
+from ..normalize import normalize_name
+from ..sources import h1b_hub as hub_source
 from ..sources import lca as lca_source
 from ..sources.registry import RegistryRecord, get_adapter
 from . import dedupe as dedupe_mod
@@ -61,6 +63,38 @@ def _load_registry(cfg: Config, states: list[str]) -> dict[str, RegistryRecord]:
     return registry
 
 
+def _load_approvals() -> dict[tuple[str, str], int]:
+    """Aggregate USCIS H-1B Employer Data Hub approval counts, if present."""
+    approvals: dict[tuple[str, str], int] = {}
+    base = data_dir() / "raw" / "h1b_hub"
+    if not base.exists():
+        return approvals
+    for path in sorted(base.glob("*")):
+        if path.suffix.lower() not in {".csv", ".xlsx", ".xls"}:
+            continue
+        for key, count in hub_source.load_approval_counts(path).items():
+            approvals[key] = approvals.get(key, 0) + count
+    return approvals
+
+
+def _attach_approvals(companies: list[Company], approvals: dict[tuple[str, str], int]) -> int:
+    """Corroborate filings with approval counts, matched on (normalized name, state)."""
+    attached = 0
+    for comp in companies:
+        key = (normalize_name(comp.name), (comp.state or "").upper())
+        count = approvals.get(key)
+        if count is None:
+            # Fall back to a name-only match across the company's aliases.
+            for alias in [comp.name, *comp.aliases]:
+                count = approvals.get((normalize_name(alias), (comp.state or "").upper()))
+                if count is not None:
+                    break
+        if count is not None:
+            comp.approval_count = count
+            attached += 1
+    return attached
+
+
 def run(
     lca_path: str | Path,
     states: list[str] | None = None,
@@ -82,6 +116,12 @@ def run(
     # Phase 2 — dedupe.
     companies = dedupe_mod.dedupe(filtered)
     stats["companies_after_dedupe"] = len(companies)
+
+    # Corroboration — attach USCIS approval counts if available.
+    approvals = _load_approvals()
+    if approvals:
+        stats["approval_records"] = len(approvals)
+        stats["companies_with_approvals"] = _attach_approvals(companies, approvals)
 
     review_queue: list[Company] = []
 

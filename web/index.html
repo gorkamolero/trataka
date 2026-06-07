@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>H1B Small-Software-Sponsor Finder — MO/TX</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <header>
+        <h1>H1B Small-Software-Sponsor Finder</h1>
+        <p class="subtitle">Small software companies in MO &amp; TX with H1B/LCA filings — leads to verify, not ground truth.</p>
+        <div id="sample-banner" class="banner hidden">
+          Showing <strong>SAMPLE</strong> data (synthetic companies at city centroids).
+          Run the pipeline with real DOL data for live leads.
+        </div>
+      </header>
+
+      <div class="controls">
+        <label class="check"><input type="checkbox" id="llc-only" /> LLC only</label>
+        <label class="check"><input type="checkbox" id="band-only" /> In target band (2–10)</label>
+        <label class="range">
+          Min filings: <span id="minf-val">1</span>
+          <input type="range" id="min-filings" min="1" max="20" value="1" />
+        </label>
+      </div>
+
+      <div id="stats" class="stats"></div>
+      <ul id="list" class="list"></ul>
+      <footer>
+        <span id="count"></span> ·
+        <a href="https://github.com/gorkamolero/trataka" target="_blank" rel="noopener">source</a>
+      </footer>
+    </aside>
+    <main id="map"></main>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

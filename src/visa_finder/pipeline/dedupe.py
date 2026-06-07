@@ -17,6 +17,7 @@ from rapidfuzz import fuzz
 
 from ..models import Company, LcaFiling, ReviewStatus
 from ..normalize import company_id, normalize_name
+from ..sources.registry import classify_entity_type
 from .filters import filing_state
 
 # Above this similarity we merge automatically; between review/auto we merge but
@@ -73,6 +74,10 @@ def collapse_exact(filings: Iterable[LcaFiling]) -> dict[str, Company]:
                 city=city,
                 state=st or state,
                 zip=zp,
+                # Low-confidence entity type inferred from the name. The LLC gate
+                # overrides this with authoritative registry data when available.
+                entity_type=classify_entity_type(f.employer_name),
+                entity_type_source="name_inference",
             )
             companies[cid] = comp
 

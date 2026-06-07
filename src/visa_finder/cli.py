@@ -13,12 +13,13 @@ from pathlib import Path
 import click
 
 from .config import data_dir, load_config
-from .export import export_leads, export_review_queue
+from .export import export_geojson, export_leads, export_review_queue
 from .pipeline.run import run as run_pipeline
 from .sources import SOURCES, list_sources
 from .store import Store
 
 DEFAULT_DB = "visa_finder.duckdb"
+SAMPLE_LCA = Path(__file__).resolve().parents[2] / "tests" / "fixtures" / "lca_sample.csv"
 
 
 def _parse_states(states: str | None) -> list[str] | None:
@@ -88,6 +89,7 @@ def sources_fetch(key: str, year: int | None) -> None:
 @click.option("--out", default="leads.csv", help="CSV export path.")
 @click.option("--llc-only/--no-llc-only", default=False, help="Restrict CSV to entity_type=LLC.")
 @click.option("--score-buildings", is_flag=True, help="Enable Phase 4 building lookups (network).")
+@click.option("--geojson", "geojson_path", default=None, help="Also write GeoJSON for the map.")
 def run_cmd(
     states: str | None,
     lca_path: str | None,
@@ -95,6 +97,7 @@ def run_cmd(
     out: str,
     llc_only: bool,
     score_buildings: bool,
+    geojson_path: str | None,
 ) -> None:
     """Run the pipeline and export a filtered CSV."""
     cfg = load_config()
@@ -109,6 +112,7 @@ def run_cmd(
         lca, state_list, cfg=cfg, apply_scoring=score_buildings
     )
 
+    n_geo = None
     with Store(db) as store:
         store.upsert(result.companies)
         if result.review_queue:
@@ -116,6 +120,8 @@ def run_cmd(
         n_leads = export_leads(store, out, states=state_list, llc_only=llc_only)
         rq_path = Path(out).with_name("review_queue.csv")
         n_review = export_review_queue(store, rq_path)
+        if geojson_path:
+            n_geo = export_geojson(store, geojson_path, states=state_list, llc_only=llc_only)
         total = store.count()
 
     click.echo(click.style("Pipeline complete.", fg="green", bold=True))
@@ -123,7 +129,32 @@ def run_cmd(
         click.echo(f"  {k}: {v}")
     click.echo(f"  exported leads: {n_leads} -> {out}")
     click.echo(f"  review queue: {n_review} -> {rq_path}")
+    if n_geo is not None:
+        click.echo(f"  geojson features: {n_geo} -> {geojson_path}")
     click.echo(f"  total companies in store: {total} ({db})")
+
+
+@cli.command("demo")
+@click.option("--out", default="web/data/leads.geojson", help="GeoJSON output path for the viewer.")
+def demo_cmd(out: str) -> None:
+    """Build the map viewer's data from the bundled SAMPLE dataset.
+
+    Used by CI to populate the hosted site. The output is clearly marked as
+    sample data (synthetic companies placed at city centroids) so the live map
+    demonstrates the viewer without implying these are real leads.
+    """
+    cfg = load_config()
+    result = run_pipeline(SAMPLE_LCA, ["MO", "TX"], cfg=cfg, apply_llc=False)
+    out_path = Path(out)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    db_path = out_path.parent / "demo.duckdb"
+    if db_path.exists():
+        db_path.unlink()
+    with Store(db_path) as store:
+        store.upsert(result.companies)
+        n = export_geojson(store, out_path, states=["MO", "TX"], use_centroids=True, sample=True)
+    db_path.unlink(missing_ok=True)
+    click.echo(f"Wrote {n} sample features -> {out_path}")
 
 
 # ---- query ------------------------------------------------------------------

@@ -54,12 +54,20 @@ def apply_llc_gate(
         etype = comp.entity_type
         # Pydantic ``use_enum_values`` may store the raw string.
         etype_val = etype.value if isinstance(etype, EntityType) else etype
-        if etype_val == EntityType.LLC.value:
+        from_registry = comp.entity_type_source == "registry"
+
+        if etype_val == EntityType.LLC.value and from_registry:
+            # Authoritative LLC -> passes automatically.
             passing.append(comp)
+        elif etype_val == EntityType.LLC.value:
+            # LLC inferred from the name only -> keep, but flag for confirmation.
+            comp.review_status = ReviewStatus.NEEDS_REVIEW
+            passing.append(comp)
+            review.append(comp)
         elif etype_val == EntityType.UNKNOWN.value:
             comp.review_status = ReviewStatus.NEEDS_REVIEW
             review.append(comp)
-        # Non-LLC known types are dropped from the LLC-gated output.
+        # Known non-LLC types are dropped from the LLC-gated output.
     return passing, review
 
 
