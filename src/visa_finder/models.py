@@ -41,6 +41,8 @@ class LcaFiling(BaseModel):
 
     case_number: str | None = None
     employer_name: str
+    employer_address1: str | None = None
+    employer_address2: str | None = None
     naics_code: str | None = None
     soc_code: str | None = None
     job_title: str | None = None

@@ -54,6 +54,12 @@ def _employer_address(filing: LcaFiling) -> tuple[str | None, str | None, str | 
     return filing.employer_city, filing.employer_state, filing.employer_zip
 
 
+def _employer_street(filing: LcaFiling) -> str | None:
+    parts = [filing.employer_address1, filing.employer_address2]
+    street = " ".join(p for p in parts if p).strip()
+    return street or None
+
+
 def collapse_exact(filings: Iterable[LcaFiling]) -> dict[str, Company]:
     """Stage 1: exact collapse on (normalized_name, state).
 
@@ -80,6 +86,7 @@ def collapse_exact(filings: Iterable[LcaFiling]) -> dict[str, Company]:
                 name=f.employer_name,
                 normalized_name=norm,
                 naics_code=f.naics_code,
+                address=_employer_street(f),
                 city=city,
                 state=st or state,
                 zip=zp,

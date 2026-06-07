@@ -18,6 +18,8 @@ from ..models import LcaFiling
 _COLUMN_ALIASES: dict[str, list[str]] = {
     "case_number": ["CASE_NUMBER", "CASE_NO"],
     "employer_name": ["EMPLOYER_NAME", "EMPLOYER_BUSINESS_DBA", "LCA_CASE_EMPLOYER_NAME"],
+    "employer_address1": ["EMPLOYER_ADDRESS1", "EMPLOYER_ADDRESS", "ADDRESS1"],
+    "employer_address2": ["EMPLOYER_ADDRESS2", "ADDRESS2"],
     "naics_code": ["NAICS_CODE", "EMPLOYER_NAICS_CODE", "LCA_CASE_NAICS_CODE"],
     "soc_code": ["SOC_CODE", "LCA_CASE_SOC_CODE", "OCCUPATIONAL_CODE"],
     "job_title": ["JOB_TITLE", "LCA_CASE_JOB_TITLE", "SOC_TITLE"],
@@ -110,6 +112,8 @@ def read_lca_file(
         yield LcaFiling(
             case_number=_clean(rec.get("case_number")),
             employer_name=name,
+            employer_address1=_clean(rec.get("employer_address1")),
+            employer_address2=_clean(rec.get("employer_address2")),
             naics_code=_clean(rec.get("naics_code")),
             soc_code=_clean(rec.get("soc_code")),
             job_title=_clean(rec.get("job_title")),

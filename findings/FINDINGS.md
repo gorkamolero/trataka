@@ -1,880 +1,870 @@
 # Findings — Small Software-Sponsor LLCs (MO + TX)
 
-From U.S. DOL OFLC LCA disclosure data, **FY2022–FY2026** (all 17 quarters, case-deduped).
+U.S. DOL OFLC LCA disclosure data, **FY2022–FY2026** (all 17 quarters, case-deduped). Now with **employer street addresses**.
 
-| Set | Count |
-|---|---:|
-| All software companies (staffing flagged) | 4208 |
-| Software sponsors (staffing excluded) | 3925 |
-| LLCs | 1507 |
-| **Small LLCs (2–10 band)** | **860** (792 TX / 68 MO) |
-| Staffing/consulting (flagged) | 283 |
+**860 small LLCs** (792 TX / 68 MO). Full CSVs: [all companies](all_companies_full.csv) · [software sponsors](all_software_sponsors.csv) · [LLCs](llc_leads.csv) · [small LLCs](small_llc_leads.csv) · [staffing](staffing_shops.csv)
 
-**Downloadable full listings (CSV, sortable on GitHub):** [all companies](all_companies_full.csv) · [software sponsors](all_software_sponsors.csv) · [LLCs](llc_leads.csv) · [small LLCs](small_llc_leads.csv) · [staffing shops](staffing_shops.csv)
+> Leads to verify. Entity type inferred from name; headcount always *unknown* (filing-volume band).
 
-> Leads to verify, not ground truth. Entity type is inferred from the company name (state registry hosts are firewalled in the build env). Headcount is never fabricated — always *unknown*, with a filing-volume confidence band.
-
-## All 860 small LLCs
-
-| # | Company | City, ST | NAICS | Filings | Confidence | Review | Map |
-|---|---------|----------|-------|--------:|------------|--------|-----|
-| 1 | Anrib LLC | St Louis, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Anrib%20LLC%2C%20St%20Louis%2C%20MO) |
-| 2 | Bordo AI, LLC | Chesterfield, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bordo%20AI%2C%20LLC%2C%20Chesterfield%2C%20MO) |
-| 3 | Clearent LLC | Creve Coeur, MO | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Clearent%20LLC%2C%20Creve%20Coeur%2C%20MO) |
-| 4 | Element 74, LLC | Cape Girardeau, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Element%2074%2C%20LLC%2C%20Cape%20Girardeau%2C%20MO) |
-| 5 | Enso Endeavors LLC | Kansas City, MO | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Enso%20Endeavors%20LLC%2C%20Kansas%20City%2C%20MO) |
-| 6 | Facilisgroup, LLC | Brentwood, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Facilisgroup%2C%20LLC%2C%20Brentwood%2C%20MO) |
-| 7 | Foresite Healthcare LLC | Maryland Heights, MO | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Foresite%20Healthcare%20LLC%2C%20Maryland%20Heights%2C%20MO) |
-| 8 | Gamer LLC | Maryland Heights, MO | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Gamer%20LLC%2C%20Maryland%20Heights%2C%20MO) |
-| 9 | Gateway Scripts LLC | Saint Louis, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Gateway%20Scripts%20LLC%2C%20Saint%20Louis%2C%20MO) |
-| 10 | INTEGRATED MANAGED CARE SYSTEMS, LLC | CAPE GIRARDEAU, MO | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INTEGRATED%20MANAGED%20CARE%20SYSTEMS%2C%20LLC%2C%20CAPE%20GIRARDEAU%2C%20MO) |
-| 11 | KKEG Solutions LLC | OFallon, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KKEG%20Solutions%20LLC%2C%20OFallon%2C%20MO) |
-| 12 | LOGICGRIDZ, LLC | ST LOUIS, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LOGICGRIDZ%2C%20LLC%2C%20ST%20LOUIS%2C%20MO) |
-| 13 | Liberty Hotel Group LLC | Liberty, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Liberty%20Hotel%20Group%20LLC%2C%20Liberty%2C%20MO) |
-| 14 | Linxup, LLC | Chesterfield, MO | 51121 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Linxup%2C%20LLC%2C%20Chesterfield%2C%20MO) |
-| 15 | Liquid Logics, L.L.C. | Lee's Summit, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Liquid%20Logics%2C%20L.L.C.%2C%20Lee%27s%20Summit%2C%20MO) |
-| 16 | MetaJungle, LLC | Ozark, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MetaJungle%2C%20LLC%2C%20Ozark%2C%20MO) |
-| 17 | Moktama IT Solutions, LLC. | Saint Louis, MO | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Moktama%20IT%20Solutions%2C%20LLC.%2C%20Saint%20Louis%2C%20MO) |
-| 18 | NEWGEN IT SOLUTIONS LLC | Farmington Hills, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEWGEN%20IT%20SOLUTIONS%20LLC%2C%20Farmington%20Hills%2C%20MO) |
-| 19 | Newagez Technologies LLC | Harrisonville, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Newagez%20Technologies%20LLC%2C%20Harrisonville%2C%20MO) |
-| 20 | PINNACLELINK VENTURES LLC | Saint Louis, MO | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PINNACLELINK%20VENTURES%20LLC%2C%20Saint%20Louis%2C%20MO) |
-| 21 | Segistics, LLC | North Kansas City, MO | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Segistics%2C%20LLC%2C%20North%20Kansas%20City%2C%20MO) |
-| 22 | Sidjun LLC | Chesterfield, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sidjun%20LLC%2C%20Chesterfield%2C%20MO) |
-| 23 | TEKPROS LLC | OFALLON, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKPROS%20LLC%2C%20OFALLON%2C%20MO) |
-| 24 | TM & Associates LLC | Saint Louis, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TM%20%26%20Associates%20LLC%2C%20Saint%20Louis%2C%20MO) |
-| 25 | VIVID SITES, LLC | St. Louis, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VIVID%20SITES%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 26 | VeriShip, LLC | Kansas City, MO | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VeriShip%2C%20LLC%2C%20Kansas%20City%2C%20MO) |
-| 27 | Vizicar LLC | Columbia, MO | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Vizicar%20LLC%2C%20Columbia%2C%20MO) |
-| 28 | Volt Systems, LLC | St. Louis, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Volt%20Systems%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 29 | Web Design and Company, LLC | St. Louis, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Web%20Design%20and%20Company%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 30 | iTek360 LLC | Cape Girardeau, MO | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=iTek360%20LLC%2C%20Cape%20Girardeau%2C%20MO) |
-| 31 | se38 Solutions LLC | Chesterfield, MO | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=se38%20Solutions%20LLC%2C%20Chesterfield%2C%20MO) |
-| 32 | AYTECHNOLOGIES LLC | CHESTERFIELD, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AYTECHNOLOGIES%20LLC%2C%20CHESTERFIELD%2C%20MO) |
-| 33 | Ascension Health Resource and Supply Management Group, LLC | St. Louis, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ascension%20Health%20Resource%20and%20Supply%20Management%20Group%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 34 | AutoAlert, LLC | Kansas, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AutoAlert%2C%20LLC%2C%20Kansas%2C%20MO) |
-| 35 | Bluspire Technologies LLC | Saint Charles, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bluspire%20Technologies%20LLC%2C%20Saint%20Charles%2C%20MO) |
-| 36 | CareSignal, LLC | St. Louis, MO | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CareSignal%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 37 | DEVEIQ LLC | CHESTERFIELD, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DEVEIQ%20LLC%2C%20CHESTERFIELD%2C%20MO) |
-| 38 | DST Brokerage Solutions LLC | Kansas City, MO | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DST%20Brokerage%20Solutions%20LLC%2C%20Kansas%20City%2C%20MO) |
-| 39 | Digital Plus Solutions LLC | Kansas City, MO | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20Plus%20Solutions%20LLC%2C%20Kansas%20City%2C%20MO) |
-| 40 | Ditat, LLC | Saint Louis, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ditat%2C%20LLC%2C%20Saint%20Louis%2C%20MO) |
-| 41 | Foursevens LLC | St. Louis, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Foursevens%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 42 | Jon Buck Enterprises, LLC | JOPLIN, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Jon%20Buck%20Enterprises%2C%20LLC%2C%20JOPLIN%2C%20MO) |
-| 43 | KDK Technology LLC | Saint Peters, MO | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KDK%20Technology%20LLC%2C%20Saint%20Peters%2C%20MO) |
-| 44 | Kelly Mitchell Group LLC | St. Louis, MO | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kelly%20Mitchell%20Group%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 45 | Rechars Solutions, LLC. | Chesterfield, MO | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rechars%20Solutions%2C%20LLC.%2C%20Chesterfield%2C%20MO) |
-| 46 | TierPoint, LLC | Saint Louis, MO | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TierPoint%2C%20LLC%2C%20Saint%20Louis%2C%20MO) |
-| 47 | Trizetto Provider Solutions LLC | Earth City, MO | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Trizetto%20Provider%20Solutions%20LLC%2C%20Earth%20City%2C%20MO) |
-| 48 | UNI CONNECTIONS LLC | BALLWIN, MO | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=UNI%20CONNECTIONS%20LLC%2C%20BALLWIN%2C%20MO) |
-| 49 | Valorem Reply, LLC | Kansas City, MO | 5415 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Valorem%20Reply%2C%20LLC%2C%20Kansas%20City%2C%20MO) |
-| 50 | Aggio, LLC | St. Louis, MO | 51821 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Aggio%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 51 | Ashers & Aarons LLC | Ballwin, MO | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ashers%20%26%20Aarons%20LLC%2C%20Ballwin%2C%20MO) |
-| 52 | DataMap, LLC | Kansas City, MO | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DataMap%2C%20LLC%2C%20Kansas%20City%2C%20MO) |
-| 53 | Envision, LLC | St. Louis, MO | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Envision%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 54 | Guga Technology Solutions LLC | Saint Joseph, MO | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Guga%20Technology%20Solutions%20LLC%2C%20Saint%20Joseph%2C%20MO) |
-| 55 | Local Backhaul Networks, LLC | St. Louis, MO | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Local%20Backhaul%20Networks%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 56 | Snow Tech Solutions LLC | Saint Peters, MO | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Snow%20Tech%20Solutions%20LLC%2C%20Saint%20Peters%2C%20MO) |
-| 57 | Techso IT, LLC | St Charles, MO | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Techso%20IT%2C%20LLC%2C%20St%20Charles%2C%20MO) |
-| 58 | The Burgiss Group, LLC | Hoboken, MO | 511210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=The%20Burgiss%20Group%2C%20LLC%2C%20Hoboken%2C%20MO) |
-| 59 | Vantage Links, LLC | St. Louis, MO | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Vantage%20Links%2C%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 60 | Mortgage NEKS LLC | Clayton, MO | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Mortgage%20NEKS%20LLC%2C%20Clayton%2C%20MO) |
-| 61 | Nexify Infosystems LLC | Saint Charles, MO | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nexify%20Infosystems%20LLC%2C%20Saint%20Charles%2C%20MO) |
-| 62 | Omnigo Software LLC | St. Louis, MO | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Omnigo%20Software%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 63 | Ethoca LLC | O’Fallon, MO | 541519 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ethoca%20LLC%2C%20O%E2%80%99Fallon%2C%20MO) |
-| 64 | Hire Soft Solutions LLC | O’Fallon, MO | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hire%20Soft%20Solutions%20LLC%2C%20O%E2%80%99Fallon%2C%20MO) |
-| 65 | Zetta Data Systems LLC | Webster Groves, MO | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zetta%20Data%20Systems%20LLC%2C%20Webster%20Groves%2C%20MO) |
-| 66 | CODENETWORKZ, LLC | KANSAS CITY, MO | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CODENETWORKZ%2C%20LLC%2C%20KANSAS%20CITY%2C%20MO) |
-| 67 | HCM Square LLC | St Charles, MO | 54151 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=HCM%20Square%20LLC%2C%20St%20Charles%2C%20MO) |
-| 68 | Information Technology Warehouse LLC | St. Louis, MO | 54151 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Information%20Technology%20Warehouse%20LLC%2C%20St.%20Louis%2C%20MO) |
-| 69 | 2nd Source IT Solutions, LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=2nd%20Source%20IT%20Solutions%2C%20LLC%2C%20Plano%2C%20TX) |
-| 70 | 360 Technology LLC | Farmers Branch, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=360%20Technology%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 71 | A4 Global Tech LLC | Denton, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=A4%20Global%20Tech%20LLC%2C%20Denton%2C%20TX) |
-| 72 | ABSOLUTE FABRICATION LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ABSOLUTE%20FABRICATION%20LLC%2C%20Houston%2C%20TX) |
-| 73 | ADAPTRA LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ADAPTRA%20LLC%2C%20Irving%2C%20TX) |
-| 74 | ADROIT AFFINE LLC | PHOENIX, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ADROIT%20AFFINE%20LLC%2C%20PHOENIX%2C%20TX) |
-| 75 | AEHL US LLC | Austin, TX | 51821 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AEHL%20US%20LLC%2C%20Austin%2C%20TX) |
-| 76 | AGI FLUX LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AGI%20FLUX%20LLC%2C%20Dallas%2C%20TX) |
-| 77 | AI Pioneer LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AI%20Pioneer%20LLC%2C%20Frisco%2C%20TX) |
-| 78 | AI2AIGLOBAL LLC | HOUSTON, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AI2AIGLOBAL%20LLC%2C%20HOUSTON%2C%20TX) |
-| 79 | AIWEBIT LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AIWEBIT%20LLC%2C%20Plano%2C%20TX) |
-| 80 | ALICE TECH SOLUTIONSLLC | IRVING, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ALICE%20TECH%20SOLUTIONSLLC%2C%20IRVING%2C%20TX) |
-| 81 | ALLURTECH LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ALLURTECH%20LLC%2C%20Frisco%2C%20TX) |
-| 82 | ANOVO TECHNOLOGY GROUP, LLC | PLANO, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ANOVO%20TECHNOLOGY%20GROUP%2C%20LLC%2C%20PLANO%2C%20TX) |
-| 83 | AWNSolution LLC | Princeton, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AWNSolution%20LLC%2C%20Princeton%2C%20TX) |
-| 84 | AZORY TECH LLC | Irving,, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AZORY%20TECH%20LLC%2C%20Irving%2C%2C%20TX) |
-| 85 | ActiveTech IT Solutions LLC | Denton, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ActiveTech%20IT%20Solutions%20LLC%2C%20Denton%2C%20TX) |
-| 86 | Admirable Technologies LLC | Round Rock, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Admirable%20Technologies%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 87 | Advanced Traffic Solutions, LLC | Katy, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Advanced%20Traffic%20Solutions%2C%20LLC%2C%20Katy%2C%20TX) |
-| 88 | All Calendars LLC | North Richland Hills, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=All%20Calendars%20LLC%2C%20North%20Richland%20Hills%2C%20TX) |
-| 89 | Alpha Cognition LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Alpha%20Cognition%20LLC%2C%20Austin%2C%20TX) |
-| 90 | Animo Services, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Animo%20Services%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 91 | Anion Marketing LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Anion%20Marketing%20LLC%2C%20Frisco%2C%20TX) |
-| 92 | Apis Business Intelligence, LLC | Plano, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Apis%20Business%20Intelligence%2C%20LLC%2C%20Plano%2C%20TX) |
-| 93 | Argus Partners LLC | Fort Worth, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Argus%20Partners%20LLC%2C%20Fort%20Worth%2C%20TX) |
-| 94 | Arise Soft LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Arise%20Soft%20LLC%2C%20Plano%2C%20TX) |
-| 95 | Arka Services LLC | Round Rock, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Arka%20Services%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 96 | Artigence Tech Solutions LLC | Garland, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Artigence%20Tech%20Solutions%20LLC%2C%20Garland%2C%20TX) |
-| 97 | Asite LLC | The Woodlands, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Asite%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 98 | Aspire Digital LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Aspire%20Digital%20LLC%2C%20Austin%2C%20TX) |
-| 99 | Athletically LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Athletically%20LLC%2C%20Austin%2C%20TX) |
-| 100 | Austin Arc,LLC. | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Austin%20Arc%2CLLC.%2C%20Austin%2C%20TX) |
-| 101 | Avaro Group LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Avaro%20Group%20LLC%2C%20Houston%2C%20TX) |
-| 102 | BACKCHINA LLC | PEARLAND, TX | 519130 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BACKCHINA%20LLC%2C%20PEARLAND%2C%20TX) |
-| 103 | BGSF PROFESSIONAL, LLC | PLANO, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BGSF%20PROFESSIONAL%2C%20LLC%2C%20PLANO%2C%20TX) |
-| 104 | Barrage Systems LLC | Hurst, TX | 541513 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Barrage%20Systems%20LLC%2C%20Hurst%2C%20TX) |
-| 105 | Bellatrix Systems LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bellatrix%20Systems%20LLC%2C%20Houston%2C%20TX) |
-| 106 | Bhoot LLC | Austin, TX | 51821 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bhoot%20LLC%2C%20Austin%2C%20TX) |
-| 107 | BigNorTek LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BigNorTek%20LLC%2C%20Dallas%2C%20TX) |
-| 108 | Bonjoy, LLC | The Woodlands, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bonjoy%2C%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 109 | Bonterra Tech LLC | Austin, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bonterra%20Tech%20LLC%2C%20Austin%2C%20TX) |
-| 110 | Boostlingo, LLC | Austin, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Boostlingo%2C%20LLC%2C%20Austin%2C%20TX) |
-| 111 | BrainWaves Digital, LLC | Austin, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BrainWaves%20Digital%2C%20LLC%2C%20Austin%2C%20TX) |
-| 112 | Breaker19 Logistics LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Breaker19%20Logistics%20LLC%2C%20Houston%2C%20TX) |
-| 113 | Broadway Technology LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Broadway%20Technology%20LLC%2C%20Austin%2C%20TX) |
-| 114 | BuilderBinder LLC | Austin, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BuilderBinder%20LLC%2C%20Austin%2C%20TX) |
-| 115 | C COM DIGITAL LLC | MCKINNEY, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=C%20COM%20DIGITAL%20LLC%2C%20MCKINNEY%2C%20TX) |
-| 116 | C2A Global IT SolutionsLLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=C2A%20Global%20IT%20SolutionsLLC%2C%20Austin%2C%20TX) |
-| 117 | CLOUDTEK DATA LLC | Round Rock, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CLOUDTEK%20DATA%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 118 | COHESIVE DIGITAL SOLUTIONS LLC | Allen, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=COHESIVE%20DIGITAL%20SOLUTIONS%20LLC%2C%20Allen%2C%20TX) |
-| 119 | COREAA LLC | The Woodlands, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=COREAA%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 120 | CPI HOLDINGS LLC | HOUSTON, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CPI%20HOLDINGS%20LLC%2C%20HOUSTON%2C%20TX) |
-| 121 | CRM Web Solutions, LLC | Addison, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CRM%20Web%20Solutions%2C%20LLC%2C%20Addison%2C%20TX) |
-| 122 | CYBIRIUS LLC | Carrollton, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CYBIRIUS%20LLC%2C%20Carrollton%2C%20TX) |
-| 123 | Capella Software LLC | Cypress, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Capella%20Software%20LLC%2C%20Cypress%2C%20TX) |
-| 124 | Careexpand, LLC | Dallas, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Careexpand%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 125 | Chain Service Solutions LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Chain%20Service%20Solutions%20LLC%2C%20Houston%2C%20TX) |
-| 126 | Chenab Technologies LLC | Richmond, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Chenab%20Technologies%20LLC%2C%20Richmond%2C%20TX) |
-| 127 | Ciphermax LLC | IRVING, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ciphermax%20LLC%2C%20IRVING%2C%20TX) |
-| 128 | Claims-X-Change, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Claims-X-Change%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 129 | Clear Again, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Clear%20Again%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 130 | Cloudrho LLC | Frisco, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cloudrho%20LLC%2C%20Frisco%2C%20TX) |
-| 131 | Club Sports Solutions L.L.C. | Round Rock, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Club%20Sports%20Solutions%20L.L.C.%2C%20Round%20Rock%2C%20TX) |
-| 132 | Co-Flo Enterprise LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Co-Flo%20Enterprise%20LLC%2C%20Houston%2C%20TX) |
-| 133 | CodeneedsIT LLC | McKinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CodeneedsIT%20LLC%2C%20McKinney%2C%20TX) |
-| 134 | CogentProc LLC | Mckinney, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CogentProc%20LLC%2C%20Mckinney%2C%20TX) |
-| 135 | Conavlytics LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Conavlytics%20LLC%2C%20Irving%2C%20TX) |
-| 136 | Connexa Technologies LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Connexa%20Technologies%20LLC%2C%20Austin%2C%20TX) |
-| 137 | Coppel Tech LLC | Coppell, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Coppel%20Tech%20LLC%2C%20Coppell%2C%20TX) |
-| 138 | Cosmosyde, LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cosmosyde%2C%20LLC%2C%20Irving%2C%20TX) |
-| 139 | CoverDoc LLC | austin, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CoverDoc%20LLC%2C%20austin%2C%20TX) |
-| 140 | Credenti LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Credenti%20LLC%2C%20Houston%2C%20TX) |
-| 141 | DATA FORCE  - INC LLC | DALLAS, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DATA%20FORCE%20%20-%20INC%20LLC%2C%20DALLAS%2C%20TX) |
-| 142 | DDS Profits, LLC | San Antonio, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DDS%20Profits%2C%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 143 | DPCon Solutions LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DPCon%20Solutions%20LLC%2C%20Plano%2C%20TX) |
-| 144 | Data Moguls LLC | San Antonio, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Data%20Moguls%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 145 | Data Products Pro LLC | McKinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Data%20Products%20Pro%20LLC%2C%20McKinney%2C%20TX) |
-| 146 | DataGlacier LLC | Cedar Park, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DataGlacier%20LLC%2C%20Cedar%20Park%2C%20TX) |
-| 147 | Databasaurus, LLC | Riesel, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Databasaurus%2C%20LLC%2C%20Riesel%2C%20TX) |
-| 148 | Database Mart LLC | League City, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Database%20Mart%20LLC%2C%20League%20City%2C%20TX) |
-| 149 | Datalibs LLC | Dallas, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Datalibs%20LLC%2C%20Dallas%2C%20TX) |
-| 150 | Dealerware, LLC | Austin, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Dealerware%2C%20LLC%2C%20Austin%2C%20TX) |
-| 151 | Dear Media LLC | Austin, TX | 516210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Dear%20Media%20LLC%2C%20Austin%2C%20TX) |
-| 152 | Denim Health LLC | Austin,, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Denim%20Health%20LLC%2C%20Austin%2C%2C%20TX) |
-| 153 | Devwise, LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Devwise%2C%20LLC%2C%20Houston%2C%20TX) |
-| 154 | Dialexa, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Dialexa%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 155 | Digital Information Security Solutions LLC | San Antonio, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20Information%20Security%20Solutions%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 156 | Dixson Technology Services Americas LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Dixson%20Technology%20Services%20Americas%20LLC%2C%20Austin%2C%20TX) |
-| 157 | Dotsincloud LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Dotsincloud%20LLC%2C%20Irving%2C%20TX) |
-| 158 | Droidal LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Droidal%20LLC%2C%20Plano%2C%20TX) |
-| 159 | Duelytics LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Duelytics%20LLC%2C%20Irving%2C%20TX) |
-| 160 | ELM FieldSight, LLC | Lewisville, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ELM%20FieldSight%2C%20LLC%2C%20Lewisville%2C%20TX) |
-| 161 | ENMAS USA LLC | The Woodlands, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ENMAS%20USA%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 162 | Echo & Reply LLC | Katy, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Echo%20%26%20Reply%20LLC%2C%20Katy%2C%20TX) |
-| 163 | Edison Systems Group LLC | Frisco, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Edison%20Systems%20Group%20LLC%2C%20Frisco%2C%20TX) |
-| 164 | Eleox LLC | Houston, TX | 5182 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Eleox%20LLC%2C%20Houston%2C%20TX) |
-| 165 | Ellym LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ellym%20LLC%2C%20Austin%2C%20TX) |
-| 166 | Enter Advisor, LLC | Addison, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Enter%20Advisor%2C%20LLC%2C%20Addison%2C%20TX) |
-| 167 | Event Dynamic, LLC | Dallas, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Event%20Dynamic%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 168 | EverLine Tech Ops LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=EverLine%20Tech%20Ops%20LLC%2C%20Houston%2C%20TX) |
-| 169 | Exceleron Software, LLC | Dallas, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Exceleron%20Software%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 170 | Executive Management Group, LLC | Southlake, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Executive%20Management%20Group%2C%20LLC%2C%20Southlake%2C%20TX) |
-| 171 | Exodus Intelligence LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Exodus%20Intelligence%20LLC%2C%20Austin%2C%20TX) |
-| 172 | FAME PBX LLC | Plano, TX | 51821 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FAME%20PBX%20LLC%2C%20Plano%2C%20TX) |
-| 173 | FORTEWIZ SYSTEMS LLC | Katy, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FORTEWIZ%20SYSTEMS%20LLC%2C%20Katy%2C%20TX) |
-| 174 | FORTUNE FOUR TECH SOLUTIONS LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FORTUNE%20FOUR%20TECH%20SOLUTIONS%20LLC%2C%20Frisco%2C%20TX) |
-| 175 | Finovient LLC | Wylie, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Finovient%20LLC%2C%20Wylie%2C%20TX) |
-| 176 | Fourth Enterprises, LLC | Austin, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Fourth%20Enterprises%2C%20LLC%2C%20Austin%2C%20TX) |
-| 177 | FreePress LLC | Austin, TX | 516210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FreePress%20LLC%2C%20Austin%2C%20TX) |
-| 178 | GATHI ANALYTICS,LLC. | Plano, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GATHI%20ANALYTICS%2CLLC.%2C%20Plano%2C%20TX) |
-| 179 | GLOBAL CLIENT TECHNOLOGY LLC | SUGARLAND, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GLOBAL%20CLIENT%20TECHNOLOGY%20LLC%2C%20SUGARLAND%2C%20TX) |
-| 180 | GLOBPEY LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GLOBPEY%20LLC%2C%20Plano%2C%20TX) |
-| 181 | GME Entertainment LLC | Grapevine, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GME%20Entertainment%20LLC%2C%20Grapevine%2C%20TX) |
-| 182 | GMWARE LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GMWARE%20LLC%2C%20Austin%2C%20TX) |
-| 183 | GOTHINKERS TECH LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GOTHINKERS%20TECH%20LLC%2C%20Plano%2C%20TX) |
-| 184 | GRAVITYINTEL LLC | Mckinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GRAVITYINTEL%20LLC%2C%20Mckinney%2C%20TX) |
-| 185 | Genesis X LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Genesis%20X%20LLC%2C%20Austin%2C%20TX) |
-| 186 | GeoSoftware, LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GeoSoftware%2C%20LLC%2C%20Houston%2C%20TX) |
-| 187 | GlobalStep Management Services, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GlobalStep%20Management%20Services%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 188 | Go Idlewild LLC | Flower Mound, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Go%20Idlewild%20LLC%2C%20Flower%20Mound%2C%20TX) |
-| 189 | Golden Section Ventures, LLC | Houston, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Golden%20Section%20Ventures%2C%20LLC%2C%20Houston%2C%20TX) |
-| 190 | Groove Jones LLC | Dallas, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Groove%20Jones%20LLC%2C%20Dallas%2C%20TX) |
-| 191 | Groves & Company LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Groves%20%26%20Company%20LLC%2C%20Austin%2C%20TX) |
-| 192 | Gurutech Solutions LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Gurutech%20Solutions%20LLC%2C%20Frisco%2C%20TX) |
-| 193 | HARTIGEN SOLUTIONS LLC | Katy, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=HARTIGEN%20SOLUTIONS%20LLC%2C%20Katy%2C%20TX) |
-| 194 | HIKEIT Trak Racer LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=HIKEIT%20Trak%20Racer%20LLC%2C%20Austin%2C%20TX) |
-| 195 | Headspring, LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Headspring%2C%20LLC%2C%20Austin%2C%20TX) |
-| 196 | HiTek US LLC | Sugar Land, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=HiTek%20US%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 197 | Holistiplan LLC | College Station, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Holistiplan%20LLC%2C%20College%20Station%2C%20TX) |
-| 198 | Hotel Trader LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hotel%20Trader%20LLC%2C%20Irving%2C%20TX) |
-| 199 | ILM360, LLC | ROUND ROCK, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ILM360%2C%20LLC%2C%20ROUND%20ROCK%2C%20TX) |
-| 200 | INFOBLITZ TECH SOLUTIONS LLC | AUSTIN, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INFOBLITZ%20TECH%20SOLUTIONS%20LLC%2C%20AUSTIN%2C%20TX) |
-| 201 | INNOVATIVE STARS LLC | KATY, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INNOVATIVE%20STARS%20LLC%2C%20KATY%2C%20TX) |
-| 202 | INTERACT CX LLC | LEWSIVILLE, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INTERACT%20CX%20LLC%2C%20LEWSIVILLE%2C%20TX) |
-| 203 | IPeople Heathcare, LLC | Lewisville, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IPeople%20Heathcare%2C%20LLC%2C%20Lewisville%2C%20TX) |
-| 204 | IT SOLVE LLC | RICHARDSON, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IT%20SOLVE%20LLC%2C%20RICHARDSON%2C%20TX) |
-| 205 | Ideabud, LLC | Austin, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ideabud%2C%20LLC%2C%20Austin%2C%20TX) |
-| 206 | Improving Corporate Services, LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Improving%20Corporate%20Services%2C%20LLC%2C%20Plano%2C%20TX) |
-| 207 | Improvizations, LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Improvizations%2C%20LLC%2C%20Austin%2C%20TX) |
-| 208 | Increase Financial LLC | Missouri City, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Increase%20Financial%20LLC%2C%20Missouri%20City%2C%20TX) |
-| 209 | Infinity Software LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Infinity%20Software%20LLC%2C%20Frisco%2C%20TX) |
-| 210 | Inflection Point LLC | 76006, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Inflection%20Point%20LLC%2C%2076006%2C%20TX) |
-| 211 | Infoglaze LLC | Katy, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Infoglaze%20LLC%2C%20Katy%2C%20TX) |
-| 212 | Innovate TechLabs LLC | Coppell, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Innovate%20TechLabs%20LLC%2C%20Coppell%2C%20TX) |
-| 213 | Innoventworks LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Innoventworks%20LLC%2C%20Frisco%2C%20TX) |
-| 214 | Insurance Technologies, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Insurance%20Technologies%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 215 | Intelli-Inform LLC | Flower Mound, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Intelli-Inform%20LLC%2C%20Flower%20Mound%2C%20TX) |
-| 216 | Iodine Software, LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Iodine%20Software%2C%20LLC%2C%20Austin%2C%20TX) |
-| 217 | JCIP SERVICES LLC | Richmond, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=JCIP%20SERVICES%20LLC%2C%20Richmond%2C%20TX) |
-| 218 | JENACIE LLC | Houston, TX | 5132 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=JENACIE%20LLC%2C%20Houston%2C%20TX) |
-| 219 | JSRM Group LLC | San Antonio, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=JSRM%20Group%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 220 | Jatayu Solutions, LLC. | Denton, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Jatayu%20Solutions%2C%20LLC.%2C%20Denton%2C%20TX) |
-| 221 | Jenforce LLC | McKinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Jenforce%20LLC%2C%20McKinney%2C%20TX) |
-| 222 | Jungle Disk, LLC | San Antonio, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Jungle%20Disk%2C%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 223 | KENAI SOLUTIONS LLC | DALLAS, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KENAI%20SOLUTIONS%20LLC%2C%20DALLAS%2C%20TX) |
-| 224 | KINETECH CLOUD, LLC | San Antonio, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KINETECH%20CLOUD%2C%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 225 | KINETIKATECH  LLC | CARTHAGE, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KINETIKATECH%20%20LLC%2C%20CARTHAGE%2C%20TX) |
-| 226 | KITKOOL GROUP LLC | FULSHEAR, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KITKOOL%20GROUP%20LLC%2C%20FULSHEAR%2C%20TX) |
-| 227 | KVISTA LLC | Leander, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KVISTA%20LLC%2C%20Leander%2C%20TX) |
-| 228 | Kaizintel LLC | Katy, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kaizintel%20LLC%2C%20Katy%2C%20TX) |
-| 229 | Kanika Compute LLC | West Lake Hills, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kanika%20Compute%20LLC%2C%20West%20Lake%20Hills%2C%20TX) |
-| 230 | Keypixel Software Solutions LLC | Parlin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Keypixel%20Software%20Solutions%20LLC%2C%20Parlin%2C%20TX) |
-| 231 | Kshitija Professional Services LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kshitija%20Professional%20Services%20LLC%2C%20Dallas%2C%20TX) |
-| 232 | Kuiper OpCo, LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kuiper%20OpCo%2C%20LLC%2C%20Austin%2C%20TX) |
-| 233 | Kural Tech Solution LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kural%20Tech%20Solution%20LLC%2C%20Plano%2C%20TX) |
-| 234 | LENDERBOX, LLC | DALLAS, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LENDERBOX%2C%20LLC%2C%20DALLAS%2C%20TX) |
-| 235 | LIAMATRIX LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LIAMATRIX%20LLC%2C%20Houston%2C%20TX) |
-| 236 | LINQX, LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LINQX%2C%20LLC%2C%20Houston%2C%20TX) |
-| 237 | LedgerSpace, LLC | COLLEGE STATION, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LedgerSpace%2C%20LLC%2C%20COLLEGE%20STATION%2C%20TX) |
-| 238 | Liberate Life Sciences Technologies, LLC. | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Liberate%20Life%20Sciences%20Technologies%2C%20LLC.%2C%20Austin%2C%20TX) |
-| 239 | Line-Scape, LLC | Dallas, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Line-Scape%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 240 | Litigiven LLC | Dallas, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Litigiven%20LLC%2C%20Dallas%2C%20TX) |
-| 241 | Lone Star Tech, LLC | Keller, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Lone%20Star%20Tech%2C%20LLC%2C%20Keller%2C%20TX) |
-| 242 | Lorvens AZTech LLC | Aubrey, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Lorvens%20AZTech%20LLC%2C%20Aubrey%2C%20TX) |
-| 243 | MASH ASSOCIATES LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MASH%20ASSOCIATES%20LLC%2C%20Dallas%2C%20TX) |
-| 244 | Manvi Tech LLC | Spring, TX | 51121 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Manvi%20Tech%20LLC%2C%20Spring%2C%20TX) |
-| 245 | Marketing Response Solutions, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Marketing%20Response%20Solutions%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 246 | Math Made Visible, LLC | Paige, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Math%20Made%20Visible%2C%20LLC%2C%20Paige%2C%20TX) |
-| 247 | Meat Mafia Media LLC | Austin, TX | 516210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Meat%20Mafia%20Media%20LLC%2C%20Austin%2C%20TX) |
-| 248 | Mediaocean LLC | New York, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Mediaocean%20LLC%2C%20New%20York%2C%20TX) |
-| 249 | Menbo Tech LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Menbo%20Tech%20LLC%2C%20Plano%2C%20TX) |
-| 250 | Micro Focus LLC | Plano, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Micro%20Focus%20LLC%2C%20Plano%2C%20TX) |
-| 251 | Microdrive LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Microdrive%20LLC%2C%20Irving%2C%20TX) |
-| 252 | MinMax Technologies, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MinMax%20Technologies%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 253 | Miracle Treasures LLC | Fulshear, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Miracle%20Treasures%20LLC%2C%20Fulshear%2C%20TX) |
-| 254 | Molathati Technology Solutions, LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Molathati%20Technology%20Solutions%2C%20LLC%2C%20Houston%2C%20TX) |
-| 255 | NEOSTRIDE LLC | Allen, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEOSTRIDE%20LLC%2C%20Allen%2C%20TX) |
-| 256 | NFORCE ONE LLC | PLANO, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NFORCE%20ONE%20LLC%2C%20PLANO%2C%20TX) |
-| 257 | NP Strategies LLC | McKinney, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NP%20Strategies%20LLC%2C%20McKinney%2C%20TX) |
-| 258 | NUBA, LLC | El Paso, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NUBA%2C%20LLC%2C%20El%20Paso%2C%20TX) |
-| 259 | Narsingh LLC | Irving, TX | 541513 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Narsingh%20LLC%2C%20Irving%2C%20TX) |
-| 260 | NextGen Tech LLC | Frisco, TX | 519130 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NextGen%20Tech%20LLC%2C%20Frisco%2C%20TX) |
-| 261 | Nexxverse LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nexxverse%20LLC%2C%20Dallas%2C%20TX) |
-| 262 | Nifty Systems LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nifty%20Systems%20LLC%2C%20Plano%2C%20TX) |
-| 263 | Ninja Partners, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ninja%20Partners%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 264 | Ntelicor, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ntelicor%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 265 | Numerique LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Numerique%20LLC%2C%20Dallas%2C%20TX) |
-| 266 | OUTLAY GLOBAL LLC | IRVING, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OUTLAY%20GLOBAL%20LLC%2C%20IRVING%2C%20TX) |
-| 267 | OfficerTRAK, LLC | Katy, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OfficerTRAK%2C%20LLC%2C%20Katy%2C%20TX) |
-| 268 | Okorio, LLC | Dallas, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Okorio%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 269 | OrderMyGear, LLC | Dallas, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OrderMyGear%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 270 | P Tech Crew, LLC | Allen, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=P%20Tech%20Crew%2C%20LLC%2C%20Allen%2C%20TX) |
-| 271 | PAGEMATICS LLC | PLANO, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PAGEMATICS%20LLC%2C%20PLANO%2C%20TX) |
-| 272 | Particle41, LLC. | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Particle41%2C%20LLC.%2C%20Frisco%2C%20TX) |
-| 273 | Penality LLC (f/k/a nowGRC LLC) | Frisco, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Penality%20LLC%20%28f/k/a%20nowGRC%20LLC%29%2C%20Frisco%2C%20TX) |
-| 274 | Peppered Software, LLC | Austin, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Peppered%20Software%2C%20LLC%2C%20Austin%2C%20TX) |
-| 275 | Perfect General Contractors LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Perfect%20General%20Contractors%20LLC%2C%20Frisco%2C%20TX) |
-| 276 | Performance Scoring, LLC | Dallas, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Performance%20Scoring%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 277 | Phenom Enterprise Cloud LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Phenom%20Enterprise%20Cloud%20LLC%2C%20Irving%2C%20TX) |
-| 278 | Physician Paradigms, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Physician%20Paradigms%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 279 | Platform Software, LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Platform%20Software%2C%20LLC%2C%20Houston%2C%20TX) |
-| 280 | Portnox Security LLC | Austin, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Portnox%20Security%20LLC%2C%20Austin%2C%20TX) |
-| 281 | Power Central LLC | Richardson, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Power%20Central%20LLC%2C%20Richardson%2C%20TX) |
-| 282 | Prelude, LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Prelude%2C%20LLC%2C%20Austin%2C%20TX) |
-| 283 | Prescriptive Data Solutions, LLC | San Antonio, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Prescriptive%20Data%20Solutions%2C%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 284 | Price Kubecka PLLC | Addison, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Price%20Kubecka%20PLLC%2C%20Addison%2C%20TX) |
-| 285 | Prime Bids, LLC | Pasadena, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Prime%20Bids%2C%20LLC%2C%20Pasadena%2C%20TX) |
-| 286 | Primebids, LLC | Pasadena, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Primebids%2C%20LLC%2C%20Pasadena%2C%20TX) |
-| 287 | Pro-Shooter LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Pro-Shooter%20LLC%2C%20Houston%2C%20TX) |
-| 288 | Prodata Strategies LLC | McKinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Prodata%20Strategies%20LLC%2C%20McKinney%2C%20TX) |
-| 289 | Profusion Tech Labs, LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Profusion%20Tech%20Labs%2C%20LLC%2C%20Austin%2C%20TX) |
-| 290 | Protocoding LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Protocoding%20LLC%2C%20Dallas%2C%20TX) |
-| 291 | Pure Flux Technology Solutions, LLC | Spring, TX | 51121 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Pure%20Flux%20Technology%20Solutions%2C%20LLC%2C%20Spring%2C%20TX) |
-| 292 | Pyrolac LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Pyrolac%20LLC%2C%20Houston%2C%20TX) |
-| 293 | QUANTUM UNIVERSAL LLC | LEWISVILLE, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=QUANTUM%20UNIVERSAL%20LLC%2C%20LEWISVILLE%2C%20TX) |
-| 294 | RAYS FOOD IMPORTS LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=RAYS%20FOOD%20IMPORTS%20LLC%2C%20Houston%2C%20TX) |
-| 295 | REPAVE IT LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=REPAVE%20IT%20LLC%2C%20Frisco%2C%20TX) |
-| 296 | RGAP LLC | Round Rock, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=RGAP%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 297 | RGS IT  SOLUTIONS LLC | CROWLEY, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=RGS%20IT%20%20SOLUTIONS%20LLC%2C%20CROWLEY%2C%20TX) |
-| 298 | Radix IoT, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Radix%20IoT%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 299 | Ralph Porter Group LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ralph%20Porter%20Group%20LLC%2C%20Austin%2C%20TX) |
-| 300 | Rex Team DEDAP LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rex%20Team%20DEDAP%20LLC%2C%20Austin%2C%20TX) |
-| 301 | S Linx LLC | Leander, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=S%20Linx%20LLC%2C%20Leander%2C%20TX) |
-| 302 | SAYA SOLUTIONS PROVIDER, LLC. | HOUSTON, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SAYA%20SOLUTIONS%20PROVIDER%2C%20LLC.%2C%20HOUSTON%2C%20TX) |
-| 303 | SEVIS SYSTEMS LLC. | PLANO, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SEVIS%20SYSTEMS%20LLC.%2C%20PLANO%2C%20TX) |
-| 304 | SIMPLY ACTIVATE LLC | PARK ROW, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SIMPLY%20ACTIVATE%20LLC%2C%20PARK%20ROW%2C%20TX) |
-| 305 | SKOUTERA LLC | COPPELL, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SKOUTERA%20LLC%2C%20COPPELL%2C%20TX) |
-| 306 | SOCIUS INNOVATIVE GLOBAL BRAINS LLC | HOUSTON, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SOCIUS%20INNOVATIVE%20GLOBAL%20BRAINS%20LLC%2C%20HOUSTON%2C%20TX) |
-| 307 | SREELAN LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SREELAN%20LLC%2C%20Frisco%2C%20TX) |
-| 308 | STEPINSIGHT LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=STEPINSIGHT%20LLC%2C%20Austin%2C%20TX) |
-| 309 | STRAY KITE STUDIOS, LLC | PLANO, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=STRAY%20KITE%20STUDIOS%2C%20LLC%2C%20PLANO%2C%20TX) |
-| 310 | SURUG Tech LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SURUG%20Tech%20LLC%2C%20Houston%2C%20TX) |
-| 311 | SYAAT USA LLC | Spring, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SYAAT%20USA%20LLC%2C%20Spring%2C%20TX) |
-| 312 | Sailpro LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sailpro%20LLC%2C%20Plano%2C%20TX) |
-| 313 | Salve Enterprises, LLC | Irving, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Salve%20Enterprises%2C%20LLC%2C%20Irving%2C%20TX) |
-| 314 | Sapientai LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sapientai%20LLC%2C%20Austin%2C%20TX) |
-| 315 | Sharpwhiz Corporation LLC | Austin, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sharpwhiz%20Corporation%20LLC%2C%20Austin%2C%20TX) |
-| 316 | SignalPet LLC | Dallas, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SignalPet%20LLC%2C%20Dallas%2C%20TX) |
-| 317 | Simplifi Holdings LLC | Fort Worth, TX | 51321 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Simplifi%20Holdings%20LLC%2C%20Fort%20Worth%2C%20TX) |
-| 318 | Software Freedom Institute LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Software%20Freedom%20Institute%20LLC%2C%20Houston%2C%20TX) |
-| 319 | Solutions by Text LLC | Addison, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Solutions%20by%20Text%20LLC%2C%20Addison%2C%20TX) |
-| 320 | SourceHOV LLC | Irving, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SourceHOV%20LLC%2C%20Irving%2C%20TX) |
-| 321 | Space Automotive, LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Space%20Automotive%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 322 | Space Cow LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Space%20Cow%20LLC%2C%20Austin%2C%20TX) |
-| 323 | Sports Operating, LLC | Dallas, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sports%20Operating%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 324 | Sprint Byte Technologies LLC | leander, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sprint%20Byte%20Technologies%20LLC%2C%20leander%2C%20TX) |
-| 325 | Squirrels Square LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Squirrels%20Square%20LLC%2C%20Frisco%2C%20TX) |
-| 326 | Successive Technologies LLC | Coppell, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Successive%20Technologies%20LLC%2C%20Coppell%2C%20TX) |
-| 327 | Synerzip LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Synerzip%20LLC%2C%20Dallas%2C%20TX) |
-| 328 | TECH LADDER LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TECH%20LADDER%20LLC%2C%20Houston%2C%20TX) |
-| 329 | TEKMINDS SYSTEM LLC | MCKINNEY, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKMINDS%20SYSTEM%20LLC%2C%20MCKINNEY%2C%20TX) |
-| 330 | TEXAS TECHNOLOGY GROUP LLC | DUNCANVILLE, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEXAS%20TECHNOLOGY%20GROUP%20LLC%2C%20DUNCANVILLE%2C%20TX) |
-| 331 | TSICOM LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TSICOM%20LLC%2C%20Houston%2C%20TX) |
-| 332 | Tangle Systems LLC | Roswell, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tangle%20Systems%20LLC%2C%20Roswell%2C%20TX) |
-| 333 | Tech Expertsus LLC | Irving, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tech%20Expertsus%20LLC%2C%20Irving%2C%20TX) |
-| 334 | Techdots LLC | Plano, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Techdots%20LLC%2C%20Plano%2C%20TX) |
-| 335 | Techminers LLC | McKinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Techminers%20LLC%2C%20McKinney%2C%20TX) |
-| 336 | The Purpose Built Group LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=The%20Purpose%20Built%20Group%20LLC%2C%20Dallas%2C%20TX) |
-| 337 | The Teneo Group, LLC | Godley, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=The%20Teneo%20Group%2C%20LLC%2C%20Godley%2C%20TX) |
-| 338 | ThinkAI Experts LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ThinkAI%20Experts%20LLC%2C%20Frisco%2C%20TX) |
-| 339 | Timbergrove Solutions, LLC | Houston, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Timbergrove%20Solutions%2C%20LLC%2C%20Houston%2C%20TX) |
-| 340 | Top Gun Blockchain LLC | Eastland, TX | 518210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Top%20Gun%20Blockchain%20LLC%2C%20Eastland%2C%20TX) |
-| 341 | Topic Gurus LLC | Rockwall, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Topic%20Gurus%20LLC%2C%20Rockwall%2C%20TX) |
-| 342 | TowWorks, LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TowWorks%2C%20LLC%2C%20Houston%2C%20TX) |
-| 343 | Trackme Software LLC | Allen, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Trackme%20Software%20LLC%2C%20Allen%2C%20TX) |
-| 344 | Triple Point Technology, LLC | Houston, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Triple%20Point%20Technology%2C%20LLC%2C%20Houston%2C%20TX) |
-| 345 | Trust Infosys, LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Trust%20Infosys%2C%20LLC%2C%20Austin%2C%20TX) |
-| 346 | Tscalar Systems LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tscalar%20Systems%20LLC%2C%20Plano%2C%20TX) |
-| 347 | Turtle Cloud LLC | Dallas, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Turtle%20Cloud%20LLC%2C%20Dallas%2C%20TX) |
-| 348 | VGTS LLC | Frisco, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VGTS%20LLC%2C%20Frisco%2C%20TX) |
-| 349 | VIVERE SYSTEMS LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VIVERE%20SYSTEMS%20LLC%2C%20Frisco%2C%20TX) |
-| 350 | VOLCONE WEB SOLUTIONS LLC | GEORGETOWN, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VOLCONE%20WEB%20SOLUTIONS%20LLC%2C%20GEORGETOWN%2C%20TX) |
-| 351 | VSSIQ Solutions LLC | Leander, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VSSIQ%20Solutions%20LLC%2C%20Leander%2C%20TX) |
-| 352 | Verdict IT Technologies LLC | IRVING, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Verdict%20IT%20Technologies%20LLC%2C%20IRVING%2C%20TX) |
-| 353 | Verittsoft LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Verittsoft%20LLC%2C%20Frisco%2C%20TX) |
-| 354 | Verity Services, LLC | The Woodlands, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Verity%20Services%2C%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 355 | Virtue Serve LLC | Irving, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Virtue%20Serve%20LLC%2C%20Irving%2C%20TX) |
-| 356 | Visual BI Solutions, LLC | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Visual%20BI%20Solutions%2C%20LLC%2C%20Plano%2C%20TX) |
-| 357 | Voltaire Health, LLC. | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Voltaire%20Health%2C%20LLC.%2C%20Plano%2C%20TX) |
-| 358 | Volusion, LLC | Austin, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Volusion%2C%20LLC%2C%20Austin%2C%20TX) |
-| 359 | WELKIN TECHNOLOGIES LLC | Alpharetta, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WELKIN%20TECHNOLOGIES%20LLC%2C%20Alpharetta%2C%20TX) |
-| 360 | WIZIENT LLC | CYPRESS, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WIZIENT%20LLC%2C%20CYPRESS%2C%20TX) |
-| 361 | WatchmeSports, LLC | Fort Worth, TX | 516210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WatchmeSports%2C%20LLC%2C%20Fort%20Worth%2C%20TX) |
-| 362 | Wave Telecom LLC | Frisco, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Wave%20Telecom%20LLC%2C%20Frisco%2C%20TX) |
-| 363 | Wellsite Navigator LLC | Houston, TX | 511210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Wellsite%20Navigator%20LLC%2C%20Houston%2C%20TX) |
-| 364 | Willow Technologies LLC | Dallas, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Willow%20Technologies%20LLC%2C%20Dallas%2C%20TX) |
-| 365 | WiredHive, LLC | McKinney, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WiredHive%2C%20LLC%2C%20McKinney%2C%20TX) |
-| 366 | Worldtech IT LLC | Austin, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Worldtech%20IT%20LLC%2C%20Austin%2C%20TX) |
-| 367 | ZERO DAY GROUP LLC | BELLAIRE, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ZERO%20DAY%20GROUP%20LLC%2C%20BELLAIRE%2C%20TX) |
-| 368 | ZOWTA LLC | Austin, TX | 513210 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ZOWTA%20LLC%2C%20Austin%2C%20TX) |
-| 369 | Zeva Technology LLC | Plano, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zeva%20Technology%20LLC%2C%20Plano%2C%20TX) |
-| 370 | Zinc LLC | Sugar Land, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zinc%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 371 | Zionzest LLC | Lewisville, TX | 541512 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zionzest%20LLC%2C%20Lewisville%2C%20TX) |
-| 372 | Ziosk Payroll, LLC | Dallas, TX | 541519 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ziosk%20Payroll%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 373 | aMind Solutions, LLC d.b.a. ArganoaMind | Plano, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=aMind%20Solutions%2C%20LLC%20d.b.a.%20ArganoaMind%2C%20Plano%2C%20TX) |
-| 374 | defi Solutions DE, LLC | Westlake, TX | 541511 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=defi%20Solutions%20DE%2C%20LLC%2C%20Westlake%2C%20TX) |
-| 375 | iRely LLC | Irving, TX | 54151 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=iRely%20LLC%2C%20Irving%2C%20TX) |
-| 376 | iSphere Innovation Partners LLC | Houston, TX | 5415 | 1 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=iSphere%20Innovation%20Partners%20LLC%2C%20Houston%2C%20TX) |
-| 377 | 8am, LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=8am%2C%20LLC%2C%20Austin%2C%20TX) |
-| 378 | AAKHIRAH INVESTMENTS LLC | Irving, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AAKHIRAH%20INVESTMENTS%20LLC%2C%20Irving%2C%20TX) |
-| 379 | AHACLOUDS LLC | Coppell, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AHACLOUDS%20LLC%2C%20Coppell%2C%20TX) |
-| 380 | ASTOUNDZ, LLC. | HOUSTON, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ASTOUNDZ%2C%20LLC.%2C%20HOUSTON%2C%20TX) |
-| 381 | ASYNC7 LLC | HOUSTON, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ASYNC7%20LLC%2C%20HOUSTON%2C%20TX) |
-| 382 | ATRIXSOFT LLC | SHERIDAN, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ATRIXSOFT%20LLC%2C%20SHERIDAN%2C%20TX) |
-| 383 | AUSIND Solutions LLC | Plano, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AUSIND%20Solutions%20LLC%2C%20Plano%2C%20TX) |
-| 384 | Aayog Solutions LLC | Round Rock, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Aayog%20Solutions%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 385 | Adaptive Vision & Robotics, LLC | McKinney, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Adaptive%20Vision%20%26%20Robotics%2C%20LLC%2C%20McKinney%2C%20TX) |
-| 386 | AiQueous, LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AiQueous%2C%20LLC%2C%20Austin%2C%20TX) |
-| 387 | Appweb, LLC | Georgetown, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Appweb%2C%20LLC%2C%20Georgetown%2C%20TX) |
-| 388 | Arks Intellitech LLC | Lewisville, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Arks%20Intellitech%20LLC%2C%20Lewisville%2C%20TX) |
-| 389 | Arora Innovation LLC | Dallas, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Arora%20Innovation%20LLC%2C%20Dallas%2C%20TX) |
-| 390 | Auctane, LLC, dba ShipStation | Austin, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Auctane%2C%20LLC%2C%20dba%20ShipStation%2C%20Austin%2C%20TX) |
-| 391 | Axcelinno, LLC | Frisco, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Axcelinno%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 392 | BEYOND SCRIPTS LLC | MCKINNEY, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BEYOND%20SCRIPTS%20LLC%2C%20MCKINNEY%2C%20TX) |
-| 393 | BINARYWAY LLC. | KATY, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BINARYWAY%20LLC.%2C%20KATY%2C%20TX) |
-| 394 | BLOCKnit LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BLOCKnit%20LLC%2C%20Frisco%2C%20TX) |
-| 395 | BLUEGREEN TECHSOLUTIONS LLC. | FRISCO, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BLUEGREEN%20TECHSOLUTIONS%20LLC.%2C%20FRISCO%2C%20TX) |
-| 396 | Banjaxed Solutions LLC | College Station, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Banjaxed%20Solutions%20LLC%2C%20College%20Station%2C%20TX) |
-| 397 | Baxter Planning Systems Opco, LLC | Austin, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Baxter%20Planning%20Systems%20Opco%2C%20LLC%2C%20Austin%2C%20TX) |
-| 398 | Bellwether Electronics, LLC | Austin, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bellwether%20Electronics%2C%20LLC%2C%20Austin%2C%20TX) |
-| 399 | Bloomgen LLC | McKinney, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bloomgen%20LLC%2C%20McKinney%2C%20TX) |
-| 400 | Blue Goji LLC | Austin, TX | 513210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Blue%20Goji%20LLC%2C%20Austin%2C%20TX) |
-| 401 | Bonterra LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bonterra%20LLC%2C%20Austin%2C%20TX) |
-| 402 | Bonum Technologies LLC | Flower Mound, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bonum%20Technologies%20LLC%2C%20Flower%20Mound%2C%20TX) |
-| 403 | BoosterHub, LLC | Georgetown, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BoosterHub%2C%20LLC%2C%20Georgetown%2C%20TX) |
-| 404 | Bridge Logix Solutions, LLC | Sugar Land, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bridge%20Logix%20Solutions%2C%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 405 | Broadleaf Commerce, LLC. | Plano, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Broadleaf%20Commerce%2C%20LLC.%2C%20Plano%2C%20TX) |
-| 406 | C4Workx LLC | Richmond, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=C4Workx%20LLC%2C%20Richmond%2C%20TX) |
-| 407 | CLOUD IMPERIUM GAMES TEXAS LLC | BEE CAVE, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CLOUD%20IMPERIUM%20GAMES%20TEXAS%20LLC%2C%20BEE%20CAVE%2C%20TX) |
-| 408 | CLOUD RESOURCES LLC | IRVING, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CLOUD%20RESOURCES%20LLC%2C%20IRVING%2C%20TX) |
-| 409 | CPS Technology Solutions LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CPS%20Technology%20Solutions%20LLC%2C%20Frisco%2C%20TX) |
-| 410 | CRAFTANY IT SOLUTIONS LLC | DALLAS, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CRAFTANY%20IT%20SOLUTIONS%20LLC%2C%20DALLAS%2C%20TX) |
-| 411 | Capitalogix LLC | Coppell, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Capitalogix%20LLC%2C%20Coppell%2C%20TX) |
-| 412 | Caton Analytics LLC | Austin, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Caton%20Analytics%20LLC%2C%20Austin%2C%20TX) |
-| 413 | Cerebre, LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cerebre%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 414 | Client Connect LLC | Plano, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Client%20Connect%20LLC%2C%20Plano%2C%20TX) |
-| 415 | CoachAlgo, LLC | Sugar Land, TX | 513210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CoachAlgo%2C%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 416 | Cocolevio, LLC | Austin, TX | 5415 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cocolevio%2C%20LLC%2C%20Austin%2C%20TX) |
-| 417 | Code Insights LLC. | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Code%20Insights%20LLC.%2C%20Frisco%2C%20TX) |
-| 418 | Computer Visionaries, LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Computer%20Visionaries%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 419 | Conduent Credit Balance Solutions, LLC | Richardson, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Conduent%20Credit%20Balance%20Solutions%2C%20LLC%2C%20Richardson%2C%20TX) |
-| 420 | Conduent Heritage, LLC | Richardson, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Conduent%20Heritage%2C%20LLC%2C%20Richardson%2C%20TX) |
-| 421 | Corva AI, LLC | Houston, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Corva%20AI%2C%20LLC%2C%20Houston%2C%20TX) |
-| 422 | Cyberbridge LLC | Katy, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cyberbridge%20LLC%2C%20Katy%2C%20TX) |
-| 423 | CyrusOne LLC | Dallas, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CyrusOne%20LLC%2C%20Dallas%2C%20TX) |
-| 424 | DIGITAL TWINS TECHNOLOGIES LLC | DUNCANVILLE, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DIGITAL%20TWINS%20TECHNOLOGIES%20LLC%2C%20DUNCANVILLE%2C%20TX) |
-| 425 | DSP Zusters LLC | Aubrey, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DSP%20Zusters%20LLC%2C%20Aubrey%2C%20TX) |
-| 426 | Digineox LLC | Houston, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Digineox%20LLC%2C%20Houston%2C%20TX) |
-| 427 | ELFA Ventures LLC | Irving, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ELFA%20Ventures%20LLC%2C%20Irving%2C%20TX) |
-| 428 | ENQBATOR LLC | Austin, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ENQBATOR%20LLC%2C%20Austin%2C%20TX) |
-| 429 | EXTERPRISE LLC | Mckinney, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=EXTERPRISE%20LLC%2C%20Mckinney%2C%20TX) |
-| 430 | Enpowertek LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Enpowertek%20LLC%2C%20Frisco%2C%20TX) |
-| 431 | FORMULA HUB LLC | Farmers Branch, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FORMULA%20HUB%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 432 | FORTUNE INSIGHTS LLC. | SOUTHLAKE, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FORTUNE%20INSIGHTS%20LLC.%2C%20SOUTHLAKE%2C%20TX) |
-| 433 | FRISCO TECHSOL LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FRISCO%20TECHSOL%20LLC%2C%20Frisco%2C%20TX) |
-| 434 | Fame Computers, LLC | Plano, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Fame%20Computers%2C%20LLC%2C%20Plano%2C%20TX) |
-| 435 | Flight Operations Holdings LLC | Southlake, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Flight%20Operations%20Holdings%20LLC%2C%20Southlake%2C%20TX) |
-| 436 | Folio Software, LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Folio%20Software%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 437 | Frisco Tech Sol LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Frisco%20Tech%20Sol%20LLC%2C%20Frisco%2C%20TX) |
-| 438 | Geek Genix, LLC | Waco, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Geek%20Genix%2C%20LLC%2C%20Waco%2C%20TX) |
-| 439 | Global Infrastructure Services LLC | Prosper, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Infrastructure%20Services%20LLC%2C%20Prosper%2C%20TX) |
-| 440 | Global Paradigm LLC | DALLAS, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Paradigm%20LLC%2C%20DALLAS%2C%20TX) |
-| 441 | GlobalStep Client Services LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GlobalStep%20Client%20Services%20LLC%2C%20Dallas%2C%20TX) |
-| 442 | Growth AXL LLC | Sugar Land, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Growth%20AXL%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 443 | GrowthAXL Shared Services LLC | Houston, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GrowthAXL%20Shared%20Services%20LLC%2C%20Houston%2C%20TX) |
-| 444 | Hahn Stats, LLC | Austin, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hahn%20Stats%2C%20LLC%2C%20Austin%2C%20TX) |
-| 445 | Honeydew Design LLC | Allen, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Honeydew%20Design%20LLC%2C%20Allen%2C%20TX) |
-| 446 | Hotel RevUp LLC | Irving, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hotel%20RevUp%20LLC%2C%20Irving%2C%20TX) |
-| 447 | Hynes & Khater, LLC | Houston, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hynes%20%26%20Khater%2C%20LLC%2C%20Houston%2C%20TX) |
-| 448 | INTELLECT CLOUD TECHNOLOGIES LLC | Allen, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INTELLECT%20CLOUD%20TECHNOLOGIES%20LLC%2C%20Allen%2C%20TX) |
-| 449 | IPSEC SYSTEMS LLC | Plano, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IPSEC%20SYSTEMS%20LLC%2C%20Plano%2C%20TX) |
-| 450 | IT MICROSTACK LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IT%20MICROSTACK%20LLC%2C%20Frisco%2C%20TX) |
-| 451 | IT PRO HUB USA LLC. | FARMERS BRANCH, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IT%20PRO%20HUB%20USA%20LLC.%2C%20FARMERS%20BRANCH%2C%20TX) |
-| 452 | Ingenious IT Systems LLC | Richmond, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ingenious%20IT%20Systems%20LLC%2C%20Richmond%2C%20TX) |
-| 453 | Janus Automation LLC | The Woodlands, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Janus%20Automation%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 454 | Jointly LLC | Austin, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Jointly%20LLC%2C%20Austin%2C%20TX) |
-| 455 | Kibernum USA LLC | Plano, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kibernum%20USA%20LLC%2C%20Plano%2C%20TX) |
-| 456 | LaborEdge, LLC | Plano, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LaborEdge%2C%20LLC%2C%20Plano%2C%20TX) |
-| 457 | Last Mile Venture LLC | Plano, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Last%20Mile%20Venture%20LLC%2C%20Plano%2C%20TX) |
-| 458 | LearnSAP LLC | Pearland, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LearnSAP%20LLC%2C%20Pearland%2C%20TX) |
-| 459 | Lexipol, LLC | Frisco, TX | 519130 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Lexipol%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 460 | Lively Video, LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Lively%20Video%2C%20LLC%2C%20Austin%2C%20TX) |
-| 461 | Logicexcell LLC | Frisco, TX | 541513 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Logicexcell%20LLC%2C%20Frisco%2C%20TX) |
-| 462 | Loop1 LLC | Cedar park, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Loop1%20LLC%2C%20Cedar%20park%2C%20TX) |
-| 463 | Lotic AI LLC | Bee Cave, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Lotic%20AI%20LLC%2C%20Bee%20Cave%2C%20TX) |
-| 464 | Luminary Creative and Marketing, LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Luminary%20Creative%20and%20Marketing%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 465 | Luna Squares Texas LLC | Pecos, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Luna%20Squares%20Texas%20LLC%2C%20Pecos%2C%20TX) |
-| 466 | METAVERSE TECHNOLOGY GROUP LLC | DUNCANVILLE, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=METAVERSE%20TECHNOLOGY%20GROUP%20LLC%2C%20DUNCANVILLE%2C%20TX) |
-| 467 | MNM Innovations LLC | Fulshear, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MNM%20Innovations%20LLC%2C%20Fulshear%2C%20TX) |
-| 468 | MYK PROVIDERSLLC | DALLAS, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MYK%20PROVIDERSLLC%2C%20DALLAS%2C%20TX) |
-| 469 | Matrix Software Technology LLC | Houston, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Matrix%20Software%20Technology%20LLC%2C%20Houston%2C%20TX) |
-| 470 | Medical Technology Solutions, LLC | Valencia, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Medical%20Technology%20Solutions%2C%20LLC%2C%20Valencia%2C%20TX) |
-| 471 | Method Analytics LLC | Trinidad, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Method%20Analytics%20LLC%2C%20Trinidad%2C%20TX) |
-| 472 | MiView Integrated Solutions, LLC | Carrollton, TX | 513210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MiView%20Integrated%20Solutions%2C%20LLC%2C%20Carrollton%2C%20TX) |
-| 473 | Mshana Group, LLC | Sugar Land, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Mshana%20Group%2C%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 474 | NEURABOX AI LLC | DALLAS, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEURABOX%20AI%20LLC%2C%20DALLAS%2C%20TX) |
-| 475 | NEXTGEN INNOVATION LABS LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEXTGEN%20INNOVATION%20LABS%20LLC%2C%20Frisco%2C%20TX) |
-| 476 | Navesink Mortgage Services, LLC | Addison, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Navesink%20Mortgage%20Services%2C%20LLC%2C%20Addison%2C%20TX) |
-| 477 | Neolution LLC | Irving, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Neolution%20LLC%2C%20Irving%2C%20TX) |
-| 478 | Nlinq Solutions LLC | Houston, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nlinq%20Solutions%20LLC%2C%20Houston%2C%20TX) |
-| 479 | North Polaris, LLC. | Houston, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=North%20Polaris%2C%20LLC.%2C%20Houston%2C%20TX) |
-| 480 | Nusoft Systems, LLC | Sugar Land, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nusoft%20Systems%2C%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 481 | Octagos Acquisition LLC | Houston, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Octagos%20Acquisition%20LLC%2C%20Houston%2C%20TX) |
-| 482 | Octed LLC | Coppell, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Octed%20LLC%2C%20Coppell%2C%20TX) |
-| 483 | Oortech LLC | Austin, TX | 51821 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Oortech%20LLC%2C%20Austin%2C%20TX) |
-| 484 | Optimal Blue, LLC | Plano, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Optimal%20Blue%2C%20LLC%2C%20Plano%2C%20TX) |
-| 485 | Optimus Labs USA, LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Optimus%20Labs%20USA%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 486 | PROTAGONA LLC | PLANO, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PROTAGONA%20LLC%2C%20PLANO%2C%20TX) |
-| 487 | Palm Delivery Innovations QOZB, LLC | Austin, TX | 513210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Palm%20Delivery%20Innovations%20QOZB%2C%20LLC%2C%20Austin%2C%20TX) |
-| 488 | Paramount Technologies LLC | Irving, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Paramount%20Technologies%20LLC%2C%20Irving%2C%20TX) |
-| 489 | Paranet Solutions LLC | Dallas, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Paranet%20Solutions%20LLC%2C%20Dallas%2C%20TX) |
-| 490 | Payteros, LLC | Houston, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Payteros%2C%20LLC%2C%20Houston%2C%20TX) |
-| 491 | Potel Projects LLC | Frisco, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Potel%20Projects%20LLC%2C%20Frisco%2C%20TX) |
-| 492 | ProjecTools Solutions LLC | Houston, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ProjecTools%20Solutions%20LLC%2C%20Houston%2C%20TX) |
-| 493 | QADWORKS SOLUTIONS LLC. | Houston, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=QADWORKS%20SOLUTIONS%20LLC.%2C%20Houston%2C%20TX) |
-| 494 | Qualesce LLC | Frisco, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Qualesce%20LLC%2C%20Frisco%2C%20TX) |
-| 495 | REVENTION LLC | HOUSTON, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=REVENTION%20LLC%2C%20HOUSTON%2C%20TX) |
-| 496 | RPD Systems LLC | Austin, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=RPD%20Systems%20LLC%2C%20Austin%2C%20TX) |
-| 497 | Rand Group Solutions, LLC | Bellaire, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rand%20Group%20Solutions%2C%20LLC%2C%20Bellaire%2C%20TX) |
-| 498 | Rayala Cloud Solutions LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rayala%20Cloud%20Solutions%20LLC%2C%20Frisco%2C%20TX) |
-| 499 | Reach Partners LLC | Austin, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Reach%20Partners%20LLC%2C%20Austin%2C%20TX) |
-| 500 | RepeatMD Operating LLC | Houston, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=RepeatMD%20Operating%20LLC%2C%20Houston%2C%20TX) |
-| 501 | SANDBOX TECHNOLOGIES LLC | DUNCANVILLE, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SANDBOX%20TECHNOLOGIES%20LLC%2C%20DUNCANVILLE%2C%20TX) |
-| 502 | SAPPHIRE INFORMATICS, LLC. | AUSTIN, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SAPPHIRE%20INFORMATICS%2C%20LLC.%2C%20AUSTIN%2C%20TX) |
-| 503 | SCMO2, LLC | Plano, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SCMO2%2C%20LLC%2C%20Plano%2C%20TX) |
-| 504 | SCN Corp LLC | Irving, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SCN%20Corp%20LLC%2C%20Irving%2C%20TX) |
-| 505 | SHARANGASOLUTIONS LLC | FLOWER MOUND, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SHARANGASOLUTIONS%20LLC%2C%20FLOWER%20MOUND%2C%20TX) |
-| 506 | SIGGA USA, LLC | Sugar Land, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SIGGA%20USA%2C%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 507 | SIGNACORP LLC | Mckineey, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SIGNACORP%20LLC%2C%20Mckineey%2C%20TX) |
-| 508 | SKIONTEK LLC | IRVING, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SKIONTEK%20LLC%2C%20IRVING%2C%20TX) |
-| 509 | SOFTSYS TECHNOLOGIES LLC | LANTANA, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SOFTSYS%20TECHNOLOGIES%20LLC%2C%20LANTANA%2C%20TX) |
-| 510 | SOLVATION LLC | PLANO, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SOLVATION%20LLC%2C%20PLANO%2C%20TX) |
-| 511 | SRP TH Services, LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SRP%20TH%20Services%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 512 | SYMBIOAITECH LLC | Farmers Branch, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SYMBIOAITECH%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 513 | Saantekglobal LLC | ALLEN, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Saantekglobal%20LLC%2C%20ALLEN%2C%20TX) |
-| 514 | Salesdrive Technologies LLC | Flower mound, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Salesdrive%20Technologies%20LLC%2C%20Flower%20mound%2C%20TX) |
-| 515 | Sathya Sai Services LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sathya%20Sai%20Services%20LLC%2C%20Austin%2C%20TX) |
-| 516 | Shaw Systems Associates, LLC | Houston, TX | 5415 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Shaw%20Systems%20Associates%2C%20LLC%2C%20Houston%2C%20TX) |
-| 517 | ShellSquare LLC | AUSTIN, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ShellSquare%20LLC%2C%20AUSTIN%2C%20TX) |
-| 518 | Slick Integrations LLC | Austin, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Slick%20Integrations%20LLC%2C%20Austin%2C%20TX) |
-| 519 | SoftTelRG LLC | McKinney, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SoftTelRG%20LLC%2C%20McKinney%2C%20TX) |
-| 520 | Softvel LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Softvel%20LLC%2C%20Austin%2C%20TX) |
-| 521 | Solidrock Solutions LLC | Flower Mound, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Solidrock%20Solutions%20LLC%2C%20Flower%20Mound%2C%20TX) |
-| 522 | Solvo Tech Solutions LLC | Dallas, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Solvo%20Tech%20Solutions%20LLC%2C%20Dallas%2C%20TX) |
-| 523 | Sri Tech International LLC | AUSTIN, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sri%20Tech%20International%20LLC%2C%20AUSTIN%2C%20TX) |
-| 524 | Sultanete, LLC | Irving, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sultanete%2C%20LLC%2C%20Irving%2C%20TX) |
-| 525 | SwiftAnt LLC | MCKINNEY, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SwiftAnt%20LLC%2C%20MCKINNEY%2C%20TX) |
-| 526 | TECHAVIDITY BUSINESS SOLUTIONS LLC | Frisco, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TECHAVIDITY%20BUSINESS%20SOLUTIONS%20LLC%2C%20Frisco%2C%20TX) |
-| 527 | TEKENERGY, LLC. | IRVING, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKENERGY%2C%20LLC.%2C%20IRVING%2C%20TX) |
-| 528 | TEKLEADS LLC | MCKINNEY, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKLEADS%20LLC%2C%20MCKINNEY%2C%20TX) |
-| 529 | TEKTRON LLC. | PLANO, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKTRON%20LLC.%2C%20PLANO%2C%20TX) |
-| 530 | TOYAJA IT SOLUTIONS LLC. | GEORGETOWN, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TOYAJA%20IT%20SOLUTIONS%20LLC.%2C%20GEORGETOWN%2C%20TX) |
-| 531 | TRAXCEL LLC | HOUSTON, TX | 541512 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TRAXCEL%20LLC%2C%20HOUSTON%2C%20TX) |
-| 532 | TRICON TECH SERVICES LLC | LEWISVILLE, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TRICON%20TECH%20SERVICES%20LLC%2C%20LEWISVILLE%2C%20TX) |
-| 533 | Tech Quotient LLC | Liberty Hill, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tech%20Quotient%20LLC%2C%20Liberty%20Hill%2C%20TX) |
-| 534 | TekDeft LLC | Plano, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TekDeft%20LLC%2C%20Plano%2C%20TX) |
-| 535 | TekRubix LLC | Irving, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TekRubix%20LLC%2C%20Irving%2C%20TX) |
-| 536 | Texas VU LLC | Frisco, TX | 541519 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Texas%20VU%20LLC%2C%20Frisco%2C%20TX) |
-| 537 | TexasFile, LLC | Corpus Christi, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TexasFile%2C%20LLC%2C%20Corpus%20Christi%2C%20TX) |
-| 538 | The Quantamental Investment Group LLC | Fulshear, TX | 519130 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=The%20Quantamental%20Investment%20Group%20LLC%2C%20Fulshear%2C%20TX) |
-| 539 | The Social Plus LLC | Frisco, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=The%20Social%20Plus%20LLC%2C%20Frisco%2C%20TX) |
-| 540 | ThoughtSpark US, LLC | Houston, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ThoughtSpark%20US%2C%20LLC%2C%20Houston%2C%20TX) |
-| 541 | Triarc Solutions, LLC | Houston, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Triarc%20Solutions%2C%20LLC%2C%20Houston%2C%20TX) |
-| 542 | Tysonite Partners LLC | Missouri City, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tysonite%20Partners%20LLC%2C%20Missouri%20City%2C%20TX) |
-| 543 | ULTIMATE SOFT LLC | Mckinney, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ULTIMATE%20SOFT%20LLC%2C%20Mckinney%2C%20TX) |
-| 544 | UPSHOP LLC | AUSTIN, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=UPSHOP%20LLC%2C%20AUSTIN%2C%20TX) |
-| 545 | UX is Fine LLC | Austin, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=UX%20is%20Fine%20LLC%2C%20Austin%2C%20TX) |
-| 546 | VALUE CREED LLC | Plano, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VALUE%20CREED%20LLC%2C%20Plano%2C%20TX) |
-| 547 | VCLOUD TECHNOLOGY GROUP LLC | DUNCANVILLE, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VCLOUD%20TECHNOLOGY%20GROUP%20LLC%2C%20DUNCANVILLE%2C%20TX) |
-| 548 | VIJAYA, LLC | WYLIE, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VIJAYA%2C%20LLC%2C%20WYLIE%2C%20TX) |
-| 549 | VKAAS LLC | FRISCO, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VKAAS%20LLC%2C%20FRISCO%2C%20TX) |
-| 550 | VSHARP LLC | Addison, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VSHARP%20LLC%2C%20Addison%2C%20TX) |
-| 551 | Veeratech LLC | Houston, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Veeratech%20LLC%2C%20Houston%2C%20TX) |
-| 552 | Verge Ventures, LLC | Richardson, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Verge%20Ventures%2C%20LLC%2C%20Richardson%2C%20TX) |
-| 553 | Vroom Automotive, LLC | Stafford, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Vroom%20Automotive%2C%20LLC%2C%20Stafford%2C%20TX) |
-| 554 | WISENMORE LLC | Fulshear, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WISENMORE%20LLC%2C%20Fulshear%2C%20TX) |
-| 555 | Waypoint Data Solutions LLC | Spring, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Waypoint%20Data%20Solutions%20LLC%2C%20Spring%2C%20TX) |
-| 556 | Winner, LLC | Fort Worth, TX | 518210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Winner%2C%20LLC%2C%20Fort%20Worth%2C%20TX) |
-| 557 | Wolfepak Software, LLC | Abilene, TX | 511210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Wolfepak%20Software%2C%20LLC%2C%20Abilene%2C%20TX) |
-| 558 | Xenonsofttech LLC. | Liberty Hill, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Xenonsofttech%20LLC.%2C%20Liberty%20Hill%2C%20TX) |
-| 559 | YOCE LLC | Fort Worth, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=YOCE%20LLC%2C%20Fort%20Worth%2C%20TX) |
-| 560 | iQGateway, LLC | The Woodlands, TX | 54151 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=iQGateway%2C%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 561 | mlivelihood LLC | Houston, TX | 513210 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=mlivelihood%20LLC%2C%20Houston%2C%20TX) |
-| 562 | pixelByte, LLC | EL PASO, TX | 541511 | 2 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=pixelByte%2C%20LLC%2C%20EL%20PASO%2C%20TX) |
-| 563 | A-DYNASTY LLC | Irving, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=A-DYNASTY%20LLC%2C%20Irving%2C%20TX) |
-| 564 | AMPLE GLOBAL SOLUTIONS LLC | Farmers Branch, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AMPLE%20GLOBAL%20SOLUTIONS%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 565 | AR INFOTEK SOLUTIONS LLC | Georgetown, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AR%20INFOTEK%20SOLUTIONS%20LLC%2C%20Georgetown%2C%20TX) |
-| 566 | AUTHENTIC DATA SOLUTIONS LLC | ROUND ROCK, TX | 541511 | 3 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=AUTHENTIC%20DATA%20SOLUTIONS%20LLC%2C%20ROUND%20ROCK%2C%20TX) |
-| 567 | Allata, LLC | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Allata%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 568 | Alpha Solutions USA LLC | Addison, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Alpha%20Solutions%20USA%20LLC%2C%20Addison%2C%20TX) |
-| 569 | Amnet Tech LLC | Leander, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Amnet%20Tech%20LLC%2C%20Leander%2C%20TX) |
-| 570 | Aqore, LLC | Grapevine, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Aqore%2C%20LLC%2C%20Grapevine%2C%20TX) |
-| 571 | Argo Design, LLC | Austin, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Argo%20Design%2C%20LLC%2C%20Austin%2C%20TX) |
-| 572 | Ashtech Intelligent LLC | Richardson, TX | 541513 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ashtech%20Intelligent%20LLC%2C%20Richardson%2C%20TX) |
-| 573 | Asset Panda LLC | Frisco, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Asset%20Panda%20LLC%2C%20Frisco%2C%20TX) |
-| 574 | Atlas Technology Group LLC | Austin, TX | 518210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Atlas%20Technology%20Group%20LLC%2C%20Austin%2C%20TX) |
-| 575 | Avmtechies LLC | Frisco, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Avmtechies%20LLC%2C%20Frisco%2C%20TX) |
-| 576 | Bottle Rocket LLC | Addison, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Bottle%20Rocket%20LLC%2C%20Addison%2C%20TX) |
-| 577 | CITRINE SOLUTION LLC | IRVING, TX | 541513 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CITRINE%20SOLUTION%20LLC%2C%20IRVING%2C%20TX) |
-| 578 | COGNITUM SOLUTIONS LLC | Austin, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=COGNITUM%20SOLUTIONS%20LLC%2C%20Austin%2C%20TX) |
-| 579 | CONNECTEK SOLUTIONS LLC | Farmers Branch, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CONNECTEK%20SOLUTIONS%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 580 | CY9 LLC | Flower Mound,, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CY9%20LLC%2C%20Flower%20Mound%2C%2C%20TX) |
-| 581 | Cloud EPA, LLC | Euless, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cloud%20EPA%2C%20LLC%2C%20Euless%2C%20TX) |
-| 582 | Cloudiyan LLC | Frisco, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cloudiyan%20LLC%2C%20Frisco%2C%20TX) |
-| 583 | Crocus IT LLC | Frisco, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Crocus%20IT%20LLC%2C%20Frisco%2C%20TX) |
-| 584 | Cyber Nirvana LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cyber%20Nirvana%20LLC%2C%20Irving%2C%20TX) |
-| 585 | Cytracom LLC | Allen, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cytracom%20LLC%2C%20Allen%2C%20TX) |
-| 586 | Dabble Sports LLC | Austin, TX | 513210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Dabble%20Sports%20LLC%2C%20Austin%2C%20TX) |
-| 587 | Digital 360 LLC | Arlington, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20360%20LLC%2C%20Arlington%2C%20TX) |
-| 588 | Digital Systems X, LLC | The Woodlands, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20Systems%20X%2C%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 589 | DuraPeople LLC | San Antonio, TX | 513210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DuraPeople%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 590 | EASYSTEPIN LLC | Katy, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=EASYSTEPIN%20LLC%2C%20Katy%2C%20TX) |
-| 591 | Enboarder LLC | Austin, TX | 511210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Enboarder%20LLC%2C%20Austin%2C%20TX) |
-| 592 | First Infra LLC | The Colony, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=First%20Infra%20LLC%2C%20The%20Colony%2C%20TX) |
-| 593 | GDS Link, LLC | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GDS%20Link%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 594 | GeoComputing Group, LLC | Houston, TX | 518210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GeoComputing%20Group%2C%20LLC%2C%20Houston%2C%20TX) |
-| 595 | Givewith LLC | Austin, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Givewith%20LLC%2C%20Austin%2C%20TX) |
-| 596 | Global Smart Work LLC | McKinney, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Smart%20Work%20LLC%2C%20McKinney%2C%20TX) |
-| 597 | Hashtag Techie LLC | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hashtag%20Techie%20LLC%2C%20Dallas%2C%20TX) |
-| 598 | Hiecept, LLC | Houston, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hiecept%2C%20LLC%2C%20Houston%2C%20TX) |
-| 599 | IBUILDSOFT LLC | Plano, TX | 518210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IBUILDSOFT%20LLC%2C%20Plano%2C%20TX) |
-| 600 | IPLUS GLOBAL USA LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=IPLUS%20GLOBAL%20USA%20LLC%2C%20Irving%2C%20TX) |
-| 601 | Idealagi LLC | The Woodlands, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Idealagi%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 602 | Invasystems Digital LLC | Sugar Land, TX | 54151 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Invasystems%20Digital%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 603 | KEYWEB TECHNOLOGIES LLC | SHERIDAN, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KEYWEB%20TECHNOLOGIES%20LLC%2C%20SHERIDAN%2C%20TX) |
-| 604 | KLOUDSLACK LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KLOUDSLACK%20LLC%2C%20Irving%2C%20TX) |
-| 605 | KNR Paradise Holdings LLC | McKinney, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KNR%20Paradise%20Holdings%20LLC%2C%20McKinney%2C%20TX) |
-| 606 | KNSERVICESLLC | Round Rock, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KNSERVICESLLC%2C%20Round%20Rock%2C%20TX) |
-| 607 | Kloutix Solutions LLC | Irving, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Kloutix%20Solutions%20LLC%2C%20Irving%2C%20TX) |
-| 608 | LorVen Techservices LLC | Frisco, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LorVen%20Techservices%20LLC%2C%20Frisco%2C%20TX) |
-| 609 | METAPRO USA, LLC | Grapevine, TX | 54151 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=METAPRO%20USA%2C%20LLC%2C%20Grapevine%2C%20TX) |
-| 610 | MK Universal LLC | Plano, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MK%20Universal%20LLC%2C%20Plano%2C%20TX) |
-| 611 | Mash IT Solutions LLC | Austin, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Mash%20IT%20Solutions%20LLC%2C%20Austin%2C%20TX) |
-| 612 | Mountain State Software Solutions, LLC d.b.a ArganoMS3 | Plano, TX | 541511 | 3 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Mountain%20State%20Software%20Solutions%2C%20LLC%20d.b.a%20ArganoMS3%2C%20Plano%2C%20TX) |
-| 613 | Navsan LLC | Helotes, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Navsan%20LLC%2C%20Helotes%2C%20TX) |
-| 614 | Netnology LLC | Plano, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Netnology%20LLC%2C%20Plano%2C%20TX) |
-| 615 | Nimmetrix LLC | Houston, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nimmetrix%20LLC%2C%20Houston%2C%20TX) |
-| 616 | NinjaOne, LLC | Austin, TX | 511210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NinjaOne%2C%20LLC%2C%20Austin%2C%20TX) |
-| 617 | North Star Identity LLC | Prosper, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=North%20Star%20Identity%20LLC%2C%20Prosper%2C%20TX) |
-| 618 | Nugen Tech LLC | Allen, TX | 541519 | 3 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Nugen%20Tech%20LLC%2C%20Allen%2C%20TX) |
-| 619 | OctagonIT LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OctagonIT%20LLC%2C%20Irving%2C%20TX) |
-| 620 | OpenSymmetry, LLC | Austin, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OpenSymmetry%2C%20LLC%2C%20Austin%2C%20TX) |
-| 621 | PEREGRINE AI LLC | PLANO, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PEREGRINE%20AI%20LLC%2C%20PLANO%2C%20TX) |
-| 622 | PTechCrew LLC | Allen, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PTechCrew%20LLC%2C%20Allen%2C%20TX) |
-| 623 | PakEnergy, LLC | Abilene, TX | 511210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PakEnergy%2C%20LLC%2C%20Abilene%2C%20TX) |
-| 624 | Panda Solutions USA LLC | Dallas, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Panda%20Solutions%20USA%20LLC%2C%20Dallas%2C%20TX) |
-| 625 | Perficient IT LLC | McKinney, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Perficient%20IT%20LLC%2C%20McKinney%2C%20TX) |
-| 626 | PioneerRX, LLC | Irving, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PioneerRX%2C%20LLC%2C%20Irving%2C%20TX) |
-| 627 | Pranu Business Group LLC | Houston, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Pranu%20Business%20Group%20LLC%2C%20Houston%2C%20TX) |
-| 628 | ProArch Technologies LLC | Lakeway, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ProArch%20Technologies%20LLC%2C%20Lakeway%2C%20TX) |
-| 629 | R'cloud LLC | Pearland, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=R%27cloud%20LLC%2C%20Pearland%2C%20TX) |
-| 630 | REAL SOURCE IT SOLUTIONS LLC | FRISCO, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=REAL%20SOURCE%20IT%20SOLUTIONS%20LLC%2C%20FRISCO%2C%20TX) |
-| 631 | ROBOTIC PROCESS AUTOMATION LLC | DUNCANVILLE, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ROBOTIC%20PROCESS%20AUTOMATION%20LLC%2C%20DUNCANVILLE%2C%20TX) |
-| 632 | Rex Team General LLC | Austin, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rex%20Team%20General%20LLC%2C%20Austin%2C%20TX) |
-| 633 | SCUBE SOFT SOLUTIONS LLC | Flower Mound, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SCUBE%20SOFT%20SOLUTIONS%20LLC%2C%20Flower%20Mound%2C%20TX) |
-| 634 | SLK Systems LLC | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SLK%20Systems%20LLC%2C%20Dallas%2C%20TX) |
-| 635 | SMARTCOMMS LLC | DALLAS, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SMARTCOMMS%20LLC%2C%20DALLAS%2C%20TX) |
-| 636 | Serverless Solutions LLC | Houston, TX | 54151 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Serverless%20Solutions%20LLC%2C%20Houston%2C%20TX) |
-| 637 | SimpleCube LLC | San Antonio, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SimpleCube%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 638 | Sitemetric, LLC | Houston, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sitemetric%2C%20LLC%2C%20Houston%2C%20TX) |
-| 639 | SoftTrak Technologies LLC. | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SoftTrak%20Technologies%20LLC.%2C%20Dallas%2C%20TX) |
-| 640 | Solera Holdings, LLC | Westlake, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Solera%20Holdings%2C%20LLC%2C%20Westlake%2C%20TX) |
-| 641 | Sutras LLC | KATY, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sutras%20LLC%2C%20KATY%2C%20TX) |
-| 642 | TBX Employee Benefits LLC | Plano, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TBX%20Employee%20Benefits%20LLC%2C%20Plano%2C%20TX) |
-| 643 | TECH SYNERGIES LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TECH%20SYNERGIES%20LLC%2C%20Irving%2C%20TX) |
-| 644 | TEKNOMITE LLC | MCKINNEY, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKNOMITE%20LLC%2C%20MCKINNEY%2C%20TX) |
-| 645 | TEKPRO IT LLC | Plano, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEKPRO%20IT%20LLC%2C%20Plano%2C%20TX) |
-| 646 | TechFuturiq LLC | McKinney, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TechFuturiq%20LLC%2C%20McKinney%2C%20TX) |
-| 647 | TekPeersGlobal LLC | Austin, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TekPeersGlobal%20LLC%2C%20Austin%2C%20TX) |
-| 648 | Tekdream LLC | Lewisville, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tekdream%20LLC%2C%20Lewisville%2C%20TX) |
-| 649 | Telafor LLC | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Telafor%20LLC%2C%20Dallas%2C%20TX) |
-| 650 | Texas Automation Systems LLC | Grand Prairie, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Texas%20Automation%20Systems%20LLC%2C%20Grand%20Prairie%2C%20TX) |
-| 651 | TraxID, LLC | Farmers Branch, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TraxID%2C%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 652 | Trinity Edge Solutions LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Trinity%20Edge%20Solutions%20LLC%2C%20Irving%2C%20TX) |
-| 653 | Turvo LLC | Dallas, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Turvo%20LLC%2C%20Dallas%2C%20TX) |
-| 654 | UtilPros LLC | Plano, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=UtilPros%20LLC%2C%20Plano%2C%20TX) |
-| 655 | VERATECH SYSTEMS LLC. | CEDAR PARK, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VERATECH%20SYSTEMS%20LLC.%2C%20CEDAR%20PARK%2C%20TX) |
-| 656 | VIRTUAL AMERICAN COMPANIES LLC | RICHMOND, TX | 518210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VIRTUAL%20AMERICAN%20COMPANIES%20LLC%2C%20RICHMOND%2C%20TX) |
-| 657 | VUYH TECHNOLOGIES LLC | KATY, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VUYH%20TECHNOLOGIES%20LLC%2C%20KATY%2C%20TX) |
-| 658 | WORK Technologies, LLC | San Antonio, TX | 518210 | 3 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=WORK%20Technologies%2C%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 659 | Waltasoft Technologies LLC | Irving, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Waltasoft%20Technologies%20LLC%2C%20Irving%2C%20TX) |
-| 660 | Watermark Insights, LLC | Austin, TX | 511210 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Watermark%20Insights%2C%20LLC%2C%20Austin%2C%20TX) |
-| 661 | We Empower IT LLC | The Woodlands, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=We%20Empower%20IT%20LLC%2C%20The%20Woodlands%2C%20TX) |
-| 662 | Winstream IT LLC | Irving, TX | 541519 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Winstream%20IT%20LLC%2C%20Irving%2C%20TX) |
-| 663 | XNOVAQ LLC | Frisco, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=XNOVAQ%20LLC%2C%20Frisco%2C%20TX) |
-| 664 | ZOSH TECH LLC | Flower Mound, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ZOSH%20TECH%20LLC%2C%20Flower%20Mound%2C%20TX) |
-| 665 | Zeal Capital Management LLC | Dallas, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zeal%20Capital%20Management%20LLC%2C%20Dallas%2C%20TX) |
-| 666 | Zimat Investments LLC | Plano, TX | 541511 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zimat%20Investments%20LLC%2C%20Plano%2C%20TX) |
-| 667 | wingu llc | Houston, TX | 541512 | 3 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=wingu%20llc%2C%20Houston%2C%20TX) |
-| 668 | A2visions LLC | Frisco, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=A2visions%20LLC%2C%20Frisco%2C%20TX) |
-| 669 | APIC SOLUTIONS LLC | AUSTIN, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=APIC%20SOLUTIONS%20LLC%2C%20AUSTIN%2C%20TX) |
-| 670 | Accruent LLC | Austin, TX | 511210 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Accruent%20LLC%2C%20Austin%2C%20TX) |
-| 671 | Assuratech LLC | Richardson, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Assuratech%20LLC%2C%20Richardson%2C%20TX) |
-| 672 | AveriSource LLC | Dallas, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AveriSource%20LLC%2C%20Dallas%2C%20TX) |
-| 673 | BIOREV LLC | IRVING, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BIOREV%20LLC%2C%20IRVING%2C%20TX) |
-| 674 | BLUESPARK LLC | IRVING, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BLUESPARK%20LLC%2C%20IRVING%2C%20TX) |
-| 675 | BPM Geeks, LLC | Houston, TX | 541511 | 4 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=BPM%20Geeks%2C%20LLC%2C%20Houston%2C%20TX) |
-| 676 | BROADX IT SOLUTIONS LLC | Irving, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BROADX%20IT%20SOLUTIONS%20LLC%2C%20Irving%2C%20TX) |
-| 677 | CLOUD CONNECT SYSTEMS LLC | FRISCO, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CLOUD%20CONNECT%20SYSTEMS%20LLC%2C%20FRISCO%2C%20TX) |
-| 678 | COSMOFETCH LLC | COPPELL, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=COSMOFETCH%20LLC%2C%20COPPELL%2C%20TX) |
-| 679 | Cambay Solutions LLC | Katy, TX | 54151 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cambay%20Solutions%20LLC%2C%20Katy%2C%20TX) |
-| 680 | Centrix Group, LLC | Austin, TX | 54151 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Centrix%20Group%2C%20LLC%2C%20Austin%2C%20TX) |
-| 681 | Cloud Technosoft LLC | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cloud%20Technosoft%20LLC%2C%20Dallas%2C%20TX) |
-| 682 | Cloudaspirers LLC | IRVING, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cloudaspirers%20LLC%2C%20IRVING%2C%20TX) |
-| 683 | Converge Info Systems LLC | Plano, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Converge%20Info%20Systems%20LLC%2C%20Plano%2C%20TX) |
-| 684 | DBD Ventures, LLC | Austin, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DBD%20Ventures%2C%20LLC%2C%20Austin%2C%20TX) |
-| 685 | DYOPATH, LLC | HOUSTON, TX | 541519 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DYOPATH%2C%20LLC%2C%20HOUSTON%2C%20TX) |
-| 686 | Datamind Analytics LLC | Frisco, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Datamind%20Analytics%20LLC%2C%20Frisco%2C%20TX) |
-| 687 | Datapower LLC | Frisco, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Datapower%20LLC%2C%20Frisco%2C%20TX) |
-| 688 | EverExpanse LLC | Round Rock, TX | 541519 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=EverExpanse%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 689 | Flutura Business Solutions LLC | Houston, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Flutura%20Business%20Solutions%20LLC%2C%20Houston%2C%20TX) |
-| 690 | FullStack Labs LLC | San Antonio, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=FullStack%20Labs%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 691 | GalacticIT LLC | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=GalacticIT%20LLC%2C%20Dallas%2C%20TX) |
-| 692 | Global Star IT Serve LLC | Plano, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Star%20IT%20Serve%20LLC%2C%20Plano%2C%20TX) |
-| 693 | Google LLC | California, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Google%20LLC%2C%20California%2C%20TX) |
-| 694 | Hyphen Solutions LLC | Dallas, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Hyphen%20Solutions%20LLC%2C%20Dallas%2C%20TX) |
-| 695 | INTEGRATEUS LLC. | AUSTIN, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INTEGRATEUS%20LLC.%2C%20AUSTIN%2C%20TX) |
-| 696 | Impact QA Services LLC | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Impact%20QA%20Services%20LLC%2C%20Dallas%2C%20TX) |
-| 697 | KUNDANA SOLUTIONS LLC. | ALLEN, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KUNDANA%20SOLUTIONS%20LLC.%2C%20ALLEN%2C%20TX) |
-| 698 | Koder Labs, LLC | Soutlake, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Koder%20Labs%2C%20LLC%2C%20Soutlake%2C%20TX) |
-| 699 | Krizmic LLC | Austin, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Krizmic%20LLC%2C%20Austin%2C%20TX) |
-| 700 | Laniakea Companies LLC | Farmers Branch, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Laniakea%20Companies%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 701 | Leading Edge Solutions LLC | The Colony, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Leading%20Edge%20Solutions%20LLC%2C%20The%20Colony%2C%20TX) |
-| 702 | Leverture, LLC | Decatur, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Leverture%2C%20LLC%2C%20Decatur%2C%20TX) |
-| 703 | LimeIQ LLC | Dallas, TX | 518210 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=LimeIQ%20LLC%2C%20Dallas%2C%20TX) |
-| 704 | Lion Skills LLC | RICHARDSON, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Lion%20Skills%20LLC%2C%20RICHARDSON%2C%20TX) |
-| 705 | Mahika Info LLC | Houston, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Mahika%20Info%20LLC%2C%20Houston%2C%20TX) |
-| 706 | Master CVV Technologies LLC | Prosper, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Master%20CVV%20Technologies%20LLC%2C%20Prosper%2C%20TX) |
-| 707 | NEO Techstaff LLC | Irving, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEO%20Techstaff%20LLC%2C%20Irving%2C%20TX) |
-| 708 | Nexus Cognitive Technologies LLC | Addison, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Nexus%20Cognitive%20Technologies%20LLC%2C%20Addison%2C%20TX) |
-| 709 | NorthStar Guru, LLC. | DALLAS, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NorthStar%20Guru%2C%20LLC.%2C%20DALLAS%2C%20TX) |
-| 710 | Ooloo Group LLC | Richmond, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Ooloo%20Group%20LLC%2C%20Richmond%2C%20TX) |
-| 711 | PEOPLESOFT TECH LLC | LEANDER, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PEOPLESOFT%20TECH%20LLC%2C%20LEANDER%2C%20TX) |
-| 712 | PLANET9TEK LLC | FRISCO, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PLANET9TEK%20LLC%2C%20FRISCO%2C%20TX) |
-| 713 | PLV INFO GENIUS LLC | FRISCO, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PLV%20INFO%20GENIUS%20LLC%2C%20FRISCO%2C%20TX) |
-| 714 | PR Square Techstaff LLC | Justin, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PR%20Square%20Techstaff%20LLC%2C%20Justin%2C%20TX) |
-| 715 | PROFESSIONAL TECHNOLGY SERVICES LLC | ALLEN, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PROFESSIONAL%20TECHNOLGY%20SERVICES%20LLC%2C%20ALLEN%2C%20TX) |
-| 716 | Paalar LLC | Frisco, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Paalar%20LLC%2C%20Frisco%2C%20TX) |
-| 717 | Pennycoder LLC | Irving, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Pennycoder%20LLC%2C%20Irving%2C%20TX) |
-| 718 | Petty Karma Interactive LLC | Austin, TX | 511210 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Petty%20Karma%20Interactive%20LLC%2C%20Austin%2C%20TX) |
-| 719 | Phoenix Infrastructure, LLC | Fort Worth, TX | 518210 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Phoenix%20Infrastructure%2C%20LLC%2C%20Fort%20Worth%2C%20TX) |
-| 720 | Pragmatech LLC | The Colony, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Pragmatech%20LLC%2C%20The%20Colony%2C%20TX) |
-| 721 | Precocity, LLC | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Precocity%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 722 | Projekt202, LLC | Dallas, TX | 511210 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Projekt202%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 723 | Prosper Path LLC | Little Elm, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Prosper%20Path%20LLC%2C%20Little%20Elm%2C%20TX) |
-| 724 | S TEKWIZARDS LLC | FARMERS BRANCH, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=S%20TEKWIZARDS%20LLC%2C%20FARMERS%20BRANCH%2C%20TX) |
-| 725 | SKYOVI LLC | Allen, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SKYOVI%20LLC%2C%20Allen%2C%20TX) |
-| 726 | SQL Brains, LLC | Frisco, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SQL%20Brains%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 727 | STRAVISO, LLC | Frisco, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=STRAVISO%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 728 | SYSINTELLECTS LLC | Plano, TX | 513210 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SYSINTELLECTS%20LLC%2C%20Plano%2C%20TX) |
-| 729 | Safekick Americas, LLC | Katy, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Safekick%20Americas%2C%20LLC%2C%20Katy%2C%20TX) |
-| 730 | Sakesh Solutions LLC | Sugar Land, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Sakesh%20Solutions%20LLC%2C%20Sugar%20Land%2C%20TX) |
-| 731 | Synnefo Solutions LLC | Grapevine, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Synnefo%20Solutions%20LLC%2C%20Grapevine%2C%20TX) |
-| 732 | TECHLADDER LLC | Houston, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TECHLADDER%20LLC%2C%20Houston%2C%20TX) |
-| 733 | TEK AMPLIFY LLC | Hutto, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEK%20AMPLIFY%20LLC%2C%20Hutto%2C%20TX) |
-| 734 | TEXAS FSG, LLC | SOUTH HOUSTON, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEXAS%20FSG%2C%20LLC%2C%20SOUTH%20HOUSTON%2C%20TX) |
-| 735 | TOADFLY TECHNOLOGIES, LLC | Houston, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TOADFLY%20TECHNOLOGIES%2C%20LLC%2C%20Houston%2C%20TX) |
-| 736 | TechBridge Partners, LLC. | Houston, TX | 541512 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TechBridge%20Partners%2C%20LLC.%2C%20Houston%2C%20TX) |
-| 737 | Technoflair Solutions LLC | Farmers Branch, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Technoflair%20Solutions%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 738 | Techwhiz Solutions, LLC | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Techwhiz%20Solutions%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 739 | Tek Geeks LLC | Argyle, TX | 54151 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tek%20Geeks%20LLC%2C%20Argyle%2C%20TX) |
-| 740 | TekOhana LLC | Farmers Branch, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TekOhana%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 741 | Turnitin LLC | Addison, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Turnitin%20LLC%2C%20Addison%2C%20TX) |
-| 742 | Tyche Softech, LLC | Prosper, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tyche%20Softech%2C%20LLC%2C%20Prosper%2C%20TX) |
-| 743 | VASHIPRA LLC | FULSHEAR, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VASHIPRA%20LLC%2C%20FULSHEAR%2C%20TX) |
-| 744 | VS Software LLC | Frisco, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VS%20Software%20LLC%2C%20Frisco%2C%20TX) |
-| 745 | WIN Reality LLC | Austin, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WIN%20Reality%20LLC%2C%20Austin%2C%20TX) |
-| 746 | Wavelabs US LLC | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Wavelabs%20US%20LLC%2C%20Dallas%2C%20TX) |
-| 747 | ZenQ, LLC. | Dallas, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ZenQ%2C%20LLC.%2C%20Dallas%2C%20TX) |
-| 748 | Zenith Cloud LLC | Irving, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Zenith%20Cloud%20LLC%2C%20Irving%2C%20TX) |
-| 749 | cPanel LLC | Houston, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=cPanel%20LLC%2C%20Houston%2C%20TX) |
-| 750 | eDriving, LLC | Westlake, TX | 541511 | 4 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=eDriving%2C%20LLC%2C%20Westlake%2C%20TX) |
-| 751 | ABACUS TECHNICAL SERVICES, LLC | PLANO, TX | 541512 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ABACUS%20TECHNICAL%20SERVICES%2C%20LLC%2C%20PLANO%2C%20TX) |
-| 752 | ACEABLE IT LLC | LEANDER, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ACEABLE%20IT%20LLC%2C%20LEANDER%2C%20TX) |
-| 753 | AGATI SYSTEMS LLC | FRISCO, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AGATI%20SYSTEMS%20LLC%2C%20FRISCO%2C%20TX) |
-| 754 | AMSYS Innovative Solutions LLC | Houston, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AMSYS%20Innovative%20Solutions%20LLC%2C%20Houston%2C%20TX) |
-| 755 | ANNA GLOBAL TECHNOLOGIES LLC | PLANO, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ANNA%20GLOBAL%20TECHNOLOGIES%20LLC%2C%20PLANO%2C%20TX) |
-| 756 | AR Val Services LLC | Allen, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=AR%20Val%20Services%20LLC%2C%20Allen%2C%20TX) |
-| 757 | ASA Techsol LLC | Dallas, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ASA%20Techsol%20LLC%2C%20Dallas%2C%20TX) |
-| 758 | ASPIREDATA LLC | PLANO, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ASPIREDATA%20LLC%2C%20PLANO%2C%20TX) |
-| 759 | Ayra Tech LLC | Allen, TX | 541511 | 5 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Ayra%20Tech%20LLC%2C%20Allen%2C%20TX) |
-| 760 | BIORBIT LLC | Lewisville, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=BIORBIT%20LLC%2C%20Lewisville%2C%20TX) |
-| 761 | Byte Solutions LLC | IRVING, TX | 541511 | 5 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Byte%20Solutions%20LLC%2C%20IRVING%2C%20TX) |
-| 762 | CUBICOID SOLUTIONS LLC | Cypress, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CUBICOID%20SOLUTIONS%20LLC%2C%20Cypress%2C%20TX) |
-| 763 | Cavnorise Technologies LLC | Dallas, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cavnorise%20Technologies%20LLC%2C%20Dallas%2C%20TX) |
-| 764 | Cognax Tech, LLC | Frisco, TX | 541512 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cognax%20Tech%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 765 | DATAVERN LLC | FARMERS BRANCH, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DATAVERN%20LLC%2C%20FARMERS%20BRANCH%2C%20TX) |
-| 766 | DataLoopz, LLC | Houston, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DataLoopz%2C%20LLC%2C%20Houston%2C%20TX) |
-| 767 | Dynamic Tek LLC | irving, TX | 541511 | 5 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Dynamic%20Tek%20LLC%2C%20irving%2C%20TX) |
-| 768 | Emerge IT Solutions LLC | Frisco, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Emerge%20IT%20Solutions%20LLC%2C%20Frisco%2C%20TX) |
-| 769 | Enuit, LLC | Houston, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Enuit%2C%20LLC%2C%20Houston%2C%20TX) |
-| 770 | INFOGAMA LLC | The Colony, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INFOGAMA%20LLC%2C%20The%20Colony%2C%20TX) |
-| 771 | INNOVATIVE SCHEDULING LLC | Dallas, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=INNOVATIVE%20SCHEDULING%20LLC%2C%20Dallas%2C%20TX) |
-| 772 | ITEKSYSTEM LLC | Farmers Branch, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ITEKSYSTEM%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 773 | ITTDIGITAL LLC. | AUSTIN, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ITTDIGITAL%20LLC.%2C%20AUSTIN%2C%20TX) |
-| 774 | InfoRight Solutions LLC | Frisco, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=InfoRight%20Solutions%20LLC%2C%20Frisco%2C%20TX) |
-| 775 | JDCQ SOLUTIONS, LLC | ADDISON, TX | 511210 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=JDCQ%20SOLUTIONS%2C%20LLC%2C%20ADDISON%2C%20TX) |
-| 776 | KNOVIQITSOLUTIONS LLC. | MAGNOLIA, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KNOVIQITSOLUTIONS%20LLC.%2C%20MAGNOLIA%2C%20TX) |
-| 777 | Khoros, LLC | Austin, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Khoros%2C%20LLC%2C%20Austin%2C%20TX) |
-| 778 | Milestone Technologies, LLC. | Dallas, TX | 54151 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Milestone%20Technologies%2C%20LLC.%2C%20Dallas%2C%20TX) |
-| 779 | NEURALSYS TEK LLC | HOUSTON, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEURALSYS%20TEK%20LLC%2C%20HOUSTON%2C%20TX) |
-| 780 | NEXTGEN IT LABS LLC | Houston, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=NEXTGEN%20IT%20LABS%20LLC%2C%20Houston%2C%20TX) |
-| 781 | OPTTECH LLC | Richardson, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OPTTECH%20LLC%2C%20Richardson%2C%20TX) |
-| 782 | Orbitpeople, LLC | Austin, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Orbitpeople%2C%20LLC%2C%20Austin%2C%20TX) |
-| 783 | P97 Networks, LLC | Houston, TX | 511210 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=P97%20Networks%2C%20LLC%2C%20Houston%2C%20TX) |
-| 784 | PEBAL BRIGHT TECHNOLOGIES LLC | CEDAR PARK, TX | 541519 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PEBAL%20BRIGHT%20TECHNOLOGIES%20LLC%2C%20CEDAR%20PARK%2C%20TX) |
-| 785 | PROTECHERS LLC. | HOUSTON, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PROTECHERS%20LLC.%2C%20HOUSTON%2C%20TX) |
-| 786 | PURVI TECHNOLOGIES LLC. | Lewisville, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PURVI%20TECHNOLOGIES%20LLC.%2C%20Lewisville%2C%20TX) |
-| 787 | Predactica, LLC | Plano, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Predactica%2C%20LLC%2C%20Plano%2C%20TX) |
-| 788 | Qubitsys LLC | Dallas, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Qubitsys%20LLC%2C%20Dallas%2C%20TX) |
-| 789 | Quisitive LLC | Irving, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Quisitive%20LLC%2C%20Irving%2C%20TX) |
-| 790 | Rarefied Atmosphere, LLC | Austin, TX | 518210 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rarefied%20Atmosphere%2C%20LLC%2C%20Austin%2C%20TX) |
-| 791 | ReferralPoint LLC | Irving, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ReferralPoint%20LLC%2C%20Irving%2C%20TX) |
-| 792 | Rifluxyss Softwares LLC | Irving, TX | 541519 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Rifluxyss%20Softwares%20LLC%2C%20Irving%2C%20TX) |
-| 793 | SPRINT ZONE TECH LLC | Cedar Park, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SPRINT%20ZONE%20TECH%20LLC%2C%20Cedar%20Park%2C%20TX) |
-| 794 | SS Business Services LLC | Houston, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SS%20Business%20Services%20LLC%2C%20Houston%2C%20TX) |
-| 795 | Srisys LLC | Irving, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Srisys%20LLC%2C%20Irving%2C%20TX) |
-| 796 | Suprha Svc LLC | Frisco, TX | 54151 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Suprha%20Svc%20LLC%2C%20Frisco%2C%20TX) |
-| 797 | TECH SPAN LLC | Plano, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TECH%20SPAN%20LLC%2C%20Plano%2C%20TX) |
-| 798 | Tech Era LLC | Irving, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tech%20Era%20LLC%2C%20Irving%2C%20TX) |
-| 799 | Tectonicx LLC | Addison, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tectonicx%20LLC%2C%20Addison%2C%20TX) |
-| 800 | Universal Conversion Technologies I, LLC | Grapevine, TX | 541512 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Universal%20Conversion%20Technologies%20I%2C%20LLC%2C%20Grapevine%2C%20TX) |
-| 801 | V SHARP LLC | Addison, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=V%20SHARP%20LLC%2C%20Addison%2C%20TX) |
-| 802 | Virtual Integrated Analytics Solutions, LLC | Houston, TX | 518210 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Virtual%20Integrated%20Analytics%20Solutions%2C%20LLC%2C%20Houston%2C%20TX) |
-| 803 | WORLDWIDE LOGICS LLC | COPPELL, TX | 541511 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=WORLDWIDE%20LOGICS%20LLC%2C%20COPPELL%2C%20TX) |
-| 804 | West Advanced Solutions, LLC | Houston, TX | 511210 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=West%20Advanced%20Solutions%2C%20LLC%2C%20Houston%2C%20TX) |
-| 805 | eTron Digital LLC | Southlake, TX | 541511 | 5 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=eTron%20Digital%20LLC%2C%20Southlake%2C%20TX) |
-| 806 | iMiDiA LLC | Cypress, TX | 518210 | 5 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=iMiDiA%20LLC%2C%20Cypress%2C%20TX) |
-| 807 | ACCLENCE LLC | PROSPER, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ACCLENCE%20LLC%2C%20PROSPER%2C%20TX) |
-| 808 | Acentrik Technology Solutions LLC | Irving, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Acentrik%20Technology%20Solutions%20LLC%2C%20Irving%2C%20TX) |
-| 809 | Amniscient LLC | Houston, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Amniscient%20LLC%2C%20Houston%2C%20TX) |
-| 810 | Arche Resources LLC | Farmers Branch, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Arche%20Resources%20LLC%2C%20Farmers%20Branch%2C%20TX) |
-| 811 | Audiencent, LLC | Dallas, TX | 54151 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Audiencent%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 812 | CAREER CONNECT TECHNOLOGIES LLC | Houston, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CAREER%20CONNECT%20TECHNOLOGIES%20LLC%2C%20Houston%2C%20TX) |
-| 813 | CLAPPONE LLC | Addison, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CLAPPONE%20LLC%2C%20Addison%2C%20TX) |
-| 814 | CONTENTACTIVE, LLC | HOUSTON, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CONTENTACTIVE%2C%20LLC%2C%20HOUSTON%2C%20TX) |
-| 815 | CROSS SENSE ANALYTICS LLC | LEWISVILLE, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CROSS%20SENSE%20ANALYTICS%20LLC%2C%20LEWISVILLE%2C%20TX) |
-| 816 | Chetana Soft LLC | HOUSTON, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Chetana%20Soft%20LLC%2C%20HOUSTON%2C%20TX) |
-| 817 | Cirrus Solutions LLC | Katy, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Cirrus%20Solutions%20LLC%2C%20Katy%2C%20TX) |
-| 818 | CloudRan Communication, LLC. | Dallas, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=CloudRan%20Communication%2C%20LLC.%2C%20Dallas%2C%20TX) |
-| 819 | DA2Technologies LLC | Dallas, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DA2Technologies%20LLC%2C%20Dallas%2C%20TX) |
-| 820 | DallasTek Software Solutions, LLC. | McKinney, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=DallasTek%20Software%20Solutions%2C%20LLC.%2C%20McKinney%2C%20TX) |
-| 821 | Delaware North America, LLC | Dallas, TX | 541519 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Delaware%20North%20America%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 822 | Drift Tech LLC | Celina, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Drift%20Tech%20LLC%2C%20Celina%2C%20TX) |
-| 823 | ERP STEP LLC | Plano, TX | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ERP%20STEP%20LLC%2C%20Plano%2C%20TX) |
-| 824 | Epiphany Industrial Technologies, LLC | San Antonio, TX | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Epiphany%20Industrial%20Technologies%2C%20LLC%2C%20San%20Antonio%2C%20TX) |
-| 825 | Frisco Analytics, LLC | Austin, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Frisco%20Analytics%2C%20LLC%2C%20Austin%2C%20TX) |
-| 826 | Gigsoft Labs LLC | Austin, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Gigsoft%20Labs%20LLC%2C%20Austin%2C%20TX) |
-| 827 | HAANTECH LLC | Southlake, TX | 54151 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=HAANTECH%20LLC%2C%20Southlake%2C%20TX) |
-| 828 | INNOCITO TECHNOLOGIES LLC | Irving, TX | 541511 | 6 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=INNOCITO%20TECHNOLOGIES%20LLC%2C%20Irving%2C%20TX) |
-| 829 | ITFluence LLC | McKinney, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=ITFluence%20LLC%2C%20McKinney%2C%20TX) |
-| 830 | Idealforce LLC | Austin, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Idealforce%20LLC%2C%20Austin%2C%20TX) |
-| 831 | Infosys Nova Holdings LLC | Richardson, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Infosys%20Nova%20Holdings%20LLC%2C%20Richardson%2C%20TX) |
-| 832 | Insightary LLC | Plano, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Insightary%20LLC%2C%20Plano%2C%20TX) |
-| 833 | KENFILL TECHNO SOLUTIONS LLC. | DALLAS, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=KENFILL%20TECHNO%20SOLUTIONS%20LLC.%2C%20DALLAS%2C%20TX) |
-| 834 | Keste, LLC d.b.a. ArganoKeste | Plano, TX | 541512 | 6 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Keste%2C%20LLC%20d.b.a.%20ArganoKeste%2C%20Plano%2C%20TX) |
-| 835 | MAADHU GLOBAL BUSINESS SOLUTIONS LLC. | SUGAR LAND, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=MAADHU%20GLOBAL%20BUSINESS%20SOLUTIONS%20LLC.%2C%20SUGAR%20LAND%2C%20TX) |
-| 836 | Maxwell Tech Systems LLC | Dallas, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Maxwell%20Tech%20Systems%20LLC%2C%20Dallas%2C%20TX) |
-| 837 | OpenKyber LLC | Round Rock, TX | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=OpenKyber%20LLC%2C%20Round%20Rock%2C%20TX) |
-| 838 | PHASORSOFT GROUP LLC | LEANDER, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=PHASORSOFT%20GROUP%20LLC%2C%20LEANDER%2C%20TX) |
-| 839 | Royal Monarch Solutions, LLC | Irving, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Royal%20Monarch%20Solutions%2C%20LLC%2C%20Irving%2C%20TX) |
-| 840 | SASS Service LLC | Austin, TX | 541511 | 6 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=SASS%20Service%20LLC%2C%20Austin%2C%20TX) |
-| 841 | SILVERLINE TECHNOLOGIES OF AMERICA, LLC | RICHARDSON, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SILVERLINE%20TECHNOLOGIES%20OF%20AMERICA%2C%20LLC%2C%20RICHARDSON%2C%20TX) |
-| 842 | SPIN Analytics and Strategy, LLC | Conroe, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SPIN%20Analytics%20and%20Strategy%2C%20LLC%2C%20Conroe%2C%20TX) |
-| 843 | SRK IT GROUP LLC | Lewisville, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SRK%20IT%20GROUP%20LLC%2C%20Lewisville%2C%20TX) |
-| 844 | SV Evolutions, LLC | Frisco, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SV%20Evolutions%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 845 | Seventhgeneration Technologies LLC | Argyle, TX | 541511 | 6 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=Seventhgeneration%20Technologies%20LLC%2C%20Argyle%2C%20TX) |
-| 846 | SmartStart Systems LLC | Cypress, TX | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=SmartStart%20Systems%20LLC%2C%20Cypress%2C%20TX) |
-| 847 | Spinakr Solutions LLC | Dallas, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Spinakr%20Solutions%20LLC%2C%20Dallas%2C%20TX) |
-| 848 | TEK FYNDER LLC | Plano, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=TEK%20FYNDER%20LLC%2C%20Plano%2C%20TX) |
-| 849 | TSI USA, LLC | Dallas, TX | 541511 | 6 | low | 🔎 | [📍](https://www.google.com/maps/search/?api=1&query=TSI%20USA%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 850 | The WIMR Group, LLC | Dallas, TX | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=The%20WIMR%20Group%2C%20LLC%2C%20Dallas%2C%20TX) |
-| 851 | Tire Profiles LLC | Irving, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Tire%20Profiles%20LLC%2C%20Irving%2C%20TX) |
-| 852 | Twilnet LLC | Frisco, TX | 541519 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Twilnet%20LLC%2C%20Frisco%2C%20TX) |
-| 853 | United Cloud Technologies LLC | Lewisville, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=United%20Cloud%20Technologies%20LLC%2C%20Lewisville%2C%20TX) |
-| 854 | Utilipal LLC | Irving, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Utilipal%20LLC%2C%20Irving%2C%20TX) |
-| 855 | VSTRS LLC dba Tek Global | Cypress, TX | 54151 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=VSTRS%20LLC%20dba%20Tek%20Global%2C%20Cypress%2C%20TX) |
-| 856 | Vintek LLC | Prosper, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Vintek%20LLC%2C%20Prosper%2C%20TX) |
-| 857 | Vivi LLC | Houston, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Vivi%20LLC%2C%20Houston%2C%20TX) |
-| 858 | Wawasan LLC | Katy, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=Wawasan%20LLC%2C%20Katy%2C%20TX) |
-| 859 | eComchain, LLC | Frisco, TX | 541511 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=eComchain%2C%20LLC%2C%20Frisco%2C%20TX) |
-| 860 | eVerge Group LLC | Lewisville, TX | 541512 | 6 | low |  | [📍](https://www.google.com/maps/search/?api=1&query=eVerge%20Group%20LLC%2C%20Lewisville%2C%20TX) |
+| # | Company | Address | City, ST | NAICS | Filings | Map |
+|---|---------|---------|----------|-------|--------:|-----|
+| 1 | Anrib LLC | 2 CITYPLACE DR 2FL | St Louis, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Anrib%20LLC%2C%202%20CITYPLACE%20DR%202FL%2C%20St%20Louis%2C%20MO) |
+| 2 | Bordo AI, LLC | 16052 Swingley Ridge Road | Chesterfield, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Bordo%20AI%2C%20LLC%2C%2016052%20Swingley%20Ridge%20Road%2C%20Chesterfield%2C%20MO) |
+| 3 | Clearent LLC | 11330 Olive Boulevard Suite 200 | Creve Coeur, MO | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Clearent%20LLC%2C%2011330%20Olive%20Boulevard%20Suite%20200%2C%20Creve%20Coeur%2C%20MO) |
+| 4 | Element 74, LLC | 1823 Rust Avenue Ste. 102 | Cape Girardeau, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Element%2074%2C%20LLC%2C%201823%20Rust%20Avenue%20Ste.%20102%2C%20Cape%20Girardeau%2C%20MO) |
+| 5 | Enso Endeavors LLC | 4741 Central St Suite 500 | Kansas City, MO | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Enso%20Endeavors%20LLC%2C%204741%20Central%20St%20Suite%20500%2C%20Kansas%20City%2C%20MO) |
+| 6 | Facilisgroup, LLC | 1600 Brentwood Blvd, Ste 800 | Brentwood, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Facilisgroup%2C%20LLC%2C%201600%20Brentwood%20Blvd%2C%20Ste%20800%2C%20Brentwood%2C%20MO) |
+| 7 | Foresite Healthcare LLC | 2574 Metro Blvd | Maryland Heights, MO | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Foresite%20Healthcare%20LLC%2C%202574%20Metro%20Blvd%2C%20Maryland%20Heights%2C%20MO) |
+| 8 | Gamer LLC | 2055 Craigshire Road Suite 402 | Maryland Heights, MO | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Gamer%20LLC%2C%202055%20Craigshire%20Road%20Suite%20402%2C%20Maryland%20Heights%2C%20MO) |
+| 9 | Gateway Scripts LLC | 3868 Boulevard Heights Ct | Saint Louis, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Gateway%20Scripts%20LLC%2C%203868%20Boulevard%20Heights%20Ct%2C%20Saint%20Louis%2C%20MO) |
+| 10 | INTEGRATED MANAGED CARE SYSTEMS, LLC | 338 BROADWAY SUITE 520 | CAPE GIRARDEAU, MO | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=INTEGRATED%20MANAGED%20CARE%20SYSTEMS%2C%20LLC%2C%20338%20BROADWAY%20SUITE%20520%2C%20CAPE%20GIRARDEAU%2C%20MO) |
+| 11 | KKEG Solutions LLC | 427 Dovedale Dr | OFallon, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=KKEG%20Solutions%20LLC%2C%20427%20Dovedale%20Dr%2C%20OFallon%2C%20MO) |
+| 12 | LOGICGRIDZ, LLC | 111 WEST PORT PLAZA DR SUITE 600 | ST LOUIS, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=LOGICGRIDZ%2C%20LLC%2C%20111%20WEST%20PORT%20PLAZA%20DR%20SUITE%20600%2C%20ST%20LOUIS%2C%20MO) |
+| 13 | Liberty Hotel Group LLC | 115 Blue Jay Dr Suite 101 | Liberty, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Liberty%20Hotel%20Group%20LLC%2C%20115%20Blue%20Jay%20Dr%20Suite%20101%2C%20Liberty%2C%20MO) |
+| 14 | Linxup, LLC | 424 S WOODS MILL RD Suite 210 | Chesterfield, MO | 51121 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Linxup%2C%20LLC%2C%20424%20S%20WOODS%20MILL%20RD%20Suite%20210%2C%20Chesterfield%2C%20MO) |
+| 15 | Liquid Logics, L.L.C. | 200 Unity Cir N | Lee's Summit, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Liquid%20Logics%2C%20L.L.C.%2C%20200%20Unity%20Cir%20N%2C%20Lee%27s%20Summit%2C%20MO) |
+| 16 | MetaJungle, LLC | 5160 N 22nd St | Ozark, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=MetaJungle%2C%20LLC%2C%205160%20N%2022nd%20St%2C%20Ozark%2C%20MO) |
+| 17 | Moktama IT Solutions, LLC. | 10314 Briar Hollow Dr Apt. 1 | Saint Louis, MO | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Moktama%20IT%20Solutions%2C%20LLC.%2C%2010314%20Briar%20Hollow%20Dr%20Apt.%201%2C%20Saint%20Louis%2C%20MO) |
+| 18 | NEWGEN IT SOLUTIONS LLC | 30450 Orchard Lake Rd | Farmington Hills, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=NEWGEN%20IT%20SOLUTIONS%20LLC%2C%2030450%20Orchard%20Lake%20Rd%2C%20Farmington%20Hills%2C%20MO) |
+| 19 | Newagez Technologies LLC | 117 S Lexington St Ste 100 | Harrisonville, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Newagez%20Technologies%20LLC%2C%20117%20S%20Lexington%20St%20Ste%20100%2C%20Harrisonville%2C%20MO) |
+| 20 | PINNACLELINK VENTURES LLC | 533 Clara Ave Apt 12 | Saint Louis, MO | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=PINNACLELINK%20VENTURES%20LLC%2C%20533%20Clara%20Ave%20Apt%2012%2C%20Saint%20Louis%2C%20MO) |
+| 21 | Segistics, LLC | 1331 Saline Street | North Kansas City, MO | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Segistics%2C%20LLC%2C%201331%20Saline%20Street%2C%20North%20Kansas%20City%2C%20MO) |
+| 22 | Sidjun LLC | 857 Foxsprings Dr Apt # D | Chesterfield, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Sidjun%20LLC%2C%20857%20Foxsprings%20Dr%20Apt%20%23%20D%2C%20Chesterfield%2C%20MO) |
+| 23 | TEKPROS LLC | 4122 KEATON CROSSING BLVD STE 106 | OFALLON, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TEKPROS%20LLC%2C%204122%20KEATON%20CROSSING%20BLVD%20STE%20106%2C%20OFALLON%2C%20MO) |
+| 24 | TM & Associates LLC | 1173 S Kingshighway Blvd | Saint Louis, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TM%20%26%20Associates%20LLC%2C%201173%20S%20Kingshighway%20Blvd%2C%20Saint%20Louis%2C%20MO) |
+| 25 | VIVID SITES, LLC | 999 Executive Parkway Dr. Suite 330 | St. Louis, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=VIVID%20SITES%2C%20LLC%2C%20999%20Executive%20Parkway%20Dr.%20Suite%20330%2C%20St.%20Louis%2C%20MO) |
+| 26 | VeriShip, LLC | 8880 Ward Parkway | Kansas City, MO | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=VeriShip%2C%20LLC%2C%208880%20Ward%20Parkway%2C%20Kansas%20City%2C%20MO) |
+| 27 | Vizicar LLC | 206 E Texas Avenue 103 | Columbia, MO | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Vizicar%20LLC%2C%20206%20E%20Texas%20Avenue%20103%2C%20Columbia%2C%20MO) |
+| 28 | Volt Systems, LLC | 1715 Deer Tracks Trail Suite 210 | St. Louis, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Volt%20Systems%2C%20LLC%2C%201715%20Deer%20Tracks%20Trail%20Suite%20210%2C%20St.%20Louis%2C%20MO) |
+| 29 | Web Design and Company, LLC | 2315 Locust Street Suite 14 | St. Louis, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Web%20Design%20and%20Company%2C%20LLC%2C%202315%20Locust%20Street%20Suite%2014%2C%20St.%20Louis%2C%20MO) |
+| 30 | iTek360 LLC | 339 Broadway Street Ste. 210 | Cape Girardeau, MO | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=iTek360%20LLC%2C%20339%20Broadway%20Street%20Ste.%20210%2C%20Cape%20Girardeau%2C%20MO) |
+| 31 | se38 Solutions LLC | 2340 The Courts Drive | Chesterfield, MO | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=se38%20Solutions%20LLC%2C%202340%20The%20Courts%20Drive%2C%20Chesterfield%2C%20MO) |
+| 32 | AYTECHNOLOGIES LLC | 2325 STERLING POINTE DR | CHESTERFIELD, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=AYTECHNOLOGIES%20LLC%2C%202325%20STERLING%20POINTE%20DR%2C%20CHESTERFIELD%2C%20MO) |
+| 33 | Ascension Health Resource and Supply Management Group, LLC | 2054 Westport Center Drive | St. Louis, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Ascension%20Health%20Resource%20and%20Supply%20Management%20Group%2C%20LLC%2C%202054%20Westport%20Center%20Drive%2C%20St.%20Louis%2C%20MO) |
+| 34 | AutoAlert, LLC | 114 W 11th Street | Kansas, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=AutoAlert%2C%20LLC%2C%20114%20W%2011th%20Street%2C%20Kansas%2C%20MO) |
+| 35 | Bluspire Technologies LLC | 1941 Bridgecrest Xing | Saint Charles, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Bluspire%20Technologies%20LLC%2C%201941%20Bridgecrest%20Xing%2C%20Saint%20Charles%2C%20MO) |
+| 36 | CareSignal, LLC | 4220 Duncan Avenue Suite 201 | St. Louis, MO | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CareSignal%2C%20LLC%2C%204220%20Duncan%20Avenue%20Suite%20201%2C%20St.%20Louis%2C%20MO) |
+| 37 | DEVEIQ LLC | 18336 EDISON AVE | CHESTERFIELD, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=DEVEIQ%20LLC%2C%2018336%20EDISON%20AVE%2C%20CHESTERFIELD%2C%20MO) |
+| 38 | DST Brokerage Solutions LLC | 1055 Broadway | Kansas City, MO | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=DST%20Brokerage%20Solutions%20LLC%2C%201055%20Broadway%2C%20Kansas%20City%2C%20MO) |
+| 39 | Digital Plus Solutions LLC | 400 E Red Bridge Road, Ste 312 | Kansas City, MO | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20Plus%20Solutions%20LLC%2C%20400%20E%20Red%20Bridge%20Road%2C%20Ste%20312%2C%20Kansas%20City%2C%20MO) |
+| 40 | Ditat, LLC | 12400 Olive Blvd. Suite 440 | Saint Louis, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Ditat%2C%20LLC%2C%2012400%20Olive%20Blvd.%20Suite%20440%2C%20Saint%20Louis%2C%20MO) |
+| 41 | Foursevens LLC | 1101 Dautel Ln | St. Louis, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Foursevens%20LLC%2C%201101%20Dautel%20Ln%2C%20St.%20Louis%2C%20MO) |
+| 42 | Jon Buck Enterprises, LLC | 218 S MAIN ST Suite B | JOPLIN, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Jon%20Buck%20Enterprises%2C%20LLC%2C%20218%20S%20MAIN%20ST%20Suite%20B%2C%20JOPLIN%2C%20MO) |
+| 43 | KDK Technology LLC | 1221 Cashmere Lane Ste 101 | Saint Peters, MO | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=KDK%20Technology%20LLC%2C%201221%20Cashmere%20Lane%20Ste%20101%2C%20Saint%20Peters%2C%20MO) |
+| 44 | Kelly Mitchell Group LLC | 8229 Maryland Avenue | St. Louis, MO | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Kelly%20Mitchell%20Group%20LLC%2C%208229%20Maryland%20Avenue%2C%20St.%20Louis%2C%20MO) |
+| 45 | Rechars Solutions, LLC. | 100 Chesterfield Business Pkwy Suite 200 | Chesterfield, MO | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Rechars%20Solutions%2C%20LLC.%2C%20100%20Chesterfield%20Business%20Pkwy%20Suite%20200%2C%20Chesterfield%2C%20MO) |
+| 46 | TierPoint, LLC | 12444 Powerscourt Drive Suite 450 | Saint Louis, MO | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TierPoint%2C%20LLC%2C%2012444%20Powerscourt%20Drive%20Suite%20450%2C%20Saint%20Louis%2C%20MO) |
+| 47 | Trizetto Provider Solutions LLC | 3300 Rider Trail South | Earth City, MO | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Trizetto%20Provider%20Solutions%20LLC%2C%203300%20Rider%20Trail%20South%2C%20Earth%20City%2C%20MO) |
+| 48 | UNI CONNECTIONS LLC | 737 ROSE HAVEN CT | BALLWIN, MO | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=UNI%20CONNECTIONS%20LLC%2C%20737%20ROSE%20HAVEN%20CT%2C%20BALLWIN%2C%20MO) |
+| 49 | Valorem Reply, LLC | 2101 Broadway Ste 11 | Kansas City, MO | 5415 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Valorem%20Reply%2C%20LLC%2C%202101%20Broadway%20Ste%2011%2C%20Kansas%20City%2C%20MO) |
+| 50 | Aggio, LLC | 1100 Corporate Square Drive Suite 243 | St. Louis, MO | 51821 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Aggio%2C%20LLC%2C%201100%20Corporate%20Square%20Drive%20Suite%20243%2C%20St.%20Louis%2C%20MO) |
+| 51 | Ashers & Aarons LLC | 329 Juanita McKee Dr | Ballwin, MO | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Ashers%20%26%20Aarons%20LLC%2C%20329%20Juanita%20McKee%20Dr%2C%20Ballwin%2C%20MO) |
+| 52 | DataMap, LLC | 2300 Main Street Suite 900 | Kansas City, MO | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=DataMap%2C%20LLC%2C%202300%20Main%20Street%20Suite%20900%2C%20Kansas%20City%2C%20MO) |
+| 53 | Envision, LLC | 6 Cityplace Drive Suite 350 | St. Louis, MO | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Envision%2C%20LLC%2C%206%20Cityplace%20Drive%20Suite%20350%2C%20St.%20Louis%2C%20MO) |
+| 54 | Guga Technology Solutions LLC | 3801 Oakland Ave Ste. 109 A | Saint Joseph, MO | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Guga%20Technology%20Solutions%20LLC%2C%203801%20Oakland%20Ave%20Ste.%20109%20A%2C%20Saint%20Joseph%2C%20MO) |
+| 55 | Local Backhaul Networks, LLC | 624 Trade Center Blvd. Suite A | St. Louis, MO | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Local%20Backhaul%20Networks%2C%20LLC%2C%20624%20Trade%20Center%20Blvd.%20Suite%20A%2C%20St.%20Louis%2C%20MO) |
+| 56 | Snow Tech Solutions LLC | 544 Miralago Shore Dr | Saint Peters, MO | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Snow%20Tech%20Solutions%20LLC%2C%20544%20Miralago%20Shore%20Dr%2C%20Saint%20Peters%2C%20MO) |
+| 57 | Techso IT, LLC | 1555 Kisker Road Suite # 140 | St Charles, MO | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Techso%20IT%2C%20LLC%2C%201555%20Kisker%20Road%20Suite%20%23%20140%2C%20St%20Charles%2C%20MO) |
+| 58 | The Burgiss Group, LLC | 111 River Street | Hoboken, MO | 511210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=The%20Burgiss%20Group%2C%20LLC%2C%20111%20River%20Street%2C%20Hoboken%2C%20MO) |
+| 59 | Vantage Links, LLC | One City Place Drive, Suite 285 | St. Louis, MO | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Vantage%20Links%2C%20LLC%2C%20One%20City%20Place%20Drive%2C%20Suite%20285%2C%20St.%20Louis%2C%20MO) |
+| 60 | Mortgage NEKS LLC | 16 N Central Ave | Clayton, MO | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Mortgage%20NEKS%20LLC%2C%2016%20N%20Central%20Ave%2C%20Clayton%2C%20MO) |
+| 61 | Nexify Infosystems LLC | 1921 Crossbridge Ct | Saint Charles, MO | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Nexify%20Infosystems%20LLC%2C%201921%20Crossbridge%20Ct%2C%20Saint%20Charles%2C%20MO) |
+| 62 | Omnigo Software LLC | 10430 Baur Blvd. | St. Louis, MO | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Omnigo%20Software%20LLC%2C%2010430%20Baur%20Blvd.%2C%20St.%20Louis%2C%20MO) |
+| 63 | Ethoca LLC | 2200 Mastercard Blvd | O’Fallon, MO | 541519 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Ethoca%20LLC%2C%202200%20Mastercard%20Blvd%2C%20O%E2%80%99Fallon%2C%20MO) |
+| 64 | Hire Soft Solutions LLC | 302 Falcon Hill Dr | O’Fallon, MO | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Hire%20Soft%20Solutions%20LLC%2C%20302%20Falcon%20Hill%20Dr%2C%20O%E2%80%99Fallon%2C%20MO) |
+| 65 | Zetta Data Systems LLC | 3225 South Brentwood Blvd Ste 209A | Webster Groves, MO | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Zetta%20Data%20Systems%20LLC%2C%203225%20South%20Brentwood%20Blvd%20Ste%20209A%2C%20Webster%20Groves%2C%20MO) |
+| 66 | CODENETWORKZ, LLC | 11730 WYANDOTTE ST | KANSAS CITY, MO | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=CODENETWORKZ%2C%20LLC%2C%2011730%20WYANDOTTE%20ST%2C%20KANSAS%20CITY%2C%20MO) |
+| 67 | HCM Square LLC | 521 Lankin Dr | St Charles, MO | 54151 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=HCM%20Square%20LLC%2C%20521%20Lankin%20Dr%2C%20St%20Charles%2C%20MO) |
+| 68 | Information Technology Warehouse LLC | 1515 N. Warson Road Suite 200 | St. Louis, MO | 54151 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Information%20Technology%20Warehouse%20LLC%2C%201515%20N.%20Warson%20Road%20Suite%20200%2C%20St.%20Louis%2C%20MO) |
+| 69 | 2nd Source IT Solutions, LLC | 6300 Independence Pkwy Suite D | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=2nd%20Source%20IT%20Solutions%2C%20LLC%2C%206300%20Independence%20Pkwy%20Suite%20D%2C%20Plano%2C%20TX) |
+| 70 | 360 Technology LLC | 4100 Spring Valley Road Suite 139 | Farmers Branch, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=360%20Technology%20LLC%2C%204100%20Spring%20Valley%20Road%20Suite%20139%2C%20Farmers%20Branch%2C%20TX) |
+| 71 | A4 Global Tech LLC | 603 E Hickory Street Suite 128 | Denton, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=A4%20Global%20Tech%20LLC%2C%20603%20E%20Hickory%20Street%20Suite%20128%2C%20Denton%2C%20TX) |
+| 72 | ABSOLUTE FABRICATION LLC | 7218  Clinton Dr | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ABSOLUTE%20FABRICATION%20LLC%2C%207218%20%20Clinton%20Dr%2C%20Houston%2C%20TX) |
+| 73 | ADAPTRA LLC | 1303 W.Walnut Hill Ln Suite 352 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ADAPTRA%20LLC%2C%201303%20W.Walnut%20Hill%20Ln%20Suite%20352%2C%20Irving%2C%20TX) |
+| 74 | ADROIT AFFINE LLC | 21640 N 19TH AVENUE SUITE C4 | PHOENIX, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ADROIT%20AFFINE%20LLC%2C%2021640%20N%2019TH%20AVENUE%20SUITE%20C4%2C%20PHOENIX%2C%20TX) |
+| 75 | AEHL US LLC | 5900 Balcones Drive Suite 100 | Austin, TX | 51821 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AEHL%20US%20LLC%2C%205900%20Balcones%20Drive%20Suite%20100%2C%20Austin%2C%20TX) |
+| 76 | AGI FLUX LLC | 13151 Emily Rd Ste 200 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AGI%20FLUX%20LLC%2C%2013151%20Emily%20Rd%20Ste%20200%2C%20Dallas%2C%20TX) |
+| 77 | AI Pioneer LLC | 14111 King RD Ste 610 | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AI%20Pioneer%20LLC%2C%2014111%20King%20RD%20Ste%20610%2C%20Frisco%2C%20TX) |
+| 78 | AI2AIGLOBAL LLC | 616 FARM TO MARKET 1960 RD W SUITE 645 | HOUSTON, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AI2AIGLOBAL%20LLC%2C%20616%20FARM%20TO%20MARKET%201960%20RD%20W%20SUITE%20645%2C%20HOUSTON%2C%20TX) |
+| 79 | AIWEBIT LLC | 6201 Windhaven Parkway Apt # 2712 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AIWEBIT%20LLC%2C%206201%20Windhaven%20Parkway%20Apt%20%23%202712%2C%20Plano%2C%20TX) |
+| 80 | ALICE TECH SOLUTIONSLLC | 320 DECKER DRIVE | IRVING, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ALICE%20TECH%20SOLUTIONSLLC%2C%20320%20DECKER%20DRIVE%2C%20IRVING%2C%20TX) |
+| 81 | ALLURTECH LLC | 13345 Marmolada Dr | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ALLURTECH%20LLC%2C%2013345%20Marmolada%20Dr%2C%20Frisco%2C%20TX) |
+| 82 | ANOVO TECHNOLOGY GROUP, LLC | 8101 MEMORIAL LN. | PLANO, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ANOVO%20TECHNOLOGY%20GROUP%2C%20LLC%2C%208101%20MEMORIAL%20LN.%2C%20PLANO%2C%20TX) |
+| 83 | AWNSolution LLC | 3490 US Highway 1 Suite 109 | Princeton, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AWNSolution%20LLC%2C%203490%20US%20Highway%201%20Suite%20109%2C%20Princeton%2C%20TX) |
+| 84 | AZORY TECH LLC | 4425 West Airport FWY Suite   138, | Irving,, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=AZORY%20TECH%20LLC%2C%204425%20West%20Airport%20FWY%20Suite%20%20%20138%2C%2C%20Irving%2C%2C%20TX) |
+| 85 | ActiveTech IT Solutions LLC | 608 E Hickory street Suite # 128 | Denton, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ActiveTech%20IT%20Solutions%20LLC%2C%20608%20E%20Hickory%20street%20Suite%20%23%20128%2C%20Denton%2C%20TX) |
+| 86 | Admirable Technologies LLC | 2261 Gattis school Rd unit 205 | Round Rock, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Admirable%20Technologies%20LLC%2C%202261%20Gattis%20school%20Rd%20unit%20205%2C%20Round%20Rock%2C%20TX) |
+| 87 | Advanced Traffic Solutions, LLC | 440 Cobia Dr. Suite 1103 | Katy, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Advanced%20Traffic%20Solutions%2C%20LLC%2C%20440%20Cobia%20Dr.%20Suite%201103%2C%20Katy%2C%20TX) |
+| 88 | All Calendars LLC | 6851 NE Loop 820 Ste 200 | North Richland Hills, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=All%20Calendars%20LLC%2C%206851%20NE%20Loop%20820%20Ste%20200%2C%20North%20Richland%20Hills%2C%20TX) |
+| 89 | Alpha Cognition LLC | 1509 Gautami Dr | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Alpha%20Cognition%20LLC%2C%201509%20Gautami%20Dr%2C%20Austin%2C%20TX) |
+| 90 | Animo Services, LLC | 10000 N Central Expressway Suite 1300 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Animo%20Services%2C%20LLC%2C%2010000%20N%20Central%20Expressway%20Suite%201300%2C%20Dallas%2C%20TX) |
+| 91 | Anion Marketing LLC | 3569 Timberland Place | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Anion%20Marketing%20LLC%2C%203569%20Timberland%20Place%2C%20Frisco%2C%20TX) |
+| 92 | Apis Business Intelligence, LLC | 7700 Windrose Avenue, Suite G300 | Plano, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Apis%20Business%20Intelligence%2C%20LLC%2C%207700%20Windrose%20Avenue%2C%20Suite%20G300%2C%20Plano%2C%20TX) |
+| 93 | Argus Partners LLC | 14951 Kings Port Rd. | Fort Worth, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Argus%20Partners%20LLC%2C%2014951%20Kings%20Port%20Rd.%2C%20Fort%20Worth%2C%20TX) |
+| 94 | Arise Soft LLC | 5465 Legacy Drive Suite 650/6116 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Arise%20Soft%20LLC%2C%205465%20Legacy%20Drive%20Suite%20650/6116%2C%20Plano%2C%20TX) |
+| 95 | Arka Services LLC | 1620 Red Bud Lane Suite 211 | Round Rock, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Arka%20Services%20LLC%2C%201620%20Red%20Bud%20Lane%20Suite%20211%2C%20Round%20Rock%2C%20TX) |
+| 96 | Artigence Tech Solutions LLC | 13509 Lyndon B Johnson Fwy STE 200 | Garland, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Artigence%20Tech%20Solutions%20LLC%2C%2013509%20Lyndon%20B%20Johnson%20Fwy%20STE%20200%2C%20Garland%2C%20TX) |
+| 97 | Asite LLC | 1725 Hughes Landing Blvd. Flr. 11th | The Woodlands, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Asite%20LLC%2C%201725%20Hughes%20Landing%20Blvd.%20Flr.%2011th%2C%20The%20Woodlands%2C%20TX) |
+| 98 | Aspire Digital LLC | 9600 Great Hills Trail Suite 150W | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Aspire%20Digital%20LLC%2C%209600%20Great%20Hills%20Trail%20Suite%20150W%2C%20Austin%2C%20TX) |
+| 99 | Athletically LLC | 5309 William Holland Ave Apt 5 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Athletically%20LLC%2C%205309%20William%20Holland%20Ave%20Apt%205%2C%20Austin%2C%20TX) |
+| 100 | Austin Arc,LLC. | 7000 North MoPac Expressway Ste 200 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Austin%20Arc%2CLLC.%2C%207000%20North%20MoPac%20Expressway%20Ste%20200%2C%20Austin%2C%20TX) |
+| 101 | Avaro Group LLC | 7600 Highmeadow Dr APT 3012 | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Avaro%20Group%20LLC%2C%207600%20Highmeadow%20Dr%20APT%203012%2C%20Houston%2C%20TX) |
+| 102 | BACKCHINA LLC | 12234 SHADOW CREEK PKWY STE 5100 | PEARLAND, TX | 519130 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=BACKCHINA%20LLC%2C%2012234%20SHADOW%20CREEK%20PKWY%20STE%205100%2C%20PEARLAND%2C%20TX) |
+| 103 | BGSF PROFESSIONAL, LLC | 5850 GRANITE PARKWAY | PLANO, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=BGSF%20PROFESSIONAL%2C%20LLC%2C%205850%20GRANITE%20PARKWAY%2C%20PLANO%2C%20TX) |
+| 104 | Barrage Systems LLC | 1848 Norwood Plaza ste100 | Hurst, TX | 541513 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Barrage%20Systems%20LLC%2C%201848%20Norwood%20Plaza%20ste100%2C%20Hurst%2C%20TX) |
+| 105 | Bellatrix Systems LLC | 1839 Sherwood Forest St STE 102 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Bellatrix%20Systems%20LLC%2C%201839%20Sherwood%20Forest%20St%20STE%20102%2C%20Houston%2C%20TX) |
+| 106 | Bhoot LLC | E 6th Street Door 612 | Austin, TX | 51821 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Bhoot%20LLC%2C%20E%206th%20Street%20Door%20612%2C%20Austin%2C%20TX) |
+| 107 | BigNorTek LLC | 14800 Quorum Dr 280 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=BigNorTek%20LLC%2C%2014800%20Quorum%20Dr%20280%2C%20Dallas%2C%20TX) |
+| 108 | Bonjoy, LLC | 1725 Hughes Landing Boulevard 11th Floor | The Woodlands, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Bonjoy%2C%20LLC%2C%201725%20Hughes%20Landing%20Boulevard%2011th%20Floor%2C%20The%20Woodlands%2C%20TX) |
+| 109 | Bonterra Tech LLC | 10801-2 N. Mopac Expy. Suite 300 | Austin, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Bonterra%20Tech%20LLC%2C%2010801-2%20N.%20Mopac%20Expy.%20Suite%20300%2C%20Austin%2C%20TX) |
+| 110 | Boostlingo, LLC | 98 San Jacinto Blvd c/o Industrious, 4th Floor | Austin, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Boostlingo%2C%20LLC%2C%2098%20San%20Jacinto%20Blvd%20c/o%20Industrious%2C%204th%20Floor%2C%20Austin%2C%20TX) |
+| 111 | BrainWaves Digital, LLC | 574 July Johnson Dr | Austin, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=BrainWaves%20Digital%2C%20LLC%2C%20574%20July%20Johnson%20Dr%2C%20Austin%2C%20TX) |
+| 112 | Breaker19 Logistics LLC | 1334 Brittmoore Rd Suite 1000B | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Breaker19%20Logistics%20LLC%2C%201334%20Brittmoore%20Rd%20Suite%201000B%2C%20Houston%2C%20TX) |
+| 113 | Broadway Technology LLC | 5000 Plaza on the Lake Suite 250 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Broadway%20Technology%20LLC%2C%205000%20Plaza%20on%20the%20Lake%20Suite%20250%2C%20Austin%2C%20TX) |
+| 114 | BuilderBinder LLC | 5317 McCandless St., Austin, TX 78722 | Austin, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=BuilderBinder%20LLC%2C%205317%20McCandless%20St.%2C%20Austin%2C%20TX%2078722%2C%20Austin%2C%20TX) |
+| 115 | C COM DIGITAL LLC | 5744 TOUCHSTONE DRIVE | MCKINNEY, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=C%20COM%20DIGITAL%20LLC%2C%205744%20TOUCHSTONE%20DRIVE%2C%20MCKINNEY%2C%20TX) |
+| 116 | C2A Global IT SolutionsLLC | 7600 Chevy Chase Dr Suite 300 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=C2A%20Global%20IT%20SolutionsLLC%2C%207600%20Chevy%20Chase%20Dr%20Suite%20300%2C%20Austin%2C%20TX) |
+| 117 | CLOUDTEK DATA LLC | 551 South Interstate 35 Frontage Road Suite 300 | Round Rock, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CLOUDTEK%20DATA%20LLC%2C%20551%20South%20Interstate%2035%20Frontage%20Road%20Suite%20300%2C%20Round%20Rock%2C%20TX) |
+| 118 | COHESIVE DIGITAL SOLUTIONS LLC | 450 Century Pkwy Suite 250 | Allen, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=COHESIVE%20DIGITAL%20SOLUTIONS%20LLC%2C%20450%20Century%20Pkwy%20Suite%20250%2C%20Allen%2C%20TX) |
+| 119 | COREAA LLC | 15 Webb Creek Pl | The Woodlands, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=COREAA%20LLC%2C%2015%20Webb%20Creek%20Pl%2C%20The%20Woodlands%2C%20TX) |
+| 120 | CPI HOLDINGS LLC | 3934 CYPRESS CREEK PKWY SUITE 205 | HOUSTON, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CPI%20HOLDINGS%20LLC%2C%203934%20CYPRESS%20CREEK%20PKWY%20SUITE%20205%2C%20HOUSTON%2C%20TX) |
+| 121 | CRM Web Solutions, LLC | 15851 Dallas Pky #550 | Addison, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CRM%20Web%20Solutions%2C%20LLC%2C%2015851%20Dallas%20Pky%20%23550%2C%20Addison%2C%20TX) |
+| 122 | CYBIRIUS LLC | 2124 Bordeaux Dr | Carrollton, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CYBIRIUS%20LLC%2C%202124%20Bordeaux%20Dr%2C%20Carrollton%2C%20TX) |
+| 123 | Capella Software LLC | 13802 Rivendell Crest Ln | Cypress, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Capella%20Software%20LLC%2C%2013802%20Rivendell%20Crest%20Ln%2C%20Cypress%2C%20TX) |
+| 124 | Careexpand, LLC | 14555 Dallas Pkwy. Suite 100-276 | Dallas, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Careexpand%2C%20LLC%2C%2014555%20Dallas%20Pkwy.%20Suite%20100-276%2C%20Dallas%2C%20TX) |
+| 125 | Chain Service Solutions LLC | 10300 Westpark Drive | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Chain%20Service%20Solutions%20LLC%2C%2010300%20Westpark%20Drive%2C%20Houston%2C%20TX) |
+| 126 | Chenab Technologies LLC | 23407 Amoroso St | Richmond, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Chenab%20Technologies%20LLC%2C%2023407%20Amoroso%20St%2C%20Richmond%2C%20TX) |
+| 127 | Ciphermax LLC | 1185 Aldrich Pl | IRVING, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ciphermax%20LLC%2C%201185%20Aldrich%20Pl%2C%20IRVING%2C%20TX) |
+| 128 | Claims-X-Change, LLC | 14200 Midway Rd STE 106 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Claims-X-Change%2C%20LLC%2C%2014200%20Midway%20Rd%20STE%20106%2C%20Dallas%2C%20TX) |
+| 129 | Clear Again, LLC | 4500 Walnut Hill Lane | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Clear%20Again%2C%20LLC%2C%204500%20Walnut%20Hill%20Lane%2C%20Dallas%2C%20TX) |
+| 130 | Cloudrho LLC | 2770 Main St Ste #125 | Frisco, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Cloudrho%20LLC%2C%202770%20Main%20St%20Ste%20%23125%2C%20Frisco%2C%20TX) |
+| 131 | Club Sports Solutions L.L.C. | 4322 Port Hope Street | Round Rock, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Club%20Sports%20Solutions%20L.L.C.%2C%204322%20Port%20Hope%20Street%2C%20Round%20Rock%2C%20TX) |
+| 132 | Co-Flo Enterprise LLC | 3000 Weslayan Suite 305 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Co-Flo%20Enterprise%20LLC%2C%203000%20Weslayan%20Suite%20305%2C%20Houston%2C%20TX) |
+| 133 | CodeneedsIT LLC | 6401 Eldorado Pkwy STE 331 | McKinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CodeneedsIT%20LLC%2C%206401%20Eldorado%20Pkwy%20STE%20331%2C%20McKinney%2C%20TX) |
+| 134 | CogentProc LLC | 8751 Collin Mckinney Parkway SUITE 1102 #1052 | Mckinney, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CogentProc%20LLC%2C%208751%20Collin%20Mckinney%20Parkway%20SUITE%201102%20%231052%2C%20Mckinney%2C%20TX) |
+| 135 | Conavlytics LLC | 1425 Greenway Dr Ste 160 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Conavlytics%20LLC%2C%201425%20Greenway%20Dr%20Ste%20160%2C%20Irving%2C%20TX) |
+| 136 | Connexa Technologies LLC | 7500 Rialto Blvd Suite 1-250 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Connexa%20Technologies%20LLC%2C%207500%20Rialto%20Blvd%20Suite%201-250%2C%20Austin%2C%20TX) |
+| 137 | Coppel Tech LLC | 224 Redwood Drive | Coppell, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Coppel%20Tech%20LLC%2C%20224%20Redwood%20Drive%2C%20Coppell%2C%20TX) |
+| 138 | Cosmosyde, LLC | 8714 Newcastle Bend | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Cosmosyde%2C%20LLC%2C%208714%20Newcastle%20Bend%2C%20Irving%2C%20TX) |
+| 139 | CoverDoc LLC | 4223 berkman drive | austin, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=CoverDoc%20LLC%2C%204223%20berkman%20drive%2C%20austin%2C%20TX) |
+| 140 | Credenti LLC | 5177 Richmond Avenue, Suite 1160 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Credenti%20LLC%2C%205177%20Richmond%20Avenue%2C%20Suite%201160%2C%20Houston%2C%20TX) |
+| 141 | DATA FORCE  - INC LLC | 17304 PRESTON RD SUITE # 828 | DALLAS, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=DATA%20FORCE%20%20-%20INC%20LLC%2C%2017304%20PRESTON%20RD%20SUITE%20%23%20828%2C%20DALLAS%2C%20TX) |
+| 142 | DDS Profits, LLC | 2211 NW Military HWY Suite 127B | San Antonio, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=DDS%20Profits%2C%20LLC%2C%202211%20NW%20Military%20HWY%20Suite%20127B%2C%20San%20Antonio%2C%20TX) |
+| 143 | DPCon Solutions LLC | 6010 W Spring Parkway Suite#204 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=DPCon%20Solutions%20LLC%2C%206010%20W%20Spring%20Parkway%20Suite%23204%2C%20Plano%2C%20TX) |
+| 144 | Data Moguls LLC | 8918 Tesoro Dr Suite 200 Office 202 | San Antonio, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Data%20Moguls%20LLC%2C%208918%20Tesoro%20Dr%20Suite%20200%20Office%20202%2C%20San%20Antonio%2C%20TX) |
+| 145 | Data Products Pro LLC | 7300 State Highway 121 STE 300 | McKinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Data%20Products%20Pro%20LLC%2C%207300%20State%20Highway%20121%20STE%20300%2C%20McKinney%2C%20TX) |
+| 146 | DataGlacier LLC | 1320 Arrow Point Dr STE 501 | Cedar Park, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=DataGlacier%20LLC%2C%201320%20Arrow%20Point%20Dr%20STE%20501%2C%20Cedar%20Park%2C%20TX) |
+| 147 | Databasaurus, LLC | 5120 State Hwy 6 | Riesel, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Databasaurus%2C%20LLC%2C%205120%20State%20Hwy%206%2C%20Riesel%2C%20TX) |
+| 148 | Database Mart LLC | 257 Westwood Dr. | League City, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Database%20Mart%20LLC%2C%20257%20Westwood%20Dr.%2C%20League%20City%2C%20TX) |
+| 149 | Datalibs LLC | 17304 Preston Road Suite 800 | Dallas, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Datalibs%20LLC%2C%2017304%20Preston%20Road%20Suite%20800%2C%20Dallas%2C%20TX) |
+| 150 | Dealerware, LLC | 211 E. 7th Street Suite 1000 | Austin, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Dealerware%2C%20LLC%2C%20211%20E.%207th%20Street%20Suite%201000%2C%20Austin%2C%20TX) |
+| 151 | Dear Media LLC | 200 W 6th Street Suite 2660 | Austin, TX | 516210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Dear%20Media%20LLC%2C%20200%20W%206th%20Street%20Suite%202660%2C%20Austin%2C%20TX) |
+| 152 | Denim Health LLC | 11801 Domain Blvd 3rd floor | Austin,, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Denim%20Health%20LLC%2C%2011801%20Domain%20Blvd%203rd%20floor%2C%20Austin%2C%2C%20TX) |
+| 153 | Devwise, LLC | 315 Addicks Howell Rd #940025 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Devwise%2C%20LLC%2C%20315%20Addicks%20Howell%20Rd%20%23940025%2C%20Houston%2C%20TX) |
+| 154 | Dialexa, LLC | 2200 Commerce Street | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Dialexa%2C%20LLC%2C%202200%20Commerce%20Street%2C%20Dallas%2C%20TX) |
+| 155 | Digital Information Security Solutions LLC | 227 North Loop 1604 E | San Antonio, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20Information%20Security%20Solutions%20LLC%2C%20227%20North%20Loop%201604%20E%2C%20San%20Antonio%2C%20TX) |
+| 156 | Dixson Technology Services Americas LLC | 600 Congress Ave | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Dixson%20Technology%20Services%20Americas%20LLC%2C%20600%20Congress%20Ave%2C%20Austin%2C%20TX) |
+| 157 | Dotsincloud LLC | 8727 Lindenwood Ln | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Dotsincloud%20LLC%2C%208727%20Lindenwood%20Ln%2C%20Irving%2C%20TX) |
+| 158 | Droidal LLC | 5465 Legacy Drive Suite 650 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Droidal%20LLC%2C%205465%20Legacy%20Drive%20Suite%20650%2C%20Plano%2C%20TX) |
+| 159 | Duelytics LLC | 320 Decker Drive, Office No: 123 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Duelytics%20LLC%2C%20320%20Decker%20Drive%2C%20Office%20No%3A%20123%2C%20Irving%2C%20TX) |
+| 160 | ELM FieldSight, LLC | 2701 E State Hwy 121 Suite 700 | Lewisville, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ELM%20FieldSight%2C%20LLC%2C%202701%20E%20State%20Hwy%20121%20Suite%20700%2C%20Lewisville%2C%20TX) |
+| 161 | ENMAS USA LLC | 102010 Grogans Mill Rd Suite 325 | The Woodlands, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ENMAS%20USA%20LLC%2C%20102010%20Grogans%20Mill%20Rd%20Suite%20325%2C%20The%20Woodlands%2C%20TX) |
+| 162 | Echo & Reply LLC | 5906 Dillon Creek Ln | Katy, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Echo%20%26%20Reply%20LLC%2C%205906%20Dillon%20Creek%20Ln%2C%20Katy%2C%20TX) |
+| 163 | Edison Systems Group LLC | 3839 Covedale Blvd | Frisco, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Edison%20Systems%20Group%20LLC%2C%203839%20Covedale%20Blvd%2C%20Frisco%2C%20TX) |
+| 164 | Eleox LLC | 4201 Main St. Ste. 530-C | Houston, TX | 5182 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Eleox%20LLC%2C%204201%20Main%20St.%20Ste.%20530-C%2C%20Houston%2C%20TX) |
+| 165 | Ellym LLC | 5900 Balcones Drive Suite 100 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ellym%20LLC%2C%205900%20Balcones%20Drive%20Suite%20100%2C%20Austin%2C%20TX) |
+| 166 | Enter Advisor, LLC | 5080 Spectrum Dr. Suite 1000E | Addison, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Enter%20Advisor%2C%20LLC%2C%205080%20Spectrum%20Dr.%20Suite%201000E%2C%20Addison%2C%20TX) |
+| 167 | Event Dynamic, LLC | 3102 Oak Lawn Ave. Suite 725 | Dallas, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Event%20Dynamic%2C%20LLC%2C%203102%20Oak%20Lawn%20Ave.%20Suite%20725%2C%20Dallas%2C%20TX) |
+| 168 | EverLine Tech Ops LLC | 150 FM 1959 Road | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=EverLine%20Tech%20Ops%20LLC%2C%20150%20FM%201959%20Road%2C%20Houston%2C%20TX) |
+| 169 | Exceleron Software, LLC | 8144 Walnut Hill Lane STE 907 | Dallas, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Exceleron%20Software%2C%20LLC%2C%208144%20Walnut%20Hill%20Lane%20STE%20907%2C%20Dallas%2C%20TX) |
+| 170 | Executive Management Group, LLC | 1460 Main St Suite 245 | Southlake, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Executive%20Management%20Group%2C%20LLC%2C%201460%20Main%20St%20Suite%20245%2C%20Southlake%2C%20TX) |
+| 171 | Exodus Intelligence LLC | 1608 W 6th ST | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Exodus%20Intelligence%20LLC%2C%201608%20W%206th%20ST%2C%20Austin%2C%20TX) |
+| 172 | FAME PBX LLC | 3400 SILVERSTONE DR STE 110 | Plano, TX | 51821 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=FAME%20PBX%20LLC%2C%203400%20SILVERSTONE%20DR%20STE%20110%2C%20Plano%2C%20TX) |
+| 173 | FORTEWIZ SYSTEMS LLC | 21040 Highland Knolls Dr STE200-421 | Katy, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=FORTEWIZ%20SYSTEMS%20LLC%2C%2021040%20Highland%20Knolls%20Dr%20STE200-421%2C%20Katy%2C%20TX) |
+| 174 | FORTUNE FOUR TECH SOLUTIONS LLC | 13455 Marmolada Dr | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=FORTUNE%20FOUR%20TECH%20SOLUTIONS%20LLC%2C%2013455%20Marmolada%20Dr%2C%20Frisco%2C%20TX) |
+| 175 | Finovient LLC | 3803 Elaine Dr. | Wylie, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Finovient%20LLC%2C%203803%20Elaine%20Dr.%2C%20Wylie%2C%20TX) |
+| 176 | Fourth Enterprises, LLC | 6504 Bridge Point Parkway Suite 300 | Austin, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Fourth%20Enterprises%2C%20LLC%2C%206504%20Bridge%20Point%20Parkway%20Suite%20300%2C%20Austin%2C%20TX) |
+| 177 | FreePress LLC | 3112 Windsor Rd Ste. A391 | Austin, TX | 516210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=FreePress%20LLC%2C%203112%20Windsor%20Rd%20Ste.%20A391%2C%20Austin%2C%20TX) |
+| 178 | GATHI ANALYTICS,LLC. | 5700 Granite Parkway Suite # 850 | Plano, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GATHI%20ANALYTICS%2CLLC.%2C%205700%20Granite%20Parkway%20Suite%20%23%20850%2C%20Plano%2C%20TX) |
+| 179 | GLOBAL CLIENT TECHNOLOGY LLC | 116 ELDRIDGE RD STE E | SUGARLAND, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GLOBAL%20CLIENT%20TECHNOLOGY%20LLC%2C%20116%20ELDRIDGE%20RD%20STE%20E%2C%20SUGARLAND%2C%20TX) |
+| 180 | GLOBPEY LLC | 6275 W Plano Pkwy STE 500 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GLOBPEY%20LLC%2C%206275%20W%20Plano%20Pkwy%20STE%20500%2C%20Plano%2C%20TX) |
+| 181 | GME Entertainment LLC | 625 Westport Parkway | Grapevine, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GME%20Entertainment%20LLC%2C%20625%20Westport%20Parkway%2C%20Grapevine%2C%20TX) |
+| 182 | GMWARE LLC | 5900 Balcones Drive Suite #23579 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GMWARE%20LLC%2C%205900%20Balcones%20Drive%20Suite%20%2323579%2C%20Austin%2C%20TX) |
+| 183 | GOTHINKERS TECH LLC | 3401 CUSTER RD, STE 167 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GOTHINKERS%20TECH%20LLC%2C%203401%20CUSTER%20RD%2C%20STE%20167%2C%20Plano%2C%20TX) |
+| 184 | GRAVITYINTEL LLC | 5011 Enclave CT | Mckinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GRAVITYINTEL%20LLC%2C%205011%20Enclave%20CT%2C%20Mckinney%2C%20TX) |
+| 185 | Genesis X LLC | 801 Barton Springs Road Floor 9 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Genesis%20X%20LLC%2C%20801%20Barton%20Springs%20Road%20Floor%209%2C%20Austin%2C%20TX) |
+| 186 | GeoSoftware, LLC | 2000 W. Sam Houston Pkwy S Ste. 950 | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GeoSoftware%2C%20LLC%2C%202000%20W.%20Sam%20Houston%20Pkwy%20S%20Ste.%20950%2C%20Houston%2C%20TX) |
+| 187 | GlobalStep Management Services, LLC | 5956 Sherry Ln, Ste 1850 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=GlobalStep%20Management%20Services%2C%20LLC%2C%205956%20Sherry%20Ln%2C%20Ste%201850%2C%20Dallas%2C%20TX) |
+| 188 | Go Idlewild LLC | 2201 Spinks Rd Suite 167 | Flower Mound, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Go%20Idlewild%20LLC%2C%202201%20Spinks%20Rd%20Suite%20167%2C%20Flower%20Mound%2C%20TX) |
+| 189 | Golden Section Ventures, LLC | 808 Travis St. STE 1406 | Houston, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Golden%20Section%20Ventures%2C%20LLC%2C%20808%20Travis%20St.%20STE%201406%2C%20Houston%2C%20TX) |
+| 190 | Groove Jones LLC | 3900 Willow Street, Suite 200 | Dallas, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Groove%20Jones%20LLC%2C%203900%20Willow%20Street%2C%20Suite%20200%2C%20Dallas%2C%20TX) |
+| 191 | Groves & Company LLC | 5900 Balcones Dr ste 4306 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Groves%20%26%20Company%20LLC%2C%205900%20Balcones%20Dr%20ste%204306%2C%20Austin%2C%20TX) |
+| 192 | Gurutech Solutions LLC | 14157 Badger Creek Dr. | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Gurutech%20Solutions%20LLC%2C%2014157%20Badger%20Creek%20Dr.%2C%20Frisco%2C%20TX) |
+| 193 | HARTIGEN SOLUTIONS LLC | 2002 W Grand Parkway N Suite 210 | Katy, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=HARTIGEN%20SOLUTIONS%20LLC%2C%202002%20W%20Grand%20Parkway%20N%20Suite%20210%2C%20Katy%2C%20TX) |
+| 194 | HIKEIT Trak Racer LLC | 7801 North Lamar Blvd. Suite C55 | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=HIKEIT%20Trak%20Racer%20LLC%2C%207801%20North%20Lamar%20Blvd.%20Suite%20C55%2C%20Austin%2C%20TX) |
+| 195 | Headspring, LLC | 1632 South First St. Ste. 200 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Headspring%2C%20LLC%2C%201632%20South%20First%20St.%20Ste.%20200%2C%20Austin%2C%20TX) |
+| 196 | HiTek US LLC | 7606 Westmoreland Dr | Sugar Land, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=HiTek%20US%20LLC%2C%207606%20Westmoreland%20Dr%2C%20Sugar%20Land%2C%20TX) |
+| 197 | Holistiplan LLC | 3193 Chaco Canyon Drive | College Station, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Holistiplan%20LLC%2C%203193%20Chaco%20Canyon%20Drive%2C%20College%20Station%2C%20TX) |
+| 198 | Hotel Trader LLC | 545 E John W Carpenter Fwy Suite 1400 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Hotel%20Trader%20LLC%2C%20545%20E%20John%20W%20Carpenter%20Fwy%20Suite%201400%2C%20Irving%2C%20TX) |
+| 199 | ILM360, LLC | 555 ROUND ROCK WEST DR STE E-236 | ROUND ROCK, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ILM360%2C%20LLC%2C%20555%20ROUND%20ROCK%20WEST%20DR%20STE%20E-236%2C%20ROUND%20ROCK%2C%20TX) |
+| 200 | INFOBLITZ TECH SOLUTIONS LLC | 5900 BALCONES DR #8492 | AUSTIN, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=INFOBLITZ%20TECH%20SOLUTIONS%20LLC%2C%205900%20BALCONES%20DR%20%238492%2C%20AUSTIN%2C%20TX) |
+| 201 | INNOVATIVE STARS LLC | 633 E FERNHURST DR STE 1001 | KATY, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=INNOVATIVE%20STARS%20LLC%2C%20633%20E%20FERNHURST%20DR%20STE%201001%2C%20KATY%2C%20TX) |
+| 202 | INTERACT CX LLC | 4400 ST HWY 121 STE 300 | LEWSIVILLE, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=INTERACT%20CX%20LLC%2C%204400%20ST%20HWY%20121%20STE%20300%2C%20LEWSIVILLE%2C%20TX) |
+| 203 | IPeople Heathcare, LLC | 1760 S Stemmons Fwy Suite 180 | Lewisville, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=IPeople%20Heathcare%2C%20LLC%2C%201760%20S%20Stemmons%20Fwy%20Suite%20180%2C%20Lewisville%2C%20TX) |
+| 204 | IT SOLVE LLC | 1121 HAMPSHIRE LN STE 228 | RICHARDSON, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=IT%20SOLVE%20LLC%2C%201121%20HAMPSHIRE%20LN%20STE%20228%2C%20RICHARDSON%2C%20TX) |
+| 205 | Ideabud, LLC | 3300 North Interstate Hwy 35 STE 700 | Austin, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ideabud%2C%20LLC%2C%203300%20North%20Interstate%20Hwy%2035%20STE%20700%2C%20Austin%2C%20TX) |
+| 206 | Improving Corporate Services, LLC | 5445 Legacy Dr STE 100 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Improving%20Corporate%20Services%2C%20LLC%2C%205445%20Legacy%20Dr%20STE%20100%2C%20Plano%2C%20TX) |
+| 207 | Improvizations, LLC | 2101 Montopolis Drive Unit 1 | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Improvizations%2C%20LLC%2C%202101%20Montopolis%20Drive%20Unit%201%2C%20Austin%2C%20TX) |
+| 208 | Increase Financial LLC | 7335 Highway 6 250 | Missouri City, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Increase%20Financial%20LLC%2C%207335%20Highway%206%20250%2C%20Missouri%20City%2C%20TX) |
+| 209 | Infinity Software LLC | 12407 Autumn Crest Dr | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Infinity%20Software%20LLC%2C%2012407%20Autumn%20Crest%20Dr%2C%20Frisco%2C%20TX) |
+| 210 | Inflection Point LLC | 1905 Ascension Blvd Suite 161 | 76006, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Inflection%20Point%20LLC%2C%201905%20Ascension%20Blvd%20Suite%20161%2C%2076006%2C%20TX) |
+| 211 | Infoglaze LLC | 10411 Monticello Hill Dr. | Katy, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Infoglaze%20LLC%2C%2010411%20Monticello%20Hill%20Dr.%2C%20Katy%2C%20TX) |
+| 212 | Innovate TechLabs LLC | 8951 Cypress Waters Boulevard Ste 160 | Coppell, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Innovate%20TechLabs%20LLC%2C%208951%20Cypress%20Waters%20Boulevard%20Ste%20160%2C%20Coppell%2C%20TX) |
+| 213 | Innoventworks LLC | 8670 Cottonpatch Lane | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Innoventworks%20LLC%2C%208670%20Cottonpatch%20Lane%2C%20Frisco%2C%20TX) |
+| 214 | Insurance Technologies, LLC | 539 W Commerce St #6200 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Insurance%20Technologies%2C%20LLC%2C%20539%20W%20Commerce%20St%20%236200%2C%20Dallas%2C%20TX) |
+| 215 | Intelli-Inform LLC | 6705 Palermo Trail | Flower Mound, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Intelli-Inform%20LLC%2C%206705%20Palermo%20Trail%2C%20Flower%20Mound%2C%20TX) |
+| 216 | Iodine Software, LLC | 6850 Austin Center Blvd Suite 230 | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Iodine%20Software%2C%20LLC%2C%206850%20Austin%20Center%20Blvd%20Suite%20230%2C%20Austin%2C%20TX) |
+| 217 | JCIP SERVICES LLC | 17926 Sunshine Trace Lane | Richmond, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=JCIP%20SERVICES%20LLC%2C%2017926%20Sunshine%20Trace%20Lane%2C%20Richmond%2C%20TX) |
+| 218 | JENACIE LLC | 7350 State Hwy 249, Ste 220 #25308 | Houston, TX | 5132 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=JENACIE%20LLC%2C%207350%20State%20Hwy%20249%2C%20Ste%20220%20%2325308%2C%20Houston%2C%20TX) |
+| 219 | JSRM Group LLC | 84 Ne Loop 410 suite 117 | San Antonio, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=JSRM%20Group%20LLC%2C%2084%20Ne%20Loop%20410%20suite%20117%2C%20San%20Antonio%2C%20TX) |
+| 220 | Jatayu Solutions, LLC. | 121 W Hickory ST Suite # 105 | Denton, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Jatayu%20Solutions%2C%20LLC.%2C%20121%20W%20Hickory%20ST%20Suite%20%23%20105%2C%20Denton%2C%20TX) |
+| 221 | Jenforce LLC | 5900 South Lake Forest Suit 300 | McKinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Jenforce%20LLC%2C%205900%20South%20Lake%20Forest%20Suit%20300%2C%20McKinney%2C%20TX) |
+| 222 | Jungle Disk, LLC | 425 Soledad Street | San Antonio, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Jungle%20Disk%2C%20LLC%2C%20425%20Soledad%20Street%2C%20San%20Antonio%2C%20TX) |
+| 223 | KENAI SOLUTIONS LLC | 5310 ALPHA ROAD | DALLAS, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=KENAI%20SOLUTIONS%20LLC%2C%205310%20ALPHA%20ROAD%2C%20DALLAS%2C%20TX) |
+| 224 | KINETECH CLOUD, LLC | 8526 Vidor Ave | San Antonio, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=KINETECH%20CLOUD%2C%20LLC%2C%208526%20Vidor%20Ave%2C%20San%20Antonio%2C%20TX) |
+| 225 | KINETIKATECH  LLC | 5489 S US HIGHWAY 79 LOT 8 | CARTHAGE, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=KINETIKATECH%20%20LLC%2C%205489%20S%20US%20HIGHWAY%2079%20LOT%208%2C%20CARTHAGE%2C%20TX) |
+| 226 | KITKOOL GROUP LLC | 28515 CASEN RANCH LN | FULSHEAR, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=KITKOOL%20GROUP%20LLC%2C%2028515%20CASEN%20RANCH%20LN%2C%20FULSHEAR%2C%20TX) |
+| 227 | KVISTA LLC | 2133 Cavara Cove | Leander, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=KVISTA%20LLC%2C%202133%20Cavara%20Cove%2C%20Leander%2C%20TX) |
+| 228 | Kaizintel LLC | 2311 Cartesian St | Katy, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Kaizintel%20LLC%2C%202311%20Cartesian%20St%2C%20Katy%2C%20TX) |
+| 229 | Kanika Compute LLC | 14 North Peak Road | West Lake Hills, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Kanika%20Compute%20LLC%2C%2014%20North%20Peak%20Road%2C%20West%20Lake%20Hills%2C%20TX) |
+| 230 | Keypixel Software Solutions LLC | 777 Washington Road Suite 1 | Parlin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Keypixel%20Software%20Solutions%20LLC%2C%20777%20Washington%20Road%20Suite%201%2C%20Parlin%2C%20TX) |
+| 231 | Kshitija Professional Services LLC | 8500 N Stemmons Fwy Suite 5038 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Kshitija%20Professional%20Services%20LLC%2C%208500%20N%20Stemmons%20Fwy%20Suite%205038%2C%20Dallas%2C%20TX) |
+| 232 | Kuiper OpCo, LLC | 201 W 5th St #11 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Kuiper%20OpCo%2C%20LLC%2C%20201%20W%205th%20St%20%2311%2C%20Austin%2C%20TX) |
+| 233 | Kural Tech Solution LLC | 3201 Mill Ridge Dr | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Kural%20Tech%20Solution%20LLC%2C%203201%20Mill%20Ridge%20Dr%2C%20Plano%2C%20TX) |
+| 234 | LENDERBOX, LLC | 5646 MILTON ST. SUITE 675 | DALLAS, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=LENDERBOX%2C%20LLC%2C%205646%20MILTON%20ST.%20SUITE%20675%2C%20DALLAS%2C%20TX) |
+| 235 | LIAMATRIX LLC | 12828 Willow Centre Dr Ste D | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=LIAMATRIX%20LLC%2C%2012828%20Willow%20Centre%20Dr%20Ste%20D%2C%20Houston%2C%20TX) |
+| 236 | LINQX, LLC | Two BriarLake, 2050 W. Sam Houston S Parkway Suite 1750 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=LINQX%2C%20LLC%2C%20Two%20BriarLake%2C%202050%20W.%20Sam%20Houston%20S%20Parkway%20Suite%201750%2C%20Houston%2C%20TX) |
+| 237 | LedgerSpace, LLC | 3515 LONGMIRE DR STE 157 | COLLEGE STATION, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=LedgerSpace%2C%20LLC%2C%203515%20LONGMIRE%20DR%20STE%20157%2C%20COLLEGE%20STATION%2C%20TX) |
+| 238 | Liberate Life Sciences Technologies, LLC. | 9812 Morgan Creek Drive | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Liberate%20Life%20Sciences%20Technologies%2C%20LLC.%2C%209812%20Morgan%20Creek%20Drive%2C%20Austin%2C%20TX) |
+| 239 | Line-Scape, LLC | 500 N Akard Street #3700 | Dallas, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Line-Scape%2C%20LLC%2C%20500%20N%20Akard%20Street%20%233700%2C%20Dallas%2C%20TX) |
+| 240 | Litigiven LLC | 12750 Merit Drive Suite 910 | Dallas, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Litigiven%20LLC%2C%2012750%20Merit%20Drive%20Suite%20910%2C%20Dallas%2C%20TX) |
+| 241 | Lone Star Tech, LLC | 520 E Vine St #306 | Keller, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Lone%20Star%20Tech%2C%20LLC%2C%20520%20E%20Vine%20St%20%23306%2C%20Keller%2C%20TX) |
+| 242 | Lorvens AZTech LLC | 4505 Aubrey Parkway | Aubrey, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Lorvens%20AZTech%20LLC%2C%204505%20Aubrey%20Parkway%2C%20Aubrey%2C%20TX) |
+| 243 | MASH ASSOCIATES LLC | 5005 W Royal Ln Suite250 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=MASH%20ASSOCIATES%20LLC%2C%205005%20W%20Royal%20Ln%20Suite250%2C%20Dallas%2C%20TX) |
+| 244 | Manvi Tech LLC | 22820 Interstate 45 Suite 7A | Spring, TX | 51121 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Manvi%20Tech%20LLC%2C%2022820%20Interstate%2045%20Suite%207A%2C%20Spring%2C%20TX) |
+| 245 | Marketing Response Solutions, LLC | 5001 Spring Valley Road Suite 1000E | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Marketing%20Response%20Solutions%2C%20LLC%2C%205001%20Spring%20Valley%20Road%20Suite%201000E%2C%20Dallas%2C%20TX) |
+| 246 | Math Made Visible, LLC | 1317 Old Pin Oak Rd | Paige, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Math%20Made%20Visible%2C%20LLC%2C%201317%20Old%20Pin%20Oak%20Rd%2C%20Paige%2C%20TX) |
+| 247 | Meat Mafia Media LLC | 10415 Old Manchaca Road Suite 201 | Austin, TX | 516210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Meat%20Mafia%20Media%20LLC%2C%2010415%20Old%20Manchaca%20Road%20Suite%20201%2C%20Austin%2C%20TX) |
+| 248 | Mediaocean LLC | 120 Broadway, 8th Floor | New York, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Mediaocean%20LLC%2C%20120%20Broadway%2C%208th%20Floor%2C%20New%20York%2C%20TX) |
+| 249 | Menbo Tech LLC | 3300 Dallas Parkway Suite 200 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Menbo%20Tech%20LLC%2C%203300%20Dallas%20Parkway%20Suite%20200%2C%20Plano%2C%20TX) |
+| 250 | Micro Focus LLC | 5340 Legacy Drive Suite# 115 | Plano, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Micro%20Focus%20LLC%2C%205340%20Legacy%20Drive%20Suite%23%20115%2C%20Plano%2C%20TX) |
+| 251 | Microdrive LLC | 4925 N O'Connor Rd. Suite 300 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Microdrive%20LLC%2C%204925%20N%20O%27Connor%20Rd.%20Suite%20300%2C%20Irving%2C%20TX) |
+| 252 | MinMax Technologies, LLC | 5050 Quorum Drive Ste. 700 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=MinMax%20Technologies%2C%20LLC%2C%205050%20Quorum%20Drive%20Ste.%20700%2C%20Dallas%2C%20TX) |
+| 253 | Miracle Treasures LLC | 28211 Enchanted Shores Lane | Fulshear, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Miracle%20Treasures%20LLC%2C%2028211%20Enchanted%20Shores%20Lane%2C%20Fulshear%2C%20TX) |
+| 254 | Molathati Technology Solutions, LLC | 2950 North Loop W. Suite 500 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Molathati%20Technology%20Solutions%2C%20LLC%2C%202950%20North%20Loop%20W.%20Suite%20500%2C%20Houston%2C%20TX) |
+| 255 | NEOSTRIDE LLC | 700 Central Expressway S Suite 400 | Allen, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=NEOSTRIDE%20LLC%2C%20700%20Central%20Expressway%20S%20Suite%20400%2C%20Allen%2C%20TX) |
+| 256 | NFORCE ONE LLC | 5700 TENNYSON PKWY | PLANO, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=NFORCE%20ONE%20LLC%2C%205700%20TENNYSON%20PKWY%2C%20PLANO%2C%20TX) |
+| 257 | NP Strategies LLC | 114 1/2 E Lousiana Street Suite 206 | McKinney, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=NP%20Strategies%20LLC%2C%20114%201/2%20E%20Lousiana%20Street%20Suite%20206%2C%20McKinney%2C%20TX) |
+| 258 | NUBA, LLC | 4630 Doniphan Dr. | El Paso, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=NUBA%2C%20LLC%2C%204630%20Doniphan%20Dr.%2C%20El%20Paso%2C%20TX) |
+| 259 | Narsingh LLC | 250 East Valley Ranch Park Way Suite 1350 | Irving, TX | 541513 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Narsingh%20LLC%2C%20250%20East%20Valley%20Ranch%20Park%20Way%20Suite%201350%2C%20Irving%2C%20TX) |
+| 260 | NextGen Tech LLC | 6775 Cowboys Way STE 1335 | Frisco, TX | 519130 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=NextGen%20Tech%20LLC%2C%206775%20Cowboys%20Way%20STE%201335%2C%20Frisco%2C%20TX) |
+| 261 | Nexxverse LLC | 2132 Hondo Ave | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Nexxverse%20LLC%2C%202132%20Hondo%20Ave%2C%20Dallas%2C%20TX) |
+| 262 | Nifty Systems LLC | 6010 W Spring Creek Pkwy #26 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Nifty%20Systems%20LLC%2C%206010%20W%20Spring%20Creek%20Pkwy%20%2326%2C%20Plano%2C%20TX) |
+| 263 | Ninja Partners, LLC | 3800 Taylor Street | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ninja%20Partners%2C%20LLC%2C%203800%20Taylor%20Street%2C%20Dallas%2C%20TX) |
+| 264 | Ntelicor, LLC | 5720 LBJ FWY Suite 410 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ntelicor%2C%20LLC%2C%205720%20LBJ%20FWY%20Suite%20410%2C%20Dallas%2C%20TX) |
+| 265 | Numerique LLC | 9535 Forest Lane Suite 253 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Numerique%20LLC%2C%209535%20Forest%20Lane%20Suite%20253%2C%20Dallas%2C%20TX) |
+| 266 | OUTLAY GLOBAL LLC | 222 EAST LAS COLINAS BLVD SUITE 1650E | IRVING, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=OUTLAY%20GLOBAL%20LLC%2C%20222%20EAST%20LAS%20COLINAS%20BLVD%20SUITE%201650E%2C%20IRVING%2C%20TX) |
+| 267 | OfficerTRAK, LLC | 1908 Avenue D #A100 | Katy, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=OfficerTRAK%2C%20LLC%2C%201908%20Avenue%20D%20%23A100%2C%20Katy%2C%20TX) |
+| 268 | Okorio, LLC | 5001 Spring Valley Rd Suite 450E | Dallas, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Okorio%2C%20LLC%2C%205001%20Spring%20Valley%20Rd%20Suite%20450E%2C%20Dallas%2C%20TX) |
+| 269 | OrderMyGear, LLC | 2211 Commerce Street Suite 300 | Dallas, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=OrderMyGear%2C%20LLC%2C%202211%20Commerce%20Street%20Suite%20300%2C%20Dallas%2C%20TX) |
+| 270 | P Tech Crew, LLC | 825 Watters Creek Dr. Suite 250 | Allen, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=P%20Tech%20Crew%2C%20LLC%2C%20825%20Watters%20Creek%20Dr.%20Suite%20250%2C%20Allen%2C%20TX) |
+| 271 | PAGEMATICS LLC | 2600 K AVE 256 | PLANO, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=PAGEMATICS%20LLC%2C%202600%20K%20AVE%20256%2C%20PLANO%2C%20TX) |
+| 272 | Particle41, LLC. | 209 Driscoll Lane | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Particle41%2C%20LLC.%2C%20209%20Driscoll%20Lane%2C%20Frisco%2C%20TX) |
+| 273 | Penality LLC (f/k/a nowGRC LLC) | 16380 Moss Haven Lane | Frisco, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Penality%20LLC%20%28f/k/a%20nowGRC%20LLC%29%2C%2016380%20Moss%20Haven%20Lane%2C%20Frisco%2C%20TX) |
+| 274 | Peppered Software, LLC | 1906 Cullen Ave | Austin, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Peppered%20Software%2C%20LLC%2C%201906%20Cullen%20Ave%2C%20Austin%2C%20TX) |
+| 275 | Perfect General Contractors LLC | 4433 Punjab Way | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Perfect%20General%20Contractors%20LLC%2C%204433%20Punjab%20Way%2C%20Frisco%2C%20TX) |
+| 276 | Performance Scoring, LLC | 13150 Coit Rd. Suite 304 | Dallas, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Performance%20Scoring%2C%20LLC%2C%2013150%20Coit%20Rd.%20Suite%20304%2C%20Dallas%2C%20TX) |
+| 277 | Phenom Enterprise Cloud LLC | 1333 Corporate Dr Suite 212 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Phenom%20Enterprise%20Cloud%20LLC%2C%201333%20Corporate%20Dr%20Suite%20212%2C%20Irving%2C%20TX) |
+| 278 | Physician Paradigms, LLC | 17300 Dallas Parkway Suite 3010 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Physician%20Paradigms%2C%20LLC%2C%2017300%20Dallas%20Parkway%20Suite%203010%2C%20Dallas%2C%20TX) |
+| 279 | Platform Software, LLC | 945 McKinney St. Suite 11711 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Platform%20Software%2C%20LLC%2C%20945%20McKinney%20St.%20Suite%2011711%2C%20Houston%2C%20TX) |
+| 280 | Portnox Security LLC | 5301 Southwest Parkway Suite 470 | Austin, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Portnox%20Security%20LLC%2C%205301%20Southwest%20Parkway%20Suite%20470%2C%20Austin%2C%20TX) |
+| 281 | Power Central LLC | 3002 Owens Blvd. | Richardson, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Power%20Central%20LLC%2C%203002%20Owens%20Blvd.%2C%20Richardson%2C%20TX) |
+| 282 | Prelude, LLC | 5725 West Highway 290 Suite 201 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Prelude%2C%20LLC%2C%205725%20West%20Highway%20290%20Suite%20201%2C%20Austin%2C%20TX) |
+| 283 | Prescriptive Data Solutions, LLC | 5460 Babcock Rd. Suite 120 Unit 99639 | San Antonio, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Prescriptive%20Data%20Solutions%2C%20LLC%2C%205460%20Babcock%20Rd.%20Suite%20120%20Unit%2099639%2C%20San%20Antonio%2C%20TX) |
+| 284 | Price Kubecka PLLC | 16775 ADDISON RD Suite 500 | Addison, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Price%20Kubecka%20PLLC%2C%2016775%20ADDISON%20RD%20Suite%20500%2C%20Addison%2C%20TX) |
+| 285 | Prime Bids, LLC | 102 Shaver Street | Pasadena, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Prime%20Bids%2C%20LLC%2C%20102%20Shaver%20Street%2C%20Pasadena%2C%20TX) |
+| 286 | Primebids, LLC | 102 Shaver Street | Pasadena, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Primebids%2C%20LLC%2C%20102%20Shaver%20Street%2C%20Pasadena%2C%20TX) |
+| 287 | Pro-Shooter LLC | 1401 Greengrass Drive | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Pro-Shooter%20LLC%2C%201401%20Greengrass%20Drive%2C%20Houston%2C%20TX) |
+| 288 | Prodata Strategies LLC | 7300 State Hwy. 121 STE  300 | McKinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Prodata%20Strategies%20LLC%2C%207300%20State%20Hwy.%20121%20STE%20%20300%2C%20McKinney%2C%20TX) |
+| 289 | Profusion Tech Labs, LLC | 7800 Hamilton Pool Rd Ste. 200 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Profusion%20Tech%20Labs%2C%20LLC%2C%207800%20Hamilton%20Pool%20Rd%20Ste.%20200%2C%20Austin%2C%20TX) |
+| 290 | Protocoding LLC | 1922 La Croix Pl | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Protocoding%20LLC%2C%201922%20La%20Croix%20Pl%2C%20Dallas%2C%20TX) |
+| 291 | Pure Flux Technology Solutions, LLC | 1123 Bringewood Chase Dr | Spring, TX | 51121 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Pure%20Flux%20Technology%20Solutions%2C%20LLC%2C%201123%20Bringewood%20Chase%20Dr%2C%20Spring%2C%20TX) |
+| 292 | Pyrolac LLC | 340 N Sam Houston Pkwy E Suite A255 | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Pyrolac%20LLC%2C%20340%20N%20Sam%20Houston%20Pkwy%20E%20Suite%20A255%2C%20Houston%2C%20TX) |
+| 293 | QUANTUM UNIVERSAL LLC | 405 STATE HIGHWAY 121 BYPASS SUITE A 250 | LEWISVILLE, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=QUANTUM%20UNIVERSAL%20LLC%2C%20405%20STATE%20HIGHWAY%20121%20BYPASS%20SUITE%20A%20250%2C%20LEWISVILLE%2C%20TX) |
+| 294 | RAYS FOOD IMPORTS LLC | 4400 Blalock Rd Ste 300 | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=RAYS%20FOOD%20IMPORTS%20LLC%2C%204400%20Blalock%20Rd%20Ste%20300%2C%20Houston%2C%20TX) |
+| 295 | REPAVE IT LLC | 6136 Frisco Square Blvd Ste 400 | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=REPAVE%20IT%20LLC%2C%206136%20Frisco%20Square%20Blvd%20Ste%20400%2C%20Frisco%2C%20TX) |
+| 296 | RGAP LLC | 525 Round Rock West Drive Suite 100-3 | Round Rock, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=RGAP%20LLC%2C%20525%20Round%20Rock%20West%20Drive%20Suite%20100-3%2C%20Round%20Rock%2C%20TX) |
+| 297 | RGS IT  SOLUTIONS LLC | 302 ROBIN ST | CROWLEY, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=RGS%20IT%20%20SOLUTIONS%20LLC%2C%20302%20ROBIN%20ST%2C%20CROWLEY%2C%20TX) |
+| 298 | Radix IoT, LLC | 14555 Dallas Parkway Suite 125 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Radix%20IoT%2C%20LLC%2C%2014555%20Dallas%20Parkway%20Suite%20125%2C%20Dallas%2C%20TX) |
+| 299 | Ralph Porter Group LLC | 2415 Durwood Street Apt. B | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ralph%20Porter%20Group%20LLC%2C%202415%20Durwood%20Street%20Apt.%20B%2C%20Austin%2C%20TX) |
+| 300 | Rex Team DEDAP LLC | 7421 Burnet Road #548 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Rex%20Team%20DEDAP%20LLC%2C%207421%20Burnet%20Road%20%23548%2C%20Austin%2C%20TX) |
+| 301 | S Linx LLC | 3009 Durango Hills Dr | Leander, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=S%20Linx%20LLC%2C%203009%20Durango%20Hills%20Dr%2C%20Leander%2C%20TX) |
+| 302 | SAYA SOLUTIONS PROVIDER, LLC. | 16310 STATE HIGHWAY 249 STE. #302 | HOUSTON, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SAYA%20SOLUTIONS%20PROVIDER%2C%20LLC.%2C%2016310%20STATE%20HIGHWAY%20249%20STE.%20%23302%2C%20HOUSTON%2C%20TX) |
+| 303 | SEVIS SYSTEMS LLC. | 1201 W. 15TH STREET SUITE 300 | PLANO, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SEVIS%20SYSTEMS%20LLC.%2C%201201%20W.%2015TH%20STREET%20SUITE%20300%2C%20PLANO%2C%20TX) |
+| 304 | SIMPLY ACTIVATE LLC | 22316 GRAND CORNER DR. | PARK ROW, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SIMPLY%20ACTIVATE%20LLC%2C%2022316%20GRAND%20CORNER%20DR.%2C%20PARK%20ROW%2C%20TX) |
+| 305 | SKOUTERA LLC | 450 S DENTON TAP RD #242 | COPPELL, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SKOUTERA%20LLC%2C%20450%20S%20DENTON%20TAP%20RD%20%23242%2C%20COPPELL%2C%20TX) |
+| 306 | SOCIUS INNOVATIVE GLOBAL BRAINS LLC | 6671 SOUTHWEST FWY SUITE 700 | HOUSTON, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SOCIUS%20INNOVATIVE%20GLOBAL%20BRAINS%20LLC%2C%206671%20SOUTHWEST%20FWY%20SUITE%20700%2C%20HOUSTON%2C%20TX) |
+| 307 | SREELAN LLC | 14185 Dromoland Drive | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SREELAN%20LLC%2C%2014185%20Dromoland%20Drive%2C%20Frisco%2C%20TX) |
+| 308 | STEPINSIGHT LLC | 5900 Balcones Drive STE 100 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=STEPINSIGHT%20LLC%2C%205900%20Balcones%20Drive%20STE%20100%2C%20Austin%2C%20TX) |
+| 309 | STRAY KITE STUDIOS, LLC | 8261 BELLEVIEW DR. STE. 220 | PLANO, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=STRAY%20KITE%20STUDIOS%2C%20LLC%2C%208261%20BELLEVIEW%20DR.%20STE.%20220%2C%20PLANO%2C%20TX) |
+| 310 | SURUG Tech LLC | 17350 State Hwy 249 Suite 220 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SURUG%20Tech%20LLC%2C%2017350%20State%20Hwy%20249%20Suite%20220%2C%20Houston%2C%20TX) |
+| 311 | SYAAT USA LLC | 25329 Budde Road Ste 806 | Spring, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SYAAT%20USA%20LLC%2C%2025329%20Budde%20Road%20Ste%20806%2C%20Spring%2C%20TX) |
+| 312 | Sailpro LLC | 6010 W Spring Creek Pkwy. Ste 176 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Sailpro%20LLC%2C%206010%20W%20Spring%20Creek%20Pkwy.%20Ste%20176%2C%20Plano%2C%20TX) |
+| 313 | Salve Enterprises, LLC | 5005 W Royal Ln., Ste. 183F | Irving, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Salve%20Enterprises%2C%20LLC%2C%205005%20W%20Royal%20Ln.%2C%20Ste.%20183F%2C%20Irving%2C%20TX) |
+| 314 | Sapientai LLC | 2008 Holland Ave Unit B | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Sapientai%20LLC%2C%202008%20Holland%20Ave%20Unit%20B%2C%20Austin%2C%20TX) |
+| 315 | Sharpwhiz Corporation LLC | 5900 Balcones Drive Ste. 100 | Austin, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Sharpwhiz%20Corporation%20LLC%2C%205900%20Balcones%20Drive%20Ste.%20100%2C%20Austin%2C%20TX) |
+| 316 | SignalPet LLC | 13101 Preston Road, #110-313 | Dallas, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SignalPet%20LLC%2C%2013101%20Preston%20Road%2C%20%23110-313%2C%20Dallas%2C%20TX) |
+| 317 | Simplifi Holdings LLC | 128 E. Exchange Avenue Suite 700 | Fort Worth, TX | 51321 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Simplifi%20Holdings%20LLC%2C%20128%20E.%20Exchange%20Avenue%20Suite%20700%2C%20Fort%20Worth%2C%20TX) |
+| 318 | Software Freedom Institute LLC | 1801 Main Street Suite 1000 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Software%20Freedom%20Institute%20LLC%2C%201801%20Main%20Street%20Suite%201000%2C%20Houston%2C%20TX) |
+| 319 | Solutions by Text LLC | 15305 Dallas Parkway Suite 1200 | Addison, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Solutions%20by%20Text%20LLC%2C%2015305%20Dallas%20Parkway%20Suite%201200%2C%20Addison%2C%20TX) |
+| 320 | SourceHOV LLC | 2701 E Grauwyler Road | Irving, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=SourceHOV%20LLC%2C%202701%20E%20Grauwyler%20Road%2C%20Irving%2C%20TX) |
+| 321 | Space Automotive, LLC | 8350 N.  US 75 Central Expressway Suite 400 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Space%20Automotive%2C%20LLC%2C%208350%20N.%20%20US%2075%20Central%20Expressway%20Suite%20400%2C%20Dallas%2C%20TX) |
+| 322 | Space Cow LLC | 8408 Selway Dr. | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Space%20Cow%20LLC%2C%208408%20Selway%20Dr.%2C%20Austin%2C%20TX) |
+| 323 | Sports Operating, LLC | 3102 Oak Lawn Ave. Suite 725 | Dallas, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Sports%20Operating%2C%20LLC%2C%203102%20Oak%20Lawn%20Ave.%20Suite%20725%2C%20Dallas%2C%20TX) |
+| 324 | Sprint Byte Technologies LLC | 137 Purple Sandpiper Ln | leander, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Sprint%20Byte%20Technologies%20LLC%2C%20137%20Purple%20Sandpiper%20Ln%2C%20leander%2C%20TX) |
+| 325 | Squirrels Square LLC | 11239 Grapevine Ln | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Squirrels%20Square%20LLC%2C%2011239%20Grapevine%20Ln%2C%20Frisco%2C%20TX) |
+| 326 | Successive Technologies LLC | 606 Lake Park Drive | Coppell, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Successive%20Technologies%20LLC%2C%20606%20Lake%20Park%20Drive%2C%20Coppell%2C%20TX) |
+| 327 | Synerzip LLC | 4100 Spring Valley Road #308 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Synerzip%20LLC%2C%204100%20Spring%20Valley%20Road%20%23308%2C%20Dallas%2C%20TX) |
+| 328 | TECH LADDER LLC | 17350 State Hwy 249 Suite 220 #22383 | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TECH%20LADDER%20LLC%2C%2017350%20State%20Hwy%20249%20Suite%20220%20%2322383%2C%20Houston%2C%20TX) |
+| 329 | TEKMINDS SYSTEM LLC | 2150 S CENTRAL EXPRESSWAY SUITE | MCKINNEY, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TEKMINDS%20SYSTEM%20LLC%2C%202150%20S%20CENTRAL%20EXPRESSWAY%20SUITE%2C%20MCKINNEY%2C%20TX) |
+| 330 | TEXAS TECHNOLOGY GROUP LLC | 722 E WHEATLAND RD SUITE 113 | DUNCANVILLE, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TEXAS%20TECHNOLOGY%20GROUP%20LLC%2C%20722%20E%20WHEATLAND%20RD%20SUITE%20113%2C%20DUNCANVILLE%2C%20TX) |
+| 331 | TSICOM LLC | 11211 Katy Fwy Ste 425 | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TSICOM%20LLC%2C%2011211%20Katy%20Fwy%20Ste%20425%2C%20Houston%2C%20TX) |
+| 332 | Tangle Systems LLC | 425 E crossvilee rd ste 201 | Roswell, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Tangle%20Systems%20LLC%2C%20425%20E%20crossvilee%20rd%20ste%20201%2C%20Roswell%2C%20TX) |
+| 333 | Tech Expertsus LLC | 7228 Ridgepoint Dr | Irving, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Tech%20Expertsus%20LLC%2C%207228%20Ridgepoint%20Dr%2C%20Irving%2C%20TX) |
+| 334 | Techdots LLC | 3400 Silverstone Dr Suite 106 | Plano, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Techdots%20LLC%2C%203400%20Silverstone%20Dr%20Suite%20106%2C%20Plano%2C%20TX) |
+| 335 | Techminers LLC | 504 Antelope Ct | McKinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Techminers%20LLC%2C%20504%20Antelope%20Ct%2C%20McKinney%2C%20TX) |
+| 336 | The Purpose Built Group LLC | 2550 Pacific Avenue STE 700 | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=The%20Purpose%20Built%20Group%20LLC%2C%202550%20Pacific%20Avenue%20STE%20700%2C%20Dallas%2C%20TX) |
+| 337 | The Teneo Group, LLC | 11709 Pallas Place | Godley, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=The%20Teneo%20Group%2C%20LLC%2C%2011709%20Pallas%20Place%2C%20Godley%2C%20TX) |
+| 338 | ThinkAI Experts LLC | 7460 Warren Pkwy Suite 100 | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ThinkAI%20Experts%20LLC%2C%207460%20Warren%20Pkwy%20Suite%20100%2C%20Frisco%2C%20TX) |
+| 339 | Timbergrove Solutions, LLC | 3302 Canal St. Ste. 42 | Houston, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Timbergrove%20Solutions%2C%20LLC%2C%203302%20Canal%20St.%20Ste.%2042%2C%20Houston%2C%20TX) |
+| 340 | Top Gun Blockchain LLC | 2800 Bonham Blvd. | Eastland, TX | 518210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Top%20Gun%20Blockchain%20LLC%2C%202800%20Bonham%20Blvd.%2C%20Eastland%2C%20TX) |
+| 341 | Topic Gurus LLC | 942 Lexington Dr | Rockwall, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Topic%20Gurus%20LLC%2C%20942%20Lexington%20Dr%2C%20Rockwall%2C%20TX) |
+| 342 | TowWorks, LLC | 1716 Washington Ave. G | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=TowWorks%2C%20LLC%2C%201716%20Washington%20Ave.%20G%2C%20Houston%2C%20TX) |
+| 343 | Trackme Software LLC | 303 S Jupiter Rd ste 110 | Allen, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Trackme%20Software%20LLC%2C%20303%20S%20Jupiter%20Rd%20ste%20110%2C%20Allen%2C%20TX) |
+| 344 | Triple Point Technology, LLC | 1221 Lamar Street 500 Suite | Houston, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Triple%20Point%20Technology%2C%20LLC%2C%201221%20Lamar%20Street%20500%20Suite%2C%20Houston%2C%20TX) |
+| 345 | Trust Infosys, LLC | 13740 Research Blvd., Suite O-2 | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Trust%20Infosys%2C%20LLC%2C%2013740%20Research%20Blvd.%2C%20Suite%20O-2%2C%20Austin%2C%20TX) |
+| 346 | Tscalar Systems LLC | 8105 Rasor Boulevard Ste # 284 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Tscalar%20Systems%20LLC%2C%208105%20Rasor%20Boulevard%20Ste%20%23%20284%2C%20Plano%2C%20TX) |
+| 347 | Turtle Cloud LLC | 9319 LBJ Freeway STE 208H | Dallas, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Turtle%20Cloud%20LLC%2C%209319%20LBJ%20Freeway%20STE%20208H%2C%20Dallas%2C%20TX) |
+| 348 | VGTS LLC | 7007 Split Rein Rd. | Frisco, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=VGTS%20LLC%2C%207007%20Split%20Rein%20Rd.%2C%20Frisco%2C%20TX) |
+| 349 | VIVERE SYSTEMS LLC | 9440 Stratton Dr #17107 | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=VIVERE%20SYSTEMS%20LLC%2C%209440%20Stratton%20Dr%20%2317107%2C%20Frisco%2C%20TX) |
+| 350 | VOLCONE WEB SOLUTIONS LLC | 104 ARGO CV | GEORGETOWN, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=VOLCONE%20WEB%20SOLUTIONS%20LLC%2C%20104%20ARGO%20CV%2C%20GEORGETOWN%2C%20TX) |
+| 351 | VSSIQ Solutions LLC | 2413 Milan Meadows Dr | Leander, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=VSSIQ%20Solutions%20LLC%2C%202413%20Milan%20Meadows%20Dr%2C%20Leander%2C%20TX) |
+| 352 | Verdict IT Technologies LLC | 5005 W ROYAL LN STE 183F | IRVING, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Verdict%20IT%20Technologies%20LLC%2C%205005%20W%20ROYAL%20LN%20STE%20183F%2C%20IRVING%2C%20TX) |
+| 353 | Verittsoft LLC | 13345 Marmolada Dr | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Verittsoft%20LLC%2C%2013345%20Marmolada%20Dr%2C%20Frisco%2C%20TX) |
+| 354 | Verity Services, LLC | 1095 Evergreen Circle Suite 200 | The Woodlands, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Verity%20Services%2C%20LLC%2C%201095%20Evergreen%20Circle%20Suite%20200%2C%20The%20Woodlands%2C%20TX) |
+| 355 | Virtue Serve LLC | 8600 Freeport Pkwy Ste 220 | Irving, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Virtue%20Serve%20LLC%2C%208600%20Freeport%20Pkwy%20Ste%20220%2C%20Irving%2C%20TX) |
+| 356 | Visual BI Solutions, LLC | 5920 Windhaven Parkway | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Visual%20BI%20Solutions%2C%20LLC%2C%205920%20Windhaven%20Parkway%2C%20Plano%2C%20TX) |
+| 357 | Voltaire Health, LLC. | 5800 Granite Parkway Suite 450 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Voltaire%20Health%2C%20LLC.%2C%205800%20Granite%20Parkway%20Suite%20450%2C%20Plano%2C%20TX) |
+| 358 | Volusion, LLC | 1825-B Kramer Lane Ste. 100 | Austin, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Volusion%2C%20LLC%2C%201825-B%20Kramer%20Lane%20Ste.%20100%2C%20Austin%2C%20TX) |
+| 359 | WELKIN TECHNOLOGIES LLC | 4080 Mc Ginnis Ferry Rd Suite#1204 | Alpharetta, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=WELKIN%20TECHNOLOGIES%20LLC%2C%204080%20Mc%20Ginnis%20Ferry%20Rd%20Suite%231204%2C%20Alpharetta%2C%20TX) |
+| 360 | WIZIENT LLC | 15430 HOPE SHADOW CT | CYPRESS, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=WIZIENT%20LLC%2C%2015430%20HOPE%20SHADOW%20CT%2C%20CYPRESS%2C%20TX) |
+| 361 | WatchmeSports, LLC | 6813 Dwight Street | Fort Worth, TX | 516210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=WatchmeSports%2C%20LLC%2C%206813%20Dwight%20Street%2C%20Fort%20Worth%2C%20TX) |
+| 362 | Wave Telecom LLC | 2500 Legacy Dr STE 118 | Frisco, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Wave%20Telecom%20LLC%2C%202500%20Legacy%20Dr%20STE%20118%2C%20Frisco%2C%20TX) |
+| 363 | Wellsite Navigator LLC | 1801 Main Street Suite 1300 | Houston, TX | 511210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Wellsite%20Navigator%20LLC%2C%201801%20Main%20Street%20Suite%201300%2C%20Houston%2C%20TX) |
+| 364 | Willow Technologies LLC | 7701 Lemmon Avenue | Dallas, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Willow%20Technologies%20LLC%2C%207701%20Lemmon%20Avenue%2C%20Dallas%2C%20TX) |
+| 365 | WiredHive, LLC | 1720 Nicklaus Ct. | McKinney, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=WiredHive%2C%20LLC%2C%201720%20Nicklaus%20Ct.%2C%20McKinney%2C%20TX) |
+| 366 | Worldtech IT LLC | 3612 Thompson St, Suite  2 | Austin, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Worldtech%20IT%20LLC%2C%203612%20Thompson%20St%2C%20Suite%20%202%2C%20Austin%2C%20TX) |
+| 367 | ZERO DAY GROUP LLC | 4545 BISSONNET ST 290 | BELLAIRE, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ZERO%20DAY%20GROUP%20LLC%2C%204545%20BISSONNET%20ST%20290%2C%20BELLAIRE%2C%20TX) |
+| 368 | ZOWTA LLC | 9600 Great Hills Trail Suite 350W | Austin, TX | 513210 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=ZOWTA%20LLC%2C%209600%20Great%20Hills%20Trail%20Suite%20350W%2C%20Austin%2C%20TX) |
+| 369 | Zeva Technology LLC | 5068 W. Plano Parkway Suite 145 | Plano, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Zeva%20Technology%20LLC%2C%205068%20W.%20Plano%20Parkway%20Suite%20145%2C%20Plano%2C%20TX) |
+| 370 | Zinc LLC | 3536 Hwy 6 South Suite 158 | Sugar Land, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Zinc%20LLC%2C%203536%20Hwy%206%20South%20Suite%20158%2C%20Sugar%20Land%2C%20TX) |
+| 371 | Zionzest LLC | 4400 State Highway 121 STE 300 | Lewisville, TX | 541512 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Zionzest%20LLC%2C%204400%20State%20Highway%20121%20STE%20300%2C%20Lewisville%2C%20TX) |
+| 372 | Ziosk Payroll, LLC | 12404 Park Central Drive Suite 350 | Dallas, TX | 541519 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=Ziosk%20Payroll%2C%20LLC%2C%2012404%20Park%20Central%20Drive%20Suite%20350%2C%20Dallas%2C%20TX) |
+| 373 | aMind Solutions, LLC d.b.a. ArganoaMind | 6100 W. Plano Parkway Ste. 1800 | Plano, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=aMind%20Solutions%2C%20LLC%20d.b.a.%20ArganoaMind%2C%206100%20W.%20Plano%20Parkway%20Ste.%201800%2C%20Plano%2C%20TX) |
+| 374 | defi Solutions DE, LLC | 1500 Solana Blvd. Ste 6400 | Westlake, TX | 541511 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=defi%20Solutions%20DE%2C%20LLC%2C%201500%20Solana%20Blvd.%20Ste%206400%2C%20Westlake%2C%20TX) |
+| 375 | iRely LLC | 5221 N OConnor Blvd Suite 650 | Irving, TX | 54151 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=iRely%20LLC%2C%205221%20N%20OConnor%20Blvd%20Suite%20650%2C%20Irving%2C%20TX) |
+| 376 | iSphere Innovation Partners LLC | 450 North Sam Houston Parkway East Suite 125 | Houston, TX | 5415 | 1 | [📍](https://www.google.com/maps/search/?api=1&query=iSphere%20Innovation%20Partners%20LLC%2C%20450%20North%20Sam%20Houston%20Parkway%20East%20Suite%20125%2C%20Houston%2C%20TX) |
+| 377 | 8am, LLC | 3700 North Capital of Texas Highway Suite 300 | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=8am%2C%20LLC%2C%203700%20North%20Capital%20of%20Texas%20Highway%20Suite%20300%2C%20Austin%2C%20TX) |
+| 378 | AAKHIRAH INVESTMENTS LLC | 2204 West Walnut Hill Lane | Irving, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=AAKHIRAH%20INVESTMENTS%20LLC%2C%202204%20West%20Walnut%20Hill%20Lane%2C%20Irving%2C%20TX) |
+| 379 | AHACLOUDS LLC | 1330 Blue Gill Bay Road | Coppell, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=AHACLOUDS%20LLC%2C%201330%20Blue%20Gill%20Bay%20Road%2C%20Coppell%2C%20TX) |
+| 380 | ASTOUNDZ, LLC. | 4501 BROOKWOODS DR | HOUSTON, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ASTOUNDZ%2C%20LLC.%2C%204501%20BROOKWOODS%20DR%2C%20HOUSTON%2C%20TX) |
+| 381 | ASYNC7 LLC | 2900 N LOOP W SUITE 825 | HOUSTON, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ASYNC7%20LLC%2C%202900%20N%20LOOP%20W%20SUITE%20825%2C%20HOUSTON%2C%20TX) |
+| 382 | ATRIXSOFT LLC | 1309 COFFEEN AVE | SHERIDAN, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ATRIXSOFT%20LLC%2C%201309%20COFFEEN%20AVE%2C%20SHERIDAN%2C%20TX) |
+| 383 | AUSIND Solutions LLC | 6010 W. Spring Creek Pkwy Suite 636 | Plano, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=AUSIND%20Solutions%20LLC%2C%206010%20W.%20Spring%20Creek%20Pkwy%20Suite%20636%2C%20Plano%2C%20TX) |
+| 384 | Aayog Solutions LLC | 16333 Great Oaks Dr STE 108 | Round Rock, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Aayog%20Solutions%20LLC%2C%2016333%20Great%20Oaks%20Dr%20STE%20108%2C%20Round%20Rock%2C%20TX) |
+| 385 | Adaptive Vision & Robotics, LLC | 2021  Commerce Drive | McKinney, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Adaptive%20Vision%20%26%20Robotics%2C%20LLC%2C%202021%20%20Commerce%20Drive%2C%20McKinney%2C%20TX) |
+| 386 | AiQueous, LLC | 8213A Shoal Creek Blvd. Suite 109 | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=AiQueous%2C%20LLC%2C%208213A%20Shoal%20Creek%20Blvd.%20Suite%20109%2C%20Austin%2C%20TX) |
+| 387 | Appweb, LLC | 1001 Cobb Creek Rd | Georgetown, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Appweb%2C%20LLC%2C%201001%20Cobb%20Creek%20Rd%2C%20Georgetown%2C%20TX) |
+| 388 | Arks Intellitech LLC | 2550 E State Highway 121 Bldg 5 STE 106 | Lewisville, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Arks%20Intellitech%20LLC%2C%202550%20E%20State%20Highway%20121%20Bldg%205%20STE%20106%2C%20Lewisville%2C%20TX) |
+| 389 | Arora Innovation LLC | 750 N Saint Paul St #744032 Ste. 250 | Dallas, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Arora%20Innovation%20LLC%2C%20750%20N%20Saint%20Paul%20St%20%23744032%20Ste.%20250%2C%20Dallas%2C%20TX) |
+| 390 | Auctane, LLC, dba ShipStation | 4301 Bull Creek Road | Austin, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Auctane%2C%20LLC%2C%20dba%20ShipStation%2C%204301%20Bull%20Creek%20Road%2C%20Austin%2C%20TX) |
+| 391 | Axcelinno, LLC | 6136 Frisco Square Blvd Suite 295 | Frisco, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Axcelinno%2C%20LLC%2C%206136%20Frisco%20Square%20Blvd%20Suite%20295%2C%20Frisco%2C%20TX) |
+| 392 | BEYOND SCRIPTS LLC | 3400 CARIBOU LANE | MCKINNEY, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=BEYOND%20SCRIPTS%20LLC%2C%203400%20CARIBOU%20LANE%2C%20MCKINNEY%2C%20TX) |
+| 393 | BINARYWAY LLC. | 1836 SNAKE RIVER ROAD STE. B | KATY, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=BINARYWAY%20LLC.%2C%201836%20SNAKE%20RIVER%20ROAD%20STE.%20B%2C%20KATY%2C%20TX) |
+| 394 | BLOCKnit LLC | 15410 Christopher Ln | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=BLOCKnit%20LLC%2C%2015410%20Christopher%20Ln%2C%20Frisco%2C%20TX) |
+| 395 | BLUEGREEN TECHSOLUTIONS LLC. | 7460 WARREN PARKWAY STE. #100, OFFICE #173 | FRISCO, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=BLUEGREEN%20TECHSOLUTIONS%20LLC.%2C%207460%20WARREN%20PARKWAY%20STE.%20%23100%2C%20OFFICE%20%23173%2C%20FRISCO%2C%20TX) |
+| 396 | Banjaxed Solutions LLC | 3011 Earl Rudder Fwy S, Ste. 100 | College Station, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Banjaxed%20Solutions%20LLC%2C%203011%20Earl%20Rudder%20Fwy%20S%2C%20Ste.%20100%2C%20College%20Station%2C%20TX) |
+| 397 | Baxter Planning Systems Opco, LLC | 7801 N. Capital of Texas Hwy. Ste. 250 | Austin, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Baxter%20Planning%20Systems%20Opco%2C%20LLC%2C%207801%20N.%20Capital%20of%20Texas%20Hwy.%20Ste.%20250%2C%20Austin%2C%20TX) |
+| 398 | Bellwether Electronics, LLC | 7122 Wood Hollow Dr. Unit 11 | Austin, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Bellwether%20Electronics%2C%20LLC%2C%207122%20Wood%20Hollow%20Dr.%20Unit%2011%2C%20Austin%2C%20TX) |
+| 399 | Bloomgen LLC | 2150 S Central Expressway Suite 200 | McKinney, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Bloomgen%20LLC%2C%202150%20S%20Central%20Expressway%20Suite%20200%2C%20McKinney%2C%20TX) |
+| 400 | Blue Goji LLC | 6301 E Stassney Lane Bldg. 6, Suite 400 | Austin, TX | 513210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Blue%20Goji%20LLC%2C%206301%20E%20Stassney%20Lane%20Bldg.%206%2C%20Suite%20400%2C%20Austin%2C%20TX) |
+| 401 | Bonterra LLC | 10801-2 North MoPac Expressway Suite 400 | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Bonterra%20LLC%2C%2010801-2%20North%20MoPac%20Expressway%20Suite%20400%2C%20Austin%2C%20TX) |
+| 402 | Bonum Technologies LLC | 3504 Dorchester Court | Flower Mound, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Bonum%20Technologies%20LLC%2C%203504%20Dorchester%20Court%2C%20Flower%20Mound%2C%20TX) |
+| 403 | BoosterHub, LLC | 3011 Dawn Drive Ste. 101 | Georgetown, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=BoosterHub%2C%20LLC%2C%203011%20Dawn%20Drive%20Ste.%20101%2C%20Georgetown%2C%20TX) |
+| 404 | Bridge Logix Solutions, LLC | Three Sugar Creek Center Blvd. Suite 100 | Sugar Land, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Bridge%20Logix%20Solutions%2C%20LLC%2C%20Three%20Sugar%20Creek%20Center%20Blvd.%20Suite%20100%2C%20Sugar%20Land%2C%20TX) |
+| 405 | Broadleaf Commerce, LLC. | 5700 Tennyson Parkway Suite 300 | Plano, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Broadleaf%20Commerce%2C%20LLC.%2C%205700%20Tennyson%20Parkway%20Suite%20300%2C%20Plano%2C%20TX) |
+| 406 | C4Workx LLC | 8006 Prairie Sage Dr. | Richmond, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=C4Workx%20LLC%2C%208006%20Prairie%20Sage%20Dr.%2C%20Richmond%2C%20TX) |
+| 407 | CLOUD IMPERIUM GAMES TEXAS LLC | 13420 GALLERIA CIRCLE SUITE  A250 | BEE CAVE, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CLOUD%20IMPERIUM%20GAMES%20TEXAS%20LLC%2C%2013420%20GALLERIA%20CIRCLE%20SUITE%20%20A250%2C%20BEE%20CAVE%2C%20TX) |
+| 408 | CLOUD RESOURCES LLC | 104 DECKER CT, STE 110 | IRVING, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CLOUD%20RESOURCES%20LLC%2C%20104%20DECKER%20CT%2C%20STE%20110%2C%20IRVING%2C%20TX) |
+| 409 | CPS Technology Solutions LLC | 8565 Anacua Rd | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CPS%20Technology%20Solutions%20LLC%2C%208565%20Anacua%20Rd%2C%20Frisco%2C%20TX) |
+| 410 | CRAFTANY IT SOLUTIONS LLC | 9330 LYNDON B JOHNSON FWY. STE. #900 | DALLAS, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CRAFTANY%20IT%20SOLUTIONS%20LLC%2C%209330%20LYNDON%20B%20JOHNSON%20FWY.%20STE.%20%23900%2C%20DALLAS%2C%20TX) |
+| 411 | Capitalogix LLC | 327 Martel Lane | Coppell, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Capitalogix%20LLC%2C%20327%20Martel%20Lane%2C%20Coppell%2C%20TX) |
+| 412 | Caton Analytics LLC | 10900 Stonelake Blvd. Building 2 Suite 100 | Austin, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Caton%20Analytics%20LLC%2C%2010900%20Stonelake%20Blvd.%20Building%202%20Suite%20100%2C%20Austin%2C%20TX) |
+| 413 | Cerebre, LLC | 539 W Commerce St Suite 857 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Cerebre%2C%20LLC%2C%20539%20W%20Commerce%20St%20Suite%20857%2C%20Dallas%2C%20TX) |
+| 414 | Client Connect LLC | 3308 Preston Road, Suite 350-102 | Plano, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Client%20Connect%20LLC%2C%203308%20Preston%20Road%2C%20Suite%20350-102%2C%20Plano%2C%20TX) |
+| 415 | CoachAlgo, LLC | 400 Promenade Way Suite 1200 | Sugar Land, TX | 513210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CoachAlgo%2C%20LLC%2C%20400%20Promenade%20Way%20Suite%201200%2C%20Sugar%20Land%2C%20TX) |
+| 416 | Cocolevio, LLC | 1800 E 4th Street Unit 123 | Austin, TX | 5415 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Cocolevio%2C%20LLC%2C%201800%20E%204th%20Street%20Unit%20123%2C%20Austin%2C%20TX) |
+| 417 | Code Insights LLC. | 14739 Yorktown Dr | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Code%20Insights%20LLC.%2C%2014739%20Yorktown%20Dr%2C%20Frisco%2C%20TX) |
+| 418 | Computer Visionaries, LLC | 4300 Sigma Rd. Suite 130 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Computer%20Visionaries%2C%20LLC%2C%204300%20Sigma%20Rd.%20Suite%20130%2C%20Dallas%2C%20TX) |
+| 419 | Conduent Credit Balance Solutions, LLC | 1702 North Collins Boulevard, Suite 260 | Richardson, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Conduent%20Credit%20Balance%20Solutions%2C%20LLC%2C%201702%20North%20Collins%20Boulevard%2C%20Suite%20260%2C%20Richardson%2C%20TX) |
+| 420 | Conduent Heritage, LLC | 1702 North Collins Boulevard, Suite 260 | Richardson, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Conduent%20Heritage%2C%20LLC%2C%201702%20North%20Collins%20Boulevard%2C%20Suite%20260%2C%20Richardson%2C%20TX) |
+| 421 | Corva AI, LLC | 1334 Brittmoore Rd. Suite 150 | Houston, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Corva%20AI%2C%20LLC%2C%201334%20Brittmoore%20Rd.%20Suite%20150%2C%20Houston%2C%20TX) |
+| 422 | Cyberbridge LLC | 7330 Lagrange Point | Katy, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Cyberbridge%20LLC%2C%207330%20Lagrange%20Point%2C%20Katy%2C%20TX) |
+| 423 | CyrusOne LLC | 2850 N Harwood St. Suite 2200 | Dallas, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=CyrusOne%20LLC%2C%202850%20N%20Harwood%20St.%20Suite%202200%2C%20Dallas%2C%20TX) |
+| 424 | DIGITAL TWINS TECHNOLOGIES LLC | 559 W WHEATLAND RD SUITE 103 | DUNCANVILLE, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=DIGITAL%20TWINS%20TECHNOLOGIES%20LLC%2C%20559%20W%20WHEATLAND%20RD%20SUITE%20103%2C%20DUNCANVILLE%2C%20TX) |
+| 425 | DSP Zusters LLC | 5812 Hightower St | Aubrey, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=DSP%20Zusters%20LLC%2C%205812%20Hightower%20St%2C%20Aubrey%2C%20TX) |
+| 426 | Digineox LLC | 2700 Post Oak Blvd Suite 21-119 | Houston, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Digineox%20LLC%2C%202700%20Post%20Oak%20Blvd%20Suite%2021-119%2C%20Houston%2C%20TX) |
+| 427 | ELFA Ventures LLC | 320 Decker Dr. Suite 254-07 | Irving, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ELFA%20Ventures%20LLC%2C%20320%20Decker%20Dr.%20Suite%20254-07%2C%20Irving%2C%20TX) |
+| 428 | ENQBATOR LLC | 13785 Research Blvd. STE  125-138 | Austin, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ENQBATOR%20LLC%2C%2013785%20Research%20Blvd.%20STE%20%20125-138%2C%20Austin%2C%20TX) |
+| 429 | EXTERPRISE LLC | 5400 Twin Cities Lane | Mckinney, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=EXTERPRISE%20LLC%2C%205400%20Twin%20Cities%20Lane%2C%20Mckinney%2C%20TX) |
+| 430 | Enpowertek LLC | 6136 Frisco Square Blvd Suite #400 | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Enpowertek%20LLC%2C%206136%20Frisco%20Square%20Blvd%20Suite%20%23400%2C%20Frisco%2C%20TX) |
+| 431 | FORMULA HUB LLC | 2727 LBJ Freeway Suite 300 | Farmers Branch, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=FORMULA%20HUB%20LLC%2C%202727%20LBJ%20Freeway%20Suite%20300%2C%20Farmers%20Branch%2C%20TX) |
+| 432 | FORTUNE INSIGHTS LLC. | 1723 E SOUTHLAKE BLVD. SUITE 230 | SOUTHLAKE, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=FORTUNE%20INSIGHTS%20LLC.%2C%201723%20E%20SOUTHLAKE%20BLVD.%20SUITE%20230%2C%20SOUTHLAKE%2C%20TX) |
+| 433 | FRISCO TECHSOL LLC | 8596 Dynasty Ln | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=FRISCO%20TECHSOL%20LLC%2C%208596%20Dynasty%20Ln%2C%20Frisco%2C%20TX) |
+| 434 | Fame Computers, LLC | 3400 Silverstone Drive Suite 110 | Plano, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Fame%20Computers%2C%20LLC%2C%203400%20Silverstone%20Drive%20Suite%20110%2C%20Plano%2C%20TX) |
+| 435 | Flight Operations Holdings LLC | 3150 Sabre Drive | Southlake, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Flight%20Operations%20Holdings%20LLC%2C%203150%20Sabre%20Drive%2C%20Southlake%2C%20TX) |
+| 436 | Folio Software, LLC | 3100 Carlisle #10105 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Folio%20Software%2C%20LLC%2C%203100%20Carlisle%20%2310105%2C%20Dallas%2C%20TX) |
+| 437 | Frisco Tech Sol LLC | 8596 Dynasty Ln | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Frisco%20Tech%20Sol%20LLC%2C%208596%20Dynasty%20Ln%2C%20Frisco%2C%20TX) |
+| 438 | Geek Genix, LLC | 2409 Skyline Drive | Waco, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Geek%20Genix%2C%20LLC%2C%202409%20Skyline%20Drive%2C%20Waco%2C%20TX) |
+| 439 | Global Infrastructure Services LLC | 660 St Andrew Ln | Prosper, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Infrastructure%20Services%20LLC%2C%20660%20St%20Andrew%20Ln%2C%20Prosper%2C%20TX) |
+| 440 | Global Paradigm LLC | 13601 Preston Road Suite 425W | DALLAS, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Paradigm%20LLC%2C%2013601%20Preston%20Road%20Suite%20425W%2C%20DALLAS%2C%20TX) |
+| 441 | GlobalStep Client Services LLC | 5956 Sherry Ln. Ste# 1850 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=GlobalStep%20Client%20Services%20LLC%2C%205956%20Sherry%20Ln.%20Ste%23%201850%2C%20Dallas%2C%20TX) |
+| 442 | Growth AXL LLC | 6014 Mowamba Terrace Ln | Sugar Land, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Growth%20AXL%20LLC%2C%206014%20Mowamba%20Terrace%20Ln%2C%20Sugar%20Land%2C%20TX) |
+| 443 | GrowthAXL Shared Services LLC | 16676 Northchase Dr. Ste. 410 | Houston, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=GrowthAXL%20Shared%20Services%20LLC%2C%2016676%20Northchase%20Dr.%20Ste.%20410%2C%20Houston%2C%20TX) |
+| 444 | Hahn Stats, LLC | 5203 Brodie Lane | Austin, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Hahn%20Stats%2C%20LLC%2C%205203%20Brodie%20Lane%2C%20Austin%2C%20TX) |
+| 445 | Honeydew Design LLC | 450 Century Parkway Ste 250 | Allen, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Honeydew%20Design%20LLC%2C%20450%20Century%20Parkway%20Ste%20250%2C%20Allen%2C%20TX) |
+| 446 | Hotel RevUp LLC | 545 E John W Carpenter Fwy Suite #1400 | Irving, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Hotel%20RevUp%20LLC%2C%20545%20E%20John%20W%20Carpenter%20Fwy%20Suite%20%231400%2C%20Irving%2C%20TX) |
+| 447 | Hynes & Khater, LLC | 5065 Westheimer Rd Ste. 1215E | Houston, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Hynes%20%26%20Khater%2C%20LLC%2C%205065%20Westheimer%20Rd%20Ste.%201215E%2C%20Houston%2C%20TX) |
+| 448 | INTELLECT CLOUD TECHNOLOGIES LLC | 825 Watter's Creek Blvd Building M, Suite 250, | Allen, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=INTELLECT%20CLOUD%20TECHNOLOGIES%20LLC%2C%20825%20Watter%27s%20Creek%20Blvd%20Building%20M%2C%20Suite%20250%2C%2C%20Allen%2C%20TX) |
+| 449 | IPSEC SYSTEMS LLC | 3200 14th Street Suite # 414 | Plano, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=IPSEC%20SYSTEMS%20LLC%2C%203200%2014th%20Street%20Suite%20%23%20414%2C%20Plano%2C%20TX) |
+| 450 | IT MICROSTACK LLC | 1616 Doral Dr, , TX, | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=IT%20MICROSTACK%20LLC%2C%201616%20Doral%20Dr%2C%20%2C%20TX%2C%2C%20Frisco%2C%20TX) |
+| 451 | IT PRO HUB USA LLC. | 2735 VILLA CREEK DR. SUITE - A292 | FARMERS BRANCH, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=IT%20PRO%20HUB%20USA%20LLC.%2C%202735%20VILLA%20CREEK%20DR.%20SUITE%20-%20A292%2C%20FARMERS%20BRANCH%2C%20TX) |
+| 452 | Ingenious IT Systems LLC | 17023 Mulben Ct | Richmond, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Ingenious%20IT%20Systems%20LLC%2C%2017023%20Mulben%20Ct%2C%20Richmond%2C%20TX) |
+| 453 | Janus Automation LLC | 2407 Timberloch Place Suite H | The Woodlands, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Janus%20Automation%20LLC%2C%202407%20Timberloch%20Place%20Suite%20H%2C%20The%20Woodlands%2C%20TX) |
+| 454 | Jointly LLC | 4361 S. Congress Ave. Ste. 101 | Austin, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Jointly%20LLC%2C%204361%20S.%20Congress%20Ave.%20Ste.%20101%2C%20Austin%2C%20TX) |
+| 455 | Kibernum USA LLC | 5700 Granite Parkway Suite 200 | Plano, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Kibernum%20USA%20LLC%2C%205700%20Granite%20Parkway%20Suite%20200%2C%20Plano%2C%20TX) |
+| 456 | LaborEdge, LLC | 6860 Dallas Pkwy Suite 800 | Plano, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=LaborEdge%2C%20LLC%2C%206860%20Dallas%20Pkwy%20Suite%20800%2C%20Plano%2C%20TX) |
+| 457 | Last Mile Venture LLC | 6009 W Parker Rd. Suites 149 & 370 | Plano, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Last%20Mile%20Venture%20LLC%2C%206009%20W%20Parker%20Rd.%20Suites%20149%20%26%20370%2C%20Plano%2C%20TX) |
+| 458 | LearnSAP LLC | 1927, County Road 129 | Pearland, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=LearnSAP%20LLC%2C%201927%2C%20County%20Road%20129%2C%20Pearland%2C%20TX) |
+| 459 | Lexipol, LLC | 2611  Internet Blvd. Ste. 100 | Frisco, TX | 519130 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Lexipol%2C%20LLC%2C%202611%20%20Internet%20Blvd.%20Ste.%20100%2C%20Frisco%2C%20TX) |
+| 460 | Lively Video, LLC | 2309 Manor Rd | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Lively%20Video%2C%20LLC%2C%202309%20Manor%20Rd%2C%20Austin%2C%20TX) |
+| 461 | Logicexcell LLC | 14175 Valley Mills Drive | Frisco, TX | 541513 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Logicexcell%20LLC%2C%2014175%20Valley%20Mills%20Drive%2C%20Frisco%2C%20TX) |
+| 462 | Loop1 LLC | 405 Brushy Creek Rd | Cedar park, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Loop1%20LLC%2C%20405%20Brushy%20Creek%20Rd%2C%20Cedar%20park%2C%20TX) |
+| 463 | Lotic AI LLC | 12600 Hill Country Boulevard Ste R-130 | Bee Cave, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Lotic%20AI%20LLC%2C%2012600%20Hill%20Country%20Boulevard%20Ste%20R-130%2C%20Bee%20Cave%2C%20TX) |
+| 464 | Luminary Creative and Marketing, LLC | 7800 N. Stemmons Fwy Ste 1100 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Luminary%20Creative%20and%20Marketing%2C%20LLC%2C%207800%20N.%20Stemmons%20Fwy%20Ste%201100%2C%20Dallas%2C%20TX) |
+| 465 | Luna Squares Texas LLC | 1734 US Hwy 285 | Pecos, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Luna%20Squares%20Texas%20LLC%2C%201734%20US%20Hwy%20285%2C%20Pecos%2C%20TX) |
+| 466 | METAVERSE TECHNOLOGY GROUP LLC | 559 W WHEATLAND RD SUITE 107 | DUNCANVILLE, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=METAVERSE%20TECHNOLOGY%20GROUP%20LLC%2C%20559%20W%20WHEATLAND%20RD%20SUITE%20107%2C%20DUNCANVILLE%2C%20TX) |
+| 467 | MNM Innovations LLC | 3430 Norwich Gardens Ln | Fulshear, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=MNM%20Innovations%20LLC%2C%203430%20Norwich%20Gardens%20Ln%2C%20Fulshear%2C%20TX) |
+| 468 | MYK PROVIDERSLLC | 2351 W NORTHWEST HWY SUITE 3241 | DALLAS, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=MYK%20PROVIDERSLLC%2C%202351%20W%20NORTHWEST%20HWY%20SUITE%203241%2C%20DALLAS%2C%20TX) |
+| 469 | Matrix Software Technology LLC | 3903 Bellaire Blvd Suite E-109 | Houston, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Matrix%20Software%20Technology%20LLC%2C%203903%20Bellaire%20Blvd%20Suite%20E-109%2C%20Houston%2C%20TX) |
+| 470 | Medical Technology Solutions, LLC | 24307 Magic Mountain Parkway #76 | Valencia, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Medical%20Technology%20Solutions%2C%20LLC%2C%2024307%20Magic%20Mountain%20Parkway%20%2376%2C%20Valencia%2C%20TX) |
+| 471 | Method Analytics LLC | 4626 Key Ranch Road | Trinidad, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Method%20Analytics%20LLC%2C%204626%20Key%20Ranch%20Road%2C%20Trinidad%2C%20TX) |
+| 472 | MiView Integrated Solutions, LLC | 1440 Halsey Way | Carrollton, TX | 513210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=MiView%20Integrated%20Solutions%2C%20LLC%2C%201440%20Halsey%20Way%2C%20Carrollton%2C%20TX) |
+| 473 | Mshana Group, LLC | 19901 Southwest Fwy, Suite # 164 | Sugar Land, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Mshana%20Group%2C%20LLC%2C%2019901%20Southwest%20Fwy%2C%20Suite%20%23%20164%2C%20Sugar%20Land%2C%20TX) |
+| 474 | NEURABOX AI LLC | 5473 BLAIR RD STE 100 PMB 731662 | DALLAS, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=NEURABOX%20AI%20LLC%2C%205473%20BLAIR%20RD%20STE%20100%20PMB%20731662%2C%20DALLAS%2C%20TX) |
+| 475 | NEXTGEN INNOVATION LABS LLC | 5 Cowboys Way Ste 300 | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=NEXTGEN%20INNOVATION%20LABS%20LLC%2C%205%20Cowboys%20Way%20Ste%20300%2C%20Frisco%2C%20TX) |
+| 476 | Navesink Mortgage Services, LLC | 15851 Dallas Parkway Ste 1150 | Addison, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Navesink%20Mortgage%20Services%2C%20LLC%2C%2015851%20Dallas%20Parkway%20Ste%201150%2C%20Addison%2C%20TX) |
+| 477 | Neolution LLC | 1431 Greenway Drive Suite#844 | Irving, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Neolution%20LLC%2C%201431%20Greenway%20Drive%20Suite%23844%2C%20Irving%2C%20TX) |
+| 478 | Nlinq Solutions LLC | 440  Benmar Dr STE 3344 | Houston, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Nlinq%20Solutions%20LLC%2C%20440%20%20Benmar%20Dr%20STE%203344%2C%20Houston%2C%20TX) |
+| 479 | North Polaris, LLC. | 8007 Bellaire Blvd | Houston, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=North%20Polaris%2C%20LLC.%2C%208007%20Bellaire%20Blvd%2C%20Houston%2C%20TX) |
+| 480 | Nusoft Systems, LLC | 5323 Turning Leaf Lane | Sugar Land, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Nusoft%20Systems%2C%20LLC%2C%205323%20Turning%20Leaf%20Lane%2C%20Sugar%20Land%2C%20TX) |
+| 481 | Octagos Acquisition LLC | 13325 Hargrave Rd Ste 281 | Houston, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Octagos%20Acquisition%20LLC%2C%2013325%20Hargrave%20Rd%20Ste%20281%2C%20Houston%2C%20TX) |
+| 482 | Octed LLC | 8951 Cypress Waters Blvd Suite 160 | Coppell, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Octed%20LLC%2C%208951%20Cypress%20Waters%20Blvd%20Suite%20160%2C%20Coppell%2C%20TX) |
+| 483 | Oortech LLC | 2021 Guadalupe Street Suite 260 | Austin, TX | 51821 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Oortech%20LLC%2C%202021%20Guadalupe%20Street%20Suite%20260%2C%20Austin%2C%20TX) |
+| 484 | Optimal Blue, LLC | 5340 Legacy Dr Building 2, 2nd Floor | Plano, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Optimal%20Blue%2C%20LLC%2C%205340%20Legacy%20Dr%20Building%202%2C%202nd%20Floor%2C%20Plano%2C%20TX) |
+| 485 | Optimus Labs USA, LLC | 12300 Ford Rd. Ste. B336 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Optimus%20Labs%20USA%2C%20LLC%2C%2012300%20Ford%20Rd.%20Ste.%20B336%2C%20Dallas%2C%20TX) |
+| 486 | PROTAGONA LLC | 500 N Central Expy Suite 500 | PLANO, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=PROTAGONA%20LLC%2C%20500%20N%20Central%20Expy%20Suite%20500%2C%20PLANO%2C%20TX) |
+| 487 | Palm Delivery Innovations QOZB, LLC | 4901 E Cesar Chavez | Austin, TX | 513210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Palm%20Delivery%20Innovations%20QOZB%2C%20LLC%2C%204901%20E%20Cesar%20Chavez%2C%20Austin%2C%20TX) |
+| 488 | Paramount Technologies LLC | 9116 Fox Hollow Trl. | Irving, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Paramount%20Technologies%20LLC%2C%209116%20Fox%20Hollow%20Trl.%2C%20Irving%2C%20TX) |
+| 489 | Paranet Solutions LLC | 15660 North Dallas Parkway Suite 600 | Dallas, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Paranet%20Solutions%20LLC%2C%2015660%20North%20Dallas%20Parkway%20Suite%20600%2C%20Dallas%2C%20TX) |
+| 490 | Payteros, LLC | 118 Vintage Park Blvd Suite W750 | Houston, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Payteros%2C%20LLC%2C%20118%20Vintage%20Park%20Blvd%20Suite%20W750%2C%20Houston%2C%20TX) |
+| 491 | Potel Projects LLC | 11491 Glen Rose Dr | Frisco, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Potel%20Projects%20LLC%2C%2011491%20Glen%20Rose%20Dr%2C%20Frisco%2C%20TX) |
+| 492 | ProjecTools Solutions LLC | 1321 Upland Drive Suite 8879 | Houston, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ProjecTools%20Solutions%20LLC%2C%201321%20Upland%20Drive%20Suite%208879%2C%20Houston%2C%20TX) |
+| 493 | QADWORKS SOLUTIONS LLC. | 10619 Hillcroft St | Houston, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=QADWORKS%20SOLUTIONS%20LLC.%2C%2010619%20Hillcroft%20St%2C%20Houston%2C%20TX) |
+| 494 | Qualesce LLC | 2591 Dallas Pkwy STE #300 | Frisco, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Qualesce%20LLC%2C%202591%20Dallas%20Pkwy%20STE%20%23300%2C%20Frisco%2C%20TX) |
+| 495 | REVENTION LLC | 1315 W SAM HOUSTON PKWY N SUITE 100 | HOUSTON, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=REVENTION%20LLC%2C%201315%20W%20SAM%20HOUSTON%20PKWY%20N%20SUITE%20100%2C%20HOUSTON%2C%20TX) |
+| 496 | RPD Systems LLC | 11200 Sacahuista CT | Austin, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=RPD%20Systems%20LLC%2C%2011200%20Sacahuista%20CT%2C%20Austin%2C%20TX) |
+| 497 | Rand Group Solutions, LLC | 6575 West Loop South Suite 700 | Bellaire, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Rand%20Group%20Solutions%2C%20LLC%2C%206575%20West%20Loop%20South%20Suite%20700%2C%20Bellaire%2C%20TX) |
+| 498 | Rayala Cloud Solutions LLC | 8113,Piedmont Ave | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Rayala%20Cloud%20Solutions%20LLC%2C%208113%2CPiedmont%20Ave%2C%20Frisco%2C%20TX) |
+| 499 | Reach Partners LLC | 100 Congress Ave. Suite 2000 | Austin, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Reach%20Partners%20LLC%2C%20100%20Congress%20Ave.%20Suite%202000%2C%20Austin%2C%20TX) |
+| 500 | RepeatMD Operating LLC | 1800 West Loop South Suite 1700 | Houston, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=RepeatMD%20Operating%20LLC%2C%201800%20West%20Loop%20South%20Suite%201700%2C%20Houston%2C%20TX) |
+| 501 | SANDBOX TECHNOLOGIES LLC | 423 W WHEATLAND RD SUITE 103 | DUNCANVILLE, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SANDBOX%20TECHNOLOGIES%20LLC%2C%20423%20W%20WHEATLAND%20RD%20SUITE%20103%2C%20DUNCANVILLE%2C%20TX) |
+| 502 | SAPPHIRE INFORMATICS, LLC. | 7600 CHEVY CHASE DRIVE SUITE #300 | AUSTIN, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SAPPHIRE%20INFORMATICS%2C%20LLC.%2C%207600%20CHEVY%20CHASE%20DRIVE%20SUITE%20%23300%2C%20AUSTIN%2C%20TX) |
+| 503 | SCMO2, LLC | 6100 W. Plano Parkway Suite 1800 | Plano, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SCMO2%2C%20LLC%2C%206100%20W.%20Plano%20Parkway%20Suite%201800%2C%20Plano%2C%20TX) |
+| 504 | SCN Corp LLC | 5005 W Royal lane STE  183D | Irving, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SCN%20Corp%20LLC%2C%205005%20W%20Royal%20lane%20STE%20%20183D%2C%20Irving%2C%20TX) |
+| 505 | SHARANGASOLUTIONS LLC | 3621 JENNIFER DRIVE | FLOWER MOUND, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SHARANGASOLUTIONS%20LLC%2C%203621%20JENNIFER%20DRIVE%2C%20FLOWER%20MOUND%2C%20TX) |
+| 506 | SIGGA USA, LLC | 13135 Dairy Ashford Suite 525 | Sugar Land, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SIGGA%20USA%2C%20LLC%2C%2013135%20Dairy%20Ashford%20Suite%20525%2C%20Sugar%20Land%2C%20TX) |
+| 507 | SIGNACORP LLC | 8720 Silverado Trail Ste 215 | Mckineey, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SIGNACORP%20LLC%2C%208720%20Silverado%20Trail%20Ste%20215%2C%20Mckineey%2C%20TX) |
+| 508 | SKIONTEK LLC | 4425 W AIRPORT FREEWAY SUITE #372 | IRVING, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SKIONTEK%20LLC%2C%204425%20W%20AIRPORT%20FREEWAY%20SUITE%20%23372%2C%20IRVING%2C%20TX) |
+| 509 | SOFTSYS TECHNOLOGIES LLC | 9012 SANDHILLS DR | LANTANA, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SOFTSYS%20TECHNOLOGIES%20LLC%2C%209012%20SANDHILLS%20DR%2C%20LANTANA%2C%20TX) |
+| 510 | SOLVATION LLC | 7608 BRODICK WAY | PLANO, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SOLVATION%20LLC%2C%207608%20BRODICK%20WAY%2C%20PLANO%2C%20TX) |
+| 511 | SRP TH Services, LLC | 3811 Turtle Creek Boulevard Suite 1100 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SRP%20TH%20Services%2C%20LLC%2C%203811%20Turtle%20Creek%20Boulevard%20Suite%201100%2C%20Dallas%2C%20TX) |
+| 512 | SYMBIOAITECH LLC | 2695 Villa Creek Dr STE B126 | Farmers Branch, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SYMBIOAITECH%20LLC%2C%202695%20Villa%20Creek%20Dr%20STE%20B126%2C%20Farmers%20Branch%2C%20TX) |
+| 513 | Saantekglobal LLC | 825 Watters Creek Blvd, BLDG M Ste 250 | ALLEN, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Saantekglobal%20LLC%2C%20825%20Watters%20Creek%20Blvd%2C%20BLDG%20M%20Ste%20250%2C%20ALLEN%2C%20TX) |
+| 514 | Salesdrive Technologies LLC | 5613 Calisto way | Flower mound, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Salesdrive%20Technologies%20LLC%2C%205613%20Calisto%20way%2C%20Flower%20mound%2C%20TX) |
+| 515 | Sathya Sai Services LLC | 5900  Balcones Drive | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Sathya%20Sai%20Services%20LLC%2C%205900%20%20Balcones%20Drive%2C%20Austin%2C%20TX) |
+| 516 | Shaw Systems Associates, LLC | 10111 Richmond Ave suite 600 | Houston, TX | 5415 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Shaw%20Systems%20Associates%2C%20LLC%2C%2010111%20Richmond%20Ave%20suite%20600%2C%20Houston%2C%20TX) |
+| 517 | ShellSquare LLC | 815 BRAZOS ST, STE 500 | AUSTIN, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ShellSquare%20LLC%2C%20815%20BRAZOS%20ST%2C%20STE%20500%2C%20AUSTIN%2C%20TX) |
+| 518 | Slick Integrations LLC | 5900 Balcones Dr Ste 100 | Austin, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Slick%20Integrations%20LLC%2C%205900%20Balcones%20Dr%20Ste%20100%2C%20Austin%2C%20TX) |
+| 519 | SoftTelRG LLC | 7300 State Highway 121 Suite 300 | McKinney, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SoftTelRG%20LLC%2C%207300%20State%20Highway%20121%20Suite%20300%2C%20McKinney%2C%20TX) |
+| 520 | Softvel LLC | 14425 Falcon Head blvd Building E Suite 100 | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Softvel%20LLC%2C%2014425%20Falcon%20Head%20blvd%20Building%20E%20Suite%20100%2C%20Austin%2C%20TX) |
+| 521 | Solidrock Solutions LLC | 6050 Long Prairie Rd Suite 100-A07 | Flower Mound, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Solidrock%20Solutions%20LLC%2C%206050%20Long%20Prairie%20Rd%20Suite%20100-A07%2C%20Flower%20Mound%2C%20TX) |
+| 522 | Solvo Tech Solutions LLC | 8330 Lyndon B Johnson Fwy STE B646 | Dallas, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Solvo%20Tech%20Solutions%20LLC%2C%208330%20Lyndon%20B%20Johnson%20Fwy%20STE%20B646%2C%20Dallas%2C%20TX) |
+| 523 | Sri Tech International LLC | 10500 LAKELINE MALL DR 201 | AUSTIN, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Sri%20Tech%20International%20LLC%2C%2010500%20LAKELINE%20MALL%20DR%20201%2C%20AUSTIN%2C%20TX) |
+| 524 | Sultanete, LLC | 320 Decker Drive Suite 100 | Irving, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Sultanete%2C%20LLC%2C%20320%20Decker%20Drive%20Suite%20100%2C%20Irving%2C%20TX) |
+| 525 | SwiftAnt LLC | 8751 COLLIN MCKINNEY PARKWAY UNIT 1102 | MCKINNEY, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=SwiftAnt%20LLC%2C%208751%20COLLIN%20MCKINNEY%20PARKWAY%20UNIT%201102%2C%20MCKINNEY%2C%20TX) |
+| 526 | TECHAVIDITY BUSINESS SOLUTIONS LLC | 6160 WARREN PKWY STE 100 | Frisco, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TECHAVIDITY%20BUSINESS%20SOLUTIONS%20LLC%2C%206160%20WARREN%20PKWY%20STE%20100%2C%20Frisco%2C%20TX) |
+| 527 | TEKENERGY, LLC. | 9901 E. VALLEY RANCH PKWY. SUITE 3045 | IRVING, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TEKENERGY%2C%20LLC.%2C%209901%20E.%20VALLEY%20RANCH%20PKWY.%20SUITE%203045%2C%20IRVING%2C%20TX) |
+| 528 | TEKLEADS LLC | 6800 WEISKOPF AVENUE STE. #150 | MCKINNEY, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TEKLEADS%20LLC%2C%206800%20WEISKOPF%20AVENUE%20STE.%20%23150%2C%20MCKINNEY%2C%20TX) |
+| 529 | TEKTRON LLC. | 4321 EVENSTAR WAY | PLANO, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TEKTRON%20LLC.%2C%204321%20EVENSTAR%20WAY%2C%20PLANO%2C%20TX) |
+| 530 | TOYAJA IT SOLUTIONS LLC. | 104 HIGHGATE LN. | GEORGETOWN, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TOYAJA%20IT%20SOLUTIONS%20LLC.%2C%20104%20HIGHGATE%20LN.%2C%20GEORGETOWN%2C%20TX) |
+| 531 | TRAXCEL LLC | 1400 BROADFIELD BLVD. SUITE 650 | HOUSTON, TX | 541512 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TRAXCEL%20LLC%2C%201400%20BROADFIELD%20BLVD.%20SUITE%20650%2C%20HOUSTON%2C%20TX) |
+| 532 | TRICON TECH SERVICES LLC | 4400 STATE HWY. 121 STE 300 | LEWISVILLE, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TRICON%20TECH%20SERVICES%20LLC%2C%204400%20STATE%20HWY.%20121%20STE%20300%2C%20LEWISVILLE%2C%20TX) |
+| 533 | Tech Quotient LLC | 14001 W Hwy 29 Ste 102 | Liberty Hill, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Tech%20Quotient%20LLC%2C%2014001%20W%20Hwy%2029%20Ste%20102%2C%20Liberty%20Hill%2C%20TX) |
+| 534 | TekDeft LLC | 3400 Silverstone Dr Suite 133 | Plano, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TekDeft%20LLC%2C%203400%20Silverstone%20Dr%20Suite%20133%2C%20Plano%2C%20TX) |
+| 535 | TekRubix LLC | 400 E Royal Lane,Suite#262 | Irving, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TekRubix%20LLC%2C%20400%20E%20Royal%20Lane%2CSuite%23262%2C%20Irving%2C%20TX) |
+| 536 | Texas VU LLC | 3201 Dallas Pkwy suite 200-318 | Frisco, TX | 541519 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Texas%20VU%20LLC%2C%203201%20Dallas%20Pkwy%20suite%20200-318%2C%20Frisco%2C%20TX) |
+| 537 | TexasFile, LLC | 520 Lawrence Street | Corpus Christi, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=TexasFile%2C%20LLC%2C%20520%20Lawrence%20Street%2C%20Corpus%20Christi%2C%20TX) |
+| 538 | The Quantamental Investment Group LLC | 4039 Harmony Breeze Ln | Fulshear, TX | 519130 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=The%20Quantamental%20Investment%20Group%20LLC%2C%204039%20Harmony%20Breeze%20Ln%2C%20Fulshear%2C%20TX) |
+| 539 | The Social Plus LLC | 5502 Monterey Dr | Frisco, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=The%20Social%20Plus%20LLC%2C%205502%20Monterey%20Dr%2C%20Frisco%2C%20TX) |
+| 540 | ThoughtSpark US, LLC | 16676 Northchase Ste. 410 | Houston, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ThoughtSpark%20US%2C%20LLC%2C%2016676%20Northchase%20Ste.%20410%2C%20Houston%2C%20TX) |
+| 541 | Triarc Solutions, LLC | 609 Main Street | Houston, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Triarc%20Solutions%2C%20LLC%2C%20609%20Main%20Street%2C%20Houston%2C%20TX) |
+| 542 | Tysonite Partners LLC | 3607 George Washington Lane | Missouri City, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Tysonite%20Partners%20LLC%2C%203607%20George%20Washington%20Lane%2C%20Missouri%20City%2C%20TX) |
+| 543 | ULTIMATE SOFT LLC | 8720 Silverado Trail STE 3B | Mckinney, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=ULTIMATE%20SOFT%20LLC%2C%208720%20Silverado%20Trail%20STE%203B%2C%20Mckinney%2C%20TX) |
+| 544 | UPSHOP LLC | 7001 BURNET ROAD SUITE 301 | AUSTIN, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=UPSHOP%20LLC%2C%207001%20BURNET%20ROAD%20SUITE%20301%2C%20AUSTIN%2C%20TX) |
+| 545 | UX is Fine LLC | 11220 Blackmoor Dr. | Austin, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=UX%20is%20Fine%20LLC%2C%2011220%20Blackmoor%20Dr.%2C%20Austin%2C%20TX) |
+| 546 | VALUE CREED LLC | 3629 Curbstone Way | Plano, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=VALUE%20CREED%20LLC%2C%203629%20Curbstone%20Way%2C%20Plano%2C%20TX) |
+| 547 | VCLOUD TECHNOLOGY GROUP LLC | 423 W WHEATLAND RD SUITE 103A | DUNCANVILLE, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=VCLOUD%20TECHNOLOGY%20GROUP%20LLC%2C%20423%20W%20WHEATLAND%20RD%20SUITE%20103A%2C%20DUNCANVILLE%2C%20TX) |
+| 548 | VIJAYA, LLC | 103 PARKWOOD DRIVE | WYLIE, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=VIJAYA%2C%20LLC%2C%20103%20PARKWOOD%20DRIVE%2C%20WYLIE%2C%20TX) |
+| 549 | VKAAS LLC | 2770 MAIN ST STE 227 | FRISCO, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=VKAAS%20LLC%2C%202770%20MAIN%20ST%20STE%20227%2C%20FRISCO%2C%20TX) |
+| 550 | VSHARP LLC | 3939 Belt Line Rd Suite 400 K | Addison, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=VSHARP%20LLC%2C%203939%20Belt%20Line%20Rd%20Suite%20400%20K%2C%20Addison%2C%20TX) |
+| 551 | Veeratech LLC | 12345 Jones Rd 287- 07 | Houston, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Veeratech%20LLC%2C%2012345%20Jones%20Rd%20287-%2007%2C%20Houston%2C%20TX) |
+| 552 | Verge Ventures, LLC | 49 Dunrobin | Richardson, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Verge%20Ventures%2C%20LLC%2C%2049%20Dunrobin%2C%20Richardson%2C%20TX) |
+| 553 | Vroom Automotive, LLC | 12053 Southwest Freeway | Stafford, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Vroom%20Automotive%2C%20LLC%2C%2012053%20Southwest%20Freeway%2C%20Stafford%2C%20TX) |
+| 554 | WISENMORE LLC | 6114 Chapel Falls Ln | Fulshear, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=WISENMORE%20LLC%2C%206114%20Chapel%20Falls%20Ln%2C%20Fulshear%2C%20TX) |
+| 555 | Waypoint Data Solutions LLC | 27123 White Sage Cove Ln | Spring, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Waypoint%20Data%20Solutions%20LLC%2C%2027123%20White%20Sage%20Cove%20Ln%2C%20Spring%2C%20TX) |
+| 556 | Winner, LLC | 4500 Like Way | Fort Worth, TX | 518210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Winner%2C%20LLC%2C%204500%20Like%20Way%2C%20Fort%20Worth%2C%20TX) |
+| 557 | Wolfepak Software, LLC | 500 Chestnut St. Ste. 500 | Abilene, TX | 511210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Wolfepak%20Software%2C%20LLC%2C%20500%20Chestnut%20St.%20Ste.%20500%2C%20Abilene%2C%20TX) |
+| 558 | Xenonsofttech LLC. | 12901 TX-29, | Liberty Hill, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=Xenonsofttech%20LLC.%2C%2012901%20TX-29%2C%2C%20Liberty%20Hill%2C%20TX) |
+| 559 | YOCE LLC | 3131 W Bolt St Unit E77 | Fort Worth, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=YOCE%20LLC%2C%203131%20W%20Bolt%20St%20Unit%20E77%2C%20Fort%20Worth%2C%20TX) |
+| 560 | iQGateway, LLC | 26209 Oakridge Drive | The Woodlands, TX | 54151 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=iQGateway%2C%20LLC%2C%2026209%20Oakridge%20Drive%2C%20The%20Woodlands%2C%20TX) |
+| 561 | mlivelihood LLC | 2424 Bell St Suite 2305 | Houston, TX | 513210 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=mlivelihood%20LLC%2C%202424%20Bell%20St%20Suite%202305%2C%20Houston%2C%20TX) |
+| 562 | pixelByte, LLC | 5845 CROMO DRIVE, SUITE 2 | EL PASO, TX | 541511 | 2 | [📍](https://www.google.com/maps/search/?api=1&query=pixelByte%2C%20LLC%2C%205845%20CROMO%20DRIVE%2C%20SUITE%202%2C%20EL%20PASO%2C%20TX) |
+| 563 | A-DYNASTY LLC | 917 W Rochelle Rd | Irving, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=A-DYNASTY%20LLC%2C%20917%20W%20Rochelle%20Rd%2C%20Irving%2C%20TX) |
+| 564 | AMPLE GLOBAL SOLUTIONS LLC | 2735 Villa Creek Dr Ste A262 | Farmers Branch, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=AMPLE%20GLOBAL%20SOLUTIONS%20LLC%2C%202735%20Villa%20Creek%20Dr%20Ste%20A262%2C%20Farmers%20Branch%2C%20TX) |
+| 565 | AR INFOTEK SOLUTIONS LLC | 501 South Austin Avenue Suite 1220 | Georgetown, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=AR%20INFOTEK%20SOLUTIONS%20LLC%2C%20501%20South%20Austin%20Avenue%20Suite%201220%2C%20Georgetown%2C%20TX) |
+| 566 | AUTHENTIC DATA SOLUTIONS LLC | 551 SOUTH INTERSTATE 35 FRONTAGE ROAD SUITE #300 | ROUND ROCK, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=AUTHENTIC%20DATA%20SOLUTIONS%20LLC%2C%20551%20SOUTH%20INTERSTATE%2035%20FRONTAGE%20ROAD%20SUITE%20%23300%2C%20ROUND%20ROCK%2C%20TX) |
+| 567 | Allata, LLC | 2777 N. Stemmons Freeway Ste 1240 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Allata%2C%20LLC%2C%202777%20N.%20Stemmons%20Freeway%20Ste%201240%2C%20Dallas%2C%20TX) |
+| 568 | Alpha Solutions USA LLC | 5080 Spectrum Drive Suite 1000E | Addison, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Alpha%20Solutions%20USA%20LLC%2C%205080%20Spectrum%20Drive%20Suite%201000E%2C%20Addison%2C%20TX) |
+| 569 | Amnet Tech LLC | 660 South Bagdad Road #320 | Leander, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Amnet%20Tech%20LLC%2C%20660%20South%20Bagdad%20Road%20%23320%2C%20Leander%2C%20TX) |
+| 570 | Aqore, LLC | 2311 Mustang Dr. Suite 100 | Grapevine, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Aqore%2C%20LLC%2C%202311%20Mustang%20Dr.%20Suite%20100%2C%20Grapevine%2C%20TX) |
+| 571 | Argo Design, LLC | 2901 S. 1st. Street Suite 200 | Austin, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Argo%20Design%2C%20LLC%2C%202901%20S.%201st.%20Street%20Suite%20200%2C%20Austin%2C%20TX) |
+| 572 | Ashtech Intelligent LLC | 300 N Coit Rd Suite 1200 | Richardson, TX | 541513 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Ashtech%20Intelligent%20LLC%2C%20300%20N%20Coit%20Rd%20Suite%201200%2C%20Richardson%2C%20TX) |
+| 573 | Asset Panda LLC | 5729 Lebanon Road Ste. 144-269 | Frisco, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Asset%20Panda%20LLC%2C%205729%20Lebanon%20Road%20Ste.%20144-269%2C%20Frisco%2C%20TX) |
+| 574 | Atlas Technology Group LLC | 1705 Guadalupe St Suite 400 | Austin, TX | 518210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Atlas%20Technology%20Group%20LLC%2C%201705%20Guadalupe%20St%20Suite%20400%2C%20Austin%2C%20TX) |
+| 575 | Avmtechies LLC | 6136 FRISCO SQUARE SUITE 400 | Frisco, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Avmtechies%20LLC%2C%206136%20FRISCO%20SQUARE%20SUITE%20400%2C%20Frisco%2C%20TX) |
+| 576 | Bottle Rocket LLC | 14841 Dallas Parkway 8th Floor | Addison, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Bottle%20Rocket%20LLC%2C%2014841%20Dallas%20Parkway%208th%20Floor%2C%20Addison%2C%20TX) |
+| 577 | CITRINE SOLUTION LLC | 5601 EXECUTIVE DRIVE SUITE 500 # 550 | IRVING, TX | 541513 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=CITRINE%20SOLUTION%20LLC%2C%205601%20EXECUTIVE%20DRIVE%20SUITE%20500%20%23%20550%2C%20IRVING%2C%20TX) |
+| 578 | COGNITUM SOLUTIONS LLC | 5900 Balcones Drive Suite #25553 | Austin, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=COGNITUM%20SOLUTIONS%20LLC%2C%205900%20Balcones%20Drive%20Suite%20%2325553%2C%20Austin%2C%20TX) |
+| 579 | CONNECTEK SOLUTIONS LLC | 3218 Beltline Rd SUITE 552 | Farmers Branch, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=CONNECTEK%20SOLUTIONS%20LLC%2C%203218%20Beltline%20Rd%20SUITE%20552%2C%20Farmers%20Branch%2C%20TX) |
+| 580 | CY9 LLC | 2201 Spinks Rd Suite STE 228 | Flower Mound,, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=CY9%20LLC%2C%202201%20Spinks%20Rd%20Suite%20STE%20228%2C%20Flower%20Mound%2C%2C%20TX) |
+| 581 | Cloud EPA, LLC | 1001 W Euless Blvd, Grand Towers STE#364 | Euless, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Cloud%20EPA%2C%20LLC%2C%201001%20W%20Euless%20Blvd%2C%20Grand%20Towers%20STE%23364%2C%20Euless%2C%20TX) |
+| 582 | Cloudiyan LLC | 8668 John Hickman Pkwy Suite 906 | Frisco, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Cloudiyan%20LLC%2C%208668%20John%20Hickman%20Pkwy%20Suite%20906%2C%20Frisco%2C%20TX) |
+| 583 | Crocus IT LLC | 615 Main St Ste 114 – 4 | Frisco, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Crocus%20IT%20LLC%2C%20615%20Main%20St%20Ste%20114%20%E2%80%93%204%2C%20Frisco%2C%20TX) |
+| 584 | Cyber Nirvana LLC | 1304 W. Walnut Hill Lane Suite 205 | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Cyber%20Nirvana%20LLC%2C%201304%20W.%20Walnut%20Hill%20Lane%20Suite%20205%2C%20Irving%2C%20TX) |
+| 585 | Cytracom LLC | 450 Century Parkway Suite 100 | Allen, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Cytracom%20LLC%2C%20450%20Century%20Parkway%20Suite%20100%2C%20Allen%2C%20TX) |
+| 586 | Dabble Sports LLC | 600 Congress Ave WeWork c/o Dabble, Level 14 | Austin, TX | 513210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Dabble%20Sports%20LLC%2C%20600%20Congress%20Ave%20WeWork%20c/o%20Dabble%2C%20Level%2014%2C%20Austin%2C%20TX) |
+| 587 | Digital 360 LLC | 603 Causally Ave suite 43 | Arlington, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20360%20LLC%2C%20603%20Causally%20Ave%20suite%2043%2C%20Arlington%2C%20TX) |
+| 588 | Digital Systems X, LLC | 2700 Technology Forest Blvd. Sutie 125 | The Woodlands, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Digital%20Systems%20X%2C%20LLC%2C%202700%20Technology%20Forest%20Blvd.%20Sutie%20125%2C%20The%20Woodlands%2C%20TX) |
+| 589 | DuraPeople LLC | 425 Soledad St Suite 500 | San Antonio, TX | 513210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=DuraPeople%20LLC%2C%20425%20Soledad%20St%20Suite%20500%2C%20San%20Antonio%2C%20TX) |
+| 590 | EASYSTEPIN LLC | 2717 Commercial Center Blvd, Unit E200 | Katy, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=EASYSTEPIN%20LLC%2C%202717%20Commercial%20Center%20Blvd%2C%20Unit%20E200%2C%20Katy%2C%20TX) |
+| 591 | Enboarder LLC | 728 Northwestern Avenue Unit B | Austin, TX | 511210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Enboarder%20LLC%2C%20728%20Northwestern%20Avenue%20Unit%20B%2C%20Austin%2C%20TX) |
+| 592 | First Infra LLC | 6600 Paige Rd Suite 224 | The Colony, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=First%20Infra%20LLC%2C%206600%20Paige%20Rd%20Suite%20224%2C%20The%20Colony%2C%20TX) |
+| 593 | GDS Link, LLC | 5307 E Mockingbird Lane Suite 1001 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=GDS%20Link%2C%20LLC%2C%205307%20E%20Mockingbird%20Lane%20Suite%201001%2C%20Dallas%2C%20TX) |
+| 594 | GeoComputing Group, LLC | 11757 Katy Freeway Suite 1300 | Houston, TX | 518210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=GeoComputing%20Group%2C%20LLC%2C%2011757%20Katy%20Freeway%20Suite%201300%2C%20Houston%2C%20TX) |
+| 595 | Givewith LLC | 327 Congress Avenue, Suite 490 | Austin, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Givewith%20LLC%2C%20327%20Congress%20Avenue%2C%20Suite%20490%2C%20Austin%2C%20TX) |
+| 596 | Global Smart Work LLC | 8720 Silverado Trail, Private Office#112 | McKinney, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Smart%20Work%20LLC%2C%208720%20Silverado%20Trail%2C%20Private%20Office%23112%2C%20McKinney%2C%20TX) |
+| 597 | Hashtag Techie LLC | 9319 LBJ Freeway Suite 235 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Hashtag%20Techie%20LLC%2C%209319%20LBJ%20Freeway%20Suite%20235%2C%20Dallas%2C%20TX) |
+| 598 | Hiecept, LLC | 1001 S. Dairy Ashford Ste. 100-174 | Houston, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Hiecept%2C%20LLC%2C%201001%20S.%20Dairy%20Ashford%20Ste.%20100-174%2C%20Houston%2C%20TX) |
+| 599 | IBUILDSOFT LLC | 4740 14th Street Suite T3 | Plano, TX | 518210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=IBUILDSOFT%20LLC%2C%204740%2014th%20Street%20Suite%20T3%2C%20Plano%2C%20TX) |
+| 600 | IPLUS GLOBAL USA LLC | 100 Brushwood Dr | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=IPLUS%20GLOBAL%20USA%20LLC%2C%20100%20Brushwood%20Dr%2C%20Irving%2C%20TX) |
+| 601 | Idealagi LLC | 21 Waterway Ave Suite 300 | The Woodlands, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Idealagi%20LLC%2C%2021%20Waterway%20Ave%20Suite%20300%2C%20The%20Woodlands%2C%20TX) |
+| 602 | Invasystems Digital LLC | 77 Sugar Creek Center Blvd Suite 650 | Sugar Land, TX | 54151 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Invasystems%20Digital%20LLC%2C%2077%20Sugar%20Creek%20Center%20Blvd%20Suite%20650%2C%20Sugar%20Land%2C%20TX) |
+| 603 | KEYWEB TECHNOLOGIES LLC | 1309 COFFEEN AVE | SHERIDAN, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=KEYWEB%20TECHNOLOGIES%20LLC%2C%201309%20COFFEEN%20AVE%2C%20SHERIDAN%2C%20TX) |
+| 604 | KLOUDSLACK LLC | 511 East John Carpenter Freeway Suite 500 | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=KLOUDSLACK%20LLC%2C%20511%20East%20John%20Carpenter%20Freeway%20Suite%20500%2C%20Irving%2C%20TX) |
+| 605 | KNR Paradise Holdings LLC | 1400 North Coit road | McKinney, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=KNR%20Paradise%20Holdings%20LLC%2C%201400%20North%20Coit%20road%2C%20McKinney%2C%20TX) |
+| 606 | KNSERVICESLLC | 6345 TURIN LN | Round Rock, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=KNSERVICESLLC%2C%206345%20TURIN%20LN%2C%20Round%20Rock%2C%20TX) |
+| 607 | Kloutix Solutions LLC | Building 3, 400 East Royal Lane Dallas Suite 290 | Irving, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Kloutix%20Solutions%20LLC%2C%20Building%203%2C%20400%20East%20Royal%20Lane%20Dallas%20Suite%20290%2C%20Irving%2C%20TX) |
+| 608 | LorVen Techservices LLC | 6160 Warren Parkway, Suite 100 | Frisco, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=LorVen%20Techservices%20LLC%2C%206160%20Warren%20Parkway%2C%20Suite%20100%2C%20Frisco%2C%20TX) |
+| 609 | METAPRO USA, LLC | 2022 W Northwest Hwy SUITE 100 | Grapevine, TX | 54151 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=METAPRO%20USA%2C%20LLC%2C%202022%20W%20Northwest%20Hwy%20SUITE%20100%2C%20Grapevine%2C%20TX) |
+| 610 | MK Universal LLC | 6860 North Dallas Parkway Suite 200 | Plano, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=MK%20Universal%20LLC%2C%206860%20North%20Dallas%20Parkway%20Suite%20200%2C%20Plano%2C%20TX) |
+| 611 | Mash IT Solutions LLC | 5301 Southwest Pkwy Ste 400 | Austin, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Mash%20IT%20Solutions%20LLC%2C%205301%20Southwest%20Pkwy%20Ste%20400%2C%20Austin%2C%20TX) |
+| 612 | Mountain State Software Solutions, LLC d.b.a ArganoMS3 | 6100 W. Plano Parkway Ste. 1800 | Plano, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Mountain%20State%20Software%20Solutions%2C%20LLC%20d.b.a%20ArganoMS3%2C%206100%20W.%20Plano%20Parkway%20Ste.%201800%2C%20Plano%2C%20TX) |
+| 613 | Navsan LLC | 13019 Moselle Forest | Helotes, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Navsan%20LLC%2C%2013019%20Moselle%20Forest%2C%20Helotes%2C%20TX) |
+| 614 | Netnology LLC | 2800 Summit Avenue | Plano, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Netnology%20LLC%2C%202800%20Summit%20Avenue%2C%20Plano%2C%20TX) |
+| 615 | Nimmetrix LLC | 16300 Park Ten Place Blvd. Ste. 200 | Houston, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Nimmetrix%20LLC%2C%2016300%20Park%20Ten%20Place%20Blvd.%20Ste.%20200%2C%20Houston%2C%20TX) |
+| 616 | NinjaOne, LLC | 816 Congress Ave Suite 1670 | Austin, TX | 511210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=NinjaOne%2C%20LLC%2C%20816%20Congress%20Ave%20Suite%201670%2C%20Austin%2C%20TX) |
+| 617 | North Star Identity LLC | 1450 Waterton Dr | Prosper, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=North%20Star%20Identity%20LLC%2C%201450%20Waterton%20Dr%2C%20Prosper%2C%20TX) |
+| 618 | Nugen Tech LLC | 945 Stockton Drive Suite 1120 | Allen, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Nugen%20Tech%20LLC%2C%20945%20Stockton%20Drive%20Suite%201120%2C%20Allen%2C%20TX) |
+| 619 | OctagonIT LLC | 2300 Valley View LN 213 | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=OctagonIT%20LLC%2C%202300%20Valley%20View%20LN%20213%2C%20Irving%2C%20TX) |
+| 620 | OpenSymmetry, LLC | 1250 S. Capital of Texas Hwy, Building One Suite 470 | Austin, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=OpenSymmetry%2C%20LLC%2C%201250%20S.%20Capital%20of%20Texas%20Hwy%2C%20Building%20One%20Suite%20470%2C%20Austin%2C%20TX) |
+| 621 | PEREGRINE AI LLC | 5700  TENNYSON PKWY SUITE 300 | PLANO, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=PEREGRINE%20AI%20LLC%2C%205700%20%20TENNYSON%20PKWY%20SUITE%20300%2C%20PLANO%2C%20TX) |
+| 622 | PTechCrew LLC | 825 Watters Creek Dr. Suite 250 | Allen, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=PTechCrew%20LLC%2C%20825%20Watters%20Creek%20Dr.%20Suite%20250%2C%20Allen%2C%20TX) |
+| 623 | PakEnergy, LLC | 500 Chestnut St. Ste. 500 | Abilene, TX | 511210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=PakEnergy%2C%20LLC%2C%20500%20Chestnut%20St.%20Ste.%20500%2C%20Abilene%2C%20TX) |
+| 624 | Panda Solutions USA LLC | 13151 Emily Road Ste 240 | Dallas, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Panda%20Solutions%20USA%20LLC%2C%2013151%20Emily%20Road%20Ste%20240%2C%20Dallas%2C%20TX) |
+| 625 | Perficient IT LLC | 10801 Smithville Pl. | McKinney, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Perficient%20IT%20LLC%2C%2010801%20Smithville%20Pl.%2C%20McKinney%2C%20TX) |
+| 626 | PioneerRX, LLC | 600 E Las Colinas Suite 2200 | Irving, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=PioneerRX%2C%20LLC%2C%20600%20E%20Las%20Colinas%20Suite%202200%2C%20Irving%2C%20TX) |
+| 627 | Pranu Business Group LLC | 14511 Old Katy Rd STE 366 | Houston, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Pranu%20Business%20Group%20LLC%2C%2014511%20Old%20Katy%20Rd%20STE%20366%2C%20Houston%2C%20TX) |
+| 628 | ProArch Technologies LLC | 2009 Ranch Road 620 North Suite 224 | Lakeway, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=ProArch%20Technologies%20LLC%2C%202009%20Ranch%20Road%20620%20North%20Suite%20224%2C%20Lakeway%2C%20TX) |
+| 629 | R'cloud LLC | 3308 Mossy Oak Trl | Pearland, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=R%27cloud%20LLC%2C%203308%20Mossy%20Oak%20Trl%2C%20Pearland%2C%20TX) |
+| 630 | REAL SOURCE IT SOLUTIONS LLC | 10069 FARMLAND DR | FRISCO, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=REAL%20SOURCE%20IT%20SOLUTIONS%20LLC%2C%2010069%20FARMLAND%20DR%2C%20FRISCO%2C%20TX) |
+| 631 | ROBOTIC PROCESS AUTOMATION LLC | 722 E WHEATLAND RD SUITE 109 | DUNCANVILLE, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=ROBOTIC%20PROCESS%20AUTOMATION%20LLC%2C%20722%20E%20WHEATLAND%20RD%20SUITE%20109%2C%20DUNCANVILLE%2C%20TX) |
+| 632 | Rex Team General LLC | 3517 North Hills Drive | Austin, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Rex%20Team%20General%20LLC%2C%203517%20North%20Hills%20Drive%2C%20Austin%2C%20TX) |
+| 633 | SCUBE SOFT SOLUTIONS LLC | 2201 Spinks Rd Ste# 279 | Flower Mound, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=SCUBE%20SOFT%20SOLUTIONS%20LLC%2C%202201%20Spinks%20Rd%20Ste%23%20279%2C%20Flower%20Mound%2C%20TX) |
+| 634 | SLK Systems LLC | 2695 Villa Creek Dr Ste B278 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=SLK%20Systems%20LLC%2C%202695%20Villa%20Creek%20Dr%20Ste%20B278%2C%20Dallas%2C%20TX) |
+| 635 | SMARTCOMMS LLC | 18208 PRESTON RD. SUITE D9 #350 | DALLAS, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=SMARTCOMMS%20LLC%2C%2018208%20PRESTON%20RD.%20SUITE%20D9%20%23350%2C%20DALLAS%2C%20TX) |
+| 636 | Serverless Solutions LLC | 825 Town & Country Lane Suite 1200 | Houston, TX | 54151 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Serverless%20Solutions%20LLC%2C%20825%20Town%20%26%20Country%20Lane%20Suite%201200%2C%20Houston%2C%20TX) |
+| 637 | SimpleCube LLC | 9901 Interstate Highway 10 West, STE 800 | San Antonio, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=SimpleCube%20LLC%2C%209901%20Interstate%20Highway%2010%20West%2C%20STE%20800%2C%20San%20Antonio%2C%20TX) |
+| 638 | Sitemetric, LLC | 4265 San Felipe Street Suite 1100 | Houston, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Sitemetric%2C%20LLC%2C%204265%20San%20Felipe%20Street%20Suite%201100%2C%20Houston%2C%20TX) |
+| 639 | SoftTrak Technologies LLC. | 8951 Cypress Waters Blvd. Suite 160 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=SoftTrak%20Technologies%20LLC.%2C%208951%20Cypress%20Waters%20Blvd.%20Suite%20160%2C%20Dallas%2C%20TX) |
+| 640 | Solera Holdings, LLC | 1500 Solana Blvd. Blg. 6., Ste. 6300 | Westlake, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Solera%20Holdings%2C%20LLC%2C%201500%20Solana%20Blvd.%20Blg.%206.%2C%20Ste.%206300%2C%20Westlake%2C%20TX) |
+| 641 | Sutras LLC | 27711 SIERRA WILLOW WAY | KATY, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Sutras%20LLC%2C%2027711%20SIERRA%20WILLOW%20WAY%2C%20KATY%2C%20TX) |
+| 642 | TBX Employee Benefits LLC | 7500 Dallas Pkwy SUITE 550 | Plano, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TBX%20Employee%20Benefits%20LLC%2C%207500%20Dallas%20Pkwy%20SUITE%20550%2C%20Plano%2C%20TX) |
+| 643 | TECH SYNERGIES LLC | 955 W. John Carpenter Fwy Suite 100 | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TECH%20SYNERGIES%20LLC%2C%20955%20W.%20John%20Carpenter%20Fwy%20Suite%20100%2C%20Irving%2C%20TX) |
+| 644 | TEKNOMITE LLC | 6800 WEISKOPF AVENUE SUITE 150, 138 | MCKINNEY, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TEKNOMITE%20LLC%2C%206800%20WEISKOPF%20AVENUE%20SUITE%20150%2C%20138%2C%20MCKINNEY%2C%20TX) |
+| 645 | TEKPRO IT LLC | 3400 Silverstone Dr Suite 119 | Plano, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TEKPRO%20IT%20LLC%2C%203400%20Silverstone%20Dr%20Suite%20119%2C%20Plano%2C%20TX) |
+| 646 | TechFuturiq LLC | 6951 Virginia Parkway Suite 304 | McKinney, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TechFuturiq%20LLC%2C%206951%20Virginia%20Parkway%20Suite%20304%2C%20McKinney%2C%20TX) |
+| 647 | TekPeersGlobal LLC | 5900 Balcones Dr STE 100 | Austin, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TekPeersGlobal%20LLC%2C%205900%20Balcones%20Dr%20STE%20100%2C%20Austin%2C%20TX) |
+| 648 | Tekdream LLC | 2785 Rockbrook Drive #304 | Lewisville, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Tekdream%20LLC%2C%202785%20Rockbrook%20Drive%20%23304%2C%20Lewisville%2C%20TX) |
+| 649 | Telafor LLC | 8951 Cypress Waters Blvd Suite 160 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Telafor%20LLC%2C%208951%20Cypress%20Waters%20Blvd%20Suite%20160%2C%20Dallas%2C%20TX) |
+| 650 | Texas Automation Systems LLC | 2725 114th Street | Grand Prairie, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Texas%20Automation%20Systems%20LLC%2C%202725%20114th%20Street%2C%20Grand%20Prairie%2C%20TX) |
+| 651 | TraxID, LLC | 12100 Ford Road, Suite 302 | Farmers Branch, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=TraxID%2C%20LLC%2C%2012100%20Ford%20Road%2C%20Suite%20302%2C%20Farmers%20Branch%2C%20TX) |
+| 652 | Trinity Edge Solutions LLC | 8825 Rodeo Dr Apt-249 | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Trinity%20Edge%20Solutions%20LLC%2C%208825%20Rodeo%20Dr%20Apt-249%2C%20Irving%2C%20TX) |
+| 653 | Turvo LLC | 4514 Cole Avenue Suite 645 | Dallas, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Turvo%20LLC%2C%204514%20Cole%20Avenue%20Suite%20645%2C%20Dallas%2C%20TX) |
+| 654 | UtilPros LLC | 2222 W Spring Creek Pkwy Ste 100 | Plano, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=UtilPros%20LLC%2C%202222%20W%20Spring%20Creek%20Pkwy%20Ste%20100%2C%20Plano%2C%20TX) |
+| 655 | VERATECH SYSTEMS LLC. | 3109 KENAI DR. UNIT 109 | CEDAR PARK, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=VERATECH%20SYSTEMS%20LLC.%2C%203109%20KENAI%20DR.%20UNIT%20109%2C%20CEDAR%20PARK%2C%20TX) |
+| 656 | VIRTUAL AMERICAN COMPANIES LLC | 10615 CLODINE RD UNIT 69 | RICHMOND, TX | 518210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=VIRTUAL%20AMERICAN%20COMPANIES%20LLC%2C%2010615%20CLODINE%20RD%20UNIT%2069%2C%20RICHMOND%2C%20TX) |
+| 657 | VUYH TECHNOLOGIES LLC | 26077 NELSON WAY SUITE 502 | KATY, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=VUYH%20TECHNOLOGIES%20LLC%2C%2026077%20NELSON%20WAY%20SUITE%20502%2C%20KATY%2C%20TX) |
+| 658 | WORK Technologies, LLC | 15600 San Pedro Avenue Suite 307 | San Antonio, TX | 518210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=WORK%20Technologies%2C%20LLC%2C%2015600%20San%20Pedro%20Avenue%20Suite%20307%2C%20San%20Antonio%2C%20TX) |
+| 659 | Waltasoft Technologies LLC | 303 , W Walnut Hill LN Suite 134 | Irving, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Waltasoft%20Technologies%20LLC%2C%20303%20%2C%20W%20Walnut%20Hill%20LN%20Suite%20134%2C%20Irving%2C%20TX) |
+| 660 | Watermark Insights, LLC | 10900 Stonelake Blvd, Quarry Oaks II Suite 350 | Austin, TX | 511210 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Watermark%20Insights%2C%20LLC%2C%2010900%20Stonelake%20Blvd%2C%20Quarry%20Oaks%20II%20Suite%20350%2C%20Austin%2C%20TX) |
+| 661 | We Empower IT LLC | 54 Rookwood Ct | The Woodlands, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=We%20Empower%20IT%20LLC%2C%2054%20Rookwood%20Ct%2C%20The%20Woodlands%2C%20TX) |
+| 662 | Winstream IT LLC | 7324 Clementine Dr. | Irving, TX | 541519 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Winstream%20IT%20LLC%2C%207324%20Clementine%20Dr.%2C%20Irving%2C%20TX) |
+| 663 | XNOVAQ LLC | 11762 Creekwood Dr | Frisco, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=XNOVAQ%20LLC%2C%2011762%20Creekwood%20Dr%2C%20Frisco%2C%20TX) |
+| 664 | ZOSH TECH LLC | 3201 Cross Timbers Rd, Bldg.#4-100 | Flower Mound, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=ZOSH%20TECH%20LLC%2C%203201%20Cross%20Timbers%20Rd%2C%20Bldg.%234-100%2C%20Flower%20Mound%2C%20TX) |
+| 665 | Zeal Capital Management LLC | 2001 RossAve Ste 700 | Dallas, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Zeal%20Capital%20Management%20LLC%2C%202001%20RossAve%20Ste%20700%2C%20Dallas%2C%20TX) |
+| 666 | Zimat Investments LLC | 5830 Granite Parkway #100-362 | Plano, TX | 541511 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=Zimat%20Investments%20LLC%2C%205830%20Granite%20Parkway%20%23100-362%2C%20Plano%2C%20TX) |
+| 667 | wingu llc | 13611 braydon bend dr | Houston, TX | 541512 | 3 | [📍](https://www.google.com/maps/search/?api=1&query=wingu%20llc%2C%2013611%20braydon%20bend%20dr%2C%20Houston%2C%20TX) |
+| 668 | A2visions LLC | 2591 Dallas Parkway Suite #300 | Frisco, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=A2visions%20LLC%2C%202591%20Dallas%20Parkway%20Suite%20%23300%2C%20Frisco%2C%20TX) |
+| 669 | APIC SOLUTIONS LLC | 5900 BALCONES DRIVE SUITE # 100 | AUSTIN, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=APIC%20SOLUTIONS%20LLC%2C%205900%20BALCONES%20DRIVE%20SUITE%20%23%20100%2C%20AUSTIN%2C%20TX) |
+| 670 | Accruent LLC | 11500 Alterra Parkway Suite110 | Austin, TX | 511210 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Accruent%20LLC%2C%2011500%20Alterra%20Parkway%20Suite110%2C%20Austin%2C%20TX) |
+| 671 | Assuratech LLC | 4429 Ceder Elm Cir | Richardson, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Assuratech%20LLC%2C%204429%20Ceder%20Elm%20Cir%2C%20Richardson%2C%20TX) |
+| 672 | AveriSource LLC | 5960 Berkshire Ln 6th Floor | Dallas, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=AveriSource%20LLC%2C%205960%20Berkshire%20Ln%206th%20Floor%2C%20Dallas%2C%20TX) |
+| 673 | BIOREV LLC | 400 E ROYAL LANE SUITE #290 | IRVING, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=BIOREV%20LLC%2C%20400%20E%20ROYAL%20LANE%20SUITE%20%23290%2C%20IRVING%2C%20TX) |
+| 674 | BLUESPARK LLC | 5605 N MACARTHUR BLVD STE 1040 | IRVING, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=BLUESPARK%20LLC%2C%205605%20N%20MACARTHUR%20BLVD%20STE%201040%2C%20IRVING%2C%20TX) |
+| 675 | BPM Geeks, LLC | 1011 Highway 6 S. Suite 117 | Houston, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=BPM%20Geeks%2C%20LLC%2C%201011%20Highway%206%20S.%20Suite%20117%2C%20Houston%2C%20TX) |
+| 676 | BROADX IT SOLUTIONS LLC | 8951 Cypress Waters Blvd STE #160 | Irving, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=BROADX%20IT%20SOLUTIONS%20LLC%2C%208951%20Cypress%20Waters%20Blvd%20STE%20%23160%2C%20Irving%2C%20TX) |
+| 677 | CLOUD CONNECT SYSTEMS LLC | 15731 SHASTA DAISY RD | FRISCO, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=CLOUD%20CONNECT%20SYSTEMS%20LLC%2C%2015731%20SHASTA%20DAISY%20RD%2C%20FRISCO%2C%20TX) |
+| 678 | COSMOFETCH LLC | 818 PREAKNESS LANE | COPPELL, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=COSMOFETCH%20LLC%2C%20818%20PREAKNESS%20LANE%2C%20COPPELL%2C%20TX) |
+| 679 | Cambay Solutions LLC | 1838 SNAKE RIVER ROAD SUITE D | Katy, TX | 54151 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Cambay%20Solutions%20LLC%2C%201838%20SNAKE%20RIVER%20ROAD%20SUITE%20D%2C%20Katy%2C%20TX) |
+| 680 | Centrix Group, LLC | 1701 Directors Blvd. Ste. 110 | Austin, TX | 54151 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Centrix%20Group%2C%20LLC%2C%201701%20Directors%20Blvd.%20Ste.%20110%2C%20Austin%2C%20TX) |
+| 681 | Cloud Technosoft LLC | 539 W. Commerce St #1053 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Cloud%20Technosoft%20LLC%2C%20539%20W.%20Commerce%20St%20%231053%2C%20Dallas%2C%20TX) |
+| 682 | Cloudaspirers LLC | 1000 W Airport Freeway WorkSpace Unit 5 | IRVING, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Cloudaspirers%20LLC%2C%201000%20W%20Airport%20Freeway%20WorkSpace%20Unit%205%2C%20IRVING%2C%20TX) |
+| 683 | Converge Info Systems LLC | 2600 Ave K | Plano, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Converge%20Info%20Systems%20LLC%2C%202600%20Ave%20K%2C%20Plano%2C%20TX) |
+| 684 | DBD Ventures, LLC | 1801 N Lamar Blvd | Austin, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=DBD%20Ventures%2C%20LLC%2C%201801%20N%20Lamar%20Blvd%2C%20Austin%2C%20TX) |
+| 685 | DYOPATH, LLC | 13430 NORTHWEST FREEWAY SUITE 1000 | HOUSTON, TX | 541519 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=DYOPATH%2C%20LLC%2C%2013430%20NORTHWEST%20FREEWAY%20SUITE%201000%2C%20HOUSTON%2C%20TX) |
+| 686 | Datamind Analytics LLC | 14009 Dorset Ln | Frisco, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Datamind%20Analytics%20LLC%2C%2014009%20Dorset%20Ln%2C%20Frisco%2C%20TX) |
+| 687 | Datapower LLC | 13091 Seattle Slew St | Frisco, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Datapower%20LLC%2C%2013091%20Seattle%20Slew%20St%2C%20Frisco%2C%20TX) |
+| 688 | EverExpanse LLC | 2251 Double Creek Dr. Suite 3001 | Round Rock, TX | 541519 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=EverExpanse%20LLC%2C%202251%20Double%20Creek%20Dr.%20Suite%203001%2C%20Round%20Rock%2C%20TX) |
+| 689 | Flutura Business Solutions LLC | 5858 Westheimer Rd Suite 405B | Houston, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Flutura%20Business%20Solutions%20LLC%2C%205858%20Westheimer%20Rd%20Suite%20405B%2C%20Houston%2C%20TX) |
+| 690 | FullStack Labs LLC | 21750 Hardy Oak Blvd Suite 104 | San Antonio, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=FullStack%20Labs%20LLC%2C%2021750%20Hardy%20Oak%20Blvd%20Suite%20104%2C%20San%20Antonio%2C%20TX) |
+| 691 | GalacticIT LLC | 8951 Cypress Waters STE 160 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=GalacticIT%20LLC%2C%208951%20Cypress%20Waters%20STE%20160%2C%20Dallas%2C%20TX) |
+| 692 | Global Star IT Serve LLC | 8105 Rasor Blvd Suite 125 | Plano, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Global%20Star%20IT%20Serve%20LLC%2C%208105%20Rasor%20Blvd%20Suite%20125%2C%20Plano%2C%20TX) |
+| 693 | Google LLC | 1600 Amphitheatre Parkway | California, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Google%20LLC%2C%201600%20Amphitheatre%20Parkway%2C%20California%2C%20TX) |
+| 694 | Hyphen Solutions LLC | 1507 Lyndon B. Johnson Freeway Suite 300 | Dallas, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Hyphen%20Solutions%20LLC%2C%201507%20Lyndon%20B.%20Johnson%20Freeway%20Suite%20300%2C%20Dallas%2C%20TX) |
+| 695 | INTEGRATEUS LLC. | 600 CONGRESS AVE. FLR. #14 | AUSTIN, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=INTEGRATEUS%20LLC.%2C%20600%20CONGRESS%20AVE.%20FLR.%20%2314%2C%20AUSTIN%2C%20TX) |
+| 696 | Impact QA Services LLC | 1919 McKinney Ave Ste 100 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Impact%20QA%20Services%20LLC%2C%201919%20McKinney%20Ave%20Ste%20100%2C%20Dallas%2C%20TX) |
+| 697 | KUNDANA SOLUTIONS LLC. | 700 SOUTH CENTRAL EXPRESSWAY | ALLEN, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=KUNDANA%20SOLUTIONS%20LLC.%2C%20700%20SOUTH%20CENTRAL%20EXPRESSWAY%2C%20ALLEN%2C%20TX) |
+| 698 | Koder Labs, LLC | 950 E. STATE HWY 114 Suite 160 | Soutlake, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Koder%20Labs%2C%20LLC%2C%20950%20E.%20STATE%20HWY%20114%20Suite%20160%2C%20Soutlake%2C%20TX) |
+| 699 | Krizmic LLC | 5900 Balcones Drive, Suite 100 | Austin, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Krizmic%20LLC%2C%205900%20Balcones%20Drive%2C%20Suite%20100%2C%20Austin%2C%20TX) |
+| 700 | Laniakea Companies LLC | 1920 Cathedral Dr. | Farmers Branch, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Laniakea%20Companies%20LLC%2C%201920%20Cathedral%20Dr.%2C%20Farmers%20Branch%2C%20TX) |
+| 701 | Leading Edge Solutions LLC | 3700 Standridge Dr STE 104 | The Colony, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Leading%20Edge%20Solutions%20LLC%2C%203700%20Standridge%20Dr%20STE%20104%2C%20The%20Colony%2C%20TX) |
+| 702 | Leverture, LLC | 114 E Main St Suite C1 | Decatur, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Leverture%2C%20LLC%2C%20114%20E%20Main%20St%20Suite%20C1%2C%20Decatur%2C%20TX) |
+| 703 | LimeIQ LLC | 12750 Merit Drive Suite 520 | Dallas, TX | 518210 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=LimeIQ%20LLC%2C%2012750%20Merit%20Drive%20Suite%20520%2C%20Dallas%2C%20TX) |
+| 704 | Lion Skills LLC | 1750 N COLLINS BLVD SUITE 106, F | RICHARDSON, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Lion%20Skills%20LLC%2C%201750%20N%20COLLINS%20BLVD%20SUITE%20106%2C%20F%2C%20RICHARDSON%2C%20TX) |
+| 705 | Mahika Info LLC | 1500 S Dairy Ashford Rd Suite 320 | Houston, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Mahika%20Info%20LLC%2C%201500%20S%20Dairy%20Ashford%20Rd%20Suite%20320%2C%20Houston%2C%20TX) |
+| 706 | Master CVV Technologies LLC | 1741 Santa Fe Lane | Prosper, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Master%20CVV%20Technologies%20LLC%2C%201741%20Santa%20Fe%20Lane%2C%20Prosper%2C%20TX) |
+| 707 | NEO Techstaff LLC | 511 E John W Carpenter Fwy Ste #500 | Irving, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=NEO%20Techstaff%20LLC%2C%20511%20E%20John%20W%20Carpenter%20Fwy%20Ste%20%23500%2C%20Irving%2C%20TX) |
+| 708 | Nexus Cognitive Technologies LLC | 15455 Dallas Parkway Suite#600 | Addison, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Nexus%20Cognitive%20Technologies%20LLC%2C%2015455%20Dallas%20Parkway%20Suite%23600%2C%20Addison%2C%20TX) |
+| 709 | NorthStar Guru, LLC. | 4100 SPRING VALLEY RD STE 605 | DALLAS, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=NorthStar%20Guru%2C%20LLC.%2C%204100%20SPRING%20VALLEY%20RD%20STE%20605%2C%20DALLAS%2C%20TX) |
+| 710 | Ooloo Group LLC | 1634 Yellow Iris Trl | Richmond, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Ooloo%20Group%20LLC%2C%201634%20Yellow%20Iris%20Trl%2C%20Richmond%2C%20TX) |
+| 711 | PEOPLESOFT TECH LLC | 3835 COUNTY ROAD 175 SUITE 320 A, MAYFIELD OFFICE PARK | LEANDER, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=PEOPLESOFT%20TECH%20LLC%2C%203835%20COUNTY%20ROAD%20175%20SUITE%20320%20A%2C%20MAYFIELD%20OFFICE%20PARK%2C%20LEANDER%2C%20TX) |
+| 712 | PLANET9TEK LLC | 11847 GREAT TRL | FRISCO, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=PLANET9TEK%20LLC%2C%2011847%20GREAT%20TRL%2C%20FRISCO%2C%20TX) |
+| 713 | PLV INFO GENIUS LLC | 12967 RISEN STAR RD | FRISCO, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=PLV%20INFO%20GENIUS%20LLC%2C%2012967%20RISEN%20STAR%20RD%2C%20FRISCO%2C%20TX) |
+| 714 | PR Square Techstaff LLC | 700 Blackhorse Trail | Justin, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=PR%20Square%20Techstaff%20LLC%2C%20700%20Blackhorse%20Trail%2C%20Justin%2C%20TX) |
+| 715 | PROFESSIONAL TECHNOLGY SERVICES LLC | 450 CENTURY PKWY STE 250 | ALLEN, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=PROFESSIONAL%20TECHNOLGY%20SERVICES%20LLC%2C%20450%20CENTURY%20PKWY%20STE%20250%2C%20ALLEN%2C%20TX) |
+| 716 | Paalar LLC | 6361 Plum Creek Rd | Frisco, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Paalar%20LLC%2C%206361%20Plum%20Creek%20Rd%2C%20Frisco%2C%20TX) |
+| 717 | Pennycoder LLC | 7301 State Highway 161 Suite 148 | Irving, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Pennycoder%20LLC%2C%207301%20State%20Highway%20161%20Suite%20148%2C%20Irving%2C%20TX) |
+| 718 | Petty Karma Interactive LLC | 1122 Tillery Street | Austin, TX | 511210 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Petty%20Karma%20Interactive%20LLC%2C%201122%20Tillery%20Street%2C%20Austin%2C%20TX) |
+| 719 | Phoenix Infrastructure, LLC | 14901  FAA Boulevard | Fort Worth, TX | 518210 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Phoenix%20Infrastructure%2C%20LLC%2C%2014901%20%20FAA%20Boulevard%2C%20Fort%20Worth%2C%20TX) |
+| 720 | Pragmatech LLC | 3424 Kirkfield Ct | The Colony, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Pragmatech%20LLC%2C%203424%20Kirkfield%20Ct%2C%20The%20Colony%2C%20TX) |
+| 721 | Precocity, LLC | 14800 Landmark Boulevard Ste. 320 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Precocity%2C%20LLC%2C%2014800%20Landmark%20Boulevard%20Ste.%20320%2C%20Dallas%2C%20TX) |
+| 722 | Projekt202, LLC | 14675 Dallas Pwky Ste 200 | Dallas, TX | 511210 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Projekt202%2C%20LLC%2C%2014675%20Dallas%20Pwky%20Ste%20200%2C%20Dallas%2C%20TX) |
+| 723 | Prosper Path LLC | 905 Sundrop Dr. | Little Elm, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Prosper%20Path%20LLC%2C%20905%20Sundrop%20Dr.%2C%20Little%20Elm%2C%20TX) |
+| 724 | S TEKWIZARDS LLC | 12100 FORD ROAD SUITE B265 | FARMERS BRANCH, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=S%20TEKWIZARDS%20LLC%2C%2012100%20FORD%20ROAD%20SUITE%20B265%2C%20FARMERS%20BRANCH%2C%20TX) |
+| 725 | SKYOVI LLC | 2461 Kent Dr | Allen, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=SKYOVI%20LLC%2C%202461%20Kent%20Dr%2C%20Allen%2C%20TX) |
+| 726 | SQL Brains, LLC | 2591 Dallas Parkway, Suite 108 | Frisco, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=SQL%20Brains%2C%20LLC%2C%202591%20Dallas%20Parkway%2C%20Suite%20108%2C%20Frisco%2C%20TX) |
+| 727 | STRAVISO, LLC | 1 Cowboys Way Suite 475 | Frisco, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=STRAVISO%2C%20LLC%2C%201%20Cowboys%20Way%20Suite%20475%2C%20Frisco%2C%20TX) |
+| 728 | SYSINTELLECTS LLC | 101 E Park Blvd , Suite # 600 | Plano, TX | 513210 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=SYSINTELLECTS%20LLC%2C%20101%20E%20Park%20Blvd%20%2C%20Suite%20%23%20600%2C%20Plano%2C%20TX) |
+| 729 | Safekick Americas, LLC | 1350 Ravello Drive | Katy, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Safekick%20Americas%2C%20LLC%2C%201350%20Ravello%20Drive%2C%20Katy%2C%20TX) |
+| 730 | Sakesh Solutions LLC | 4410 Piper Pass Ln | Sugar Land, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Sakesh%20Solutions%20LLC%2C%204410%20Piper%20Pass%20Ln%2C%20Sugar%20Land%2C%20TX) |
+| 731 | Synnefo Solutions LLC | 1452 Hughes Rd. Ste. 200 | Grapevine, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Synnefo%20Solutions%20LLC%2C%201452%20Hughes%20Rd.%20Ste.%20200%2C%20Grapevine%2C%20TX) |
+| 732 | TECHLADDER LLC | 17350 State Hwy 249 Suite 220 #22383 | Houston, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=TECHLADDER%20LLC%2C%2017350%20State%20Hwy%20249%20Suite%20220%20%2322383%2C%20Houston%2C%20TX) |
+| 733 | TEK AMPLIFY LLC | 1014 Moose Rd | Hutto, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=TEK%20AMPLIFY%20LLC%2C%201014%20Moose%20Rd%2C%20Hutto%2C%20TX) |
+| 734 | TEXAS FSG, LLC | 1712 HOUSTON BLVD | SOUTH HOUSTON, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=TEXAS%20FSG%2C%20LLC%2C%201712%20HOUSTON%20BLVD%2C%20SOUTH%20HOUSTON%2C%20TX) |
+| 735 | TOADFLY TECHNOLOGIES, LLC | 12000 AEROSPACE AVE Suite 100 | Houston, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=TOADFLY%20TECHNOLOGIES%2C%20LLC%2C%2012000%20AEROSPACE%20AVE%20Suite%20100%2C%20Houston%2C%20TX) |
+| 736 | TechBridge Partners, LLC. | 6666 Harwin Dr. Ste. # 150B | Houston, TX | 541512 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=TechBridge%20Partners%2C%20LLC.%2C%206666%20Harwin%20Dr.%20Ste.%20%23%20150B%2C%20Houston%2C%20TX) |
+| 737 | Technoflair Solutions LLC | 2727 LBJ FWY Suite 760 | Farmers Branch, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Technoflair%20Solutions%20LLC%2C%202727%20LBJ%20FWY%20Suite%20760%2C%20Farmers%20Branch%2C%20TX) |
+| 738 | Techwhiz Solutions, LLC | 2043 Empire Central Dr. Ste.# 116 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Techwhiz%20Solutions%2C%20LLC%2C%202043%20Empire%20Central%20Dr.%20Ste.%23%20116%2C%20Dallas%2C%20TX) |
+| 739 | Tek Geeks LLC | 111 Dallas Street Suite #111 | Argyle, TX | 54151 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Tek%20Geeks%20LLC%2C%20111%20Dallas%20Street%20Suite%20%23111%2C%20Argyle%2C%20TX) |
+| 740 | TekOhana LLC | 2665 Villa Creek Drive Suite A104-1 | Farmers Branch, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=TekOhana%20LLC%2C%202665%20Villa%20Creek%20Drive%20Suite%20A104-1%2C%20Farmers%20Branch%2C%20TX) |
+| 741 | Turnitin LLC | Greenhill Towers 14131 Midway Road Suite 540 | Addison, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Turnitin%20LLC%2C%20Greenhill%20Towers%2014131%20Midway%20Road%20Suite%20540%2C%20Addison%2C%20TX) |
+| 742 | Tyche Softech, LLC | 130 N Preston Rd Suite 228 | Prosper, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Tyche%20Softech%2C%20LLC%2C%20130%20N%20Preston%20Rd%20Suite%20228%2C%20Prosper%2C%20TX) |
+| 743 | VASHIPRA LLC | 28306 VINEYARD TERRACE LN | FULSHEAR, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=VASHIPRA%20LLC%2C%2028306%20VINEYARD%20TERRACE%20LN%2C%20FULSHEAR%2C%20TX) |
+| 744 | VS Software LLC | 13405 Agile Drive | Frisco, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=VS%20Software%20LLC%2C%2013405%20Agile%20Drive%2C%20Frisco%2C%20TX) |
+| 745 | WIN Reality LLC | 5918 West Courtyard Suite 450 | Austin, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=WIN%20Reality%20LLC%2C%205918%20West%20Courtyard%20Suite%20450%2C%20Austin%2C%20TX) |
+| 746 | Wavelabs US LLC | 2021 McKinney Ave Suite 1200 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Wavelabs%20US%20LLC%2C%202021%20McKinney%20Ave%20Suite%201200%2C%20Dallas%2C%20TX) |
+| 747 | ZenQ, LLC. | 4100 Spring Valley Road Ste 910 | Dallas, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=ZenQ%2C%20LLC.%2C%204100%20Spring%20Valley%20Road%20Ste%20910%2C%20Dallas%2C%20TX) |
+| 748 | Zenith Cloud LLC | 2604 Fountain Dr | Irving, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=Zenith%20Cloud%20LLC%2C%202604%20Fountain%20Dr%2C%20Irving%2C%20TX) |
+| 749 | cPanel LLC | 2550 N. Loop West Freeway, Suite 4006 | Houston, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=cPanel%20LLC%2C%202550%20N.%20Loop%20West%20Freeway%2C%20Suite%204006%2C%20Houston%2C%20TX) |
+| 750 | eDriving, LLC | 1500 Solana Blvd., Bldg. 6 Ste 6300 | Westlake, TX | 541511 | 4 | [📍](https://www.google.com/maps/search/?api=1&query=eDriving%2C%20LLC%2C%201500%20Solana%20Blvd.%2C%20Bldg.%206%20Ste%206300%2C%20Westlake%2C%20TX) |
+| 751 | ABACUS TECHNICAL SERVICES, LLC | 5068 W PLANO PKWY SUITE #155 | PLANO, TX | 541512 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ABACUS%20TECHNICAL%20SERVICES%2C%20LLC%2C%205068%20W%20PLANO%20PKWY%20SUITE%20%23155%2C%20PLANO%2C%20TX) |
+| 752 | ACEABLE IT LLC | 2436 LIGHTNING VW | LEANDER, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ACEABLE%20IT%20LLC%2C%202436%20LIGHTNING%20VW%2C%20LEANDER%2C%20TX) |
+| 753 | AGATI SYSTEMS LLC | 8000 PRESTON ROAD SUITE # 401 | FRISCO, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=AGATI%20SYSTEMS%20LLC%2C%208000%20PRESTON%20ROAD%20SUITE%20%23%20401%2C%20FRISCO%2C%20TX) |
+| 754 | AMSYS Innovative Solutions LLC | 10101 Southwest Fwy #570 | Houston, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=AMSYS%20Innovative%20Solutions%20LLC%2C%2010101%20Southwest%20Fwy%20%23570%2C%20Houston%2C%20TX) |
+| 755 | ANNA GLOBAL TECHNOLOGIES LLC | 3300 DALLAS PARKWAY | PLANO, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ANNA%20GLOBAL%20TECHNOLOGIES%20LLC%2C%203300%20DALLAS%20PARKWAY%2C%20PLANO%2C%20TX) |
+| 756 | AR Val Services LLC | 825 Watter's Creek Boulevard Suite 250-#241 | Allen, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=AR%20Val%20Services%20LLC%2C%20825%20Watter%27s%20Creek%20Boulevard%20Suite%20250-%23241%2C%20Allen%2C%20TX) |
+| 757 | ASA Techsol LLC | 13111 N. Central Expressway Suite 8021 | Dallas, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ASA%20Techsol%20LLC%2C%2013111%20N.%20Central%20Expressway%20Suite%208021%2C%20Dallas%2C%20TX) |
+| 758 | ASPIREDATA LLC | 4503 HELSTON DRIVE | PLANO, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ASPIREDATA%20LLC%2C%204503%20HELSTON%20DRIVE%2C%20PLANO%2C%20TX) |
+| 759 | Ayra Tech LLC | 1333 W Mcdermott Dr Suite:200 | Allen, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Ayra%20Tech%20LLC%2C%201333%20W%20Mcdermott%20Dr%20Suite%3A200%2C%20Allen%2C%20TX) |
+| 760 | BIORBIT LLC | 4400 STATE HWY 121 STE 392 | Lewisville, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=BIORBIT%20LLC%2C%204400%20STATE%20HWY%20121%20STE%20392%2C%20Lewisville%2C%20TX) |
+| 761 | Byte Solutions LLC | 7011 NUECES DR | IRVING, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Byte%20Solutions%20LLC%2C%207011%20NUECES%20DR%2C%20IRVING%2C%20TX) |
+| 762 | CUBICOID SOLUTIONS LLC | 15831 Vanderpool Ricer Dr | Cypress, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=CUBICOID%20SOLUTIONS%20LLC%2C%2015831%20Vanderpool%20Ricer%20Dr%2C%20Cypress%2C%20TX) |
+| 763 | Cavnorise Technologies LLC | 4099 McEwen Rd Suite 315 | Dallas, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Cavnorise%20Technologies%20LLC%2C%204099%20McEwen%20Rd%20Suite%20315%2C%20Dallas%2C%20TX) |
+| 764 | Cognax Tech, LLC | 1493 Hazel Green DR | Frisco, TX | 541512 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Cognax%20Tech%2C%20LLC%2C%201493%20Hazel%20Green%20DR%2C%20Frisco%2C%20TX) |
+| 765 | DATAVERN LLC | 2727 LYNDON B JOHNSON FWY STE 572 | FARMERS BRANCH, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=DATAVERN%20LLC%2C%202727%20LYNDON%20B%20JOHNSON%20FWY%20STE%20572%2C%20FARMERS%20BRANCH%2C%20TX) |
+| 766 | DataLoopz, LLC | 3033 Chimney Rock Road Ste.# 2556 | Houston, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=DataLoopz%2C%20LLC%2C%203033%20Chimney%20Rock%20Road%20Ste.%23%202556%2C%20Houston%2C%20TX) |
+| 767 | Dynamic Tek LLC | 511 E john W Carpenter Fwy Flr 5 | irving, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Dynamic%20Tek%20LLC%2C%20511%20E%20john%20W%20Carpenter%20Fwy%20Flr%205%2C%20irving%2C%20TX) |
+| 768 | Emerge IT Solutions LLC | 14336 Gatewood ln | Frisco, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Emerge%20IT%20Solutions%20LLC%2C%2014336%20Gatewood%20ln%2C%20Frisco%2C%20TX) |
+| 769 | Enuit, LLC | 1001 Texas Street Suite 800 | Houston, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Enuit%2C%20LLC%2C%201001%20Texas%20Street%20Suite%20800%2C%20Houston%2C%20TX) |
+| 770 | INFOGAMA LLC | 6600 Paige RD | The Colony, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=INFOGAMA%20LLC%2C%206600%20Paige%20RD%2C%20The%20Colony%2C%20TX) |
+| 771 | INNOVATIVE SCHEDULING LLC | 3401 Olympus Blvd Suite 500 | Dallas, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=INNOVATIVE%20SCHEDULING%20LLC%2C%203401%20Olympus%20Blvd%20Suite%20500%2C%20Dallas%2C%20TX) |
+| 772 | ITEKSYSTEM LLC | 2695 Villa Creek Drive Ste B 113 | Farmers Branch, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ITEKSYSTEM%20LLC%2C%202695%20Villa%20Creek%20Drive%20Ste%20B%20113%2C%20Farmers%20Branch%2C%20TX) |
+| 773 | ITTDIGITAL LLC. | 800 EMBASSY DR. STE. #609 | AUSTIN, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ITTDIGITAL%20LLC.%2C%20800%20EMBASSY%20DR.%20STE.%20%23609%2C%20AUSTIN%2C%20TX) |
+| 774 | InfoRight Solutions LLC | 8303 Pitkin Rd | Frisco, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=InfoRight%20Solutions%20LLC%2C%208303%20Pitkin%20Rd%2C%20Frisco%2C%20TX) |
+| 775 | JDCQ SOLUTIONS, LLC | 3939 BELT LINE ROAD SUITE 350 | ADDISON, TX | 511210 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=JDCQ%20SOLUTIONS%2C%20LLC%2C%203939%20BELT%20LINE%20ROAD%20SUITE%20350%2C%20ADDISON%2C%20TX) |
+| 776 | KNOVIQITSOLUTIONS LLC. | 32407 TAMINA RD. STE. #6 | MAGNOLIA, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=KNOVIQITSOLUTIONS%20LLC.%2C%2032407%20TAMINA%20RD.%20STE.%20%236%2C%20MAGNOLIA%2C%20TX) |
+| 777 | Khoros, LLC | 7300 Ranch Road 2222 Building 1 | Austin, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Khoros%2C%20LLC%2C%207300%20Ranch%20Road%202222%20Building%201%2C%20Austin%2C%20TX) |
+| 778 | Milestone Technologies, LLC. | 14200 Midway Road Suite 120 | Dallas, TX | 54151 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Milestone%20Technologies%2C%20LLC.%2C%2014200%20Midway%20Road%20Suite%20120%2C%20Dallas%2C%20TX) |
+| 779 | NEURALSYS TEK LLC | 6671 SOUTHWEST FWY STE 700 | HOUSTON, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=NEURALSYS%20TEK%20LLC%2C%206671%20SOUTHWEST%20FWY%20STE%20700%2C%20HOUSTON%2C%20TX) |
+| 780 | NEXTGEN IT LABS LLC | 11111 Katy Freeway Suite 910 | Houston, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=NEXTGEN%20IT%20LABS%20LLC%2C%2011111%20Katy%20Freeway%20Suite%20910%2C%20Houston%2C%20TX) |
+| 781 | OPTTECH LLC | 100 N. Central Expressway Suite 513 | Richardson, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=OPTTECH%20LLC%2C%20100%20N.%20Central%20Expressway%20Suite%20513%2C%20Richardson%2C%20TX) |
+| 782 | Orbitpeople, LLC | 301 Santaluz Lane | Austin, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Orbitpeople%2C%20LLC%2C%20301%20Santaluz%20Lane%2C%20Austin%2C%20TX) |
+| 783 | P97 Networks, LLC | 2050 West Sam Houston Parkway South Suite 900 | Houston, TX | 511210 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=P97%20Networks%2C%20LLC%2C%202050%20West%20Sam%20Houston%20Parkway%20South%20Suite%20900%2C%20Houston%2C%20TX) |
+| 784 | PEBAL BRIGHT TECHNOLOGIES LLC | 1464 EAST WHITESTONE BLVD. STE. #504 | CEDAR PARK, TX | 541519 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=PEBAL%20BRIGHT%20TECHNOLOGIES%20LLC%2C%201464%20EAST%20WHITESTONE%20BLVD.%20STE.%20%23504%2C%20CEDAR%20PARK%2C%20TX) |
+| 785 | PROTECHERS LLC. | 7207 REGENCY SQUARE BLVD. STE. #260-2 | HOUSTON, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=PROTECHERS%20LLC.%2C%207207%20REGENCY%20SQUARE%20BLVD.%20STE.%20%23260-2%2C%20HOUSTON%2C%20TX) |
+| 786 | PURVI TECHNOLOGIES LLC. | 4400 State Hwy 121 Suite 300-0090 | Lewisville, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=PURVI%20TECHNOLOGIES%20LLC.%2C%204400%20State%20Hwy%20121%20Suite%20300-0090%2C%20Lewisville%2C%20TX) |
+| 787 | Predactica, LLC | 5055 W. Park Blvd Ste 400 | Plano, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Predactica%2C%20LLC%2C%205055%20W.%20Park%20Blvd%20Ste%20400%2C%20Plano%2C%20TX) |
+| 788 | Qubitsys LLC | 9535 Forest Lane Suite 215G | Dallas, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Qubitsys%20LLC%2C%209535%20Forest%20Lane%20Suite%20215G%2C%20Dallas%2C%20TX) |
+| 789 | Quisitive LLC | 1431 Greenway Drive Ste. 1000 | Irving, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Quisitive%20LLC%2C%201431%20Greenway%20Drive%20Ste.%201000%2C%20Irving%2C%20TX) |
+| 790 | Rarefied Atmosphere, LLC | 98 San Jacinto Blvd. Ste. 160 | Austin, TX | 518210 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Rarefied%20Atmosphere%2C%20LLC%2C%2098%20San%20Jacinto%20Blvd.%20Ste.%20160%2C%20Austin%2C%20TX) |
+| 791 | ReferralPoint LLC | 222 W Las Colinas Blvd Suite 1950 | Irving, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=ReferralPoint%20LLC%2C%20222%20W%20Las%20Colinas%20Blvd%20Suite%201950%2C%20Irving%2C%20TX) |
+| 792 | Rifluxyss Softwares LLC | 1016 Candlewood Trail | Irving, TX | 541519 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Rifluxyss%20Softwares%20LLC%2C%201016%20Candlewood%20Trail%2C%20Irving%2C%20TX) |
+| 793 | SPRINT ZONE TECH LLC | 201 S. Lakeline Blvd. Unit 102-B | Cedar Park, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=SPRINT%20ZONE%20TECH%20LLC%2C%20201%20S.%20Lakeline%20Blvd.%20Unit%20102-B%2C%20Cedar%20Park%2C%20TX) |
+| 794 | SS Business Services LLC | 1839 Sherwood Forest Dr Suite 102 | Houston, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=SS%20Business%20Services%20LLC%2C%201839%20Sherwood%20Forest%20Dr%20Suite%20102%2C%20Houston%2C%20TX) |
+| 795 | Srisys LLC | 400 E Royal Ln Suite 290 | Irving, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Srisys%20LLC%2C%20400%20E%20Royal%20Ln%20Suite%20290%2C%20Irving%2C%20TX) |
+| 796 | Suprha Svc LLC | 6136 Frisco Square Blvd Suite 400 | Frisco, TX | 54151 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Suprha%20Svc%20LLC%2C%206136%20Frisco%20Square%20Blvd%20Suite%20400%2C%20Frisco%2C%20TX) |
+| 797 | TECH SPAN LLC | 6830 N Dallas Pkwy Suite 200 | Plano, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=TECH%20SPAN%20LLC%2C%206830%20N%20Dallas%20Pkwy%20Suite%20200%2C%20Plano%2C%20TX) |
+| 798 | Tech Era LLC | 5005 w royal Ln Suite 183I | Irving, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Tech%20Era%20LLC%2C%205005%20w%20royal%20Ln%20Suite%20183I%2C%20Irving%2C%20TX) |
+| 799 | Tectonicx LLC | 15455 Dallas Parkway suite 600 | Addison, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Tectonicx%20LLC%2C%2015455%20Dallas%20Parkway%20suite%20600%2C%20Addison%2C%20TX) |
+| 800 | Universal Conversion Technologies I, LLC | 1701  W. Northwest Highway Suite 100 | Grapevine, TX | 541512 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Universal%20Conversion%20Technologies%20I%2C%20LLC%2C%201701%20%20W.%20Northwest%20Highway%20Suite%20100%2C%20Grapevine%2C%20TX) |
+| 801 | V SHARP LLC | 3939 Belt Line Rd Suite 400 K | Addison, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=V%20SHARP%20LLC%2C%203939%20Belt%20Line%20Rd%20Suite%20400%20K%2C%20Addison%2C%20TX) |
+| 802 | Virtual Integrated Analytics Solutions, LLC | 16000 Park Ten Place Suite 301 | Houston, TX | 518210 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=Virtual%20Integrated%20Analytics%20Solutions%2C%20LLC%2C%2016000%20Park%20Ten%20Place%20Suite%20301%2C%20Houston%2C%20TX) |
+| 803 | WORLDWIDE LOGICS LLC | 8951 CYPRESS WATERS BLVD SUITE 160 | COPPELL, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=WORLDWIDE%20LOGICS%20LLC%2C%208951%20CYPRESS%20WATERS%20BLVD%20SUITE%20160%2C%20COPPELL%2C%20TX) |
+| 804 | West Advanced Solutions, LLC | 433 North Loop W | Houston, TX | 511210 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=West%20Advanced%20Solutions%2C%20LLC%2C%20433%20North%20Loop%20W%2C%20Houston%2C%20TX) |
+| 805 | eTron Digital LLC | 1560 E Southlake Blvd Suite 100 | Southlake, TX | 541511 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=eTron%20Digital%20LLC%2C%201560%20E%20Southlake%20Blvd%20Suite%20100%2C%20Southlake%2C%20TX) |
+| 806 | iMiDiA LLC | 21251 FM-529 Rd Ste. B | Cypress, TX | 518210 | 5 | [📍](https://www.google.com/maps/search/?api=1&query=iMiDiA%20LLC%2C%2021251%20FM-529%20Rd%20Ste.%20B%2C%20Cypress%2C%20TX) |
+| 807 | ACCLENCE LLC | 130 N. PRESTON RD SUITE #224 | PROSPER, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=ACCLENCE%20LLC%2C%20130%20N.%20PRESTON%20RD%20SUITE%20%23224%2C%20PROSPER%2C%20TX) |
+| 808 | Acentrik Technology Solutions LLC | 5005 W Royal Ln STE 183H | Irving, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Acentrik%20Technology%20Solutions%20LLC%2C%205005%20W%20Royal%20Ln%20STE%20183H%2C%20Irving%2C%20TX) |
+| 809 | Amniscient LLC | 4422 Cypress Creek Pkwy Suite 270 | Houston, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Amniscient%20LLC%2C%204422%20Cypress%20Creek%20Pkwy%20Suite%20270%2C%20Houston%2C%20TX) |
+| 810 | Arche Resources LLC | 13612 Midway Road Suite 405 | Farmers Branch, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Arche%20Resources%20LLC%2C%2013612%20Midway%20Road%20Suite%20405%2C%20Farmers%20Branch%2C%20TX) |
+| 811 | Audiencent, LLC | 1327 Empire Central Dr. Suite 230-D | Dallas, TX | 54151 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Audiencent%2C%20LLC%2C%201327%20Empire%20Central%20Dr.%20Suite%20230-D%2C%20Dallas%2C%20TX) |
+| 812 | CAREER CONNECT TECHNOLOGIES LLC | 5718 Westheimer Rd. Suite 1000 | Houston, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=CAREER%20CONNECT%20TECHNOLOGIES%20LLC%2C%205718%20Westheimer%20Rd.%20Suite%201000%2C%20Houston%2C%20TX) |
+| 813 | CLAPPONE LLC | 15305 Dallas Parkway 12th Floor | Addison, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=CLAPPONE%20LLC%2C%2015305%20Dallas%20Parkway%2012th%20Floor%2C%20Addison%2C%20TX) |
+| 814 | CONTENTACTIVE, LLC | 7102 N. SAM HOUSTON PKWY W. SUITE 201 | HOUSTON, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=CONTENTACTIVE%2C%20LLC%2C%207102%20N.%20SAM%20HOUSTON%20PKWY%20W.%20SUITE%20201%2C%20HOUSTON%2C%20TX) |
+| 815 | CROSS SENSE ANALYTICS LLC | 376 W MAIN ST STE F | LEWISVILLE, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=CROSS%20SENSE%20ANALYTICS%20LLC%2C%20376%20W%20MAIN%20ST%20STE%20F%2C%20LEWISVILLE%2C%20TX) |
+| 816 | Chetana Soft LLC | 3107 BRIARWOOD POINT PL | HOUSTON, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Chetana%20Soft%20LLC%2C%203107%20BRIARWOOD%20POINT%20PL%2C%20HOUSTON%2C%20TX) |
+| 817 | Cirrus Solutions LLC | 25807 Westheimer Pkwy ste 325 | Katy, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Cirrus%20Solutions%20LLC%2C%2025807%20Westheimer%20Pkwy%20ste%20325%2C%20Katy%2C%20TX) |
+| 818 | CloudRan Communication, LLC. | 12100 Ford Road Suite B368 | Dallas, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=CloudRan%20Communication%2C%20LLC.%2C%2012100%20Ford%20Road%20Suite%20B368%2C%20Dallas%2C%20TX) |
+| 819 | DA2Technologies LLC | 9304 Forest Ln STE S210 | Dallas, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=DA2Technologies%20LLC%2C%209304%20Forest%20Ln%20STE%20S210%2C%20Dallas%2C%20TX) |
+| 820 | DallasTek Software Solutions, LLC. | 6800 Weiskopf Avenue Ste# 150 | McKinney, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=DallasTek%20Software%20Solutions%2C%20LLC.%2C%206800%20Weiskopf%20Avenue%20Ste%23%20150%2C%20McKinney%2C%20TX) |
+| 821 | Delaware North America, LLC | 3626 North Hall St. (Two Oak Lawn) Suite 610 | Dallas, TX | 541519 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Delaware%20North%20America%2C%20LLC%2C%203626%20North%20Hall%20St.%20%28Two%20Oak%20Lawn%29%20Suite%20610%2C%20Dallas%2C%20TX) |
+| 822 | Drift Tech LLC | 6246 Shasta Creek Rd | Celina, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Drift%20Tech%20LLC%2C%206246%20Shasta%20Creek%20Rd%2C%20Celina%2C%20TX) |
+| 823 | ERP STEP LLC | 101 E. Park Street Suite 600 | Plano, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=ERP%20STEP%20LLC%2C%20101%20E.%20Park%20Street%20Suite%20600%2C%20Plano%2C%20TX) |
+| 824 | Epiphany Industrial Technologies, LLC | 5665 Southeast Loop 410 | San Antonio, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Epiphany%20Industrial%20Technologies%2C%20LLC%2C%205665%20Southeast%20Loop%20410%2C%20San%20Antonio%2C%20TX) |
+| 825 | Frisco Analytics, LLC | 11801 Domain Blvd 3rd Floor | Austin, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Frisco%20Analytics%2C%20LLC%2C%2011801%20Domain%20Blvd%203rd%20Floor%2C%20Austin%2C%20TX) |
+| 826 | Gigsoft Labs LLC | 10900 Research Blvd Ste 160 C,  Unit #2043 | Austin, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Gigsoft%20Labs%20LLC%2C%2010900%20Research%20Blvd%20Ste%20160%20C%2C%20%20Unit%20%232043%2C%20Austin%2C%20TX) |
+| 827 | HAANTECH LLC | 950 E. State Highway 114 Suite 160 | Southlake, TX | 54151 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=HAANTECH%20LLC%2C%20950%20E.%20State%20Highway%20114%20Suite%20160%2C%20Southlake%2C%20TX) |
+| 828 | INNOCITO TECHNOLOGIES LLC | 511 E John Carpenter Fwy Suite 435 | Irving, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=INNOCITO%20TECHNOLOGIES%20LLC%2C%20511%20E%20John%20Carpenter%20Fwy%20Suite%20435%2C%20Irving%2C%20TX) |
+| 829 | ITFluence LLC | 5900 South Lake Forest Dr Ste. 300 | McKinney, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=ITFluence%20LLC%2C%205900%20South%20Lake%20Forest%20Dr%20Ste.%20300%2C%20McKinney%2C%20TX) |
+| 830 | Idealforce LLC | 13276 N. Highway 183 Suite 202 | Austin, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Idealforce%20LLC%2C%2013276%20N.%20Highway%20183%20Suite%20202%2C%20Austin%2C%20TX) |
+| 831 | Infosys Nova Holdings LLC | 2400 N Glenville Drive Suite C150 | Richardson, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Infosys%20Nova%20Holdings%20LLC%2C%202400%20N%20Glenville%20Drive%20Suite%20C150%2C%20Richardson%2C%20TX) |
+| 832 | Insightary LLC | 5055 West Park Blvd Suite 400 | Plano, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Insightary%20LLC%2C%205055%20West%20Park%20Blvd%20Suite%20400%2C%20Plano%2C%20TX) |
+| 833 | KENFILL TECHNO SOLUTIONS LLC. | 8204 ELMBROOK DR. STE. #215 | DALLAS, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=KENFILL%20TECHNO%20SOLUTIONS%20LLC.%2C%208204%20ELMBROOK%20DR.%20STE.%20%23215%2C%20DALLAS%2C%20TX) |
+| 834 | Keste, LLC d.b.a. ArganoKeste | 6100 Plano Parkway Ste. 1800 | Plano, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Keste%2C%20LLC%20d.b.a.%20ArganoKeste%2C%206100%20Plano%20Parkway%20Ste.%201800%2C%20Plano%2C%20TX) |
+| 835 | MAADHU GLOBAL BUSINESS SOLUTIONS LLC. | 12808 W AIRPORT BLVD. SUITE #303 N | SUGAR LAND, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=MAADHU%20GLOBAL%20BUSINESS%20SOLUTIONS%20LLC.%2C%2012808%20W%20AIRPORT%20BLVD.%20SUITE%20%23303%20N%2C%20SUGAR%20LAND%2C%20TX) |
+| 836 | Maxwell Tech Systems LLC | 17762 Preston Road suite 106 | Dallas, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Maxwell%20Tech%20Systems%20LLC%2C%2017762%20Preston%20Road%20suite%20106%2C%20Dallas%2C%20TX) |
+| 837 | OpenKyber LLC | 1 Chisholm Trail Rd Ste 450 | Round Rock, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=OpenKyber%20LLC%2C%201%20Chisholm%20Trail%20Rd%20Ste%20450%2C%20Round%20Rock%2C%20TX) |
+| 838 | PHASORSOFT GROUP LLC | 10824 E CRYSTAL FALLS PKWY SUITE#502 | LEANDER, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=PHASORSOFT%20GROUP%20LLC%2C%2010824%20E%20CRYSTAL%20FALLS%20PKWY%20SUITE%23502%2C%20LEANDER%2C%20TX) |
+| 839 | Royal Monarch Solutions, LLC | 5304 Carnaby Street #114 | Irving, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Royal%20Monarch%20Solutions%2C%20LLC%2C%205304%20Carnaby%20Street%20%23114%2C%20Irving%2C%20TX) |
+| 840 | SASS Service LLC | 509 Ayinger Ln | Austin, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=SASS%20Service%20LLC%2C%20509%20Ayinger%20Ln%2C%20Austin%2C%20TX) |
+| 841 | SILVERLINE TECHNOLOGIES OF AMERICA, LLC | 1212 E. ARAPAHO ROAD | RICHARDSON, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=SILVERLINE%20TECHNOLOGIES%20OF%20AMERICA%2C%20LLC%2C%201212%20E.%20ARAPAHO%20ROAD%2C%20RICHARDSON%2C%20TX) |
+| 842 | SPIN Analytics and Strategy, LLC | 602 Everett Street | Conroe, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=SPIN%20Analytics%20and%20Strategy%2C%20LLC%2C%20602%20Everett%20Street%2C%20Conroe%2C%20TX) |
+| 843 | SRK IT GROUP LLC | 2601 TX-121 STE 216 | Lewisville, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=SRK%20IT%20GROUP%20LLC%2C%202601%20TX-121%20STE%20216%2C%20Lewisville%2C%20TX) |
+| 844 | SV Evolutions, LLC | 4817 Club Terrace Lane | Frisco, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=SV%20Evolutions%2C%20LLC%2C%204817%20Club%20Terrace%20Lane%2C%20Frisco%2C%20TX) |
+| 845 | Seventhgeneration Technologies LLC | 615 Blue Horizon Way | Argyle, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Seventhgeneration%20Technologies%20LLC%2C%20615%20Blue%20Horizon%20Way%2C%20Argyle%2C%20TX) |
+| 846 | SmartStart Systems LLC | 13610 Monteigne Ln | Cypress, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=SmartStart%20Systems%20LLC%2C%2013610%20Monteigne%20Ln%2C%20Cypress%2C%20TX) |
+| 847 | Spinakr Solutions LLC | 603 Munger Ave Ste 100-300 | Dallas, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Spinakr%20Solutions%20LLC%2C%20603%20Munger%20Ave%20Ste%20100-300%2C%20Dallas%2C%20TX) |
+| 848 | TEK FYNDER LLC | 2000 N Central Expy STE 107 | Plano, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=TEK%20FYNDER%20LLC%2C%202000%20N%20Central%20Expy%20STE%20107%2C%20Plano%2C%20TX) |
+| 849 | TSI USA, LLC | 8750 N. Central Expressway Ste. 300 | Dallas, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=TSI%20USA%2C%20LLC%2C%208750%20N.%20Central%20Expressway%20Ste.%20300%2C%20Dallas%2C%20TX) |
+| 850 | The WIMR Group, LLC | 3200 Main Street Suite 1.2 | Dallas, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=The%20WIMR%20Group%2C%20LLC%2C%203200%20Main%20Street%20Suite%201.2%2C%20Dallas%2C%20TX) |
+| 851 | Tire Profiles LLC | 3010 Story Rd W | Irving, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Tire%20Profiles%20LLC%2C%203010%20Story%20Rd%20W%2C%20Irving%2C%20TX) |
+| 852 | Twilnet LLC | 2591 Dallas Pkwy Ste. 300 | Frisco, TX | 541519 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Twilnet%20LLC%2C%202591%20Dallas%20Pkwy%20Ste.%20300%2C%20Frisco%2C%20TX) |
+| 853 | United Cloud Technologies LLC | 4400 State Hwy 121 STE 300 | Lewisville, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=United%20Cloud%20Technologies%20LLC%2C%204400%20State%20Hwy%20121%20STE%20300%2C%20Lewisville%2C%20TX) |
+| 854 | Utilipal LLC | 4545 Fuller Dr | Irving, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Utilipal%20LLC%2C%204545%20Fuller%20Dr%2C%20Irving%2C%20TX) |
+| 855 | VSTRS LLC dba Tek Global | 11119 McCracken Circle Suite A | Cypress, TX | 54151 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=VSTRS%20LLC%20dba%20Tek%20Global%2C%2011119%20McCracken%20Circle%20Suite%20A%2C%20Cypress%2C%20TX) |
+| 856 | Vintek LLC | 291 S Preston Rd Ste 1040 | Prosper, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Vintek%20LLC%2C%20291%20S%20Preston%20Rd%20Ste%201040%2C%20Prosper%2C%20TX) |
+| 857 | Vivi LLC | 12333 Sowden Road #58971 | Houston, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Vivi%20LLC%2C%2012333%20Sowden%20Road%20%2358971%2C%20Houston%2C%20TX) |
+| 858 | Wawasan LLC | 26606 Cook Field Rd Suite 100 | Katy, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=Wawasan%20LLC%2C%2026606%20Cook%20Field%20Rd%20Suite%20100%2C%20Katy%2C%20TX) |
+| 859 | eComchain, LLC | 9300 Wade Blvd., Suite 301 | Frisco, TX | 541511 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=eComchain%2C%20LLC%2C%209300%20Wade%20Blvd.%2C%20Suite%20301%2C%20Frisco%2C%20TX) |
+| 860 | eVerge Group LLC | 1079 W. Round Grove Road,  Box 311 Suite 300 | Lewisville, TX | 541512 | 6 | [📍](https://www.google.com/maps/search/?api=1&query=eVerge%20Group%20LLC%2C%201079%20W.%20Round%20Grove%20Road%2C%20%20Box%20311%20Suite%20300%2C%20Lewisville%2C%20TX) |
