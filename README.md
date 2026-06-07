@@ -79,12 +79,31 @@ visa-finder demo            # writes web/data/leads.geojson
 python -m http.server -d web 8000   # open http://localhost:8000
 ```
 
+### Standalone single-file build (no server)
+
+For a viewer you can just open in a browser — no web server, no hosting — build a
+self-contained HTML with the data inlined:
+
+```bash
+visa-finder demo                      # or: run --geojson web/data/leads.geojson
+python scripts/build_standalone.py    # -> dist/visa-finder-map.html
+```
+
+Open `dist/visa-finder-map.html` directly (MapLibre loads from its CDN; the
+browser fetches tiles).
+
 ### Hosting
 
 The viewer auto-deploys to **GitHub Pages** via
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml): CI builds the
-sample GeoJSON and publishes `web/`. (GitHub Pages on a private repo requires a
-paid GitHub plan; on a public repo it is free.)
+sample GeoJSON and publishes `web/`. The published URL will be
+`https://gorkamolero.github.io/trataka/`.
+
+> Requires GitHub Actions to be enabled for the repo (Settings → Actions →
+> General → "Allow all actions"). If Actions jobs fail instantly with no logs
+> (startup failure, no runner assigned), Actions is disabled or the account
+> needs email/billing verification — enable it, then re-run the workflow. Pages
+> on a private repo also needs a paid plan; on a public repo it is free.
 
 ## Data sources (all free)
 

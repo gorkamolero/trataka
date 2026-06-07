@@ -30,12 +30,17 @@ map.on("load", init);
 
 async function init() {
   let fc;
-  try {
-    const resp = await fetch("data/leads.geojson", { cache: "no-store" });
-    fc = await resp.json();
-  } catch (err) {
-    document.getElementById("stats").textContent = "Could not load leads.geojson";
-    return;
+  if (window.__LEADS__) {
+    // Standalone single-file build: data is inlined, no fetch needed.
+    fc = window.__LEADS__;
+  } else {
+    try {
+      const resp = await fetch("data/leads.geojson", { cache: "no-store" });
+      fc = await resp.json();
+    } catch (err) {
+      document.getElementById("stats").textContent = "Could not load leads.geojson";
+      return;
+    }
   }
 
   state.all = fc.features || [];
