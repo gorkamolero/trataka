@@ -45,6 +45,7 @@ def export_leads(
     states: list[str] | None = None,
     llc_only: bool = False,
     min_filings: int = 1,
+    exclude_staffing: bool = True,
 ) -> int:
     conditions = [f"lca_filing_count >= {int(min_filings)}"]
     if states:
@@ -52,6 +53,8 @@ def export_leads(
         conditions.append(f"state IN ({joined})")
     if llc_only:
         conditions.append("entity_type = 'LLC'")
+    if exclude_staffing:
+        conditions.append("COALESCE(is_staffing, FALSE) = FALSE")
     where = "WHERE " + " AND ".join(conditions) if conditions else ""
     sql = LEADS_VIEW.format(where=where)
 
@@ -72,6 +75,7 @@ def export_geojson(
     min_filings: int = 1,
     use_centroids: bool = True,
     sample: bool = False,
+    exclude_staffing: bool = True,
 ) -> int:
     """Export leads as GeoJSON for the map viewer.
 
@@ -86,6 +90,8 @@ def export_geojson(
         conditions.append(f"state IN ({joined})")
     if llc_only:
         conditions.append("entity_type = 'LLC'")
+    if exclude_staffing:
+        conditions.append("COALESCE(is_staffing, FALSE) = FALSE")
     where = "WHERE " + " AND ".join(conditions)
     sql = f"""
         SELECT name, entity_type, naics_code, address, city, state, zip,
@@ -176,6 +182,7 @@ def export_markdown(
     llc_only: bool = False,
     min_filings: int = 1,
     sample: bool = False,
+    exclude_staffing: bool = True,
 ) -> int:
     """Write a human-readable Markdown report: a sorted leads table with a
     Google Maps link per company, plus a short review-queue section."""
@@ -185,6 +192,8 @@ def export_markdown(
         conditions.append(f"state IN ({joined})")
     if llc_only:
         conditions.append("entity_type = 'LLC'")
+    if exclude_staffing:
+        conditions.append("COALESCE(is_staffing, FALSE) = FALSE")
     where = "WHERE " + " AND ".join(conditions)
     sql = f"""
         SELECT name, entity_type, naics_code, address, city, state, zip,

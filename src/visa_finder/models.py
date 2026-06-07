@@ -71,6 +71,9 @@ class Company(BaseModel):
     entity_type: EntityType = EntityType.UNKNOWN
     entity_type_source: str | None = None
 
+    # Flagged (not dropped) IT-staffing / consulting body shop
+    is_staffing: bool = False
+
     # Location (signal #3 + basis for #5)
     address: str | None = None
     city: str | None = None

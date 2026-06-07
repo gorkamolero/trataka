@@ -118,11 +118,14 @@ def run(
     companies = dedupe_mod.dedupe(filtered)
     stats["companies_after_dedupe"] = len(companies)
 
-    # Optional: drop IT-staffing / consulting body shops to bias toward product
-    # software companies.
+    # Flag IT-staffing / consulting body shops (never hidden — only dropped if
+    # explicitly requested). Flagging keeps the listing complete.
+    for c in companies:
+        c.is_staffing = cfg.is_staffing(c.name)
+    stats["flagged_staffing"] = sum(1 for c in companies if c.is_staffing)
     if exclude_staffing:
         before = len(companies)
-        companies = [c for c in companies if not cfg.is_staffing(c.name)]
+        companies = [c for c in companies if not c.is_staffing]
         stats["excluded_staffing"] = before - len(companies)
 
     # Corroboration — attach USCIS approval counts if available.

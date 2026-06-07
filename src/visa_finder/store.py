@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS companies (
     naics_description VARCHAR,
     entity_type       VARCHAR,
     entity_type_source VARCHAR,
+    is_staffing       BOOLEAN,
     address           VARCHAR,
     city              VARCHAR,
     state             VARCHAR,
@@ -51,7 +52,8 @@ CREATE TABLE IF NOT EXISTS companies (
 
 _COLUMNS = [
     "company_id", "name", "normalized_name", "aliases", "naics_code",
-    "naics_description", "entity_type", "entity_type_source", "address", "city",
+    "naics_description", "entity_type", "entity_type_source", "is_staffing",
+    "address", "city",
     "state", "zip", "latitude", "longitude", "building_score", "building_flags",
     "lca_filing_count", "job_titles", "soc_codes", "approval_count", "headcount",
     "size_confidence", "in_target_band", "match_confidence", "review_status",
@@ -81,7 +83,7 @@ class Store:
         return [
             c.company_id, c.name, c.normalized_name, json.dumps(c.aliases),
             c.naics_code, c.naics_description, enum_val(c.entity_type),
-            c.entity_type_source, c.address, c.city, c.state, c.zip,
+            c.entity_type_source, c.is_staffing, c.address, c.city, c.state, c.zip,
             c.latitude, c.longitude, c.building_score, json.dumps(c.building_flags),
             c.lca_filing_count, json.dumps(c.job_titles), json.dumps(c.soc_codes),
             c.approval_count, c.headcount, enum_val(c.size_confidence),
