@@ -58,6 +58,20 @@ visa-finder query "SELECT name, city, lca_filing_count FROM companies ORDER BY l
 
 Adding a state is config, not code — see `config/states.yaml`.
 
+## Markdown report (no hosting needed)
+
+For a readable findings doc with a sorted table and a **Google Maps link per
+company**:
+
+```bash
+visa-finder report --states MO,TX --out report.md
+# or alongside a full run:
+visa-finder run --states MO,TX --markdown report.md
+```
+
+If no real DOL data is present under `data/raw/lca/`, the report is built from
+the bundled sample dataset and clearly labelled as such.
+
 ## Map viewer (LibreMap)
 
 A static, no-API-key map viewer lives in [`web/`](web/), built on

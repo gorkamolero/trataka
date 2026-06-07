@@ -27,6 +27,7 @@ data/cache/
 *.duckdb.wal
 leads*.csv
 review_queue*.csv
+report*.md
 
 # OS / editors
 .DS_Store

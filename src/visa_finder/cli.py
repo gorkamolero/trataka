@@ -13,7 +13,7 @@ from pathlib import Path
 import click
 
 from .config import data_dir, load_config
-from .export import export_geojson, export_leads, export_review_queue
+from .export import export_geojson, export_leads, export_markdown, export_review_queue
 from .pipeline.run import run as run_pipeline
 from .sources import SOURCES, list_sources
 from .store import Store
@@ -90,6 +90,7 @@ def sources_fetch(key: str, year: int | None) -> None:
 @click.option("--llc-only/--no-llc-only", default=False, help="Restrict CSV to entity_type=LLC.")
 @click.option("--score-buildings", is_flag=True, help="Enable Phase 4 building lookups (network).")
 @click.option("--geojson", "geojson_path", default=None, help="Also write GeoJSON for the map.")
+@click.option("--markdown", "markdown_path", default=None, help="Also write a Markdown report.")
 def run_cmd(
     states: str | None,
     lca_path: str | None,
@@ -98,6 +99,7 @@ def run_cmd(
     llc_only: bool,
     score_buildings: bool,
     geojson_path: str | None,
+    markdown_path: str | None,
 ) -> None:
     """Run the pipeline and export a filtered CSV."""
     cfg = load_config()
@@ -122,6 +124,8 @@ def run_cmd(
         n_review = export_review_queue(store, rq_path)
         if geojson_path:
             n_geo = export_geojson(store, geojson_path, states=state_list, llc_only=llc_only)
+        if markdown_path:
+            export_markdown(store, markdown_path, states=state_list, llc_only=llc_only)
         total = store.count()
 
     click.echo(click.style("Pipeline complete.", fg="green", bold=True))
@@ -131,6 +135,8 @@ def run_cmd(
     click.echo(f"  review queue: {n_review} -> {rq_path}")
     if n_geo is not None:
         click.echo(f"  geojson features: {n_geo} -> {geojson_path}")
+    if markdown_path:
+        click.echo(f"  markdown report -> {markdown_path}")
     click.echo(f"  total companies in store: {total} ({db})")
 
 
@@ -158,6 +164,41 @@ def demo_cmd(out: str) -> None:
 
 
 # ---- query ------------------------------------------------------------------
+
+@cli.command("report")
+@click.option("--states", default=None, help="Comma-separated states, e.g. MO,TX.")
+@click.option("--lca", "lca_path", default=None, help="LCA file or dir (default: data/raw/lca).")
+@click.option("--out", default="report.md", help="Markdown report output path.")
+@click.option("--llc-only/--no-llc-only", default=False, help="Restrict to entity_type=LLC.")
+def report_cmd(states: str | None, lca_path: str | None, out: str, llc_only: bool) -> None:
+    """Write a Markdown findings report (tables + Google Maps links).
+
+    Uses real LCA data when present under data/raw/lca (or --lca); otherwise
+    falls back to the bundled SAMPLE dataset, clearly labelled as such.
+    """
+    cfg = load_config()
+    state_list = _parse_states(states) or ["MO", "TX"]
+    default_lca = data_dir() / "raw" / "lca"
+    if lca_path:
+        lca, sample = Path(lca_path), False
+    elif default_lca.exists() and any(default_lca.iterdir()):
+        lca, sample = default_lca, False
+    else:
+        lca, sample = SAMPLE_LCA, True
+        click.echo("No real LCA data found — building report from SAMPLE dataset.")
+
+    result = run_pipeline(lca, state_list, cfg=cfg, apply_llc=not sample)
+    out_path = Path(out)
+    db_path = out_path.with_suffix(".duckdb")
+    db_path.unlink(missing_ok=True)
+    with Store(db_path) as store:
+        store.upsert(result.companies)
+        if result.review_queue:
+            store.upsert(result.review_queue)
+        n = export_markdown(store, out_path, states=state_list, llc_only=llc_only, sample=sample)
+    db_path.unlink(missing_ok=True)
+    click.echo(f"Wrote report with {n} companies -> {out_path}")
+
 
 @cli.command("query")
 @click.argument("sql")
