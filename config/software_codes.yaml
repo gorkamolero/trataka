@@ -1,0 +1,37 @@
+# Defines what counts as a "software company" for the hard industry filter.
+#
+# A record qualifies as software if EITHER:
+#   - its employer NAICS code is in `naics` (prefix match), OR
+#   - the LCA job's SOC code is in `soc` (prefix match) AND naics is missing.
+#
+# NAICS is the primary signal (employer industry). SOC is a secondary signal
+# (occupation of the sponsored role) used when NAICS is absent or ambiguous.
+
+# NAICS prefixes for software / software-adjacent industries.
+naics:
+  - "5112"    # Software Publishers
+  - "5132"    # (legacy) Software Publishers
+  - "5182"    # Data Processing, Hosting, and Related Services
+  - "518210"  # Data Processing, Hosting, and Related Services
+  - "5415"    # Computer Systems Design and Related Services
+  - "541511"  # Custom Computer Programming Services
+  - "541512"  # Computer Systems Design Services
+  - "541519"  # Other Computer Related Services
+  - "519130"  # Internet Publishing / Web Search Portals (legacy)
+  - "513210"  # Software Publishers (2022 NAICS)
+  - "516210"  # Media Streaming / Web Portals (2022 NAICS)
+
+# SOC prefixes for software-development occupations (2018 SOC).
+soc:
+  - "15-1131" # Computer Programmers
+  - "15-1132" # Software Developers, Applications (2010 SOC)
+  - "15-1133" # Software Developers, Systems Software (2010 SOC)
+  - "15-1252" # Software Developers (2018 SOC)
+  - "15-1253" # Software QA Analysts and Testers
+  - "15-1254" # Web Developers
+  - "15-1255" # Web and Digital Interface Designers
+  - "15-1256" # Software Developers and QA Analysts (combined)
+  - "15-1257" # Web Developers and Digital Interface Designers (combined)
+
+# Treat NAICS as authoritative when present; only fall back to SOC otherwise.
+naics_is_authoritative: true

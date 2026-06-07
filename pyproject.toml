@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visa-finder"
+version = "0.1.0"
+description = "Finder for small software companies in MO/TX that sponsor H1B/LCA filings"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "duckdb>=0.10",
+    "pydantic>=2.5",
+    "pandas>=2.0",
+    "rapidfuzz>=3.6",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "click>=8.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.3",
+    "mypy>=1.8",
+    "types-PyYAML",
+    "types-requests",
+]
+
+[project.scripts]
+visa-finder = "visa_finder.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.mypy]
+python_version = "3.10"
+packages = ["visa_finder"]
+ignore_missing_imports = true

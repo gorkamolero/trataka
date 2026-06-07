@@ -1,0 +1,44 @@
+# State configuration. Adding a state here (plus a registry adapter) is all that is
+# needed to extend coverage — no pipeline rework.
+#
+# registry.adapter must match a key registered in visa_finder.sources.registry.
+
+states:
+  MO:
+    name: Missouri
+    fips: "29"
+    enabled: true
+    registry:
+      # Missouri SOS "Business Entity Search" / bulk data.
+      adapter: missouri_sos
+      bulk_url: "https://bsd.sos.mo.gov/BusinessEntity/BESearch.aspx"
+      notes: >
+        MO offers an online business entity search. Bulk extracts may require a
+        request to the SOS. Where bulk data is unavailable, fall back to the
+        OpenCorporates adapter (jurisdiction us_mo).
+      opencorporates_jurisdiction: us_mo
+
+  TX:
+    name: Texas
+    fips: "48"
+    enabled: true
+    registry:
+      # Texas SOS SOSDirect / Comptroller "Active Franchise Tax Permit Holders"
+      # is a useful free bulk source that includes entity type + address.
+      adapter: texas_comptroller
+      bulk_url: "https://comptroller.texas.gov/transparency/open-data/"
+      notes: >
+        TX Comptroller publishes Active Franchise Tax Permit Holders as open
+        data, including taxpayer name, entity type, and address. Fall back to
+        OpenCorporates (jurisdiction us_tx) for gaps.
+      opencorporates_jurisdiction: us_tx
+
+  # Example of how to add a state later — flip enabled to true and supply a
+  # registry adapter.
+  # CA:
+  #   name: California
+  #   fips: "06"
+  #   enabled: false
+  #   registry:
+  #     adapter: opencorporates
+  #     opencorporates_jurisdiction: us_ca

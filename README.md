@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# H1B Small-Software-Sponsor Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Builds a deduplicated, queryable dataset of **small software companies in Missouri
+and Texas that sponsor H1B/LCA filings** — biased toward LLCs with ~2–10 employees
+registered to small (non-tower) buildings.
 
-Currently, two official plugins are available:
+Free / public sources only. Output is **leads to verify, not ground truth**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Note: this project currently lives in a repo named `trataka` for practical reasons.
+> The package and tooling are all named `visa-finder`.
 
-## React Compiler
+## What it does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Given quarterly federal disclosure data plus state registries and open building
+data, it produces a per-company record and a filtered CSV export of qualifying
+leads.
 
-## Expanding the ESLint configuration
+### Filters & signals
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| # | Signal | Type | Source |
+|---|--------|------|--------|
+| 1 | Has certified H1B/LCA filings | hard filter | DOL OFLC LCA disclosure data |
+| 2 | Software company (industry codes) | hard filter | NAICS / SOC code sets |
+| 3 | State is MO or TX | hard filter | filing + registry address |
+| 4 | Entity type is LLC | hard filter (+ review queue) | state business registries |
+| 5 | Small building | score 0–1 | geocoding + open building data |
+| 6 | Headcount 2–10 | confidence proxy | filing volume + building size |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Building and headcount are **proxies**. Headcount is never fabricated — actual
+headcount is reported as `unknown` with a low/medium confidence band.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Build order (value-first)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Sponsorship + software + state filter** → an immediate real list.
+2. **Dedupe + CSV export** → usable output fast.
+3. **LLC gate** → biggest precision gain.
+4. **Building + headcount scoring** → refinement last.
+
+See [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md) for architecture and
+[`SPEC.md`](SPEC.md) for the planning-level spec.
+
+## Quick start
+
+```bash
+# Install (editable) + dev deps
+pip install -e ".[dev]"
+
+# 1. Download the source files you want (prints URLs + saves to data/raw)
+visa-finder sources list
+visa-finder sources fetch lca --year 2024
+
+# 2. Run the pipeline (Phase 1+2: filter + dedupe + export)
+visa-finder run --states MO,TX --out leads.csv
+
+# 3. Query the store directly
+visa-finder query "SELECT name, city, lca_filing_count FROM companies ORDER BY lca_filing_count DESC LIMIT 20"
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Adding a state is config, not code — see `config/states.yaml`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Data sources (all free)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **DOL OFLC LCA disclosure data** — the sponsorship signal (certified H1B/LCA filings).
+- **USCIS H-1B Employer Data Hub** — approval-count corroboration.
+- **Missouri / Texas Secretary of State business registries** — entity type + registered address.
+- **U.S. Census geocoder + OpenStreetMap/Overpass** — geocoding and building footprints.
+- **OpenCorporates API** — fallback company registry where state bulk data is thin.
+
+Stick to official bulk downloads and free APIs. Sources whose terms prohibit
+scraping are avoided.
+
+## Status
+
+Scaffold + Phase 1/2 pipeline (filter, dedupe, export) implemented. Phases 3–4
+(LLC gate, building/headcount scoring) are wired into the pipeline with working
+interfaces and are progressively being filled in. See the implementation plan
+for the milestone breakdown.
